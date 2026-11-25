@@ -1,0 +1,102 @@
+[
+  {
+    "id": "I01",
+    "date": "2025-02",
+    "jurisdiction": "Multinational",
+    "record_type": "Criminal investigation",
+    "description": "Operation Cumberland",
+    "observed_outcome": "25 arrests",
+    "interpretation": "Arrests; no conviction inference",
+    "primary_source": "https://www.coe.int/en/web/cybercrime/-/denmark-bosnia-and-herzegovina-and-others-operation-cumberland-on-ai-generated-child-sexual-abuse-material"
+  },
+  {
+    "id": "I02",
+    "date": "2025",
+    "jurisdiction": "Australia",
+    "record_type": "Civil enforcement",
+    "description": "Federal Court sexual deepfake case",
+    "observed_outcome": "AUD 343,500 penalty plus costs",
+    "interpretation": "Civil penalty; not compensation",
+    "primary_source": "https://www.esafety.gov.au/newsroom/media-releases/court-orders-343500-penalty-for-posting-deepfakes-of-australian-women"
+  },
+  {
+    "id": "I03",
+    "date": "2026-03-09",
+    "jurisdiction": "US / Kentucky",
+    "record_type": "Criminal sentence",
+    "description": "AI-generated child abuse material",
+    "observed_outcome": "5 years imprisonment; 20 years supervised release",
+    "interpretation": "Case-specific sentence",
+    "primary_source": "https://www.justice.gov/usao-wdky/pr/bowling-green-man-sentenced-5-years-federal-prison-followed-20-years-supervised"
+  },
+  {
+    "id": "I04",
+    "date": "2026-02-06",
+    "jurisdiction": "US",
+    "record_type": "Criminal verdict",
+    "description": "Child exploitation including AI-generated material",
+    "observed_outcome": "Convicted",
+    "interpretation": "Verdict; not sentence",
+    "primary_source": "https://www.justice.gov/opa/pr/repeat-sex-offender-convicted-child-exploitation-offenses-including-receiving-and-possessing"
+  },
+  {
+    "id": "I05",
+    "date": "2026-09-08",
+    "jurisdiction": "US / Ohio",
+    "record_type": "Criminal sentence",
+    "description": "Cyberstalking and digital forgeries",
+    "observed_outcome": "15 years imprisonment",
+    "interpretation": "Combined offenses",
+    "primary_source": "https://www.justice.gov/usao-sdoh/pr/columbus-man-sentenced-15-years-prison-cyberstalking-exes-creating-ai-generated"
+  },
+  {
+    "id": "I06",
+    "date": "2026-09-16",
+    "jurisdiction": "US / Missouri",
+    "record_type": "Criminal sentence",
+    "description": "Possession of abuse material including AI-generated material",
+    "observed_outcome": "Sentence reported; duration requires reconciliation",
+    "interpretation": "Inherited register and source URL disagree on the sentence duration; omitted pending source check.",
+    "primary_source": "https://www.justice.gov/usao-edmo/pr/missouri-man-who-possessed-ai-generated-child-sexual-abuse-material-sentenced-14-years"
+  },
+  {
+    "id": "I07",
+    "date": "2026-05",
+    "jurisdiction": "US",
+    "record_type": "Regulatory warning",
+    "description": "FTC removal-process compliance",
+    "observed_outcome": "12 companies warned",
+    "interpretation": "Not adjudication",
+    "primary_source": "https://www.ftc.gov/news-events/news/press-releases/2026/05/ftc-sends-warning-letters-companies-about-compliance-take-it-down-act"
+  },
+  {
+    "id": "I08",
+    "date": "2025",
+    "jurisdiction": "Australia",
+    "record_type": "Repository governance",
+    "description": "Model-hosting regulatory engagement",
+    "observed_outcome": "Publisher terms updated",
+    "interpretation": "Policy change, not measured victim reduction",
+    "primary_source": "https://www.esafety.gov.au/newsroom/media-releases/esafety-action-prevents-services-nudifying-australian-school-children"
+  },
+  {
+    "id": "I09",
+    "date": "2026-11",
+    "jurisdiction": "Australia",
+    "record_type": "Regulatory response",
+    "description": "Eight targeted services",
+    "observed_outcome": "Access withdrawal or compliance measures",
+    "interpretation": "May overlap I08; do not sum; no harm effect measured",
+    "primary_source": "https://www.esafety.gov.au/sites/default/files/2026-11/eSafety_submission_Digital_Duty_of_Care_Bill_Senate_Committee_Inquiry.pdf"
+  },
+  {
+    "id": "I10",
+    "date": "2026-10-26",
+    "jurisdiction": "UK",
+    "record_type": "Regulatory investigation",
+    "description": "Ofcom intimate-image abuse enforcement",
+    "observed_outcome": "Two investigations opened",
+    "interpretation": "Not findings of violation",
+    "primary_source": "https://www.ofcom.org.uk/online-safety/illegal-and-harmful-content/Enforcement-programme-into-measures-being-taken-by-services-to-prevent-users-from-encountering-or-sharing-non-consensual-intimate-imagery-NCII"
+  }
+]

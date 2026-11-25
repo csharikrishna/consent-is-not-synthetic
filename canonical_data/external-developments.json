@@ -1,0 +1,37 @@
+[
+  {
+    "id": "EXT-01",
+    "date": "2025-05-19",
+    "actor": "US Congress / FTC",
+    "development": "TAKE IT DOWN Act enacted (compliance deadline 19 May 2026; 12 FTC warning letters May 2026)",
+    "status": "Verified external enforcement"
+  },
+  {
+    "id": "EXT-02",
+    "date": "2026-07-08",
+    "actor": "European Union",
+    "development": "Regulation (EU) 2026/1744 adopted (published 24 July 2026; AI prohibitions applicable 2 Dec 2026)",
+    "status": "Enacted, not yet applicable as of 25 Nov 2026"
+  },
+  {
+    "id": "EXT-03",
+    "date": "2026-09",
+    "actor": "Australian eSafety Commissioner",
+    "development": "8 services restricted Australian access or added compliance measures; Hugging Face updated misuse rules",
+    "status": "Verified external regulatory outcome"
+  },
+  {
+    "id": "EXT-04",
+    "date": "2026-10-26",
+    "actor": "UK Ofcom",
+    "development": "NCII enforcement programme engaging 25 high-risk services and opening formal investigations",
+    "status": "Verified external regulatory action"
+  },
+  {
+    "id": "EXT-05",
+    "date": "2026-06-18",
+    "actor": "Parliament of Canada",
+    "development": "Protecting Victims Act (Bill C-16) received Royal Assent",
+    "status": "Enacted; commencement pending confirmation"
+  }
+]

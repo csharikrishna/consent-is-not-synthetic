@@ -1,0 +1,15 @@
+metric_id,measure,value,unit,denominator,period,reference_number,status,interpretation
+M01,Self-reported synthetic intimate imagery victimization,2.2,percent,>16000 respondents,10-country survey; CHI 2024,65,reported,Not a global rate
+M02,Self-reported perpetration,1.8,percent,>16000 respondents,10-country survey; CHI 2024,65,reported,Self-report; not an estimate of all perpetrators
+M03,Estimated traffic to selected websites,20.7,million visits,31 selected sites,May 2025,66,reported,Not unique visitors or generations
+M04,Apps examined,29,apps,selected sample,Online 2025,67,reported,Not prevalence
+M05,Children reporting fabricated nude imagery ever,3,percent,1948 answering sensitive module,Australia; Dec 2024-Feb 2025,68,reported,Rounded; self-report
+M06,Children reporting fabricated nude imagery past year,1,percent,1948 answering sensitive module,Australia; Dec 2024-Feb 2025,68,reported,Rounded; overlapping lifetime group
+M07,Services changing access or measures,8,services,targeted services,Australia; Nov 2026 submission,70,reported,Not all withdrawn; not causal harm reduction
+M08,Prior visits to eight services,200000,"visits per month, lower bound",8 services,Australia; Nov 2026 submission,70,reported,Strictly more than 200000; no follow-up traffic
+M09,Civil penalty,343500,AUD,one civil case,Australia; 2025,71,reported,Not victim compensation
+M10,Warning letters,12,companies,targeted companies,US; May 2026,72,reported,Not adjudications
+M11,Services engaged,25,services,high risk services,UK; Oct 2026,73,reported,Not completed remediation
+M12,Records without responsible person,69,records,104 reviewed records,UK; 2025,75,reported,Not all providers
+M13,Records without responsible person share,66.35,percent,104 reviewed records,UK; 2025,75,derived 69/104*100,Not AI-specific
+M14,Arrests,25,people,cross-border operation,Feb 2025,76,reported,Not convictions

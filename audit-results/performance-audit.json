@@ -1,0 +1,107 @@
+[
+  {
+    "route": "/",
+    "dclMs": 120,
+    "loadMs": 221
+  },
+  {
+    "route": "/impact/",
+    "dclMs": 29,
+    "loadMs": 31
+  },
+  {
+    "route": "/evidence/",
+    "dclMs": 32,
+    "loadMs": 66
+  },
+  {
+    "route": "/incidents/",
+    "dclMs": 22,
+    "loadMs": 28
+  },
+  {
+    "route": "/technology/",
+    "dclMs": 26,
+    "loadMs": 28
+  },
+  {
+    "route": "/model-governance/",
+    "dclMs": 42,
+    "loadMs": 45
+  },
+  {
+    "route": "/open-weights/",
+    "dclMs": 38,
+    "loadMs": 41
+  },
+  {
+    "route": "/regulation/",
+    "dclMs": 45,
+    "loadMs": 69
+  },
+  {
+    "route": "/accountability/",
+    "dclMs": 42,
+    "loadMs": 55
+  },
+  {
+    "route": "/research/",
+    "dclMs": 59,
+    "loadMs": 59
+  },
+  {
+    "route": "/library/",
+    "dclMs": 32,
+    "loadMs": 36
+  },
+  {
+    "route": "/sources/",
+    "dclMs": 48,
+    "loadMs": 67
+  },
+  {
+    "route": "/transparency/",
+    "dclMs": 50,
+    "loadMs": 52
+  },
+  {
+    "route": "/methodology/",
+    "dclMs": 30,
+    "loadMs": 31
+  },
+  {
+    "route": "/about/",
+    "dclMs": 28,
+    "loadMs": 31
+  },
+  {
+    "route": "/corrections/",
+    "dclMs": 26,
+    "loadMs": 28
+  },
+  {
+    "route": "/take-action/",
+    "dclMs": 25,
+    "loadMs": 31
+  },
+  {
+    "route": "/action/",
+    "dclMs": 30,
+    "loadMs": 36
+  },
+  {
+    "route": "/models/",
+    "dclMs": 46,
+    "loadMs": 47
+  },
+  {
+    "route": "/press/",
+    "dclMs": 23,
+    "loadMs": 25
+  },
+  {
+    "route": "/support/",
+    "dclMs": 24,
+    "loadMs": 26
+  }
+]

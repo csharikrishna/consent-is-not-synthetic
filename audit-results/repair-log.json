@@ -1,0 +1,20 @@
+[
+  {
+    "id": "DEF-01",
+    "severity": "P2",
+    "file": "web/public/interactions.js",
+    "component": "CITATION_DATA",
+    "issue": "Embedded citation modal payload was out of sync with V4.1 canonical updates in web/lib/data.json (e.g., Ofcom p. 18 locator and EU Reg. 2026/1744).",
+    "fix": "Resynced CITATION_DATA for all 76 sources directly from web/lib/data.json.",
+    "verification": "master_audit_phase1_to_5.py confirmed 76/76 sources synced; Playwright citationModal test passed."
+  },
+  {
+    "id": "DEF-02",
+    "severity": "P1",
+    "file": "web/components/ui.tsx",
+    "component": "ButtonLink",
+    "issue": "ButtonLink rendered Next.js <Link> for /downloads/... static files, causing 404 RSC prefetch requests (/downloads/v4-journal.pdf/__next._tree.txt?_rsc=...) on /transparency/.",
+    "fix": "Updated ButtonLink to render native <a href={href} download> when href starts with /downloads/.",
+    "verification": "Rebuilt web/out and re-ran 120-check Playwright audit across all 20 routes and 6 viewports."
+  }
+]

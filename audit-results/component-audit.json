@@ -1,0 +1,276 @@
+{
+  "exported_components": {
+    "MetricExplorer": {
+      "file": "web/components/Explorer.tsx",
+      "consumers": [
+        "web/app/evidence/page.tsx"
+      ]
+    },
+    "IncidentExplorer": {
+      "file": "web/components/Explorer.tsx",
+      "consumers": [
+        "web/app/evidence/page.tsx",
+        "web/app/incidents/page.tsx"
+      ]
+    },
+    "SourceExplorer": {
+      "file": "web/components/Explorer.tsx",
+      "consumers": [
+        "web/app/sources/page.tsx"
+      ]
+    },
+    "Completeness": {
+      "file": "web/components/Explorer.tsx",
+      "consumers": [
+        "web/app/evidence/page.tsx",
+        "web/app/methodology/page.tsx",
+        "web/app/model-governance/page.tsx",
+        "web/app/models/page.tsx",
+        "web/app/research/page.tsx"
+      ]
+    },
+    "JurisdictionExplorer": {
+      "file": "web/components/Explorer.tsx",
+      "consumers": [
+        "web/app/evidence/page.tsx",
+        "web/app/regulation/page.tsx"
+      ]
+    },
+    "CorrectionExplorer": {
+      "file": "web/components/Explorer.tsx",
+      "consumers": [
+        "web/app/corrections/page.tsx"
+      ]
+    },
+    "Top50SnapshotExplorer": {
+      "file": "web/components/Explorer.tsx",
+      "consumers": [
+        "web/app/models/page.tsx"
+      ]
+    },
+    "ModelAccessGate": {
+      "file": "web/components/ModelAccessGate.tsx",
+      "consumers": [
+        "web/app/models/page.tsx"
+      ]
+    },
+    "Mark": {
+      "file": "web/components/ui.tsx",
+      "consumers": []
+    },
+    "Header": {
+      "file": "web/components/ui.tsx",
+      "consumers": [
+        "web/app/layout.tsx"
+      ]
+    },
+    "Footer": {
+      "file": "web/components/ui.tsx",
+      "consumers": [
+        "web/app/layout.tsx"
+      ]
+    },
+    "Eyebrow": {
+      "file": "web/components/ui.tsx",
+      "consumers": [
+        "web/app/page.tsx",
+        "web/app/accountability/page.tsx",
+        "web/app/press/page.tsx",
+        "web/app/research/page.tsx",
+        "web/app/support/page.tsx"
+      ]
+    },
+    "Heading": {
+      "file": "web/components/ui.tsx",
+      "consumers": [
+        "web/app/not-found.tsx",
+        "web/app/about/page.tsx",
+        "web/app/accountability/page.tsx",
+        "web/app/corrections/page.tsx",
+        "web/app/evidence/page.tsx",
+        "web/app/impact/page.tsx",
+        "web/app/incidents/page.tsx",
+        "web/app/methodology/page.tsx",
+        "web/app/model-governance/page.tsx",
+        "web/app/models/page.tsx",
+        "web/app/press/page.tsx",
+        "web/app/regulation/page.tsx",
+        "web/app/research/page.tsx",
+        "web/app/sources/page.tsx",
+        "web/app/support/page.tsx",
+        "web/app/take-action/page.tsx",
+        "web/app/technology/page.tsx",
+        "web/app/transparency/page.tsx"
+      ]
+    },
+    "Section": {
+      "file": "web/components/ui.tsx",
+      "consumers": [
+        "web/app/page.tsx",
+        "web/app/about/page.tsx",
+        "web/app/accountability/page.tsx",
+        "web/app/corrections/page.tsx",
+        "web/app/evidence/page.tsx",
+        "web/app/impact/page.tsx",
+        "web/app/incidents/page.tsx",
+        "web/app/methodology/page.tsx",
+        "web/app/model-governance/page.tsx",
+        "web/app/models/page.tsx",
+        "web/app/press/page.tsx",
+        "web/app/regulation/page.tsx",
+        "web/app/research/page.tsx",
+        "web/app/sources/page.tsx",
+        "web/app/support/page.tsx",
+        "web/app/take-action/page.tsx",
+        "web/app/technology/page.tsx",
+        "web/app/transparency/page.tsx"
+      ]
+    },
+    "Source": {
+      "file": "web/components/ui.tsx",
+      "consumers": [
+        "web/app/page.tsx",
+        "web/app/accountability/page.tsx",
+        "web/app/evidence/page.tsx",
+        "web/app/impact/page.tsx",
+        "web/app/incidents/page.tsx",
+        "web/app/methodology/page.tsx",
+        "web/app/model-governance/page.tsx",
+        "web/app/models/page.tsx",
+        "web/app/press/page.tsx",
+        "web/app/regulation/page.tsx",
+        "web/app/research/page.tsx",
+        "web/app/sources/page.tsx",
+        "web/app/support/page.tsx",
+        "web/app/take-action/page.tsx",
+        "web/app/technology/page.tsx",
+        "web/app/transparency/page.tsx",
+        "web/components/Explorer.tsx"
+      ]
+    },
+    "Stat": {
+      "file": "web/components/ui.tsx",
+      "consumers": [
+        "web/app/page.tsx",
+        "web/app/accountability/page.tsx",
+        "web/app/impact/page.tsx",
+        "web/app/models/page.tsx",
+        "web/app/sources/page.tsx",
+        "web/app/transparency/page.tsx"
+      ]
+    },
+    "ButtonLink": {
+      "file": "web/components/ui.tsx",
+      "consumers": [
+        "web/app/not-found.tsx",
+        "web/app/page.tsx",
+        "web/app/about/page.tsx",
+        "web/app/accountability/page.tsx",
+        "web/app/corrections/page.tsx",
+        "web/app/evidence/page.tsx",
+        "web/app/impact/page.tsx",
+        "web/app/incidents/page.tsx",
+        "web/app/methodology/page.tsx",
+        "web/app/model-governance/page.tsx",
+        "web/app/models/page.tsx",
+        "web/app/press/page.tsx",
+        "web/app/regulation/page.tsx",
+        "web/app/research/page.tsx",
+        "web/app/sources/page.tsx",
+        "web/app/support/page.tsx",
+        "web/app/take-action/page.tsx",
+        "web/app/technology/page.tsx",
+        "web/app/transparency/page.tsx"
+      ]
+    },
+    "Note": {
+      "file": "web/components/ui.tsx",
+      "consumers": [
+        "web/app/page.tsx",
+        "web/app/about/page.tsx",
+        "web/app/accountability/page.tsx",
+        "web/app/corrections/page.tsx",
+        "web/app/evidence/page.tsx",
+        "web/app/impact/page.tsx",
+        "web/app/incidents/page.tsx",
+        "web/app/methodology/page.tsx",
+        "web/app/model-governance/page.tsx",
+        "web/app/models/page.tsx",
+        "web/app/press/page.tsx",
+        "web/app/regulation/page.tsx",
+        "web/app/research/page.tsx",
+        "web/app/sources/page.tsx",
+        "web/app/support/page.tsx",
+        "web/app/take-action/page.tsx",
+        "web/app/technology/page.tsx",
+        "web/app/transparency/page.tsx"
+      ]
+    },
+    "Bars": {
+      "file": "web/components/ui.tsx",
+      "consumers": [
+        "web/app/evidence/page.tsx",
+        "web/app/impact/page.tsx",
+        "web/app/methodology/page.tsx"
+      ]
+    },
+    "Chain": {
+      "file": "web/components/ui.tsx",
+      "consumers": [
+        "web/app/page.tsx",
+        "web/app/accountability/page.tsx",
+        "web/app/model-governance/page.tsx",
+        "web/app/models/page.tsx"
+      ]
+    },
+    "RestrictionBanner": {
+      "file": "web/components/ui.tsx",
+      "consumers": []
+    },
+    "SignupCard": {
+      "file": "web/components/ui.tsx",
+      "consumers": [
+        "web/app/page.tsx",
+        "web/app/take-action/page.tsx"
+      ]
+    }
+  },
+  "orphan_components": [
+    "Mark",
+    "RestrictionBanner"
+  ],
+  "data_attributes": {
+    "data-dropdown": {
+      "in_jsx_count": 8,
+      "in_interactions_js": true
+    },
+    "data-menu": {
+      "in_jsx_count": 1,
+      "in_interactions_js": true
+    },
+    "data-filter-root": {
+      "in_jsx_count": 6,
+      "in_interactions_js": true
+    },
+    "data-search": {
+      "in_jsx_count": 6,
+      "in_interactions_js": true
+    },
+    "data-select": {
+      "in_jsx_count": 6,
+      "in_interactions_js": true
+    },
+    "data-chart-group": {
+      "in_jsx_count": 2,
+      "in_interactions_js": true
+    },
+    "data-citation": {
+      "in_jsx_count": 3,
+      "in_interactions_js": true
+    },
+    "data-copy": {
+      "in_jsx_count": 6,
+      "in_interactions_js": true
+    }
+  }
+}

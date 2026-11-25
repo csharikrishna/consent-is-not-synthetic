@@ -1,0 +1,13 @@
+node_modules/
+web/.next/
+web/out/
+releases/
+archive/
+research/private-snapshots/
+research/original-deliverables/Phase_1_Image_Model_Inventory.xlsx
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+.env
+.env.local

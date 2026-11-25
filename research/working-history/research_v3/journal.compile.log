@@ -1,0 +1,883 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./journal.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/newtxtext.sty
+`newtxtext' v1.744, 2024/04/01 Text macros taking advantage of TeXGyre Termes a
+nd its extensions (msharpe)
+(/usr/share/texlive/texmf-dist/tex/latex/xpatch/xpatch.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def))
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex)))
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/carlisle/scalefnt.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/kastrup/binhex.tex)
+(/usr/share/texlive/texmf-dist/tex/latex/fontaxes/fontaxes.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/newtxmath.sty
+`newtxmath' v1.754, 2024/09/22 Math macros based originally on txfonts (msharpe
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/centernot.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/kastrup/binhex.tex)
+amsthm NOT loaded
+) (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg))
+(/usr/share/texlive/texmf-dist/tex/latex/needspace/needspace.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/ragged2e/ragged2e.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(/usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/xurl/xurl.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/t1ntxtlf.fd)
+No file journal.aux.
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/omlntxmi.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/untxexa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/lmsntxsy.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/lmxntxexx.fd)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ptm.cfg)
+
+LaTeX Warning: Citation `ausmodels' on page 1 undefined on input line 24.
+
+
+LaTeX Warning: Citation `ausbill' on page 1 undefined on input line 24.
+
+
+LaTeX Warning: Citation `iwf' on page 1 undefined on input line 24.
+
+
+LaTeX Warning: Citation `unicef12' on page 1 undefined on input line 24.
+
+
+LaTeX Warning: Citation `reportremove' on page 1 undefined on input line 24.
+
+
+LaTeX Warning: Citation `deepfakeimpact' on page 1 undefined on input line 24.
+
+
+LaTeX Warning: Citation `uknotes' on page 1 undefined on input line 24.
+
+
+LaTeX Warning: Citation `ntia' on page 1 undefined on input line 24.
+
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/ot1minntx.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/untxmia.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/untxsym.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/untxsyc.fd)
+
+LaTeX Warning: Citation `unicef12' on page 1 undefined on input line 33.
+
+
+LaTeX Warning: Citation `iwf' on page 1 undefined on input line 33.
+
+
+LaTeX Warning: Citation `reportremove' on page 1 undefined on input line 33.
+
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-
+dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc}{/usr/share/texlive/texmf-dist/fon
+ts/enc/dvips/newtx/ntx-ec-tlf.enc}]
+
+LaTeX Warning: Citation `nist' on page 2 undefined on input line 44.
+
+
+LaTeX Warning: Citation `fbi' on page 2 undefined on input line 44.
+
+
+[2]
+
+LaTeX Warning: Citation `survivors' on page 3 undefined on input line 94.
+
+
+LaTeX Warning: Citation `deepfakeimpact' on page 3 undefined on input line 94.
+
+
+LaTeX Warning: Citation `unicefwide' on page 3 undefined on input line 104.
+
+
+LaTeX Warning: Citation `iwf' on page 3 undefined on input line 107.
+
+
+LaTeX Warning: Citation `unicef12' on page 3 undefined on input line 107.
+
+
+LaTeX Warning: Citation `unicef12' on page 3 undefined on input line 110.
+
+
+LaTeX Warning: Citation `thorn' on page 3 undefined on input line 110.
+
+
+[3]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 120.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Citation `reportremove' on page 4 undefined on input line 120.
+
+
+LaTeX Warning: Citation `reportremove' on page 4 undefined on input line 120.
+
+
+LaTeX Warning: Citation `unicefwide' on page 4 undefined on input line 125.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 130.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Citation `chi24' on page 4 undefined on input line 130.
+
+
+[4 <./figures/report_remove.pdf>]
+
+LaTeX Warning: Citation `chi24' on page 5 undefined on input line 130.
+
+
+LaTeX Warning: Citation `auskids' on page 5 undefined on input line 131.
+
+
+LaTeX Warning: Citation `isdtraffic' on page 5 undefined on input line 133.
+
+
+LaTeX Warning: Citation `apps29' on page 5 undefined on input line 133.
+
+
+LaTeX Warning: Citation `ausmodels' on page 5 undefined on input line 135.
+
+
+[5 <./figures/survey_usage.pdf>]
+
+LaTeX Warning: Citation `dojohio' on page 6 undefined on input line 152.
+
+
+LaTeX Warning: Citation `dojstalk' on page 6 undefined on input line 152.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 160.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Citation `nist' on page 6 undefined on input line 160.
+
+
+LaTeX Warning: Citation `hfcards' on page 6 undefined on input line 160.
+
+
+LaTeX Warning: Citation `nist' on page 6 undefined on input line 160.
+
+
+LaTeX Warning: Citation `hfcards' on page 6 undefined on input line 160.
+
+
+Underfull \hbox (badness 10000) in alignment at lines 172--172
+[][][] 
+
+LaTeX Warning: Citation `ldm' on page 6 undefined on input line 174.
+
+
+LaTeX Warning: Citation `sdxl' on page 6 undefined on input line 174.
+
+
+LaTeX Warning: Citation `flux' on page 6 undefined on input line 174.
+
+
+LaTeX Warning: Citation `qwen' on page 6 undefined on input line 174.
+
+
+LaTeX Warning: Citation `moss' on page 6 undefined on input line 174.
+
+
+LaTeX Warning: Citation `pixart' on page 6 undefined on input line 174.
+
+
+LaTeX Warning: Citation `sana' on page 6 undefined on input line 174.
+
+
+LaTeX Warning: Citation `zimage' on page 6 undefined on input line 174.
+
+
+LaTeX Warning: Citation `lumina' on page 6 undefined on input line 174.
+
+
+[6 <./figures/ecosystem.pdf>]
+
+LaTeX Warning: Citation `ldm' on page 7 undefined on input line 193.
+
+
+LaTeX Warning: Citation `sdxl' on page 7 undefined on input line 193.
+
+
+LaTeX Warning: Citation `flux' on page 7 undefined on input line 193.
+
+
+LaTeX Warning: Citation `memory' on page 7 undefined on input line 205.
+
+
+[7{/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}]
+
+LaTeX Warning: Citation `memory' on page 8 undefined on input line 223.
+
+
+LaTeX Warning: Citation `runpod' on page 8 undefined on input line 223.
+
+
+LaTeX Warning: Citation `lora' on page 8 undefined on input line 249.
+
+
+LaTeX Warning: Citation `loradiff' on page 8 undefined on input line 249.
+
+
+LaTeX Warning: Citation `dream' on page 8 undefined on input line 249.
+
+
+[8]
+
+LaTeX Warning: Citation `laion' on page 9 undefined on input line 263.
+
+
+LaTeX Warning: Citation `hfpolicy' on page 9 undefined on input line 268.
+
+
+LaTeX Warning: Citation `iwf' on page 9 undefined on input line 273.
+
+
+LaTeX Warning: Citation `iwfi' on page 9 undefined on input line 273.
+
+
+LaTeX Warning: Citation `iwfv' on page 9 undefined on input line 273.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 276.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Citation `iwf' on page 9 undefined on input line 276.
+
+
+LaTeX Warning: Citation `iwf' on page 9 undefined on input line 276.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 278.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Citation `iwfi' on page 9 undefined on input line 278.
+
+
+LaTeX Warning: Citation `iwfv' on page 9 undefined on input line 278.
+
+
+[9 <./figures/iwf_reports.pdf>]
+
+LaTeX Warning: Citation `iwfi' on page 10 undefined on input line 278.
+
+
+LaTeX Warning: Citation `iwfv' on page 10 undefined on input line 278.
+
+
+LaTeX Warning: Citation `iwf26' on page 10 undefined on input line 280.
+
+
+LaTeX Warning: Citation `iwfexec' on page 10 undefined on input line 280.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 285.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Citation `iwfv' on page 10 undefined on input line 285.
+
+
+LaTeX Warning: Citation `iwfv' on page 10 undefined on input line 285.
+
+
+LaTeX Warning: Citation `iwfexec' on page 10 undefined on input line 287.
+
+
+LaTeX Warning: Citation `iwfv' on page 10 undefined on input line 287.
+
+
+LaTeX Warning: Citation `iwf' on page 10 undefined on input line 287.
+
+
+LaTeX Warning: Citation `ncmec' on page 10 undefined on input line 297.
+
+
+LaTeX Warning: Citation `ncmec25' on page 10 undefined on input line 297.
+
+
+[10 <./figures/iwf_media.pdf> <./figures/iwf_videos.pdf>]
+
+LaTeX Warning: Citation `fbi' on page 11 undefined on input line 305.
+
+
+LaTeX Warning: Citation `fincen' on page 11 undefined on input line 305.
+
+
+LaTeX Warning: Citation `iwf' on page 11 undefined on input line 317.
+
+
+LaTeX Warning: Citation `ncmec25' on page 11 undefined on input line 317.
+
+
+LaTeX Warning: Citation `fbi' on page 11 undefined on input line 317.
+
+
+LaTeX Warning: Citation `meta' on page 11 undefined on input line 317.
+
+
+LaTeX Warning: Citation `fakefaces' on page 11 undefined on input line 317.
+
+
+LaTeX Warning: Citation `ftcads' on page 11 undefined on input line 317.
+
+
+LaTeX Warning: Citation `meta' on page 11 undefined on input line 328.
+
+
+LaTeX Warning: Citation `fakefaces' on page 11 undefined on input line 328.
+
+
+LaTeX Warning: Citation `metaindia' on page 11 undefined on input line 328.
+
+
+LaTeX Warning: Citation `graphika' on page 11 undefined on input line 328.
+
+
+[11]
+
+LaTeX Warning: Citation `metalabel' on page 12 undefined on input line 342.
+
+
+LaTeX Warning: Citation `youtube' on page 12 undefined on input line 342.
+
+
+LaTeX Warning: Citation `tiktok' on page 12 undefined on input line 342.
+
+
+LaTeX Warning: Citation `xpolicy' on page 12 undefined on input line 342.
+
+
+LaTeX Warning: Citation `ftcads' on page 12 undefined on input line 352.
+
+
+LaTeX Warning: Citation `fbi' on page 12 undefined on input line 363.
+
+
+LaTeX Warning: Citation `fincen' on page 12 undefined on input line 363.
+
+
+[12]
+
+LaTeX Warning: Citation `nist' on page 13 undefined on input line 376.
+
+
+LaTeX Warning: Citation `c2pa' on page 13 undefined on input line 376.
+
+
+LaTeX Warning: Citation `genimage' on page 13 undefined on input line 390.
+
+
+LaTeX Warning: Citation `dailybench' on page 13 undefined on input line 390.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 403.
+See the caption package documentation for explanation.
+
+
+[13]
+
+LaTeX Warning: Citation `nist' on page 14 undefined on input line 416.
+
+
+LaTeX Warning: Citation `genimage' on page 14 undefined on input line 416.
+
+
+Underfull \hbox (badness 10000) in alignment at lines 433--433
+[][][] 
+
+[14 <./figures/base_rate.pdf>]
+
+LaTeX Warning: Citation `india' on page 15 undefined on input line 435.
+
+
+LaTeX Warning: Citation `indiafaq' on page 15 undefined on input line 435.
+
+
+LaTeX Warning: Citation `eu' on page 15 undefined on input line 435.
+
+
+LaTeX Warning: Citation `eudate' on page 15 undefined on input line 435.
+
+
+LaTeX Warning: Citation `us' on page 15 undefined on input line 435.
+
+
+LaTeX Warning: Citation `uk' on page 15 undefined on input line 435.
+
+
+LaTeX Warning: Citation `ukcps' on page 15 undefined on input line 435.
+
+
+LaTeX Warning: Citation `au' on page 15 undefined on input line 435.
+
+
+LaTeX Warning: Citation `ca' on page 15 undefined on input line 435.
+
+
+LaTeX Warning: Citation `jp' on page 15 undefined on input line 435.
+
+
+LaTeX Warning: Citation `kr' on page 15 undefined on input line 435.
+
+
+LaTeX Warning: Citation `itact' on page 15 undefined on input line 435.
+
+
+LaTeX Warning: Citation `pocso' on page 15 undefined on input line 435.
+
+
+LaTeX Warning: Citation `itact' on page 15 undefined on input line 440.
+
+
+LaTeX Warning: Citation `pocso' on page 15 undefined on input line 440.
+
+
+LaTeX Warning: Citation `iwf' on page 15 undefined on input line 462.
+
+
+LaTeX Warning: Citation `ncmec25' on page 15 undefined on input line 462.
+
+
+LaTeX Warning: Citation `fbi' on page 15 undefined on input line 462.
+
+
+LaTeX Warning: Citation `meta' on page 15 undefined on input line 462.
+
+
+LaTeX Warning: Citation `ftcads' on page 15 undefined on input line 462.
+
+
+[15]
+
+LaTeX Warning: Citation `uknotes' on page 16 undefined on input line 481.
+
+
+LaTeX Warning: Citation `ftcenforce' on page 16 undefined on input line 481.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 483.
+See the caption package documentation for explanation.
+
+
+[16 <./figures/regulatory_tiers.pdf>]
+
+LaTeX Warning: Citation `ntia' on page 17 undefined on input line 494.
+
+
+LaTeX Warning: Citation `ntia' on page 17 undefined on input line 507.
+
+
+LaTeX Warning: Citation `ausbill' on page 17 undefined on input line 520.
+
+
+LaTeX Warning: Citation `ausmodels' on page 17 undefined on input line 520.
+
+
+LaTeX Warning: Citation `auscourt' on page 17 undefined on input line 520.
+
+
+LaTeX Warning: Citation `ftcletters' on page 17 undefined on input line 520.
+
+
+LaTeX Warning: Citation `ofcomncii' on page 17 undefined on input line 520.
+
+
+LaTeX Warning: Citation `cumberland' on page 17 undefined on input line 520.
+
+
+[17]
+
+LaTeX Warning: Citation `ausbill' on page 18 undefined on input line 522.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 524.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Citation `ofcomrisk' on page 18 undefined on input line 524.
+
+
+LaTeX Warning: Citation `ofcomrisk' on page 18 undefined on input line 524.
+
+
+[18 <./figures/governance_gap.pdf>]
+
+LaTeX Warning: Citation `itact' on page 19 undefined on input line 544.
+
+
+LaTeX Warning: Citation `pocso' on page 19 undefined on input line 544.
+
+
+LaTeX Warning: Citation `india' on page 19 undefined on input line 544.
+
+
+LaTeX Warning: Citation `indiareport' on page 19 undefined on input line 544.
+
+
+LaTeX Warning: Citation `isdtraffic' on page 19 undefined on input line 559.
+
+
+LaTeX Warning: Citation `apps29' on page 19 undefined on input line 559.
+
+
+LaTeX Warning: Citation `ausbill' on page 19 undefined on input line 559.
+
+
+LaTeX Warning: Citation `ausmodels' on page 19 undefined on input line 559.
+
+
+LaTeX Warning: Citation `ntia' on page 19 undefined on input line 559.
+
+
+LaTeX Warning: Citation `ofcomrisk' on page 19 undefined on input line 559.
+
+
+LaTeX Warning: Citation `ftcletters' on page 19 undefined on input line 559.
+
+
+LaTeX Warning: Citation `indiafull' on page 19 undefined on input line 559.
+
+
+LaTeX Warning: Citation `ofcomncii' on page 19 undefined on input line 559.
+
+
+LaTeX Warning: Citation `auskids' on page 19 undefined on input line 559.
+
+
+LaTeX Warning: Citation `deepfakeimpact' on page 19 undefined on input line 559
+.
+
+
+[19]
+
+LaTeX Warning: Citation `indiafull' on page 20 undefined on input line 569.
+
+
+LaTeX Warning: Citation `hfcards' on page 20 undefined on input line 575.
+
+
+LaTeX Warning: Citation `iwf' on page 20 undefined on input line 575.
+
+
+LaTeX Warning: Citation `ncmec25' on page 20 undefined on input line 575.
+
+
+LaTeX Warning: Citation `fbi' on page 20 undefined on input line 575.
+
+
+LaTeX Warning: Citation `meta' on page 20 undefined on input line 575.
+
+
+LaTeX Warning: Citation `nist' on page 20 undefined on input line 575.
+
+
+LaTeX Warning: Citation `c2pa' on page 20 undefined on input line 575.
+
+
+[20]
+[21] (/usr/share/texlive/texmf-dist/tex/latex/newtx/t1ntxtt.fd)
+[22]
+[23] (./journal.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `journal.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+ )
+(see the transcript file for additional information)</usr/share/texlive/texmf-d
+ist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/newtx/NewTXMI7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/txfonts/t1xtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txm
+iaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/newtx/ztmri.pfb>
+Output written on journal.pdf (23 pages, 378048 bytes).
+Transcript written on journal.log.
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./journal.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/newtxtext.sty
+`newtxtext' v1.744, 2024/04/01 Text macros taking advantage of TeXGyre Termes a
+nd its extensions (msharpe)
+(/usr/share/texlive/texmf-dist/tex/latex/xpatch/xpatch.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def))
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex)))
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/carlisle/scalefnt.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/kastrup/binhex.tex)
+(/usr/share/texlive/texmf-dist/tex/latex/fontaxes/fontaxes.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/newtxmath.sty
+`newtxmath' v1.754, 2024/09/22 Math macros based originally on txfonts (msharpe
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/centernot.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/kastrup/binhex.tex)
+amsthm NOT loaded
+) (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg))
+(/usr/share/texlive/texmf-dist/tex/latex/needspace/needspace.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/ragged2e/ragged2e.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(/usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/xurl/xurl.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/t1ntxtlf.fd) (./journal.aux)
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/omlntxmi.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/untxexa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/lmsntxsy.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/lmxntxexx.fd)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ptm.cfg) (./journal.out)
+(./journal.out) (/usr/share/texlive/texmf-dist/tex/latex/newtx/ot1minntx.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/untxmia.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/untxsym.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/untxsyc.fd)
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-
+dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc}{/usr/share/texlive/texmf-dist/fon
+ts/enc/dvips/newtx/ntx-ec-tlf.enc}]
+[2]
+[3]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 120.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 130.
+See the caption package documentation for explanation.
+
+
+[4 <./figures/report_remove.pdf>]
+[5 <./figures/survey_usage.pdf>]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 160.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in alignment at lines 172--172
+[][][] 
+
+[6 <./figures/ecosystem.pdf>]
+[7{/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}]
+[8]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 276.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 278.
+See the caption package documentation for explanation.
+
+
+[9 <./figures/iwf_reports.pdf>]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 285.
+See the caption package documentation for explanation.
+
+
+[10 <./figures/iwf_media.pdf> <./figures/iwf_videos.pdf>]
+[11]
+[12]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 403.
+See the caption package documentation for explanation.
+
+
+[13]
+Underfull \hbox (badness 10000) in alignment at lines 433--433
+[][][] 
+
+[14 <./figures/base_rate.pdf>]
+[15]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 483.
+See the caption package documentation for explanation.
+
+
+[16 <./figures/regulatory_tiers.pdf>]
+[17]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 524.
+See the caption package documentation for explanation.
+
+
+[18 <./figures/governance_gap.pdf>]
+[19]
+[20]
+[21] (/usr/share/texlive/texmf-dist/tex/latex/newtx/t1ntxtt.fd)
+[22]
+[23] (./journal.aux) )
+(see the transcript file for additional information)</usr/share/texlive/texmf-d
+ist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/newtx/NewTXMI7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/txfonts/t1xtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txm
+iaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/newtx/ztmri.pfb>
+Output written on journal.pdf (23 pages, 387059 bytes).
+Transcript written on journal.log.

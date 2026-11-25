@@ -1,0 +1,26 @@
+{
+  "files": [
+    {
+      "filename": "hero.svg",
+      "size_bytes": 2057,
+      "sha256": "6baf60b801db47737d3a554e3dee5b72aef932766605e24b6a4e6b2765cd8691",
+      "referenced_in_app": true,
+      "in_out": true
+    },
+    {
+      "filename": "mark.svg",
+      "size_bytes": 346,
+      "sha256": "bf02f928a941e342d72234eba140cf5b44b767564f3aa592b4b08cb3475c938a",
+      "referenced_in_app": true,
+      "in_out": true
+    },
+    {
+      "filename": "social-card.png",
+      "size_bytes": 39355,
+      "sha256": "e1a422a39cf7347a53f961ec779a6269aa5876a206fcaa3245d508f16db5214d",
+      "referenced_in_app": true,
+      "in_out": true
+    }
+  ],
+  "missing_targets": []
+}

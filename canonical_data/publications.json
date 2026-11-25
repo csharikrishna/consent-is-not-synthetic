@@ -1,0 +1,92 @@
+[
+  {
+    "title": "Research Journal Manuscript · V4.1 (Defended Edition)",
+    "slug": "v4-journal",
+    "file": "v4-journal.pdf",
+    "type": "Master Evidence & Policy Synthesis",
+    "pages": "24 pages",
+    "date": "25 November 2026",
+    "status": "Current Working Edition (Pending External Peer Review)",
+    "description": "AI-assisted structured narrative evidence review and regulatory policy synthesis, reconciled to the V4.1 canonical baseline with formal limitations and non-pooling disclaimers."
+  },
+  {
+    "title": "Public Evidence Brief",
+    "slug": "public-evidence-brief",
+    "file": "public-evidence-brief.pdf",
+    "type": "Briefing Document",
+    "pages": "4 pages",
+    "date": "25 November 2026",
+    "status": "Public Brief (V4.1 Aligned)",
+    "description": "Concise synthesis of verified empirical findings, survivor harms, and four core policy demands."
+  },
+  {
+    "title": "India Policy Brief",
+    "slug": "india-policy-brief",
+    "file": "india-policy-brief.pdf",
+    "type": "Policy Brief",
+    "pages": "2 pages",
+    "date": "25 November 2026",
+    "status": "Informational Regulatory Analysis",
+    "description": "Analysis of India's IT Act, IT Rules 2021/2026 amendments (2-hour and 3-hour distinct triggers), BNS, POCSO, and DPDP Act."
+  },
+  {
+    "title": "Annotated Source Evidence",
+    "slug": "annotated-evidence",
+    "file": "annotated-evidence.pdf",
+    "type": "Evidence Dossier",
+    "pages": "16 pages",
+    "date": "November 2026",
+    "status": "Source Dossier",
+    "description": "Bibliographic notes, locators, methodological limits, and citations for indexed references."
+  },
+  {
+    "title": "Research Resource Directory",
+    "slug": "resource-directory",
+    "file": "resource-directory.pdf",
+    "type": "Bibliography",
+    "pages": "12 pages",
+    "date": "November 2026",
+    "status": "Bibliography Index",
+    "description": "Numbered reference index with URLs and institutional source categorizations."
+  },
+  {
+    "title": "Historical Research Review · V3",
+    "slug": "v3-journal",
+    "file": "v3-journal.pdf",
+    "type": "Archival Draft",
+    "pages": "23 pages",
+    "date": "2026",
+    "status": "Archived (Superseded by V4.1)",
+    "description": "Superseded V3 draft preserved unchanged for transparency."
+  },
+  {
+    "title": "Historical Research Review · V2",
+    "slug": "v2-journal",
+    "file": "v2-journal.pdf",
+    "type": "Archival Draft",
+    "pages": "18 pages",
+    "date": "Mid-2026",
+    "status": "Archived (Superseded by V4.1)",
+    "description": "Superseded V2 draft preserved unchanged for transparency."
+  },
+  {
+    "title": "Historical Research Review · V1",
+    "slug": "v1-journal",
+    "file": "v1-journal.pdf",
+    "type": "Archival Draft",
+    "pages": "20 pages",
+    "date": "Early 2026",
+    "status": "Archived (Superseded by V4.1)",
+    "description": "Superseded V1 draft preserved unchanged for transparency."
+  },
+  {
+    "title": "Prospective Research Protocol",
+    "slug": "research-protocol",
+    "file": "research-protocol.md",
+    "type": "Methodology Protocol",
+    "pages": "Markdown",
+    "date": "25 November 2026",
+    "status": "Protocol Specification",
+    "description": "Structured narrative evidence review and regulatory policy synthesis protocol guided by PRISMA transparency principles."
+  }
+]

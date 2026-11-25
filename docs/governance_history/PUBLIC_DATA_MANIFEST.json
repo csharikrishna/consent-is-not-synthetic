@@ -1,0 +1,116 @@
+{
+  "project": "Consent Is Not Synthetic",
+  "edition": "Version 4 (Institutional Defended Release Candidate)",
+  "release_date": "2026-11-25",
+  "generator": "Research Transparency & Integrity Pipeline",
+  "files": [
+    {
+      "filename": "Synthetic_Abuse_Research_V4.pdf",
+      "size_bytes": 178461,
+      "sha256": "35994259c4919ea83852bfda6d67f07ecc015cb20375b82b1a463ea93528f558",
+      "format": "PDF"
+    },
+    {
+      "filename": "annotated-evidence.pdf",
+      "size_bytes": 223665,
+      "sha256": "09ef167548cc9aba15315a4af2c46aa819f037c43448ff8e0118bae8b6efc853",
+      "format": "PDF"
+    },
+    {
+      "filename": "citation-audit.csv",
+      "size_bytes": 54850,
+      "sha256": "5eb6fc914bac9c87d1eee966318b33e86509b92c6fb834971d75980cd0129e9b",
+      "format": "CSV"
+    },
+    {
+      "filename": "citation-audit.json",
+      "size_bytes": 75011,
+      "sha256": "a205f5f1b50b665f4efd4c3ef6e0da12b6fead80465883b3f18419345172ac79",
+      "format": "JSON"
+    },
+    {
+      "filename": "claim-to-action.csv",
+      "size_bytes": 1800,
+      "sha256": "be63246620d3368b3b67ac1f75f697b7c61ac497bb01e9a7dc16d3d660b80f24",
+      "format": "CSV"
+    },
+    {
+      "filename": "claim-verification-final.csv",
+      "size_bytes": 7571,
+      "sha256": "7ccbc80f975618945b3026701163e7803b9a805ac01cf44b6a7b9fde53b0b444",
+      "format": "CSV"
+    },
+    {
+      "filename": "incident-register.csv",
+      "size_bytes": 2888,
+      "sha256": "87818a1730aa8f0dbb28c46e3fb35c84b366b08964cc3ed18bde56563f283e03",
+      "format": "CSV"
+    },
+    {
+      "filename": "india-policy-brief.pdf",
+      "size_bytes": 145596,
+      "sha256": "3b26d2739739b26fe7328ba778510114e30378dc65ac80fdccde74327bf16cde",
+      "format": "PDF"
+    },
+    {
+      "filename": "model-metadata-completeness.csv",
+      "size_bytes": 1482,
+      "sha256": "c9cfaffb63d54f4647f475c5659f5adcc0989cbecc39d55b3705e886d78c9a7d",
+      "format": "CSV"
+    },
+    {
+      "filename": "public-evidence-brief.pdf",
+      "size_bytes": 35079,
+      "sha256": "2e5cc9f64fc7022b4d92a9e98a9a9d208988993d39511f4470ff7c0f4d08dcea",
+      "format": "PDF"
+    },
+    {
+      "filename": "public-source-register.csv",
+      "size_bytes": 29909,
+      "sha256": "0fa52a65080fba9107278e60392efe0272c87e94d79ae1c640278d51b43f57de",
+      "format": "CSV"
+    },
+    {
+      "filename": "quantitative-evidence.csv",
+      "size_bytes": 1898,
+      "sha256": "5c27027361cb2f9d7ded17d0b04b67ca63623c06db58389405a90e9919738fd9",
+      "format": "CSV"
+    },
+    {
+      "filename": "research-protocol.md",
+      "size_bytes": 8935,
+      "sha256": "dbd90e6a2f3eacbaf0b89b2e747a26221ec4556972a4db6e1eae86f47633d2e1",
+      "format": "MD"
+    },
+    {
+      "filename": "resource-directory.pdf",
+      "size_bytes": 198972,
+      "sha256": "0b93cad0ca7dbe0d52a18642bb9aaaa72fd3091453ac41b6e67ed9badc3836c3",
+      "format": "PDF"
+    },
+    {
+      "filename": "v1-journal.pdf",
+      "size_bytes": 383038,
+      "sha256": "4349553192df71f21814af3a4a2a9a335454b044e32d08db486772d9b5d0f321",
+      "format": "PDF"
+    },
+    {
+      "filename": "v2-journal.pdf",
+      "size_bytes": 441328,
+      "sha256": "a962b320b1706e22bbb7ec52ada4268278b9aa726aee6d0d4e63dcf2bff35514",
+      "format": "PDF"
+    },
+    {
+      "filename": "v3-journal.pdf",
+      "size_bytes": 502653,
+      "sha256": "835d3c6646b731695101c56f897fee09aaa3a1e8ab5819b4f8738c0338137880",
+      "format": "PDF"
+    },
+    {
+      "filename": "v4-journal.pdf",
+      "size_bytes": 178461,
+      "sha256": "35994259c4919ea83852bfda6d67f07ecc015cb20375b82b1a463ea93528f558",
+      "format": "PDF"
+    }
+  ]
+}

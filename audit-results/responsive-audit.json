@@ -1,0 +1,1010 @@
+[
+  {
+    "viewport": "mobile_360",
+    "route": "/",
+    "overflow": false,
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/impact/",
+    "overflow": false,
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/evidence/",
+    "overflow": false,
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/incidents/",
+    "overflow": false,
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/technology/",
+    "overflow": false,
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/model-governance/",
+    "overflow": false,
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/open-weights/",
+    "overflow": false,
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/regulation/",
+    "overflow": false,
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/accountability/",
+    "overflow": false,
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/research/",
+    "overflow": false,
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/library/",
+    "overflow": false,
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/sources/",
+    "overflow": false,
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/transparency/",
+    "overflow": false,
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/methodology/",
+    "overflow": false,
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/about/",
+    "overflow": false,
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/corrections/",
+    "overflow": false,
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/take-action/",
+    "overflow": false,
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/action/",
+    "overflow": false,
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/models/",
+    "overflow": false,
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/press/",
+    "overflow": false,
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/support/",
+    "overflow": false,
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/",
+    "overflow": false,
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/impact/",
+    "overflow": false,
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/evidence/",
+    "overflow": false,
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/incidents/",
+    "overflow": false,
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/technology/",
+    "overflow": false,
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/model-governance/",
+    "overflow": false,
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/open-weights/",
+    "overflow": false,
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/regulation/",
+    "overflow": false,
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/accountability/",
+    "overflow": false,
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/research/",
+    "overflow": false,
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/library/",
+    "overflow": false,
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/sources/",
+    "overflow": false,
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/transparency/",
+    "overflow": false,
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/methodology/",
+    "overflow": false,
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/about/",
+    "overflow": false,
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/corrections/",
+    "overflow": false,
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/take-action/",
+    "overflow": false,
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/action/",
+    "overflow": false,
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/models/",
+    "overflow": false,
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/press/",
+    "overflow": false,
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/support/",
+    "overflow": false,
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/",
+    "overflow": false,
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/impact/",
+    "overflow": false,
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/evidence/",
+    "overflow": false,
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/incidents/",
+    "overflow": false,
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/technology/",
+    "overflow": false,
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/model-governance/",
+    "overflow": false,
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/open-weights/",
+    "overflow": false,
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/regulation/",
+    "overflow": false,
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/accountability/",
+    "overflow": false,
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/research/",
+    "overflow": false,
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/library/",
+    "overflow": false,
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/sources/",
+    "overflow": false,
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/transparency/",
+    "overflow": false,
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/methodology/",
+    "overflow": false,
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/about/",
+    "overflow": false,
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/corrections/",
+    "overflow": false,
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/take-action/",
+    "overflow": false,
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/action/",
+    "overflow": false,
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/models/",
+    "overflow": false,
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/press/",
+    "overflow": false,
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/support/",
+    "overflow": false,
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/",
+    "overflow": false,
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/impact/",
+    "overflow": false,
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/evidence/",
+    "overflow": false,
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/incidents/",
+    "overflow": false,
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/technology/",
+    "overflow": false,
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/model-governance/",
+    "overflow": false,
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/open-weights/",
+    "overflow": false,
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/regulation/",
+    "overflow": false,
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/accountability/",
+    "overflow": false,
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/research/",
+    "overflow": false,
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/library/",
+    "overflow": false,
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/sources/",
+    "overflow": false,
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/transparency/",
+    "overflow": false,
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/methodology/",
+    "overflow": false,
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/about/",
+    "overflow": false,
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/corrections/",
+    "overflow": false,
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/take-action/",
+    "overflow": false,
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/action/",
+    "overflow": false,
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/models/",
+    "overflow": false,
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/press/",
+    "overflow": false,
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/support/",
+    "overflow": false,
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/",
+    "overflow": false,
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/impact/",
+    "overflow": false,
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/evidence/",
+    "overflow": false,
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/incidents/",
+    "overflow": false,
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/technology/",
+    "overflow": false,
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/model-governance/",
+    "overflow": false,
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/open-weights/",
+    "overflow": false,
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/regulation/",
+    "overflow": false,
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/accountability/",
+    "overflow": false,
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/research/",
+    "overflow": false,
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/library/",
+    "overflow": false,
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/sources/",
+    "overflow": false,
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/transparency/",
+    "overflow": false,
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/methodology/",
+    "overflow": false,
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/about/",
+    "overflow": false,
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/corrections/",
+    "overflow": false,
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/take-action/",
+    "overflow": false,
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/action/",
+    "overflow": false,
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/models/",
+    "overflow": false,
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/press/",
+    "overflow": false,
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/support/",
+    "overflow": false,
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/",
+    "overflow": false,
+    "scrollWidth": 1920,
+    "innerWidth": 1920,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/impact/",
+    "overflow": false,
+    "scrollWidth": 1920,
+    "innerWidth": 1920,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/evidence/",
+    "overflow": false,
+    "scrollWidth": 1920,
+    "innerWidth": 1920,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/incidents/",
+    "overflow": false,
+    "scrollWidth": 1920,
+    "innerWidth": 1920,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/technology/",
+    "overflow": false,
+    "scrollWidth": 1920,
+    "innerWidth": 1920,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/model-governance/",
+    "overflow": false,
+    "scrollWidth": 1920,
+    "innerWidth": 1920,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/open-weights/",
+    "overflow": false,
+    "scrollWidth": 1920,
+    "innerWidth": 1920,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/regulation/",
+    "overflow": false,
+    "scrollWidth": 1920,
+    "innerWidth": 1920,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/accountability/",
+    "overflow": false,
+    "scrollWidth": 1920,
+    "innerWidth": 1920,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/research/",
+    "overflow": false,
+    "scrollWidth": 1920,
+    "innerWidth": 1920,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/library/",
+    "overflow": false,
+    "scrollWidth": 1920,
+    "innerWidth": 1920,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/sources/",
+    "overflow": false,
+    "scrollWidth": 1920,
+    "innerWidth": 1920,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/transparency/",
+    "overflow": false,
+    "scrollWidth": 1920,
+    "innerWidth": 1920,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/methodology/",
+    "overflow": false,
+    "scrollWidth": 1920,
+    "innerWidth": 1920,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/about/",
+    "overflow": false,
+    "scrollWidth": 1920,
+    "innerWidth": 1920,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/corrections/",
+    "overflow": false,
+    "scrollWidth": 1920,
+    "innerWidth": 1920,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/take-action/",
+    "overflow": false,
+    "scrollWidth": 1920,
+    "innerWidth": 1920,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/action/",
+    "overflow": false,
+    "scrollWidth": 1920,
+    "innerWidth": 1920,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/models/",
+    "overflow": false,
+    "scrollWidth": 1920,
+    "innerWidth": 1920,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/press/",
+    "overflow": false,
+    "scrollWidth": 1920,
+    "innerWidth": 1920,
+    "tablesUnwrapped": 0
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/support/",
+    "overflow": false,
+    "scrollWidth": 1920,
+    "innerWidth": 1920,
+    "tablesUnwrapped": 0
+  }
+]

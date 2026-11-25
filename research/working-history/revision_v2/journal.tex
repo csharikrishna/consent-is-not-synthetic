@@ -1,0 +1,603 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=21mm,top=21mm,bottom=22mm]{geometry}
+\usepackage[T1]{fontenc}\usepackage{newtxtext,newtxmath}\usepackage{microtype}
+\usepackage{needspace}\usepackage{graphicx,booktabs,tabularx,array,ragged2e,xcolor,caption,enumitem,fancyhdr,hyperref,xurl}
+\definecolor{ink}{HTML}{183849}\definecolor{muted}{HTML}{486674}
+\hypersetup{colorlinks=true,linkcolor=ink,citecolor=ink,urlcolor=muted,breaklinks=true}
+\setlength{\parindent}{0pt}\setlength{\parskip}{4.5pt plus 1pt}\renewcommand{\arraystretch}{1.16}
+\setlist{nosep,leftmargin=*}\captionsetup{font=small,labelfont=bf}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small\textsc{Synthetic media risk | Policy and evidence review}}\fancyhead[R]{\small November 2026}\fancyfoot[L]{\small Research article | Draft}\fancyfoot[R]{\small\thepage}\setlength{\headheight}{15pt}
+\newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
+\newcommand{\sect}[2]{\Needspace{6\baselineskip}\section{#1}\textcolor{muted}{\small\textsc{#2}}\par\vspace{2mm}}
+\newcommand{\fig}[3]{\begin{samepage}\begin{center}\includegraphics[width=#2\linewidth]{figures/#1.pdf}\captionof{figure}{#3}\end{center}\end{samepage}}
+\newcommand{\sub}[1]{\vspace{1mm}\textbf{#1}\par}
+\begin{document}
+\thispagestyle{empty}
+{\large\textsc{Research article | Policy and evidence review}}\\[8mm]
+{\color{ink}\fontsize{25}{29}\selectfont\bfseries Synthetic Sexual Abuse in the\\Age of Generative AI}\par
+\vspace{3mm}{\Large Evidence of harm, accountability gaps, and the case\\for targeted prohibition and release controls}\par
+\vspace{4mm}\rule{\linewidth}{0.8pt}\par
+\textbf{Revised policy research manuscript} \hfill Evidence cutoff: 25 November 2026\par
+\textit{Working paper for author review; not peer-reviewed. Author and affiliation to be supplied.}\par
+\vspace{3mm}\textbf{Abstract}\par
+
+\textbf{Background.} Generative AI can transform an ordinary photograph into an instrument of sexual abuse without the depicted person's participation. The resulting harm is not hypothetical: survivors face loss of autonomy, repeated exposure, intimidation and social exclusion. Downloadable model weights create a distinct problem of downstream control, although abuse is also possible through hosted systems. \textbf{Methods.} A structured narrative review integrates public technical documentation, survey estimates, operational child-protection data, qualitative research, criminal cases and legal materials. \textbf{Results.} UNICEF estimates that at least 1.2 million children across 11 surveyed countries experienced sexual deepfake victimization in one year. IWF assessed 8,029 realistic criminal AI-generated media items in 2025; its reports containing such imagery increased from 193 to 491. A separate UK child-reporting service recorded more actioned reports involving suspected faked imagery in six months of 2026 than in all of 2025. These datasets measure different outcomes and cannot be pooled. \textbf{Policy implications.} Prohibit purpose-built abuse generators and their knowing supply; require independent, risk-proportionate pre-release evaluation; restrict distribution where critical risks remain unresolved; and establish enforceable victim remedies. A universal ban on general-purpose open weights is not established by the present evidence. \textbf{Conclusion.} The burden of managing foreseeable sexual exploitation should not be transferred to the people whose likenesses are abused. \cite{iwf,unicef12,reportremove,deepfakeimpact,uknotes,ntia}
+
+
+\textbf{Keywords:} latent diffusion; open weights; generative AI; non-consensual intimate imagery; CSAM; synthetic identities; provenance; platform governance.\par
+\vspace{3mm}
+\noindent\begin{tabularx}{\linewidth}{@{}YYY@{}}
+{\color{ink}\Large\bfseries 1.2 million+} & {\color{ink}\Large\bfseries 8,029} & {\color{ink}\Large\bfseries 268}\\
+\small Estimated children affected across 11 countries in one year & \small Criminal AI-generated media assessed by IWF in 2025 & \small Actioned suspected-faked reports, UK, Jan--Jun 2026\\
+\end{tabularx}
+\par\vspace{1mm}{\footnotesize Different populations and counting units; figures must not be combined. Sources: \cite{unicef12,iwf,reportremove}.}\par
+\vspace{1mm}\rule{\linewidth}{0.4pt}
+
+Contribution: a cross-layer technical review, a source-auditable synthesis of victim and operational evidence, and a proposed three-tier regulatory framework with evaluation and redress requirements. The companion evidence ledger records each source, extracted finding and limitation. This manuscript is not a reproducible guide to harmful generation.
+
+
+\clearpage\sect{Introduction and research questions}{Phase 1 | ecosystem definition}
+
+Generative image systems have moved from narrowly controlled applications toward downloadable weights, flexible interfaces and independently operated infrastructure. The resulting supply chain is not a single product: a model may be redistributed under new names, adapted by a third party, executed locally, embedded in a hosted application or used to publish material on unrelated platforms. Responsibility for controlling misuse therefore cannot be assigned exclusively to the original model developer.
+
+
+A crucial distinction is between synthetic content and harmful use. Fictional imagery, design mock-ups, educational diagrams and disclosed fictional characters may be legitimate. Harm arises through exploitation, unlawful content, deception, violation of consent, impersonation or other contextual misconduct. A detector that identifies synthetic origin cannot determine consent or whether a depicted event occurred. Conversely, authentic media can be used to deceive or harass. \cite{nist,fbi}
+
+
+\sub{Research questions}
+
+\begin{center}\small\begin{tabularx}{\linewidth}{@{}YY@{}}\toprule
+\textbf{Question} & \textbf{Analytical objective}\\\midrule
+RQ1. What is distributed? & Classify models, components, adaptation artifacts and applications without double counting.\\
+RQ2. How is risk introduced? & Identify the control boundaries between data acquisition, publication, execution and distribution.\\
+RQ3. What harms are documented? & Synthesize incident reports, child-protection assessments and coordinated-network evidence.\\
+RQ4. What can be measured? & Distinguish prevalence, reports, media items, case datasets and detector error rates.\\
+RQ5. What interventions are defensible? & Compare technical, organizational and legal measures with attention to proportionality and victims.\\\bottomrule\end{tabularx}\end{center}
+
+This review emphasizes the gap between technical availability and effective accountability. A license can define authorized use, yet cannot by itself prevent unauthorized downstream execution. An interface can impose safeguards, but independently distributed weights create additional governance challenges. A social platform can remove harmful content even if generation occurred elsewhere. These are complementary intervention opportunities, not substitutes for one another.
+
+
+\sub{Scope and terminology}
+
+Open-weight means weights are made available under stated terms; open-source is a stronger claim about freedoms and associated artifacts. CSAM denotes child sexual abuse material. NCII denotes non-consensual intimate imagery, including qualifying synthetic depictions. A synthetic persona is an AI-generated or materially AI-assisted identity, which may be disclosed, fictional, deceptive or fraudulent depending on its presentation and conduct.
+
+
+\sect{Methodology and evidence quality}{Phase 1 | reproducible desk research}
+
+The study uses a targeted, structured desk review rather than a systematic review with exhaustive screening. Public primary materials were prioritized: official model documentation, research papers, regulator publications, transparency reports and child-protection organizations. Searches covered image architectures, fine-tuning, repository policies, synthetic identity evidence, detection, and legal developments. Relevant records were grouped by source type and claim. Duplicate or mirrored results were not counted as independent evidence.
+
+
+\begin{center}\small\begin{tabularx}{\linewidth}{@{}YY@{}}\toprule
+\textbf{Evidence type} & \textbf{Use and quality boundary}\\\midrule
+Tier 1: primary sources & Statutes, regulators, official model cards and operational reports. Strong for what their publishers actually document; may still be incomplete.\\
+Tier 2: research and investigations & Peer-reviewed or preprint research and independent investigations. Evaluate study design, selection and generalizability.\\
+Tier 3: community claims & Discovery leads only. Do not treat popularity, forum claims or unsupported safety claims as verified.\\\bottomrule\end{tabularx}\end{center}
+
+\sub{Extraction protocol}
+
+For every source, record publisher, title, date, stable URL, relevant paraphrase and limitation. For repositories, record canonical publisher, artifact role, parent architecture, revision, license, file inventory and documentation status. For reported abuse, record time window, population, counting unit, denominator and attribution. An unknown field remains unknown. A changed model card or deleted repository is not proof of wrongdoing.
+
+
+\sub{Inclusion, exclusion and ethics}
+
+Include public general-purpose model releases, official technical papers, legitimate deployment documentation and verified reports. Exclude explicit abuse media, links to illicit content, inventories selected by sexual-abuse capability and reproducible abuse workflows. Do not probe for harmful outputs, collect target images or download suspect training data. This choice protects victims and prevents the research artifact from becoming a discovery or exploitation aid.
+
+
+\sub{Limitations}
+
+No authenticated repository API crawl, complete community census, full revision-hash audit, hardware experiments or controlled safety testing was performed. Indexed web text was available for some documents where full access was restricted. Model cards and policy statements are self-reported; operational abuse observations have selection effects. This is a narrative evidence synthesis with explicit verification gaps, not a claim to have measured the entire global ecosystem.
+
+
+\section{The human cost: a fabricated image is not a fabricated injury}
+\textbf{The central rights violation is the loss of sexual autonomy.} A synthetic depiction need not record a physical event to violate a real person's dignity, privacy or sense of safety. For an identifiable victim, the publication or threatened publication of a fabricated image can make their own likeness a source of coercion. The recipient need not believe the image is genuine for the abuse to have consequences: humiliation, harassment and reputational damage can occur precisely because the fabrication is recognized as a hostile act. This is why a definition of harm limited to the authenticity of the depicted event is inadequate.
+
+Qualitative research on image-based sexual abuse has documented deep and persistent disruption to survivors' social and personal lives. A 2026 Australian interview study focused on sexualized deepfakes, comprising 15 victim-survivors and 10 perpetrators, reports substantial psychological, social and work-related harms. These studies support the existence and nature of the injury, not its incidence in a wider population. They do not justify predicting a particular psychological outcome for any individual. \cite{survivors,deepfakeimpact}
+
+\begin{center}\small\begin{tabularx}{\linewidth}{@{}YYY@{}}\toprule
+\textbf{Dimension} & \textbf{Foreseeable harm} & \textbf{Required response}\\\midrule
+Autonomy & Sexual identity is represented without permission; threats can intensify loss of control. & Consent-centred law and prompt redress.\\
+Mental wellbeing & Distress, fear, shame, isolation and uncertainty over further exposure. & Confidential, trauma-informed support.\\
+School and work & Harassment, peer exclusion, damage to professional or educational participation. & Anti-retaliation rules and safeguarding.\\
+Continuing exposure & Reappearance or further manipulation may prolong the injury. & Removal, lawful duplicate prevention, case follow-up.\\
+Institutional burden & Victims may be forced to explain, contest and repeatedly document abuse. & One-stop complaints and minimal repetitive disclosure.\\\bottomrule\end{tabularx}\end{center}
+
+For children the implications extend to safeguarding, learning and trust. UNICEF's September 2026 report on technology-facilitated sexual exploitation across 21 countries describes fear, isolation and heightened mental-health risks, including an approximately fourfold association with reported suicidal thoughts or behaviours and self-harm. This is evidence about the broader category of abuse, not a deepfake-specific causal effect. The ethical obligation is to prevent exploitation and offer support, not to use these outcomes as sensational rhetoric. \cite{unicefwide}
+
+\sub{When a child is not identifiable}
+Absence of an identified victim does not resolve the harm question. IWF documents the reuse of known victims' likenesses and warns of broader risks to child protection. UNICEF also identifies normalization, demand and investigative challenges as concerns. The precise causal effect of synthetic media exposure on later contact offending remains insufficiently established by this review; the case for action need not depend on claiming that every synthetic image directly causes a contact offence. \cite{iwf,unicef12}
+
+\section{Scale: victim estimates and operational evidence}
+UNICEF's February 2026 release draws on nationally representative household surveys in 11 countries, approximately 1,000 internet-using children aged 12--17 and 1,000 caregivers per country. The national estimates were weighted using UN population data and estimated internet-use rates. The resulting estimate of at least 1.2 million children affected in one year is not a count of survey respondents, a global estimate, or a count attributable to a particular model or release mode. In some study countries, the reported prevalence was one child in 25. A separate US survey by Thorn of 1,200 people aged 13--20 found approximately 6\% of teen respondents reported being targeted by deepfake nude creation. The designs differ and should not be pooled. \cite{unicef12,thorn}
+
+\begin{center}\small\begin{tabularx}{\linewidth}{@{}>{\RaggedRight\arraybackslash}p{.25\linewidth}YY@{}}\toprule
+\textbf{Measure} & \textbf{Magnitude} & \textbf{Interpretation}\\\midrule
+UNICEF 11 countries & $\geq$1.2 million children; one-year estimate & Sexual deepfake victimization; modelled survey estimate [53].\\
+UNICEF 21 countries & Approx. 20 million children; one-year estimate & All surveyed forms of technology-facilitated sexual abuse, not AI-specific [54].\\
+Thorn US survey & Approx. 6\% of teens surveyed & Self-reported targeting; no global extrapolation [56].\\
+IWF 2025 & 491 reports; 8,029 media items & Operational detection, not unique victims [1].\\
+Report Remove & 221 actioned reports in 2025; 268 in H1 2026 & Suspected faked imagery; not necessarily AI [55].\\\bottomrule\end{tabularx}\end{center}
+
+\fig{report_remove}{.88}{UK Report Remove: suspected-faked reports and actioned subset. Periods differ in duration; categories include non-AI manipulation. Source: IWF and Childline, 10 August 2026. \cite{reportremove}}
+
+The first half of 2026 alone exceeded the previous full year for actioned reports by 47, or 21.3\%. This is a comparison of recorded totals over unequal periods, not an annualized forecast. It strengthens the case that real children are seeking assistance, while leaving open the effects of awareness, reporting access and classification changes. No aggregate of these figures is scientifically meaningful.
+
+\sub{The unseen burden}
+UNICEF's broader September 2026 survey synthesis reports that fewer than one in 100 experiences of technology-facilitated sexual exploitation were reported to authorities. It also estimates nearly 20 million affected internet-using children aged 12--17 across 21 countries. This finding cannot be used as a multiplier for AI-specific hotline counts. It does, however, highlight why police and platform records alone cannot measure the full experience of harm. \cite{unicefwide}
+
+\section{Criminal cases: from possibility to established conduct}
+The following cases establish that AI-assisted sexual abuse has already been addressed in criminal proceedings. They do not establish the risk of any named model, the prevalence of a particular technique or the effectiveness of a specific prohibition.
+
+\begin{center}\small\begin{tabularx}{\linewidth}{@{}>{\RaggedRight\arraybackslash}p{.21\linewidth}YY@{}}\toprule
+\textbf{Case and date} & \textbf{Documented outcome} & \textbf{Policy significance}\\\midrule
+Ohio, 11 May 2026 & A 14-year federal sentence following guilty pleas involving child sexual abuse material, including AI alteration of images of real children. & Ordinary images can become instruments of abuse; safeguarding and reporting matter [59].\\
+Ohio, 8 Sep 2026 & A 15-year federal sentence after guilty pleas involving cyberstalking, obscene representations of child sexual abuse and digital forgery publication. & Synthetic abuse can accompany coercion and harassment; image-only enforcement is inadequate [60].\\\bottomrule\end{tabularx}\end{center}
+
+These are aggregate sentences for multiple offences, not tariffs for AI generation. The DOJ releases do not establish a particular open-weight architecture as the cause. A defensible policy must cover harmful conduct regardless of whether a tool is local, hosted, free or commercial. \cite{dojohio,dojstalk}
+
+
+\sect{Representative model architecture inventory}{Phase 1 | classification rather than unsafe capability ranking}
+
+The model ecosystem spans latent diffusion with U-Net denoisers, diffusion transformers (DiTs), rectified-flow systems and specialized components. The table is a deliberately bounded, independently sourced sample of foundation or major model releases. Parameter counts are reported only where the retrieved publisher material supports them. The companion Phase 1 spreadsheet from the initial pass is a broader discovery aid; it is not an independently audited benchmark.
+
+
+\fig{ecosystem}{.78}{Conceptual ecosystem and control points. Original diagram, informed by model documentation and synthetic-content transparency literature. \cite{nist,hfcards}}
+
+\begin{center}\small\begin{tabularx}{\linewidth}{@{}>{\RaggedRight\arraybackslash}p{.25\linewidth}>{\RaggedRight\arraybackslash}p{.42\linewidth}>{\RaggedRight\arraybackslash}p{.26\linewidth}@{}}\toprule
+\textbf{Model / family} & \textbf{Architecture and role} & \textbf{Reported scale / evidence}\\\midrule
+Latent Diffusion & Latent-space denoising; architecture foundation & Paper, 2021/2022 [11]\\
+SDXL & Latent diffusion; optional refiner & Paper, 2023 [12]\\
+FLUX.1 schnell & Rectified-flow transformer; distilled release & 12B; Apache-2.0 [13]\\
+Qwen-Image & Image generation foundation & 20B; publisher metadata [14]\\
+MOSS-Image & DiT generation backbone & 5B backbone [15]\\
+PixArt-Sigma & Diffusion transformer & 0.6B variant [47]\\
+SANA & Efficient image generation & 0.6B variant [48]\\
+Z-Image-Turbo & Image generation model family & 6B [49]\\
+Lumina-Image 2.0 & Unified image generation & Not audited [50]\\\bottomrule\end{tabularx}\end{center}
+
+Sources for the representative comparison:  \cite{ldm,sdxl,flux,qwen,moss,pixart,sana,zimage,lumina}
+
+
+\sub{Artifact taxonomy}
+
+\begin{center}\small\begin{tabularx}{\linewidth}{@{}YYY@{}}\toprule
+\textbf{Artifact} & \textbf{What it changes} & \textbf{Research handling}\\\midrule
+Base weights & Original learned parameters & One canonical lineage record.\\
+Full fine-tune & Some or all learned weights & Separate derivative with parent.\\
+Merge & Combination of checkpoints & Record lineage; verify licenses.\\
+LoRA / adapter & Additional adaptation parameters & Not a standalone foundation.\\
+Quantized variant & Numerical representation & Distinguish components and precision.\\
+Inference wrapper & Execution and interface & Separate software inventory.\\\bottomrule\end{tabularx}\end{center}
+
+Other families requiring a separate verification pass include Kandinsky, HunyuanImage, Playground and DeepFloyd IF, as well as other Stable Diffusion, FLUX and Qwen releases. Their absence from the audited sample is not evidence of unavailability. The original 100-entry target and repository popularity rankings remain unmet; no extrapolation is made from keyword search counts. A public model name or download count does not demonstrate illegal content capability.
+
+
+\sect{Technical specifications and resource accounting}{Phase 2 | architecture, precision and hardware}
+
+Latent diffusion encodes images into a compressed representation and learns a denoising process in that space. SDXL extends latent diffusion with architectural improvements and a refinement option. Rectified-flow and transformer systems represent other approaches to learning image generation. Parameters alone do not determine image quality, safety, throughput or memory footprint. \cite{ldm,sdxl,flux}
+
+
+\sub{Weight storage: a transparent theoretical calculation}
+
+For $N$ parameters stored with $b$ bits per parameter, the ideal raw size is $S=N b/8$ bytes. In decimal gigabytes, $S_{GB}=N_{B}b/8$, where $N_B$ is the number of billions of parameters. Actual archives include metadata, potentially mixed precision, and auxiliary components.\par
+\begin{center}\small\begin{tabularx}{\linewidth}{@{}YYYY@{}}\toprule
+\textbf{Reported component scale} & \textbf{16-bit ideal GB} & \textbf{8-bit ideal GB} & \textbf{4-bit ideal GB}\\\midrule
+5B (MOSS backbone) & 10 & 5 & 2.5\\
+12B (FLUX.1 schnell) & 24 & 12 & 6\\
+20B (Qwen-Image) & 40 & 20 & 10\\\bottomrule\end{tabularx}\end{center}
+
+The numerical examples are arithmetic illustrations, not verified downloadable variants, disk sizes, compatibility claims or GPU recommendations. A 16-bit tensor occupies two bytes per element, but quantization schemes can introduce scaling metadata or retain selected tensors at higher precision. Full pipelines may add text encoders, tokenizers, autoencoders, schedulers and other assets. \cite{memory}
+
+
+\sub{Hardware and performance audit fields}
+
+\begin{center}\small\begin{tabularx}{\linewidth}{@{}YY@{}}\toprule
+\textbf{Metric} & \textbf{Required measurement}\\\midrule
+On-disk size & Sum actual repository files at a pinned revision; identify optional duplicates.\\
+Peak VRAM & Record GPU, driver, batch, input/output dimensions and peak allocated/reserved memory.\\
+Latency & Separate cold load, warm inference and end-to-end time; report median and percentiles.\\
+Precision & Record numerical representation for each component, not just filename.\\
+Quality & Evaluate benign tasks with predefined metrics and independent review.\\\bottomrule\end{tabularx}\end{center}
+
+Theoretical weight size is neither a minimum device specification nor a measure of peak VRAM. Activations, execution buffers and runtime overhead depend on implementation. Actual file sizes, benchmarked memory, quantization availability and licenses for additional releases remain unverified and must not be populated from assumptions.
+
+
+\sect{Deployment infrastructure and safeguards}{Phase 3 | governance across execution environments}
+
+Image generation can occur in local applications, self-managed servers and hosted inference services. Diffusers provides library-based model execution and documents memory optimization; Runpod documents GPU-hosted and endpoint services. The application layer can implement authentication, abuse reporting, rate limits and output controls, whereas model distribution and local execution create different enforcement boundaries. \cite{memory,runpod}
+
+
+\begin{center}\small\begin{tabularx}{\linewidth}{@{}YYY@{}}\toprule
+\textbf{Execution class} & \textbf{Operational boundary} & \textbf{Recommended safeguards}\\\midrule
+Local applications & Device owner operates the runtime & Consent-aware use, verified files, minimal retention, safe defaults.\\
+Self-hosted service & Operator controls endpoint and logs & Authentication, access scoping, abuse triage, security updates.\\
+Managed GPU provider & Provider controls infrastructure & Acceptable-use enforcement, customer escalation, lawful evidence handling.\\
+Hosted inference API & Application controls requests and responses & Input/output safety, quotas, incident reporting, redress.\\
+Repository hub & Publisher and host control distribution & Versioning, model cards, review and removal procedures.\\\bottomrule\end{tabularx}\end{center}
+
+\sub{Legitimate deployment review}
+
+Examples of interfaces in the wider ecosystem include ComfyUI, AUTOMATIC1111, Forge, InvokeAI, Fooocus and SwarmUI; these are software interfaces, not independent foundation models. Managed GPU and application platforms vary in authentication, pricing, endpoint exposure and acceptable-use terms. This review does not provide an abuse-oriented deployment or provider-selection guide. Individual versions, costs and platform policies were not exhaustively audited.
+
+
+\sub{Technical trust boundary}
+
+The operator should distinguish provenance of executable code from provenance of model weights. A model card is not a security certificate. Use verified upstream software, segregate secrets from workload data, limit network privileges, and establish a documented incident response plan. Public endpoints require stronger scrutiny than internal experiments because their potential user population is wider and attribution may be more difficult.
+
+
+Performance tuning can change storage and computational costs without solving content governance. Similarly, access control does not demonstrate safe model behavior. Independent testing with authorized benign tasks should evaluate service reliability, documentation, reporting channels and data protection. A cloud provider should not equate removing one endpoint with eliminating copies or upstream distribution.
+
+
+\sect{Adaptation, derivatives and dataset provenance}{Phase 4 | governance of model modification}
+
+Adaptation is valuable for domain-specific style, scientific visualization and accessibility. LoRA uses low-rank trainable parameter updates; DreamBooth is research on subject-driven generation. These mechanisms can support customization but make consent and training provenance particularly important when a person is identifiable. Legitimate identity-specific projects require a defined authorization scope, data rights, revocation processes and secure handling. \cite{lora,loradiff,dream}
+
+
+\begin{center}\small\begin{tabularx}{\linewidth}{@{}YYY@{}}\toprule
+\textbf{Mechanism} & \textbf{Conceptual difference} & \textbf{Governance risk}\\\midrule
+Fine-tuning & Updates learned weights & Derivative inherits or introduces risks; evaluate separately.\\
+Adapter / LoRA & Adds learned adaptation parameters & May be redistributed independently; document parent and consent.\\
+Checkpoint merge & Combines learned representations & Unclear provenance or license conflicts.\\
+Distillation & Transfers behavior into another model & Safety behavior may change; verify rather than assume.\\
+Quantization & Changes numerical representation & Performance and safety evaluation may need repeating.\\
+Runtime policy & Controls application behavior & Separate from learned weights and training provenance.\\\bottomrule\end{tabularx}\end{center}
+
+\sub{Documented dataset incident}
+
+LAION reported that a December 2023 Stanford investigation identified URL links to potentially illegal material in LAION-5B. LAION withdrew the dataset and worked with child-protection organizations to address the problem. This is evidence of a dataset governance failure and remediation effort, not proof that every downstream model memorized or can reproduce those samples. Establishing model-level causation would require lawful, authorized investigation. \cite{laion}
+
+
+\sub{Controls before publication}
+
+Publishers should maintain records of data acquisition, usage rights, consent for identifiable subjects, screening methodology and remediation. Document model lineage and expected limitations; communicate material changes to downstream maintainers. Repository hosts should implement reporting and review pathways. Hugging Face's policy specifically addresses the obligation to minimize the risk of artifacts being used for child sexual exploitation material. A written policy, however, is not proof of effective enforcement. \cite{hfpolicy}
+
+
+\sect{Documented child-protection evidence}{Phase 5 | quantitative findings}
+
+IWF operational reporting documents increased discovery of realistic AI-generated child sexual abuse imagery. In 2024, 193 reports contained such material; in 2025, 491 reports did. The increase is approximately 154.4\%, derived from (491-193)/193. The 2025 criminal media count comprises 4,586 still images and 3,443 videos, totaling 8,029 items. An additional 82 items were classified as prohibited rather than criminal photorealistic items under the reported categories. \cite{iwf,iwfi,iwfv}
+
+
+\fig{iwf_reports}{.96}{Original chart using IWF published report counts. Units are reports, not media items or victims. \cite{iwf}}
+
+\fig{iwf_media}{.96}{Original chart using detailed IWF still-image and video pages. Counts sum to 8,029. \cite{iwfi,iwfv}}
+
+Interpretation: the data demonstrate operationally observed harm and rising workload. They do not establish worldwide prevalence, numbers of offenders or the proportion of model outputs that are illegal. Detection priorities, reporting, classification and coverage can alter year-to-year counts. IWF reports that the first half of 2026 surpassed full-year 2025 for photorealistic AI-generated still-image findings; no exact 2026 value is inferred. \cite{iwf26,iwfexec}
+
+
+\sect{Video growth and reporting-system differences}{Phase 5 | measurement and triangulation}
+
+\fig{iwf_videos}{.96}{IWF video counts, logarithmic scale to display both years. The ratio is approximately 264.8. \cite{iwfv}}
+
+A discrepancy warrants explicit disclosure: the IWF executive-summary PDF lists 3,343 AI-generated videos for 2025, whereas the detailed video and overview pages list 3,443. The latter agrees with 4,586 + 3,443 = 8,029. This paper uses the detailed reporting figure and records the conflicting publication; the publisher should clarify it. \cite{iwfexec,iwfv,iwf}
+
+
+\begin{center}\small\begin{tabularx}{\linewidth}{@{}YYY@{}}\toprule
+\textbf{NCMEC measure} & \textbf{Reported value} & \textbf{Time window}\\\midrule
+CyberTipline reports with generative-AI nexus & >400,000 & 2025\\
+Subset involving GAI CSAM possession, generation or attempts & >182,000 & 2025\\
+Media categorized AI-generated by NCMEC staff & >158,000 & Jan 2023--Dec 2025\\
+Media marked AI-generated by service providers & >11,000 & Jan 2023--Dec 2025\\\bottomrule\end{tabularx}\end{center}
+
+NCMEC source:  \cite{ncmec,ncmec25}
+
+
+Different annotation processes may explain part of the gap between staff and provider classifications, but the figures do not supply matched denominators, item-level overlap or an estimate of false negatives. Likewise, reports with an AI nexus are not all reports of generated CSAM. These distinctions are essential when communicating the seriousness of the problem without misrepresenting statistics. No IWF and NCMEC counts are pooled.
+
+
+\sect{Misuse taxonomy and observed cases}{Phase 5 | harm pathways}
+
+The strongest evidence for synthetic-image misuse concerns documented categories rather than precise model attribution. The FBI public advisory of June 2023 described manipulated imagery used in extortion and harassment; FinCEN subsequently identified financially motivated sextortion as a financial-crime concern. These reports illustrate how image manipulation can cause harm even when the image does not depict a real event. \cite{fbi,fincen}
+
+
+\begin{center}\small\begin{tabularx}{\linewidth}{@{}YYY@{}}\toprule
+\textbf{Category} & \textbf{Harm / evidence} & \textbf{Response focus}\\\midrule
+Child sexual exploitation & Victim revictimization and child-protection burden; IWF and NCMEC. & Specialist reporting and removal; protect children.\\
+NCII and sextortion & Coercion, psychological and reputational harm; FBI advisory. & Rapid takedown, victim support, lawful investigation.\\
+Synthetic identity fraud & False trust, deception and financial loss; network studies. & Account review, verification and payment monitoring.\\
+Coordinated manipulation & Misleading public discourse; Meta enforcement. & Network analysis and independent corroboration.\\
+Fabricated evidence & False accusations or incorrect decisions; analytical risk. & Provenance, source checks, chain of custody.\\
+Misleading endorsements & Consumer deception; FTC guidance. & Truthful claims, material relationship disclosure.\\\bottomrule\end{tabularx}\end{center}
+
+Evidence for the first four categories is grounded in operational reports or empirical studies. Fabricated evidence is included as a plausible high-impact threat scenario, not a measured incident count in this review. Advertising guidance addresses permissible and impermissible practices rather than quantifying fraud. \cite{iwf,ncmec25,fbi,meta,fakefaces,ftcads}
+
+
+\sub{Model attribution and victim impact}
+
+A harmful file rarely carries sufficient evidence to identify its originating model. Model-family attribution based on image appearance is especially weak when the image has been edited, compressed or redistributed. An investigator should avoid naming a particular model or person without corroboration. Harms can include loss of privacy, continuing victimization, coercion, loss of income and burdens on families or institutions. The ethical priority is containment and support, not recreating the harmful output.
+
+
+
+\sect{Synthetic identities and platform governance}{Phase 6 | account-level evidence}
+
+Synthetic profile images have appeared in coordinated operations for years. Meta reported that more than two-thirds of coordinated inauthentic behavior networks it disrupted in 2022 included accounts with likely GAN-generated profile photos. A 2024 research dataset contains 1,420 X/Twitter accounts with GAN-generated faces. A separate Meta report on an India-focused network in 2025 documents broader use of generated profile images and content. Graphika documented an earlier coordinated synthetic-face network. \cite{meta,fakefaces,metaindia,graphika}
+
+
+These are enforcement and selected-research samples, not estimates of the proportion of all social-media accounts that are synthetic. A generated avatar may belong to a genuine person; an authentic photo may be stolen. Determine whether account behavior violates identity, fraud or coordination rules rather than relying on visual origin alone.
+
+
+\begin{center}\small\begin{tabularx}{\linewidth}{@{}YYY@{}}\toprule
+\textbf{Platform} & \textbf{Retrieved policy evidence} & \textbf{Caution}\\\midrule
+Facebook / Instagram & Meta describes AI info labeling. [27] & Labels do not establish consent or truth.\\
+YouTube & AI disclosures and supported credentials. [28] & Video disclosure and identity complaints differ.\\
+TikTok & AI-content disclosure and impersonation reporting. [29] & Full enforcement scope not audited.\\
+X & Authenticity and harmful misleading media policy. [30] & Context matters; fictional identities not necessarily fraud.\\
+Reddit, Discord, Telegram, Pinterest & Further official-policy verification required. & No claims of platform-wide prevalence or compliance.\\\bottomrule\end{tabularx}\end{center}
+
+Platform policy sources:  \cite{metalabel,youtube,tiktok,xpolicy}
+
+
+\sub{Account-level assessment}
+
+A defensible investigation combines reported identity claims, independently corroborated account history, public content context, related accounts and signs of harm. Network-level evidence may establish coordination more reliably than isolated visual artifacts. Use proportionate access and respect platform rules and privacy; avoid public accusations based on automated scores.
+
+
+\sect{Distribution, commercialization and fraud}{Phase 6 | legitimate versus deceptive activity}
+
+Commercial synthetic content can appear in advertising, fictional entertainment, design assets and disclosed virtual personas. The relevant distinction is not whether an image was generated but whether the commercial representation is truthful, consented and legally permitted. The FTC's revised Endorsement Guides clarify that virtual influencers and fake reviews can fall within advertising endorsement rules. \cite{ftcads}
+
+
+\begin{center}\small\begin{tabularx}{\linewidth}{@{}YYY@{}}\toprule
+\textbf{Context} & \textbf{Legitimate practice} & \textbf{Risk requiring intervention}\\\midrule
+Advertising & Truthful claim and disclosure of material relationships & Fabricated endorsements or false demonstrations.\\
+Virtual creator & Disclosed fictional persona and lawful rights & Misrepresentation of identity or personal experience.\\
+Marketplace & Accurate product description and IP rights & Counterfeits, unauthorized likeness or misleading previews.\\
+Subscription service & Lawful, consented, disclosed material & Non-consensual content or exploitative commercial activity.\\
+Financial interactions & Verified beneficiary and clear commercial terms & Fraud, coercion, sextortion or deceptive fundraising.\\\bottomrule\end{tabularx}\end{center}
+
+The FBI and FinCEN sources establish that manipulated content and financially motivated coercion are real concerns. They do not provide a reliable estimate of revenue from synthetic-persona scams or the fraction of subscription platforms involved in abuse. This paper avoids naming suspect services or explaining how to monetize illicit content. \cite{fbi,fincen}
+
+
+\sub{Controls at the transaction boundary}
+
+Advertisers should retain evidence for endorsements and consent; platforms should require meaningful disclosure, investigate complaints and provide redress. Payment intermediaries should use risk-based review and lawful reporting obligations. A creator using fictional imagery should avoid implying that a fabricated individual used a product, suffered a medical condition or supplied a testimonial when that representation would mislead consumers.
+
+
+Disclosure is necessary in some contexts but not sufficient. A label cannot legitimize non-consensual exploitation or unlawful content. Conversely, the presence of a synthetic-content label does not automatically indicate fraud. Policy enforcement should distinguish rights violations, deceptive conduct and ordinary creative expression.
+
+
+\sect{Digital forensics and provenance}{Phase 7 | evidence at the image level}
+
+NIST identifies complementary approaches to digital-content transparency, including provenance, watermarking, metadata and detection. C2PA defines an interoperable manifest and assertion framework, allowing consumers to inspect signed claims about an asset's origin or editing history. These techniques answer different questions: provenance is not necessarily veracity, and a detector score is not a legal determination. \cite{nist,c2pa}
+
+
+\begin{center}\small\begin{tabularx}{\linewidth}{@{}YYY@{}}\toprule
+\textbf{Method} & \textbf{What it can support} & \textbf{What it cannot establish alone}\\\midrule
+Cryptographic provenance & Integrity and attribution of signed assertions & Truth, consent or safety of the depicted content.\\
+Metadata inspection & Recorded software, timestamps, declared edits & Authenticity when metadata is absent or unreliable.\\
+Perceptual / exact hashes & Known-file matching or similarity & Whether an unknown image is abusive.\\
+Statistical detector & Estimated synthetic-origin likelihood & Identity, consent, criminality or model attribution.\\
+Source corroboration & Independent support for event or identity claims & Complete proof when sources remain unavailable.\\
+Human specialist review & Contextual assessment and escalation & Infallibility; review must be documented.\\\bottomrule\end{tabularx}\end{center}
+
+\sub{Benchmark evidence}
+
+GenImage presents a million-scale research benchmark using images from GAN and diffusion generators, with tasks addressing generalization. The 2026 DailyBench preprint broadens evaluation to full generation and localized manipulation. These are important methodological resources, but this paper does not quote accuracy results without auditing their test sets, split protocols and metric definitions. Benchmark performance on ordinary images cannot be applied directly to specialized unlawful-content classification. \cite{genimage,dailybench}
+
+
+\sub{Forensic preservation}
+
+Use original files when lawful and available, preserve timestamps and provenance metadata, document each handling action and maintain hashes for integrity. In suspected child sexual abuse cases, do not download, duplicate or redistribute the content; record non-content identifiers and report through authorized channels. Specialist personnel should determine what evidence can legally be retained. The source record should distinguish observation from inference.
+
+
+\sect{Detector evaluation and base-rate effects}{Phase 7 | statistical interpretation}
+
+A detector's sensitivity is $TP/(TP+FN)$ and its specificity is $TN/(TN+FP)$, where $TP$, $FP$, $TN$ and $FN$ denote true positives, false positives, true negatives and false negatives. Precision is $TP/(TP+FP)$. These quantities depend on the dataset and operational threshold. For prevalence $p$, sensitivity $s$ and false-positive rate $f$, the expected positive predictive value is
+\[ \mathrm{PPV}=\frac{s p}{s p+f(1-p)}. \]
+
+\fig{base_rate}{.96}{Illustrative calculation, not measured detector performance. Assumptions: sensitivity 95\%, false-positive rate 5\%.}
+
+Example: at 1\% prevalence among 10,000 items, a hypothetical 95\%-sensitive detector finds 95 true positives; a 5\% false-positive rate among the 9,900 negatives produces 495 false positives. Precision is 95/590 = 16.1\%. Even a seemingly strong classifier can create a large moderation burden when the target class is rare.
+
+
+\begin{center}\small\begin{tabularx}{\linewidth}{@{}YY@{}}\toprule
+\textbf{Evaluation requirement} & \textbf{Reason}\\\midrule
+Generator-disjoint test split & Measures transfer to unseen models.\\
+Authentic and edited-image controls & Avoids confusing routine editing with synthesis.\\
+Threshold reporting & Allows operational trade-offs to be reviewed.\\
+Subgroup and format evaluation & Checks error disparities and distribution shift.\\
+Independent confirmation & Reduces false accusations and unjust enforcement.\\\bottomrule\end{tabularx}\end{center}
+
+A deployment should calibrate on the intended lawful population and regularly reassess drift. Provenance, contextual evidence and human review are necessary when a decision could cause serious harm. No detector is proposed as a substitute for qualified investigation. \cite{nist,genimage}
+
+
+\sect{Comparative regulatory landscape}{Phase 8 | jurisdiction-by-jurisdiction overview}
+
+The legal landscape changes rapidly. The following comparison uses official material available by the evidence cutoff. It is a legal issue-spotting table, not legal advice or a complete analysis of every offence, effective date, exemption or platform classification. Laws targeting abuse, transparency and intermediaries serve different purposes.
+
+
+\begin{center}\small\begin{tabularx}{\linewidth}{@{}>{\RaggedRight\arraybackslash}p{.19\linewidth}>{\RaggedRight\arraybackslash}p{.46\linewidth}>{\RaggedRight\arraybackslash}p{.28\linewidth}@{}}\toprule
+\textbf{Jurisdiction} & \textbf{Verified development} & \textbf{Interpretive boundary}\\\midrule
+India & IT Act offences; Feb 2026 IT Rules amendment addresses synthetically generated information. [36,37] & Check current text, exceptions and applicability.\\
+European Union & AI Act Art. 50 transparency duties apply from 2 Aug 2026. [38,39] & Disclosure does not legalize unlawful content.\\
+United States & FTC Section 3 TAKE IT DOWN enforcement from 19 May 2026; valid requests trigger 48-hour removal duty. [40] & Covered platforms and qualifying depictions only.\\
+United Kingdom & Crime and Policing Act 2026 and CPS guidance address intimate image abuse and generators. [41,42] & Check territorial scope and commencement.\\
+Australia & eSafety guidance covers faked intimate images. [43] & Regulator support is not full criminal-law coverage.\\
+Canada & Protecting Victims Act (C-16) received Royal Assent 18 June 2026; qualifying synthetic representations included. [44] & Check specific provision effective dates.\\
+Japan & Government reply discusses possible defamation/insult depending on facts. [45] & No blanket claim of comprehensive prohibition.\\
+South Korea & Sexual Crimes Act Art. 14-2 addresses nonconsensual sexual manipulation. [46] & Check authoritative current Korean text.\\\bottomrule\end{tabularx}\end{center}
+
+Sources:  \cite{india,indiafaq,eu,eudate,us,uk,ukcps,au,ca,jp,kr,itact,pocso}
+
+
+\sub{India: child protection and statutory context}
+
+The IT Act and POCSO Act are relevant to the investigation of online sexual exploitation. Read their current provisions, including IT Act section 67B and POCSO sections 13--15, alongside the intermediary rules and applicable judgments. The exact application to wholly synthetic or altered images requires a fact-specific legal assessment. \cite{itact,pocso}
+
+
+\sub{Cross-border enforcement}
+
+The location of the subject, platform, model publisher and infrastructure may differ. Jurisdiction, applicable statutory elements and procedural obligations require case-specific review. Transparency labels and content provenance support accountability but cannot replace victim remedies, criminal investigation or data-protection requirements. Further research should separately verify privacy, copyright, child-protection and intermediary statutes in each jurisdiction.
+
+
+\sect{Threat model and practical mitigation}{Phase 9 | risk matrix and controls}
+
+This qualitative matrix is a proposed prioritization framework, not an empirically measured forecast. Likelihood denotes plausibility in exposed ecosystems, severity denotes potential victim or societal impact, and detectability denotes difficulty of reliable confirmation. Critical harms merit intervention even when incidence is uncertain.
+
+
+\begin{center}\small\begin{tabularx}{\linewidth}{@{}YYYY@{}}\toprule
+\textbf{Threat scenario} & \textbf{Likelihood*} & \textbf{Severity*} & \textbf{Detectability*}\\\midrule
+Child sexual exploitation & High & Critical & Very difficult\\
+NCII / sextortion & High & Critical & Difficult\\
+Synthetic identity fraud & High & High & Difficult\\
+Coordinated influence & Medium & High & Difficult\\
+Fabricated evidence & Medium & High & Very difficult\\
+Misleading endorsement & Medium & Moderate--high & Moderate\\\bottomrule\end{tabularx}\end{center}
+
+*Analytical judgments only; not probability estimates. Evidence for documented categories:  \cite{iwf,ncmec25,fbi,meta,ftcads}
+
+
+\begin{center}\small\begin{tabularx}{\linewidth}{@{}YYY@{}}\toprule
+\textbf{Responsible party} & \textbf{Priority action} & \textbf{Suggested indicator}\\\midrule
+Model publishers & Consent-aware data governance and documented safety evaluation & Lineage documentation coverage.\\
+Repository hosts & Review credible reports; document enforcement and appeals & Time to triage substantiated reports.\\
+Cloud operators & Accountability and abuse escalation & Time to contain verified abuse.\\
+Social platforms & Notice, review, removal and re-upload prevention where lawful & Resolution time; appeal error rate.\\
+Researchers & Ethics review, authorized testing, transparent limitations & Source audit completeness.\\
+Victim support teams & Accessible reporting and confidential support & Time to connect with appropriate help.\\\bottomrule\end{tabularx}\end{center}
+
+Avoid universal mandates to collect sensitive identifiers when less invasive controls suffice. Protection systems should include error correction and appeals, particularly for automated enforcement. A layered approach is necessary because no single participant controls all copies of a model, all infrastructure or all subsequent distribution.
+
+
+
+\section{The case for prohibition and controlled release}
+\textbf{Policy proposition.} Prohibit the development for abusive purposes, knowing commercial or non-commercial supply, and promotion of tools designed to facilitate child sexual abuse imagery or non-consensual sexual impersonation, subject to precise legal definitions and authorized research exceptions. General-purpose systems should instead be governed by demonstrated risk, release mode and reasonable safeguards. This is a recommendation, not a description of universal current law.
+
+The UK Crime and Policing Act 2026 provides a concrete supply-side precedent. Its explanatory notes identify provisions targeting child sexual abuse image-generators and tools made, adapted or supplied for creating purported intimate images. The latter include defined defences and intermediary exemptions. The exact commencement and territorial applicability must be verified before asserting a live criminal obligation. In the US, the FTC began enforcing the TAKE IT DOWN Act's platform-removal provision on 19 May 2026: qualifying content and known identical copies must be removed within 48 hours of a valid request. \cite{uknotes,ftcenforce}
+
+\fig{regulatory_tiers}{.95}{Proposed three-tier governance framework. Normative synthesis, not a description of current law.}
+
+\begin{center}\small\begin{tabularx}{\linewidth}{@{}>{\RaggedRight\arraybackslash}p{.19\linewidth}YY@{}}\toprule
+\textbf{Tier} & \textbf{Intervention} & \textbf{Decision criteria}\\\midrule
+A: Prohibit & No public development for abuse or knowing supply; remove verified listings; enforce against culpable suppliers. & Specific abusive design or documented intended use, established through lawful evidence.\\
+B: Restrict & Delay unrestricted weight release; allow controlled, authorized evaluation; require remediation and reassessment. & Independently substantiated critical residual risk, weak controls, material exposure and lack of less restrictive alternatives.\\
+C: Permit & Legitimate research and ordinary creation subject to proportionate safety, privacy and redress duties. & Documented legitimate uses and acceptable residual risk under published criteria.\\\bottomrule\end{tabularx}\end{center}
+
+The proposed framework deliberately avoids using parameter count, download rank or a generic adult-content label as a proxy for criminal capability. Such shortcuts would misclassify legitimate tools, miss dangerous specialized derivatives, and weaken enforcement legitimacy. Decisions require a record of evidence, notice, an opportunity to respond where appropriate, independent review and a route to appeal.
+
+\section{Counterarguments, feasibility and the evidence needed for a ban}
+The strongest objection to a universal prohibition is that the underlying technology has substantial lawful uses and can support independent research, competition and safety evaluation. The 2024 NTIA report concluded that its then-available evidence did not justify broad restrictions on widely available dual-use model weights, while preserving the possibility of future targeted restrictions. Its analysis is not a finding that image generators are safe; its scope and evidence base differ from the later child-protection reports discussed here. \cite{ntia}
+
+\begin{center}\small\begin{tabularx}{\linewidth}{@{}YYY@{}}\toprule
+\textbf{Policy option} & \textbf{Likely value} & \textbf{Limits and trade-offs}\\\midrule
+Blanket open-weight ban & Could reduce some future public releases. & Existing copies and foreign supply persist; restricts legitimate research; incremental effect unmeasured.\\
+Purpose-built tool prohibition & Targets products whose purpose is abusive, including hosted systems. & Requires precise definitions, evidence and cross-border enforcement.\\
+Pre-release controls & Intervenes before hard-to-recall distribution. & Independent testing capacity, uncertainty, compliance costs.\\
+Downstream removal & Directly reduces exposure on cooperating platforms. & Acts after injury and cannot guarantee deletion everywhere.\\
+Voluntary safeguards only & Flexible, low initial regulatory cost. & Uneven implementation and limited recourse if firms fail to act.\\\bottomrule\end{tabularx}\end{center}
+
+\sub{A precautionary release decision}
+For a prospective release, an independent authority should compare the proposed distribution with a controlled-access alternative. A restriction is justified in this framework where severe harm is credible, unrestricted release materially changes exposure or enforceability, and a narrower mitigation cannot sufficiently reduce the risk. The evaluation should consider benefits foregone, implementation cost, discrimination risks and the likelihood of displacement to other channels. It is not necessary to establish an exact global victim count before taking a proportionate preventive action. Conversely, documented harm alone does not quantify the benefit of prohibiting every general-purpose model.
+
+Once publicly distributed, weights are difficult to recall; this is an asymmetry between release and remediation identified in the NTIA report. Therefore pre-release review matters most for future high-risk releases. Restrictions must remain reviewable, with updated evidence, time limits for interim measures and an avenue for reconsideration. \cite{ntia}
+
+\section{An enforceable implementation framework}
+The following milestones are proposed, not existing universal deadlines. They assign responsibility to the participants who can intervene rather than asking victims to police the ecosystem. National authorities should tailor them to applicable law and operational capacity.
+
+\begin{center}\small\begin{tabularx}{\linewidth}{@{}>{\RaggedRight\arraybackslash}p{.18\linewidth}YY@{}}\toprule
+\textbf{Target} & \textbf{Action and owner} & \textbf{Audit evidence}\\\midrule
+0--30 days & Regulators define prohibited purposes, preserve research exceptions; hosts establish confidential escalation. & Published criteria, reporting pathways, response ownership.\\
+30--90 days & Publishers document safety cases for high-risk releases; hosts investigate verified abusive listings; platforms test removal workflows. & Independent review records, remediation decisions, response-time distributions.\\
+90--180 days & Regulators audit compliance; social and payment services coordinate lawful abuse escalation; victim organizations review accessibility. & Audit results, appeal outcomes, recurring exposure metrics.\\
+6--12 months & Independent evaluators compare outcomes and unintended consequences; revise thresholds and statutory guidance. & Public aggregate evaluation, uncertainty analysis, corrective measures.\\\bottomrule\end{tabularx}\end{center}
+
+\sub{Metrics that measure protection rather than publicity}
+Measure median and 90th-percentile time from valid report to protective action; proportion of qualifying reports resolved within the applicable deadline; repeat exposure within a defined follow-up period; victim-reported accessibility and satisfaction; audit coverage; and successful appeals and false-positive rates. Report denominators, missing data, time periods and sampling rules. Higher reporting volume may reflect improved access rather than more abuse, so incident counts must be interpreted alongside independent victim surveys and review capacity. No reduction target should be represented as an achieved result.
+
+\sub{India-specific policy pathway}
+India can build on the IT Act, POCSO, intermediary rules and the National Cyber Crime Reporting Portal while examining gaps in liability for purpose-built abuse generators. A legislative proposal should expressly distinguish synthetic sexual exploitation from lawful artistic and medical uses, define the prohibited conduct and relevant mental element, provide confidential reporting and remedies, and preserve legitimate investigation under authorization. Integrate child-protection specialists into evaluation and provide a clear appeal route. The official portal supports a reporting category for crimes concerning women and children. \cite{itact,pocso,india,indiareport}
+
+\sub{Victim-centred incident response}
+Respond to threats and coercion through appropriate safety and law-enforcement channels; provide confidential support; do not require a victim to redistribute intimate material to demonstrate abuse. Use authorized reporting mechanisms and preserve non-content identifiers where lawful. Suspected child sexual abuse material should not be downloaded, copied or circulated by members of the public. Do not force victims to repeatedly retell traumatic events. Platform action, investigation, counselling and legal remedies should be complementary rather than sequential barriers to protection.
+
+\sect{Synthesis, limitations and conclusion}{Phase 10 | research consolidation}
+
+The available evidence supports three conclusions. First, open weights and derivatives increase the number of independent execution and governance boundaries; repository-level documentation alone does not establish safe downstream use. Second, child-protection organizations and law-enforcement reports demonstrate concrete synthetic-media harms, while social-platform evidence documents synthetic identities in coordinated activity. Third, provenance and detectors are complementary but cannot independently establish consent, legality or truth. \cite{hfcards,iwf,ncmec25,fbi,meta,nist,c2pa}
+
+
+\sub{Research completeness and follow-up requirements}
+
+\begin{center}\small\begin{tabularx}{\linewidth}{@{}YY@{}}\toprule
+\textbf{Phase} & \textbf{Status in this manuscript}\\\midrule
+1--2: inventory and technical specifications & Representative sourced releases; no exhaustive 100+ audit, revision hashes or file-level size census.\\
+3--4: deployment and adaptation & Conceptual comparison and controls; no platform-by-platform pricing/benchmark audit.\\
+5--6: abuse, identity and distribution & Primary-source evidence and selected platforms; not global prevalence or revenue estimates.\\
+7: digital forensics & Method comparison, benchmark sources and illustrative math; no detector experiments.\\
+8: regulation & Eight-jurisdiction overview; further provision-level review required.\\
+9--10: mitigation and consolidation & Qualitative risk matrix, source register, figures and limitations.\\\bottomrule\end{tabularx}\end{center}
+
+Further empirical work should include a reproducible general-purpose model metadata census with pinned revisions, documented component-level file sizes and benign benchmark protocols. Authorized child-safety specialists should lead sensitive safety evaluation under appropriate legal and ethics frameworks. Researchers should seek corrections to source inconsistencies and update legal commencement information before submission. A longitudinal dataset of platform enforcement indicators would strengthen comparative claims.
+
+
+\sub{Conclusion and research contribution}
+The convergence of survey evidence, qualitative survivor research, operational reports and adjudicated cases supports urgent action against synthetic sexual abuse. These sources do not independently establish what fraction is attributable to open weights, but they do establish that the harm is real and that waiting for perfect attribution would leave existing victims without adequate remedies. The proposed approach is to prohibit purpose-built abuse tools, prevent uncontrolled release of independently assessed high-risk capabilities where necessary, and enforce downstream removal and support. The obligation to prove a product is acceptably safe before exposing the public to critical risks should rest with those who develop and distribute it, subject to proportionate regulation and independent scrutiny.
+
+\sub{Declarations}
+
+No human participants were recruited, no model weights were executed, and no unlawful or exploitative media were collected. Funding, competing interests, authorship and affiliation must be declared by the submitting author. Figures are original visualizations of public statistics or analytical diagrams. No abusive imagery is reproduced; third-party image downloads were not available in the initial research pass. All sources are listed in the bibliography and companion annotated evidence document. This manuscript has not undergone peer review or independent legal review.
+
+
+\clearpage\begin{thebibliography}{99}\footnotesize\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}
+\bibitem{iwf} Internet Watch Foundation. AI-generated CSAM trends, 2025 Data \& Insights Report. 2025 reporting year; accessed 2026-11-25. \ \url{https://www.iwf.org.uk/annual-data-insights-report-2025/emerging-and-persistent-harms/ai-generated-child-sexual-abuse-material/}.
+\bibitem{iwfi} Internet Watch Foundation. AI-generated image trends. 2025 reporting year; accessed 2026-11-25. \ \url{https://www.iwf.org.uk/annual-data-insights-report-2025/image-insights/ai-generated-images/}.
+\bibitem{iwfv} Internet Watch Foundation. AI-generated video trends. 2025 reporting year; accessed 2026-11-25. \ \url{https://www.iwf.org.uk/annual-data-insights-report-2025/video-insights/ai-generated-videos/}.
+\bibitem{iwf26} Internet Watch Foundation. More AI-generated abuse images found in first six months of 2026 than all of 2025. 2026; accessed 2026-11-25. \ \url{https://www.iwf.org.uk/news-media/news/more-ai-generated-child-sexual-abuse-images-found-in-the-first-six-months-of-2026-than-all-of-2025-iwf-warns}.
+\bibitem{iwfexec} Internet Watch Foundation. Executive summary, Annual Data \& Insights Report 2025. 2026; accessed 2026-11-25. \ \url{https://www.iwf.org.uk/media/upbjgpib/iwf_ar25_executivesummary_digital.pdf}.
+\bibitem{ncmec} National Center for Missing \& Exploited Children. Generative AI. Accessed 2026-11-25. \ \url{https://www.missingkids.org/theissues/generative-ai}.
+\bibitem{ncmec25} National Center for Missing \& Exploited Children. CyberTipline data. 2025 reporting year; accessed 2026-11-25. \ \url{https://www.ncmec.org/gethelpnow/cybertipline/cybertiplinedata}.
+\bibitem{laion} LAION. Releasing Re-LAION-5B. 2024; accessed 2026-11-25. \ \url{https://laion.ai/blog/relaion-5b/}.
+\bibitem{hfpolicy} Hugging Face. Content policy. Accessed 2026-11-25. \ \url{https://huggingface.co/content-policy}.
+\bibitem{hfcards} Hugging Face. Model cards. Accessed 2026-11-25. \ \url{https://huggingface.co/docs/hub/model-cards}.
+\bibitem{ldm} Rombach et al.. High-Resolution Image Synthesis with Latent Diffusion Models. 2021 preprint; 2022 CVPR. \ \url{https://arxiv.org/abs/2112.10752}.
+\bibitem{sdxl} Podell et al.. SDXL: Improving Latent Diffusion Models for High-Resolution Image Synthesis. 2023 preprint. \ \url{https://arxiv.org/abs/2307.01952}.
+\bibitem{flux} Black Forest Labs. FLUX.1 schnell model card. Accessed 2026-11-25. \ \url{https://huggingface.co/black-forest-labs/FLUX.1-schnell/blob/main/README.md}.
+\bibitem{qwen} Qwen. Qwen-Image model card. 2025 release; accessed 2026-11-25. \ \url{https://huggingface.co/Qwen/Qwen-Image}.
+\bibitem{moss} OpenMOSS. MOSS-Image official repository. Accessed 2026-11-25. \ \url{https://github.com/OpenMOSS/MOSS-Image}.
+\bibitem{lora} Hu et al.. LoRA: Low-Rank Adaptation of Large Language Models. 2021 preprint. \ \url{https://arxiv.org/abs/2106.09685}.
+\bibitem{loradiff} Hugging Face. Diffusers: LoRA. Accessed 2026-11-25. \ \url{https://huggingface.co/docs/diffusers/en/training/lora}.
+\bibitem{dream} Ruiz et al.. DreamBooth: Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation. 2022 preprint. \ \url{https://arxiv.org/abs/2208.12242}.
+\bibitem{memory} Hugging Face. Diffusers: Reduce memory usage. Accessed 2026-11-25. \ \url{https://huggingface.co/docs/diffusers/en/optimization/memory}.
+\bibitem{runpod} Runpod. Runpod documentation. Accessed 2026-11-25. \ \url{https://docs.runpod.io/}.
+\bibitem{fbi} FBI Internet Crime Complaint Center. Malicious actors manipulating photos and videos to create explicit content and sextortion schemes. 2023-06-05. \ \url{https://www.ic3.gov/PSA/2023/PSA230605}.
+\bibitem{fincen} Financial Crimes Enforcement Network. Notice on financially motivated sextortion. 2025; accessed 2026-11-25. \ \url{https://www.fincen.gov/news/news-releases/fincen-issues-notice-financially-motivated-sextortion/}.
+\bibitem{meta} Meta. Recapping our 2022 coordinated inauthentic behavior enforcements. 2022-12. \ \url{https://about.fb.com/news/2022/12/metas-2022-coordinated-inauthentic-behavior-enforcements/}.
+\bibitem{metaindia} Meta. India-based CIB network, H2 2025 indicators. 2025 reporting period. \ \url{https://github.com/meta/threat-research/blob/main/indicators/meta-h2-2025-india-based-cib-network.md}.
+\bibitem{fakefaces} Journal of Online Trust and Safety. Characteristics and Prevalence of Fake Social Media Profiles with AI-generated Faces. 2024. \ \url{https://tsjournal.org/index.php/jots/article/view/197}.
+\bibitem{graphika} Graphika. OperationFFS: Fake Face Swarm. 2019. \ \url{https://www.graphika.com/reports/operationffs-fake-face-swarm}.
+\bibitem{metalabel} Meta. Our approach to labeling AI-generated content and manipulated media. 2024; updated. \ \url{https://about.fb.com/news/2024/04/metas-approach-to-labeling-ai-generated-content-and-manipulated-media/}.
+\bibitem{youtube} YouTube. Understanding how this content was made disclosures. Accessed 2026-11-25. \ \url{https://support.google.com/youtube/answer/15447836?hl=en}.
+\bibitem{tiktok} TikTok. AI-generated content. Accessed 2026-11-25. \ \url{https://support.tiktok.com/en/using-tiktok/creating-videos/ai-generated-content}.
+\bibitem{xpolicy} X. Authenticity policy. Accessed 2026-11-25. \ \url{https://help.x.com/en/rules-and-policies/authenticity}.
+\bibitem{ftcads} Federal Trade Commission. Updated advertising guides to combat deceptive reviews and endorsements. 2023-06. \ \url{https://www.ftc.gov/news-events/news/press-releases/2023/06/federal-trade-commission-announces-updated-advertising-guides-combat-deceptive-reviews-endorsements}.
+\bibitem{nist} NIST. Reducing Risks Posed by Synthetic Content, NIST AI 100-4. 2024. \ \url{https://doi.org/10.6028/NIST.AI.100-4}.
+\bibitem{c2pa} Coalition for Content Provenance and Authenticity. Content Credentials technical specification v2.5. Accessed 2026-11-25. \ \url{https://spec.c2pa.org/specifications/specifications/2.5/specs/C2PA_Specification.html}.
+\bibitem{genimage} Zhu et al.. GenImage: A Million-Scale Benchmark for Detecting AI-Generated Image. 2023. \ \url{https://arxiv.org/abs/2306.08571}.
+\bibitem{dailybench} DailyBench authors. DailyBench: A Unified Benchmark for AI-Generated and Manipulated Images from Modern Generative Models. 2026 preprint. \ \url{https://arxiv.org/abs/2607.24016}.
+\bibitem{india} Government of India, Press Information Bureau. Government response on deepfake regulatory framework. 2026-08-06. \ \url{https://www.pib.gov.in/PressReleasePage.aspx?PRID=2295500&lang=1&reg=1}.
+\bibitem{indiafaq} MeitY. FAQ: IT Rules 2026 amendments. 2026-02. \ \url{https://www.meity.gov.in/static/uploads/2026/02/49d4c4b42fc2d3dce00e0fdcf7ed1389.pdf}.
+\bibitem{eu} European Union. AI Act, Regulation (EU) 2024/1689, Article 50. 2024. \ \url{https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-50?full=1}.
+\bibitem{eudate} European Commission. Guidelines on transparency obligations. 2026; accessed 2026-11-25. \ \url{https://digital-strategy.ec.europa.eu/en/policies/guidelines-ai-transparency-obligations}.
+\bibitem{us} Federal Trade Commission. Complying with the TAKE IT DOWN Act. 2026-05. \ \url{https://www.ftc.gov/business-guidance/resources/complying-take-it-down-act}.
+\bibitem{uk} UK Government. Crime and Policing Act 2026: intimate image abuse factsheet. 2026; accessed 2026-11-25. \ \url{https://www.gov.uk/government/publications/crime-and-policing-act-2026-factsheets/crime-and-policing-act-2026-intimate-image-abuse-factsheet}.
+\bibitem{ukcps} Crown Prosecution Service. Cybercrime prosecution guidance. Accessed 2026-11-25. \ \url{https://www.cps.gov.uk/prosecution-guidance/cybercrime-prosecution-guidance}.
+\bibitem{au} Australian eSafety Commissioner. Image-based abuse. Accessed 2026-11-25. \ \url{https://www.esafety.gov.au/key-topics/image-based-abuse}.
+\bibitem{ca} Parliament of Canada. Bill C-16, Protecting Victims Act, Royal Assent. 2026-06-18. \ \url{https://www.parl.ca/documentviewer/en/45-1/bill/C-16/royal-assent?col=2}.
+\bibitem{jp} House of Representatives, Japan. Government reply concerning sexual deepfakes. 2025. \ \url{https://www.shugiin.go.jp/internet/itdb_shitsumon.nsf/html/shitsumon/b217084.htm}.
+\bibitem{kr} Korea Law Information Center. Act on Special Cases Concerning Punishment of Sexual Crimes, Article 14-2. Accessed 2026-11-25. \ \url{https://www.law.go.kr/lsInfoP.do?lsiSeq=265789&viewCls=engLsInfoR}.
+\bibitem{pixart} PixArt research team. PixArt-Sigma official repository. Accessed 2026-11-25. \ \url{https://github.com/PixArt-alpha/PixArt-sigma}.
+\bibitem{sana} NVlabs. SANA official repository. Accessed 2026-11-25. \ \url{https://github.com/NVlabs/SANA}.
+\bibitem{zimage} Tongyi-MAI. Z-Image-Turbo model card. Accessed 2026-11-25. \ \url{https://huggingface.co/Tongyi-MAI/Z-Image-Turbo}.
+\bibitem{lumina} Alpha-VLLM. Lumina-Image 2.0 model card. Accessed 2026-11-25. \ \url{https://huggingface.co/Alpha-VLLM/Lumina-Image-2.0/blob/main/README.md}.
+\bibitem{itact} India Code. Information Technology Act, 2000. Accessed 2026-11-25. \ \url{https://www.indiacode.nic.in/indiacode/handle/123456789/1999?locale=en}.
+\bibitem{pocso} India Code. Protection of Children from Sexual Offences Act, 2012. Accessed 2026-11-25. \ \url{https://www.indiacode.nic.in/indiacode/handle/123456789/2079?view_type=browse}.
+\bibitem{unicef12} UNICEF, ECPAT and INTERPOL. Deepfake abuse is abuse: Disrupting Harm Phase 2 findings. 4 February 2026. \url{https://www.unicef.org/press-releases/deepfake-abuse-is-abuse}.
+\bibitem{unicefwide} UNICEF Innocenti. Through Children's Eyes: technology-facilitated sexual exploitation and abuse. 3 September 2026. \url{https://www.unicef.org/press-releases/1-5-children-across-21-countries-have-experienced-tech-facilitated-sexual}.
+\bibitem{reportremove} IWF and Childline. Reports from children of fake or manipulated intimate imagery. 10 August 2026. \url{https://www.iwf.org.uk/news-media/news/hundreds-of-british-under-18s-reporting-nude-or-sexual-imagery-of-themselves-say-its-faked-or-manipulated/}.
+\bibitem{thorn} Thorn. Deepfake Nudes and Young People. 3 March 2025. \url{https://www.thorn.org/research/library/deepfake-nudes-and-young-people/}.
+\bibitem{survivors} McGlynn et al.. The Harms of Image-Based Sexual Abuse. 2020 online publication. \url{https://doi.org/10.1177/0964663920947791}.
+\bibitem{deepfakeimpact} PubMed-indexed study. The lived experiences and impacts of sexualized deepfake abuse. 2026. \url{https://pubmed.ncbi.nlm.nih.gov/42920292/}.
+\bibitem{dojohio} US Department of Justice. Hilliard man sentenced for AI alteration of real minors' images. 11 May 2026. \url{https://www.justice.gov/usao-sdoh/pr/hilliard-man-sentenced-14-years-prison-using-ai-morph-images-real-minors-child}.
+\bibitem{dojstalk} US Department of Justice. Columbus man sentenced for cyberstalking and AI-generated obscene material. 8 September 2026. \url{https://www.justice.gov/usao-sdoh/pr/columbus-man-sentenced-15-years-prison-cyberstalking-exes-creating-ai-generated}.
+\bibitem{uknotes} UK Parliament. Crime and Policing Act 2026: explanatory notes. 2026. \url{https://www.legislation.gov.uk/ukpga/2026/20/notes/division/11/index.htm}.
+\bibitem{ftcenforce} US Federal Trade Commission. FTC Begins Enforcing the TAKE IT DOWN Act. 19 May 2026. \url{https://www.ftc.gov/news-events/news/press-releases/2026/05/ftc-begins-enforcing-take-it-down-act}.
+\bibitem{ntia} US National Telecommunications and Information Administration. Dual-Use Foundation Models with Widely Available Model Weights. July 2024. \url{https://www.ntia.gov/sites/default/files/publications/ntia-ai-open-model-report.pdf}.
+\bibitem{indiareport} Government of India. National Cyber Crime Reporting Portal: FAQ. Accessed 25 November 2026. \url{https://www.cybercrime.gov.in/webform/FAQ.aspx}.
+\end{thebibliography}\end{document}

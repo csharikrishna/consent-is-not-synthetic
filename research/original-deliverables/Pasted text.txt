@@ -1,0 +1,730 @@
+[$deep-research](app://connector_openai_deep_research) # MASTER DEEP RESEARCH PROMPT\
+\## Global Open-Weight Image Generation Ecosystem, Unrestricted Model Intelligence, Deployment Infrastructure & Synthetic Media Misuse Investigation\
+\
+\### 1. RESEARCH MISSION\
+\
+Conduct an extensive, evidence-based investigation into the global ecosystem of open-source and open-weight image-generation models, particularly models with reduced content restrictions, community fine-tunes, NSFW-oriented adaptations, and models capable of generating content that commercial image-generation platforms may restrict.\
+\
+This is a technical, academic, cybersecurity, digital-forensics, and platform-safety research project.\
+\
+The objective is to develop a comprehensive intelligence database that explains:\
+\
+1\. What image-generation models are publicly available.\
+2\. Their underlying architectures, parameter counts, weight formats, storage sizes, and quantization methods.\
+3\. How these models are downloaded, installed, configured, hosted, and operated.\
+4\. How community developers modify, fine-tune, merge, and redistribute models.\
+5\. How these technologies are misused to produce deceptive, non-consensual, impersonating, or otherwise harmful synthetic media.\
+6\. How malicious actors use synthetic identities and AI-generated imagery in social media ecosystems.\
+7\. How synthetic identities are distributed, operated, promoted, and monetized.\
+8\. What detection, prevention, investigation, and mitigation mechanisms can address these threats.\
+\
+Do not produce a superficial list of models. Investigate the complete ecosystem, including models, repositories, deployment tools, workflows, communities, distribution channels, and misuse patterns.\
+\
+\---\
+\
+\# 2. RESEARCH SCOPE A: GLOBAL MODEL INVENTORY\
+\
+Identify as many publicly available image-generation models as possible.\
+\
+Do not restrict discovery to models containing keywords such as "uncensored", "NSFW", or "unfiltered".
+
+Search for all possible models when i just searched this nsfw i got around 900+ models there in hugging face inspect as many as you can based on stars or downloads or likes or what ever and rank those models and list those models , I want you to find as many as possible models&#x20;
+
+[danger !!!]  : we might not know whether those models are able to generate ch\*dren pictures of that genre , we need to take a deep action on this \
+\
+Investigate the following model families:\
+\
+\### A. Stable Diffusion ecosystem\
+\- Stable Diffusion 1.x\
+\- Stable Diffusion 2.x\
+\- Stable Diffusion XL\
+\- Stable Diffusion 3 / 3.5\
+\- Pony Diffusion\
+\- Illustrious XL\
+\- Juggernaut\
+\- Realistic Vision\
+\- DreamShaper\
+\- EpicRealism\
+\- Other community checkpoints\
+\- NSFW-oriented community fine-tunes\
+\
+\### B. FLUX ecosystem\
+\- FLUX.1 Dev\
+\- FLUX.1 Schnell\
+\- FLUX.1 Kontext\
+\- FLUX community checkpoints\
+\- FLUX LoRAs\
+\- Quantized FLUX variants\
+\- Community modifications and fine-tunes\
+\
+\### C. Qwen Image ecosystem\
+\- Qwen Image\
+\- Qwen Image Edit\
+\- Qwen Image 2.x family and verified releases\
+\- Community fine-tunes\
+\- NSFW-oriented LoRAs\
+\- Quantized implementations\
+\
+\### D. MOSS ecosystem\
+\- MOSS-Image\
+\- MOSS-Image-SFT\
+\- Community adaptations\
+\- LoRAs\
+\- Quantized variants\
+\
+\### E. Other architectures\
+Investigate:\
+\- PixArt\
+\- AuraFlow\
+\- Hunyuan Image\
+\- Z-Image\
+\- Kandinsky\
+\- Playground\
+\- DeepFloyd IF\
+\- Lumina\
+\- Sana\
+\- Other emerging open-weight image-generation architectures\
+\
+\### F. Additional model categories\
+\- Image-to-image models\
+\- Inpainting and outpainting models\
+\- Face restoration models\
+\- Face swapping models\
+\- Identity-preserving generation models\
+\- Pose and body-control models\
+\- Image editing models\
+\- Video-generation models capable of synthesizing people\
+\- Multimodal models with image-generation capabilities\
+\
+For every model, establish whether it is a base model, full fine-tune, checkpoint merge, LoRA, adapter, quantized derivative, or inference wrapper.\
+\
+Do not incorrectly classify a LoRA as an independent foundation model.\
+\
+\---\
+\
+\# 3. RESEARCH SCOPE B: MODEL TECHNICAL SPECIFICATIONS\
+\
+Build a structured technical database.\
+\
+Collect the following fields for every model:\
+\
+\| Field | Required information |\
+\|---|---|\
+\| Model name | Official model name |\
+\| Repository | Exact repository URL |\
+\| Developer | Individual, organization or research group |\
+\| Base architecture | SDXL, FLUX, Qwen, etc. |\
+\| Model family | Diffusion, DiT, flow matching, etc. |\
+\| Parameter count | Total parameters, if disclosed |\
+\| Original size | Actual weight size |\
+\| File formats | Safetensors, GGUF, CKPT, etc. |\
+\| Precision | FP32, FP16, BF16, FP8, INT8, INT4 |\
+\| Quantization | GGUF Q4/Q5/Q8, GPTQ, AWQ, other |\
+\| Quantized size | Actual size of each available variant |\
+\| VAE | Associated VAE, if applicable |\
+\| Text encoder | Associated text encoders |\
+\| Training method | Full fine-tuning, LoRA, merge, etc. |\
+\| Resolution | Native or recommended resolution |\
+\| VRAM | Tested or documented requirements |\
+\| License | Exact license and restrictions |\
+\| Safety mechanisms | Built-in and external filters |\
+\| Availability | Active, archived, removed or inaccessible |\
+\| Last update | Verified repository update date |\
+\
+Important:\
+\
+\- Distinguish total model parameters from individual component parameters.\
+\- Distinguish download size from VRAM requirements.\
+\- Record actual repository file sizes rather than estimated sizes wherever possible.\
+\- Do not assume a model is quantized because its file is smaller.\
+\- Identify whether quantization affects the UNet/transformer, text encoder, or other components.\
+\- Record multiple variants separately.\
+\
+\### Required output\
+\
+Create a master inventory with at least 100 entries if the evidence supports it.\
+\
+Provide:\
+1\. Model comparison table.\
+2\. Architecture classification.\
+3\. Model-size comparison.\
+4\. Quantization comparison.\
+5\. Hardware compatibility matrix.\
+6\. License and availability matrix.\
+\
+Do not fabricate entries to meet a target number.\
+\
+\---\
+\
+\# 4. RESEARCH SCOPE C: HOW PEOPLE RUN THESE MODELS\
+\
+Investigate the real-world deployment ecosystem.\
+\
+Identify and examine:\
+\
+\### Local inference applications\
+\- ComfyUI\
+\- AUTOMATIC1111\
+\- Forge\
+\- InvokeAI\
+\- Fooocus\
+\- SwarmUI\
+\- Diffusers\
+\- Other relevant interfaces\
+\
+\### Model execution and optimization\
+\- PyTorch\
+\- CUDA\
+\- xFormers\
+\- FlashAttention\
+\- TensorRT\
+\- ONNX\
+\- GGUF loaders\
+\- CPU offloading\
+\- Model slicing and tiling\
+\- Low-VRAM inference\
+\- Quantized inference\
+\
+\### Cloud infrastructure\
+\- RunPod\
+\- Vast.ai\
+\- Paperspace\
+\- Google Colab\
+\- Hugging Face Spaces\
+\- Modal\
+\- Replicate\
+\- Other GPU hosting services\
+\
+For each platform, investigate:\
+\
+\- Supported model families.\
+\- Hardware requirements.\
+\- GPU memory requirements.\
+\- Deployment architecture.\
+\- Storage requirements.\
+\- API availability.\
+\- Pricing models.\
+\- Public versus private endpoints.\
+\- Authentication mechanisms.\
+\- Usage restrictions.\
+\- Abuse reporting and moderation policies.\
+\
+Document legitimate deployment workflows sufficiently to reproduce and benchmark models.\
+\
+Do not provide instructions for bypassing provider safeguards, evading identity verification, or concealing abusive activity.\
+\
+\---\
+\
+\# 5. RESEARCH SCOPE D: MODEL MODIFICATION AND FINE-TUNING ECOSYSTEM\
+\
+Investigate how community developers create specialized image-generation models.\
+\
+Research:\
+\
+\- LoRA training.\
+\- DreamBooth.\
+\- Full fine-tuning.\
+\- Checkpoint merging.\
+\- Text-encoder fine-tuning.\
+\- Embeddings and textual inversion.\
+\- Dataset curation.\
+\- Caption generation.\
+\- Synthetic dataset generation.\
+\- Model distillation.\
+\- Quantization.\
+\- Model conversion.\
+\- Community checkpoint distribution.\
+\
+Identify commonly used training tools and frameworks.\
+\
+Investigate how identity-specific datasets are used and what consent, privacy, copyright, and dataset-provenance concerns arise.\
+\
+Explain the technical differences between:\
+\- Removing an external safety checker.\
+\- Modifying a pipeline.\
+\- Fine-tuning model weights.\
+\- Training a model on specialized datasets.\
+\- Modifying prompt-processing components.\
+\
+Document the technical mechanisms and associated risks without providing instructions to defeat safeguards or facilitate harmful content production.\
+\
+\---\
+\
+\# 6. RESEARCH SCOPE E: MISUSE INTELLIGENCE\
+\
+This is one of the most important sections.\
+\
+Investigate documented misuse of open-weight image-generation systems.\
+\
+Build a taxonomy of misuse.\
+\
+\### A. Non-consensual synthetic imagery\
+Investigate:\
+\- Non-consensual intimate imagery.\
+\- Synthetic sexual impersonation.\
+\- Deepfake pornography.\
+\- Image manipulation involving identifiable individuals.\
+\- Harassment and targeted abuse.\
+\- Reputational damage.\
+\
+\### B. Synthetic identity creation\
+Investigate:\
+\- AI-generated fictional personalities.\
+\- Synthetic profile photographs.\
+\- Identity impersonation.\
+\- Fake influencer personas.\
+\- Fraudulent identity presentation.\
+\- AI-generated profile-image collections.\
+\
+\### C. Social media abuse\
+Investigate documented cases involving:\
+\- Fake social media profiles.\
+\- AI-generated influencer accounts.\
+\- Coordinated fake personas.\
+\- Impersonation networks.\
+\- Spam accounts.\
+\- Fake engagement.\
+\- Fraudulent promotional accounts.\
+\- Synthetic content farms.\
+\
+\### D. Financial and commercial exploitation\
+Investigate:\
+\- Fake influencer monetization.\
+\- Subscription-based synthetic personas.\
+\- Fraudulent advertising.\
+\- Romance scams.\
+\- Impersonation-based fundraising.\
+\- Deceptive product promotions.\
+\- Affiliate fraud.\
+\- Fake portfolio and modelling profiles.\
+\
+\### E. Other abuse patterns\
+Investigate:\
+\- Political impersonation.\
+\- Misinformation.\
+\- Fabricated evidence.\
+\- Harassment campaigns.\
+\- Synthetic identity-based fraud.\
+\- Copyright and personality-rights violations.\
+\
+For every documented misuse category, collect:\
+\
+1\. Description of the incident.\
+2\. Technology involved.\
+3\. Model or model family, if known.\
+4\. Distribution platforms.\
+5\. Victim impact.\
+6\. Scale of activity, if established.\
+7\. Geographic scope.\
+8\. Relevant legal provisions.\
+9\. Detection methods.\
+10\. Platform response.\
+11\. Mitigation measures.\
+12\. Primary source evidence.\
+\
+IMPORTANT RESEARCH BOUNDARY:\
+\
+Investigate the existence, characteristics, prevalence, and impact of abusive workflows.\
+\
+Do not provide actionable instructions for creating non-consensual intimate imagery, impersonating real people, manufacturing deceptive identities, operating fraudulent social media accounts, evading platform moderation, or monetizing scams.\
+\
+When describing attacker workflows, use a high-level threat-intelligence model rather than a reproducible abuse tutorial.\
+\
+\---\
+\
+\# 7. RESEARCH SCOPE F: SYNTHETIC SOCIAL MEDIA IDENTITIES\
+\
+Investigate how AI-generated identities are appearing across social platforms.\
+\
+Platforms to examine:\
+\
+\- Instagram\
+\- Facebook\
+\- TikTok\
+\- YouTube\
+\- X\
+\- Reddit\
+\- Telegram\
+\- Discord\
+\- Pinterest\
+\- Other relevant platforms\
+\
+Research questions:\
+\
+1\. How prevalent are AI-generated profile pictures?\
+2\. How are synthetic influencers identified?\
+3\. What characteristics distinguish genuine human accounts from synthetic personas?\
+4\. How do coordinated networks of fake accounts operate?\
+5\. How are AI-generated photographs mixed with authentic photographs?\
+6\. How are synthetic identities disclosed or concealed?\
+7\. How do fake accounts obtain followers and engagement?\
+8\. What types of fraudulent activity have been documented?\
+9\. How are synthetic personas monetized?\
+10\. What policies do platforms enforce concerning AI-generated identities and synthetic media?\
+\
+Study account lifecycle patterns at a conceptual level:\
+\
+\- Identity creation.\
+\- Profile establishment.\
+\- Content publication.\
+\- Audience development.\
+\- Audience engagement.\
+\- Commercial activity.\
+\- Abuse detection.\
+\- Account enforcement.\
+\
+Investigate public research, platform transparency reports, independent investigations, and documented case studies.\
+\
+For each platform, distinguish between:\
+\- Permitted fictional or disclosed AI personas.\
+\- Undisclosed but non-deceptive synthetic accounts.\
+\- Impersonation.\
+\- Coordinated inauthentic behaviour.\
+\- Fraudulent accounts.\
+\
+Do not provide account-farming playbooks, automation scripts, verification bypass methods, or moderation-evasion techniques.\
+\
+\---\
+\
+\# 8. RESEARCH SCOPE G: CONTENT DISTRIBUTION AND MONETIZATION\
+\
+Investigate how synthetic imagery is distributed and commercialized.\
+\
+Examine:\
+\
+\- Subscription-based content platforms.\
+\- Social media influencer ecosystems.\
+\- Advertising networks.\
+\- Affiliate marketing.\
+\- Image marketplaces.\
+\- AI content marketplaces.\
+\- Messaging platforms.\
+\- Creator platforms.\
+\- Synthetic influencer agencies.\
+\
+Research:\
+\
+\- Platform policies.\
+\- Creator disclosure requirements.\
+\- Identity verification.\
+\- Content moderation.\
+\- Copyright.\
+\- Consent.\
+\- Payment processing restrictions.\
+\- Monetization eligibility.\
+\- Fraud prevention.\
+\- Consumer protection.\
+\
+Identify how legitimate AI creators operate differently from deceptive or abusive operators.\
+\
+Do not include instructions for monetizing deceptive impersonation or non-consensual content.\
+\
+\---\
+\
+\# 9. RESEARCH SCOPE H: DETECTION AND DIGITAL FORENSICS\
+\
+Investigate the technical methods available to identify AI-generated imagery and synthetic identities.\
+\
+\### Image-level analysis\
+\- AI image detectors.\
+\- Frequency-domain analysis.\
+\- Image provenance.\
+\- C2PA.\
+\- Metadata inspection.\
+\- EXIF analysis.\
+\- Watermarking.\
+\- Diffusion fingerprints.\
+\- Image inconsistencies.\
+\- Face and identity consistency analysis.\
+\
+\### Account-level analysis\
+\- Profile-image reuse.\
+\- Cross-platform identity inconsistencies.\
+\- Account age and activity anomalies.\
+\- Coordinated posting patterns.\
+\- Network analysis.\
+\- Engagement anomalies.\
+\- Synthetic persona clustering.\
+\
+\### Infrastructure-level analysis\
+\- Public model repository analysis.\
+\- Model hash identification.\
+\- Model version tracking.\
+\- Public API fingerprinting.\
+\- Hosting-provider abuse reports.\
+\- Open-source threat intelligence.\
+\
+For every detection approach, investigate:\
+\
+\- Methodology.\
+\- Accuracy.\
+\- False-positive rates.\
+\- False-negative rates.\
+\- Known limitations.\
+\- Available datasets.\
+\- Reproducibility.\
+\- Research papers.\
+\- Open-source implementations.\
+\
+Do not present AI image detection as perfectly reliable.\
+\
+\---\
+\
+\# 10. RESEARCH SCOPE I: LEGAL AND REGULATORY LANDSCAPE\
+\
+Investigate laws and regulatory developments in:\
+\
+\- India.\
+\- United States.\
+\- European Union.\
+\- United Kingdom.\
+\- Australia.\
+\- Canada.\
+\- Japan.\
+\- South Korea.\
+\
+Cover:\
+\
+\- Non-consensual intimate imagery.\
+\- Sexual deepfakes.\
+\- Child sexual abuse material.\
+\- Privacy and personality rights.\
+\- Copyright.\
+\- Defamation.\
+\- Identity impersonation.\
+\- AI-generated content disclosure.\
+\- Platform intermediary obligations.\
+\- AI transparency regulations.\
+\- Data protection.\
+\- Model distribution.\
+\- Dataset licensing.\
+\
+For India, investigate:\
+\- Information Technology Act.\
+\- IT Rules and relevant amendments.\
+\- Bharatiya Nyaya Sanhita.\
+\- Digital Personal Data Protection Act.\
+\- Relevant government advisories.\
+\- Applicable judicial decisions.\
+\
+Clearly distinguish laws in force from proposed legislation, government guidance, and policy recommendations.\
+\
+Do not make blanket legal claims. Explain jurisdictional differences.\
+\
+\---\
+\
+\# 11. RESEARCH SCOPE J: SECURITY AND SAFETY RECOMMENDATIONS\
+\
+Develop a practical threat-mitigation framework.\
+\
+Investigate recommendations for:\
+\
+\- Model publishers.\
+\- Model-hosting platforms.\
+\- Social media platforms.\
+\- GPU cloud providers.\
+\- Researchers.\
+\- Content creators.\
+\- Individuals affected by synthetic impersonation.\
+\- Law-enforcement and digital-forensics teams.\
+\
+Evaluate:\
+\- Dataset provenance.\
+\- Consent-aware training.\
+\- Model cards.\
+\- Safety evaluations.\
+\- Abuse reporting.\
+\- Content provenance.\
+\- Synthetic media disclosure.\
+\- Identity verification.\
+\- Automated moderation.\
+\- Human review.\
+\- Incident response.\
+\- Evidence preservation.\
+\
+Include a risk matrix evaluating the likelihood, severity, and detectability of each misuse category.\
+\
+\---\
+\
+\# 12. SOURCE DISCOVERY STRATEGY\
+\
+Do not rely exclusively on Google search results or Hugging Face.\
+\
+Search and cross-reference:\
+\
+\### Model repositories\
+\- Hugging Face.\
+\- GitHub.\
+\- Civitai.\
+\- ModelScope.\
+\- Replicate.\
+\- OpenModelDB.\
+\- Other public model repositories.\
+\
+\### Academic research\
+\- arXiv.\
+\- Google Scholar.\
+\- IEEE Xplore.\
+\- ACM Digital Library.\
+\- Springer.\
+\- Elsevier.\
+\- USENIX.\
+\- ACM CCS.\
+\- IEEE S&P.\
+\
+\### Threat intelligence and investigations\
+\- Europol.\
+\- INTERPOL.\
+\- FBI.\
+\- NCMEC.\
+\- Internet Watch Foundation.\
+\- Stanford Internet Observatory.\
+\- Graphika.\
+\- CCDH.\
+\- ISD.\
+\- Other credible research organizations.\
+\
+\### Platform documentation\
+\- Meta Transparency Center.\
+\- Instagram policies.\
+\- TikTok Safety Center.\
+\- YouTube policies.\
+\- X policies.\
+\- Reddit policies.\
+\- Hugging Face policies.\
+\- Civitai policies.\
+\
+\### Community discussions\
+Investigate relevant public discussions on:\
+\- Reddit.\
+\- GitHub Issues.\
+\- Hugging Face discussions.\
+\- Developer forums.\
+\- Public technical communities.\
+\
+Community discussions are useful for discovering tools and practices but must not be treated as verified facts without corroboration.\
+\
+\---\
+\
+\# 13. EVIDENCE AND VERIFICATION REQUIREMENTS\
+\
+Every important claim must have a source.\
+\
+Apply the following evidence hierarchy:\
+\
+Tier 1: Official model repositories, research papers, government publications, legal documents and platform transparency reports.\
+\
+Tier 2: Independent technical research, credible investigative journalism and established cybersecurity reports.\
+\
+Tier 3: Developer discussions, community documentation, forum posts and user reports.\
+\
+For each claim, record:\
+\
+\- Claim.\
+\- Source URL.\
+\- Publisher.\
+\- Publication date.\
+\- Access date.\
+\- Relevant quotation or supporting passage.\
+\- Evidence quality.\
+\- Verification status.\
+\
+Never invent model names, model sizes, download statistics, incidents, legal requirements, or quantization information.\
+\
+If a fact cannot be verified, mark it as UNKNOWN or UNVERIFIED.\
+\
+Separate:\
+\- Confirmed facts.\
+\- Community-reported claims.\
+\- Research hypotheses.\
+\- Analytical conclusions.\
+\
+\---\
+\
+\# 14. EXPECTED DELIVERABLES\
+\
+Produce the following research outputs.\
+\
+\### Deliverable 1: Executive Research Report\
+A comprehensive report explaining the ecosystem, major findings, risks, and conclusions.\
+\
+\### Deliverable 2: Master Model Database\
+A structured spreadsheet containing every verified model and its technical specifications.\
+\
+Target: 100+ entries where supported by evidence.\
+\
+\### Deliverable 3: Model Architecture Report\
+A comparison of model families, architectures, parameter counts, precision, quantization, and hardware requirements.\
+\
+\### Deliverable 4: Deployment Ecosystem Report\
+An explanation of how open-weight models are deployed locally and in cloud environments.\
+\
+\### Deliverable 5: Misuse Intelligence Report\
+A taxonomy of documented misuse, real-world cases, technologies involved, and impacts.\
+\
+\### Deliverable 6: Synthetic Identity and Social Media Report\
+A platform-by-platform study of AI-generated personas, fake identities, impersonation, account networks, and monetization abuse.\
+\
+\### Deliverable 7: Digital Forensics and Detection Report\
+A technical investigation of image detection, synthetic identity detection, provenance, and platform-level investigation.\
+\
+\### Deliverable 8: Legal and Regulatory Comparison\
+A jurisdiction-by-jurisdiction analysis of applicable laws and platform responsibilities.\
+\
+\### Deliverable 9: Threat Model\
+A threat matrix identifying attack surfaces, threat actors, capabilities, impact, likelihood, and mitigation strategies.\
+\
+\### Deliverable 10: Research Bibliography\
+A properly organized bibliography containing primary sources, academic papers, technical repositories, official policies, and investigative reports.\
+\
+\---\
+\
+\# 15. RESEARCH EXECUTION PLAN\
+\
+Execute the research in phases.\
+\
+Phase 1: Discover the model ecosystem.\
+\
+Phase 2: Verify repositories, architecture, file sizes, and quantization.\
+\
+Phase 3: Investigate deployment frameworks and infrastructure.\
+\
+Phase 4: Examine model modifications and fine-tuning practices.\
+\
+Phase 5: Investigate documented misuse and synthetic identity ecosystems.\
+\
+Phase 6: Examine social media distribution and monetization.\
+\
+Phase 7: Investigate detection and digital forensics.\
+\
+Phase 8: Analyze legal and regulatory frameworks.\
+\
+Phase 9: Build threat models and mitigation recommendations.\
+\
+Phase 10: Consolidate findings into the final research report and structured database.\
+\
+Do not attempt to complete every phase superficially in one pass. Work systematically, maintain a research ledger, identify gaps, and conduct follow-up searches.\
+\
+\---\
+\
+\# 16. FINAL RESEARCH STANDARD\
+\
+The final result must be comparable to a serious academic and cybersecurity intelligence research project.\
+\
+It must be:\
+\
+\- Technically accurate.\
+\- Comprehensive.\
+\- Evidence-driven.\
+\- Reproducible where appropriate.\
+\- Legally contextualized.\
+\- Properly referenced.\
+\- Explicit about uncertainty.\
+\- Free from fabricated statistics.\
+\- Organized for future research and benchmarking.\
+\
+The central objective is to understand the complete open-weight image-generation ecosystem, including its legitimate uses, technical capabilities, deployment infrastructure, abuse potential, social consequences, and available safeguards.\
+\
+Do not confuse open-weight availability with unrestricted legal permission to use or distribute generated content.\
+\
+\*\*Begin with Phase 1. Present the discovery methodology, initial model inventory, and source register before proceeding to subsequent phases.\*\*

@@ -1,0 +1,186 @@
+{
+  "files": [
+    {
+      "filename": "annotated-evidence.pdf",
+      "size_bytes": 223665,
+      "sha256": "09ef167548cc9aba15315a4af2c46aa819f037c43448ff8e0118bae8b6efc853",
+      "referenced_in_app": true,
+      "in_out": true
+    },
+    {
+      "filename": "citation-audit.csv",
+      "size_bytes": 54850,
+      "sha256": "5eb6fc914bac9c87d1eee966318b33e86509b92c6fb834971d75980cd0129e9b",
+      "referenced_in_app": true,
+      "in_out": true
+    },
+    {
+      "filename": "citation-audit.json",
+      "size_bytes": 75011,
+      "sha256": "a205f5f1b50b665f4efd4c3ef6e0da12b6fead80465883b3f18419345172ac79",
+      "referenced_in_app": true,
+      "in_out": true
+    },
+    {
+      "filename": "claim-to-action.csv",
+      "size_bytes": 1800,
+      "sha256": "be63246620d3368b3b67ac1f75f697b7c61ac497bb01e9a7dc16d3d660b80f24",
+      "referenced_in_app": true,
+      "in_out": true
+    },
+    {
+      "filename": "claim-verification-final.csv",
+      "size_bytes": 10849,
+      "sha256": "8ed93f1df53f794230f7eb4e9c994665c2af6a88ff547438ecf3d354deaaa382",
+      "referenced_in_app": true,
+      "in_out": true
+    },
+    {
+      "filename": "executive-summary-2page.md",
+      "size_bytes": 6951,
+      "sha256": "42b2684bb20cba5b4976a41bf83593d673480c63b14c1bab754e4adf1a69a279",
+      "referenced_in_app": true,
+      "in_out": true
+    },
+    {
+      "filename": "fact-sheet-1page.md",
+      "size_bytes": 4552,
+      "sha256": "589d6040752f3df262ae1d6a513b8a6b8ca40d57fe5712be8f6926bf5828db8c",
+      "referenced_in_app": true,
+      "in_out": true
+    },
+    {
+      "filename": "final-release-decision.md",
+      "size_bytes": 3868,
+      "sha256": "244d78f7cc04f48891cb1d793ca79f9205930871a06bd10dcbcbdbc26a7edaab",
+      "referenced_in_app": true,
+      "in_out": true
+    },
+    {
+      "filename": "incident-register.csv",
+      "size_bytes": 2888,
+      "sha256": "87818a1730aa8f0dbb28c46e3fb35c84b366b08964cc3ed18bde56563f283e03",
+      "referenced_in_app": true,
+      "in_out": true
+    },
+    {
+      "filename": "india-policy-brief.pdf",
+      "size_bytes": 145596,
+      "sha256": "3b26d2739739b26fe7328ba778510114e30378dc65ac80fdccde74327bf16cde",
+      "referenced_in_app": true,
+      "in_out": true
+    },
+    {
+      "filename": "media-backgrounder.md",
+      "size_bytes": 6360,
+      "sha256": "eba0bf576633808121219bd4b52333b0597522191f29f316ea8830727af953ff",
+      "referenced_in_app": true,
+      "in_out": true
+    },
+    {
+      "filename": "model-metadata-completeness.csv",
+      "size_bytes": 1482,
+      "sha256": "c9cfaffb63d54f4647f475c5659f5adcc0989cbecc39d55b3705e886d78c9a7d",
+      "referenced_in_app": true,
+      "in_out": true
+    },
+    {
+      "filename": "public-data-manifest.json",
+      "size_bytes": 3748,
+      "sha256": "df58ec9c1616ee9bd7860159ab4aef62bff21a8d4e2044f59c85cc916dcafce3",
+      "referenced_in_app": true,
+      "in_out": true
+    },
+    {
+      "filename": "public-evidence-brief.pdf",
+      "size_bytes": 35079,
+      "sha256": "2e5cc9f64fc7022b4d92a9e98a9a9d208988993d39511f4470ff7c0f4d08dcea",
+      "referenced_in_app": true,
+      "in_out": true
+    },
+    {
+      "filename": "public-source-register.csv",
+      "size_bytes": 31584,
+      "sha256": "25427a80703b4c8c100a3a0505f2d5f3b634347facac9a559f6536118e3a4640",
+      "referenced_in_app": true,
+      "in_out": true
+    },
+    {
+      "filename": "quantitative-evidence.csv",
+      "size_bytes": 1898,
+      "sha256": "5c27027361cb2f9d7ded17d0b04b67ca63623c06db58389405a90e9919738fd9",
+      "referenced_in_app": true,
+      "in_out": true
+    },
+    {
+      "filename": "research-protocol.md",
+      "size_bytes": 8935,
+      "sha256": "dbd90e6a2f3eacbaf0b89b2e747a26221ec4556972a4db6e1eae86f47633d2e1",
+      "referenced_in_app": true,
+      "in_out": true
+    },
+    {
+      "filename": "resource-directory.pdf",
+      "size_bytes": 198972,
+      "sha256": "0b93cad0ca7dbe0d52a18642bb9aaaa72fd3091453ac41b6e67ed9badc3836c3",
+      "referenced_in_app": true,
+      "in_out": true
+    },
+    {
+      "filename": "Synthetic_Abuse_Research_V4.pdf",
+      "size_bytes": 155939,
+      "sha256": "8f893f3ba495adc99757fcb7d7f35d12ea60f4c10ecccb92009f28e79ddb35b7",
+      "referenced_in_app": false,
+      "in_out": true
+    },
+    {
+      "filename": "top50-hf-metadata-snapshot.json",
+      "size_bytes": 36906,
+      "sha256": "dc2b5ce3df6346fb53fdccab7907279af5e2117a1fc23c1ea425fe3a273aefc9",
+      "referenced_in_app": true,
+      "in_out": true
+    },
+    {
+      "filename": "unresolved-evidence-register.md",
+      "size_bytes": 3422,
+      "sha256": "2d16da63bfc19a7c9d5ffdfb6920925215c6d0ed9865497dd062a66df9f1f2ea",
+      "referenced_in_app": true,
+      "in_out": true
+    },
+    {
+      "filename": "v1-journal.pdf",
+      "size_bytes": 383038,
+      "sha256": "4349553192df71f21814af3a4a2a9a335454b044e32d08db486772d9b5d0f321",
+      "referenced_in_app": true,
+      "in_out": true
+    },
+    {
+      "filename": "v2-journal.pdf",
+      "size_bytes": 441328,
+      "sha256": "a962b320b1706e22bbb7ec52ada4268278b9aa726aee6d0d4e63dcf2bff35514",
+      "referenced_in_app": true,
+      "in_out": true
+    },
+    {
+      "filename": "v3-journal.pdf",
+      "size_bytes": 502653,
+      "sha256": "835d3c6646b731695101c56f897fee09aaa3a1e8ab5819b4f8738c0338137880",
+      "referenced_in_app": true,
+      "in_out": true
+    },
+    {
+      "filename": "v4-journal.pdf",
+      "size_bytes": 155939,
+      "sha256": "8f893f3ba495adc99757fcb7d7f35d12ea60f4c10ecccb92009f28e79ddb35b7",
+      "referenced_in_app": true,
+      "in_out": true
+    }
+  ],
+  "missing_targets": [
+    "${v.file}",
+    "citation-audit.json</code> &mdash; All 76 peer-reviewed and statutory references.\n            </li>\n            <li style={{marginBottom:",
+    "claim-verification-final.csv</code> &mdash; 15 headline empirical claims audited with page locators.\n            </li>\n            <li style={{marginBottom:",
+    "incident-register.csv</code> &mdash; 10 documented legal and enforcement cases.\n            </li>\n          </ul>\n\n          <div style={{marginTop:",
+    "v4-journal.pdf</code> &mdash; Complete 24-page defended research paper.\n            </li>\n            <li style={{marginBottom:"
+  ]
+}

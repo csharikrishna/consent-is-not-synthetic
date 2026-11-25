@@ -1,0 +1,68 @@
+[
+  {
+    "control_id": "C01",
+    "documented_problem": "Commercially offered abuse tools; substantial traffic",
+    "source_refs": "66;67;70",
+    "proposed_action": "Targeted prohibition of knowing supply; review cross-stack duties",
+    "accountable_actor": "Legislature and regulator",
+    "outcome_metric": "Verified availability; substitution; repeated victim survey",
+    "denominator": "Authorized sampled services; survey population",
+    "status": "Proposed",
+    "caveat": "Service response is not causal harm reduction"
+  },
+  {
+    "control_id": "C02",
+    "documented_problem": "Downloadable-model misuse documented",
+    "source_refs": "69;63",
+    "proposed_action": "Independent safety case and proportionate release hold",
+    "accountable_actor": "Publisher, repository, independent reviewer",
+    "outcome_metric": "High-risk releases reviewed; unresolved critical findings",
+    "denominator": "High-risk releases in review scope",
+    "status": "Proposed",
+    "caveat": "No model-specific prevalence estimate"
+  },
+  {
+    "control_id": "C03",
+    "documented_problem": "Missing named owner in 69 of 104 records",
+    "source_refs": "75",
+    "proposed_action": "Named accountable officer and dated corrective action",
+    "accountable_actor": "Board and regulator",
+    "outcome_metric": "Records meeting governance requirements",
+    "denominator": "Records audited",
+    "status": "Proposed",
+    "caveat": "Broad online safety; not AI-only"
+  },
+  {
+    "control_id": "C04",
+    "documented_problem": "Removal mechanism and deadline compliance",
+    "source_refs": "72;74",
+    "proposed_action": "Audit response by applicable legal trigger",
+    "accountable_actor": "Intermediaries, regulator",
+    "outcome_metric": "Eligible reports acted on within deadline",
+    "denominator": "All eligible reports with elapsed deadline including unresolved",
+    "status": "Proposed",
+    "caveat": "Distinguish notices from individual complaints"
+  },
+  {
+    "control_id": "C05",
+    "documented_problem": "Repeat distribution and ongoing enforcement",
+    "source_refs": "73;32",
+    "proposed_action": "Lawful duplicate prevention and independent appeal",
+    "accountable_actor": "Platform safety team",
+    "outcome_metric": "Repeat exposure at 7 and 30 days; error and appeal outcomes",
+    "denominator": "Resolved cases with adequate follow-up; reviewed matches",
+    "status": "Proposed",
+    "caveat": "Report attrition and false positives"
+  },
+  {
+    "control_id": "C06",
+    "documented_problem": "Victimization and lived harms",
+    "source_refs": "53;58;68",
+    "proposed_action": "Confidential victim referrals and safeguarding",
+    "accountable_actor": "Child protection and victim support",
+    "outcome_metric": "Referral completion; accessibility; perceived safety",
+    "denominator": "Eligible consenting cases or survey respondents",
+    "status": "Proposed",
+    "caveat": "No new human-subject study conducted"
+  }
+]

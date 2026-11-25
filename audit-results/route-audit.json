@@ -1,0 +1,1286 @@
+[
+  {
+    "viewport": "mobile_360",
+    "route": "/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [
+      "Error: <svg> attribute height: Expected length, \"auto\"."
+    ],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Consent Is Not Synthetic — Public Research & Advocacy Platform"
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/impact/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Human impact | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/evidence/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [
+      "Error: <svg> attribute height: Expected length, \"auto\"."
+    ],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Evidence Dashboard & Quantitative Data Explorer — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/incidents/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Documented Incidents & Legal Case Register | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/technology/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Technology and digital forensics | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/model-governance/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Model Publisher & Repository Governance | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/open-weights/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Hugging Face & Open-Weight Accountability — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/regulation/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Global Regulation & Legal Matrix | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/accountability/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Policy & Accountability Center — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/research/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Research Library & Public Repository — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/library/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Research Library & Public Repository — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/sources/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Source Register & Annotated Bibliography | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/transparency/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Research Transparency Center: Version History, Audited Claims & Impact Tracker | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/methodology/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Research Methodology: Structured Narrative Evidence Review & Audit Standards | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/about/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "About the Initiative & Mission | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/corrections/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Public Corrections & Integrity Register | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/take-action/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Take Action: Protect Dignity & Demand Accountability | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/action/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Take Action: Protect Dignity & Demand Accountability | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/models/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Model Hub Governance: Technical Inventory Completeness & Repository Accountability | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/press/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Press & Media Center — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "mobile_360",
+    "route": "/support/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Survivor Support & Official Reporting Hub — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [
+      "Error: <svg> attribute height: Expected length, \"auto\"."
+    ],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Consent Is Not Synthetic — Public Research & Advocacy Platform"
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/impact/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Human impact | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/evidence/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [
+      "Error: <svg> attribute height: Expected length, \"auto\"."
+    ],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Evidence Dashboard & Quantitative Data Explorer — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/incidents/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Documented Incidents & Legal Case Register | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/technology/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Technology and digital forensics | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/model-governance/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Model Publisher & Repository Governance | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/open-weights/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Hugging Face & Open-Weight Accountability — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/regulation/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Global Regulation & Legal Matrix | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/accountability/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Policy & Accountability Center — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/research/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Research Library & Public Repository — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/library/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Research Library & Public Repository — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/sources/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Source Register & Annotated Bibliography | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/transparency/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Research Transparency Center: Version History, Audited Claims & Impact Tracker | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/methodology/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Research Methodology: Structured Narrative Evidence Review & Audit Standards | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/about/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "About the Initiative & Mission | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/corrections/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Public Corrections & Integrity Register | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/take-action/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Take Action: Protect Dignity & Demand Accountability | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/action/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Take Action: Protect Dignity & Demand Accountability | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/models/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Model Hub Governance: Technical Inventory Completeness & Repository Accountability | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/press/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Press & Media Center — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "mobile_390",
+    "route": "/support/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Survivor Support & Official Reporting Hub — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [
+      "Error: <svg> attribute height: Expected length, \"auto\"."
+    ],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Consent Is Not Synthetic — Public Research & Advocacy Platform"
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/impact/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Human impact | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/evidence/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [
+      "Error: <svg> attribute height: Expected length, \"auto\"."
+    ],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Evidence Dashboard & Quantitative Data Explorer — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/incidents/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Documented Incidents & Legal Case Register | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/technology/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Technology and digital forensics | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/model-governance/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Model Publisher & Repository Governance | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/open-weights/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Hugging Face & Open-Weight Accountability — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/regulation/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Global Regulation & Legal Matrix | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/accountability/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Policy & Accountability Center — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/research/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Research Library & Public Repository — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/library/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Research Library & Public Repository — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/sources/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Source Register & Annotated Bibliography | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/transparency/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Research Transparency Center: Version History, Audited Claims & Impact Tracker | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/methodology/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Research Methodology: Structured Narrative Evidence Review & Audit Standards | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/about/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "About the Initiative & Mission | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/corrections/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Public Corrections & Integrity Register | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/take-action/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Take Action: Protect Dignity & Demand Accountability | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/action/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Take Action: Protect Dignity & Demand Accountability | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/models/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Model Hub Governance: Technical Inventory Completeness & Repository Accountability | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/press/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Press & Media Center — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_768",
+    "route": "/support/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Survivor Support & Official Reporting Hub — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [
+      "Error: <svg> attribute height: Expected length, \"auto\"."
+    ],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Consent Is Not Synthetic — Public Research & Advocacy Platform"
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/impact/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Human impact | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/evidence/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [
+      "Error: <svg> attribute height: Expected length, \"auto\"."
+    ],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Evidence Dashboard & Quantitative Data Explorer — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/incidents/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Documented Incidents & Legal Case Register | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/technology/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Technology and digital forensics | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/model-governance/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Model Publisher & Repository Governance | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/open-weights/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Hugging Face & Open-Weight Accountability — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/regulation/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Global Regulation & Legal Matrix | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/accountability/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Policy & Accountability Center — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/research/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Research Library & Public Repository — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/library/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Research Library & Public Repository — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/sources/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Source Register & Annotated Bibliography | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/transparency/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Research Transparency Center: Version History, Audited Claims & Impact Tracker | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/methodology/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Research Methodology: Structured Narrative Evidence Review & Audit Standards | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/about/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "About the Initiative & Mission | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/corrections/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Public Corrections & Integrity Register | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/take-action/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Take Action: Protect Dignity & Demand Accountability | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/action/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Take Action: Protect Dignity & Demand Accountability | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/models/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Model Hub Governance: Technical Inventory Completeness & Repository Accountability | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/press/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Press & Media Center — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "tablet_1024",
+    "route": "/support/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Survivor Support & Official Reporting Hub — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [
+      "Error: <svg> attribute height: Expected length, \"auto\"."
+    ],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Consent Is Not Synthetic — Public Research & Advocacy Platform"
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/impact/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Human impact | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/evidence/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [
+      "Error: <svg> attribute height: Expected length, \"auto\"."
+    ],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Evidence Dashboard & Quantitative Data Explorer — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/incidents/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Documented Incidents & Legal Case Register | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/technology/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Technology and digital forensics | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/model-governance/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Model Publisher & Repository Governance | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/open-weights/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Hugging Face & Open-Weight Accountability — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/regulation/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Global Regulation & Legal Matrix | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/accountability/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Policy & Accountability Center — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/research/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Research Library & Public Repository — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/library/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Research Library & Public Repository — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/sources/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Source Register & Annotated Bibliography | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/transparency/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Research Transparency Center: Version History, Audited Claims & Impact Tracker | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/methodology/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Research Methodology: Structured Narrative Evidence Review & Audit Standards | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/about/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "About the Initiative & Mission | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/corrections/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Public Corrections & Integrity Register | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/take-action/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Take Action: Protect Dignity & Demand Accountability | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/action/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Take Action: Protect Dignity & Demand Accountability | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/models/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Model Hub Governance: Technical Inventory Completeness & Repository Accountability | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/press/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Press & Media Center — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1440",
+    "route": "/support/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Survivor Support & Official Reporting Hub — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [
+      "Error: <svg> attribute height: Expected length, \"auto\"."
+    ],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Consent Is Not Synthetic — Public Research & Advocacy Platform"
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/impact/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Human impact | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/evidence/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [
+      "Error: <svg> attribute height: Expected length, \"auto\"."
+    ],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Evidence Dashboard & Quantitative Data Explorer — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/incidents/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Documented Incidents & Legal Case Register | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/technology/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Technology and digital forensics | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/model-governance/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Model Publisher & Repository Governance | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/open-weights/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Hugging Face & Open-Weight Accountability — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/regulation/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Global Regulation & Legal Matrix | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/accountability/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Policy & Accountability Center — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/research/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Research Library & Public Repository — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/library/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Research Library & Public Repository — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/sources/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Source Register & Annotated Bibliography | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/transparency/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Research Transparency Center: Version History, Audited Claims & Impact Tracker | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/methodology/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Research Methodology: Structured Narrative Evidence Review & Audit Standards | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/about/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "About the Initiative & Mission | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/corrections/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Public Corrections & Integrity Register | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/take-action/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Take Action: Protect Dignity & Demand Accountability | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/action/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Take Action: Protect Dignity & Demand Accountability | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/models/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Model Hub Governance: Technical Inventory Completeness & Repository Accountability | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/press/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Press & Media Center — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  },
+  {
+    "viewport": "desktop_1920",
+    "route": "/support/",
+    "status": 200,
+    "pass": true,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "title": "Survivor Support & Official Reporting Hub — Consent Is Not Synthetic | Consent Is Not Synthetic"
+  }
+]

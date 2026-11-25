@@ -1,0 +1,37 @@
+[
+  {
+    "id": "IMP-01",
+    "target": "MeitY (India)",
+    "deliverable": "01_MeitY_India_Submission.md",
+    "status": "Proposed",
+    "notes": "Drafted; not submitted pending owner sign-off."
+  },
+  {
+    "id": "IMP-02",
+    "target": "NCPCR (India)",
+    "deliverable": "02_NCPCR_Child_Protection_Submission.md",
+    "status": "Proposed",
+    "notes": "Drafted; not submitted pending owner sign-off."
+  },
+  {
+    "id": "IMP-03",
+    "target": "NCW (India)",
+    "deliverable": "03_NCW_Women_Dignity_Submission.md",
+    "status": "Proposed",
+    "notes": "Drafted; not submitted pending owner sign-off."
+  },
+  {
+    "id": "IMP-04",
+    "target": "Hugging Face Trust & Safety",
+    "deliverable": "04_Platform_Trust_and_Safety_Brief.md",
+    "status": "Proposed",
+    "notes": "Drafted; not submitted pending owner sign-off."
+  },
+  {
+    "id": "IMP-05",
+    "target": "Child Protection NGOs",
+    "deliverable": "05_Child_Protection_NGO_Protocol.md",
+    "status": "Proposed",
+    "notes": "Drafted; not submitted pending owner sign-off."
+  }
+]

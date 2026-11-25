@@ -1,0 +1,30 @@
+{
+  "name": "consent-is-not-synthetic",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && node postbuild.cjs",
+    "serve": "npx serve out",
+    "typecheck": "tsc --noEmit",
+    "preview:offline": "node scripts/export-offline.cjs"
+  },
+  "dependencies": {
+    "next": "^16.0.10",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.10",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "playwright": "^1.65.1",
+    "postcss": "^8.5.0",
+    "tailwindcss": "^4.1.10",
+    "typescript": "^5.9.3"
+  }
+}

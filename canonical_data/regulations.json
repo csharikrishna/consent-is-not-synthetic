@@ -1,0 +1,167 @@
+[
+  {
+    "id": "india",
+    "country": "India",
+    "flag": "IN",
+    "statute": "IT Act 2000, IT Rules 2021 (2026 Amendments), BNS, POCSO Act, DPDP Act",
+    "status": "In force (2026 Rules amendments active)",
+    "effectiveDate": "2021 / 2026 IT Rules Amendments",
+    "timeline": "2 hours (qualifying intimate-image complaints); 3 hours (qualifying court/government orders)",
+    "scope": "Distinct statutory triggers under IT Rules 2021/2026, BNS criminal provisions, POCSO child protection, and DPDP personal data duties.",
+    "obligations": [
+      "2-hour window applies to qualifying intimate-image complaints under the relevant IT Rules provision (not a universal deadline for all online content).",
+      "3-hour window applies to qualifying court or authorized government orders under the relevant provision.",
+      "Distinguish current intermediary law from proposed upstream model-distribution regulation; not every model-hosting repository is automatically subject to every intermediary obligation."
+    ],
+    "penalties": "Loss of Section 79 safe harbour; BNS/POCSO criminal liability; DPDP financial penalties.",
+    "sources": [
+      64,
+      74
+    ],
+    "gaps": "No dedicated upstream statutory pre-release safety assessment mandate for open-weight model publishers."
+  },
+  {
+    "id": "us",
+    "country": "United States",
+    "flag": "US",
+    "statute": "TAKE IT DOWN Act (Federal) & State NCII Statutes",
+    "status": "In force",
+    "effectiveDate": "Enacted 19 May 2025; Covered-platform compliance 19 May 2026",
+    "timeline": "Within 48 hours of a qualifying valid request",
+    "scope": "Federal covered-platform removal obligations (including known identical copies, subject to statutory requirements) enforced by the FTC, distinct from criminal provisions and state laws.",
+    "obligations": [
+      "Covered platforms must remove qualifying non-consensual intimate imagery and known identical copies within 48 hours of a valid request.",
+      "Maintain accessible notice-and-removal processes subject to FTC enforcement.",
+      "Distinct from federal criminal prohibitions and state-level civil/criminal NCII statutes."
+    ],
+    "penalties": "FTC enforcement actions and civil penalties for covered-platform non-compliance; separate criminal penalties under applicable federal/state statutes.",
+    "sources": [
+      40,
+      72
+    ],
+    "gaps": "Does not directly regulate offline local execution of downloaded open-weight models."
+  },
+  {
+    "id": "uk",
+    "country": "United Kingdom",
+    "flag": "UK",
+    "statute": "Online Safety Act 2023 & Crime and Policing Act 2026",
+    "status": "Online Safety Act active; Crime & Policing Act 2026 (commencement-dependent)",
+    "effectiveDate": "OSA active; CPA 2026 provisions subject to commencement",
+    "timeline": "Expeditious takedown & Ofcom statutory enforcement notices",
+    "scope": "Crime and Policing Act 2026 addresses specified child sexual abuse image generators and purported intimate-image generators; uncommenced provisions are not yet enforceable.",
+    "obligations": [
+      "Platforms in scope of the Online Safety Act must assess and mitigate illegal content risks under Ofcom codes and guidance.",
+      "Crime and Policing Act 2026 generator offences apply only upon statutory commencement of the relevant provisions."
+    ],
+    "penalties": "Ofcom fines up to 10% of qualifying worldwide revenue under OSA; criminal penalties once CPA 2026 provisions commence.",
+    "sources": [
+      41,
+      42,
+      73,
+      75
+    ],
+    "gaps": "Uncommenced statutory provisions cannot yet be enforced; cross-border open-weight mirror enforcement remains challenging."
+  },
+  {
+    "id": "eu",
+    "country": "European Union",
+    "flag": "EU",
+    "statute": "Regulation (EU) 2026/1744, AI Act (2024/1689 Art. 50) & Digital Services Act",
+    "status": "Enacted (Reg. 2026/1744 prohibitions applicable 2 Dec 2026)",
+    "effectiveDate": "Adopted 8 July 2026; Published 24 July 2026; Applicable 2 Dec 2026",
+    "timeline": "Expeditious notice-and-action under DSA; AI prohibitions from 2 Dec 2026",
+    "scope": "Regulation (EU) 2026/1744 (Art. 1(7), printed p. 18) addresses specified AI systems generating/manipulating non-consensual intimate material and CSAM. As of 25 Nov 2026 cutoff, enacted but not yet applicable. Not a universal ban on open-weight AI models.",
+    "obligations": [
+      "Prohibitions on specified abusive AI systems take effect 2 December 2026, subject to defined conditions, safeguards, and exceptions.",
+      "AI Act Art. 50 transparency and machine-readable marking duties (applicable 2 August 2026).",
+      "DSA systemic risk mitigation duties for Very Large Online Platforms."
+    ],
+    "penalties": "Administrative fines under AI Act / Regulation (EU) 2026/1744 and DSA enforcement frameworks.",
+    "sources": [
+      38,
+      39
+    ],
+    "gaps": "Watermarking/provenance signals can be stripped; prohibitions are not yet applicable as of 25 Nov 2026 cutoff."
+  },
+  {
+    "id": "australia",
+    "country": "Australia",
+    "flag": "AU",
+    "statute": "Online Safety Act 2021, Industry Codes/Standards & eSafety Enforcement",
+    "status": "Active enforcement",
+    "effectiveDate": "Online Safety Act 2021 (ongoing 2025-2026 enforcement)",
+    "timeline": "24 hours from formal eSafety removal notice",
+    "scope": "Image-based abuse scheme covering digitally altered or synthetic intimate depictions, plus eSafety notices to platforms and model-hosting repositories.",
+    "obligations": [
+      "Comply with formal eSafety removal notices within 24 hours.",
+      "Adhere to registered Online Safety industry codes and standards.",
+      "Documented regulator outcomes: 8 services withdrew Australian access or introduced compliance measures; Hugging Face updated misuse rules following eSafety engagement."
+    ],
+    "penalties": "Federal Court civil penalties (e.g., AUD 343,500 civil penalty order in 2025 case); service blocking directions.",
+    "sources": [
+      43,
+      69,
+      70,
+      71
+    ],
+    "gaps": "Service access restrictions do not establish measured population-level reductions in victimization."
+  },
+  {
+    "id": "canada",
+    "country": "Canada",
+    "flag": "CA",
+    "statute": "Bill C-16 (Protecting Victims Act)",
+    "status": "Royal Assent 18 June 2026 (commencement pending confirmation)",
+    "effectiveDate": "Royal Assent 18 June 2026; commencement details pending verification",
+    "timeline": "Criminal justice proceedings (commencement-dependent)",
+    "scope": "Addresses non-consensual sexual deepfakes; exact commencement dates and operative statutory provisions require verification against authoritative Canadian legal records before making enforceability claims.",
+    "obligations": [
+      "Statutory amendments addressing non-consensual synthetic sexual depictions (subject to confirmed commencement).",
+      "Intermediary court-order compliance under applicable criminal procedure."
+    ],
+    "penalties": "Criminal penalties as prescribed upon commencement.",
+    "sources": [
+      44
+    ],
+    "gaps": "Commencement status and full operative text require local primary verification."
+  },
+  {
+    "id": "japan",
+    "country": "Japan",
+    "flag": "JP",
+    "statute": "Penal Code (Defamation Art. 230, Insult Art. 231) & Provider Liability Act",
+    "status": "Case-by-case statutory application",
+    "effectiveDate": "Existing Penal Code & civil remedies (reaffirmed 2025)",
+    "timeline": "Notice-and-takedown under Provider Liability Limitation Act",
+    "scope": "Previously established findings note possible criminal defamation or insult depending on case facts, alongside civil privacy/portrait rights.",
+    "obligations": [
+      "Voluntary platform moderation upon valid infringement notice.",
+      "Sender identification disclosure upon court order."
+    ],
+    "penalties": "Criminal defamation/insult penalties where statutory elements are met; civil tort liability.",
+    "sources": [
+      45
+    ],
+    "gaps": "No standalone deepfake-specific statutory offence established in retained baseline."
+  },
+  {
+    "id": "south_korea",
+    "country": "South Korea",
+    "flag": "KR",
+    "statute": "Act on Special Cases Concerning Punishment of Sexual Crimes (Art. 14-2)",
+    "status": "Active enforcement",
+    "effectiveDate": "Active (Article 14-2)",
+    "timeline": "Expedited KCSC access-blocking deliberation",
+    "scope": "English statutory text addresses non-consensual editing or synthesis of a person's face, body, or voice into sexual depictions.",
+    "obligations": [
+      "Prohibits non-consensual sexual synthesis and distribution.",
+      "Telecommunications operators must execute blocking/filtering orders."
+    ],
+    "penalties": "Statutory criminal imprisonment and fines under Art. 14-2.",
+    "sources": [
+      46
+    ],
+    "gaps": "Cross-border enforcement against offshore encrypted channels remains difficult."
+  }
+]

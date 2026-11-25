@@ -1,0 +1,32 @@
+{
+  "total_sources": 76,
+  "referenced_count": 54,
+  "missing_sources": [],
+  "incomplete_sources": [],
+  "orphan_source_ids": [
+    2,
+    8,
+    14,
+    15,
+    17,
+    26,
+    27,
+    28,
+    29,
+    30,
+    36,
+    42,
+    47,
+    49,
+    50,
+    51,
+    52,
+    61,
+    62,
+    65,
+    73,
+    76
+  ],
+  "interactions_js_source_count": 76,
+  "sources_missing_from_interactions_js": []
+}

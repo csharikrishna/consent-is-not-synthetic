@@ -1,0 +1,72 @@
+[
+  {
+    "id": "SUP-01",
+    "name": "Indian National Cyber Crime Reporting Portal",
+    "url": "https://cybercrime.gov.in/",
+    "jurisdiction": "India",
+    "category": "General cybercrime & NCII reporting"
+  },
+  {
+    "id": "SUP-02",
+    "name": "India Emergency Response (112)",
+    "url": "",
+    "jurisdiction": "India",
+    "category": "Immediate danger and emergencies"
+  },
+  {
+    "id": "SUP-03",
+    "name": "India Child Helpline (1098)",
+    "url": "",
+    "jurisdiction": "India",
+    "category": "Child protection"
+  },
+  {
+    "id": "SUP-04",
+    "name": "India Women Helpline (181, subject to availability)",
+    "url": "",
+    "jurisdiction": "India",
+    "category": "Women distress support"
+  },
+  {
+    "id": "SUP-05",
+    "name": "India Financial Cyber Fraud Helpline (1930)",
+    "url": "",
+    "jurisdiction": "India",
+    "category": "Financial cyber fraud ONLY"
+  },
+  {
+    "id": "SUP-06",
+    "name": "NCMEC CyberTipline",
+    "url": "https://report.cybertip.org/",
+    "jurisdiction": "Global / US",
+    "category": "Child protection"
+  },
+  {
+    "id": "SUP-07",
+    "name": "Take It Down (NCMEC)",
+    "url": "https://takeitdown.ncmec.org/",
+    "jurisdiction": "Global",
+    "category": "Intimate-image removal (under 18 when imagery created)"
+  },
+  {
+    "id": "SUP-08",
+    "name": "StopNCII.org",
+    "url": "https://stopncii.org/",
+    "jurisdiction": "Global",
+    "category": "Intimate-image removal (eligible adults)"
+  },
+  {
+    "id": "SUP-09",
+    "name": "Internet Watch Foundation (IWF)",
+    "url": "https://www.iwf.org.uk/",
+    "jurisdiction": "Global / UK",
+    "category": "Child protection"
+  },
+  {
+    "id": "SUP-10",
+    "name": "Australian eSafety Commissioner",
+    "url": "https://www.esafety.gov.au/",
+    "jurisdiction": "Australia",
+    "category": "Victim reporting and removal assistance"
+  }
+]
