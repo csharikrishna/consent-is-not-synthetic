@@ -1,6 +1,6 @@
-import type {MetadataRoute} from 'next';
-import {origin} from '../lib/seo';
-import {nav} from '../lib/content';
+import type { MetadataRoute } from 'next';
+import { siteUrl } from '../lib/seo';
+import { nav } from '../lib/content';
 
 export const dynamic = 'force-static';
 
@@ -12,13 +12,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/library/',
     '/action/',
     '/press/',
-    '/support/'
+    '/support/',
   ]));
 
-  return origin ? allPaths.map((path) => ({
-    url: origin + path,
-    lastModified: '2026-11-25',
-    changeFrequency: 'monthly',
-    priority: path === '/' ? 1 : 0.8
-  })) : [];
+  return siteUrl
+    ? allPaths.map((path) => ({
+        url: `${siteUrl}${path}`,
+        changeFrequency: 'monthly',
+        priority: path === '/' ? 1 : 0.8,
+      }))
+    : [];
 }

@@ -1,4 +1,5 @@
 import {Heading, Section, Note, Stat, Source, ButtonLink} from '../../components/ui';
+import {claims, external_developments, initiative_impact} from '../../lib/content';
 import {pageMeta} from '../../lib/seo';
 import Link from 'next/link';
 
@@ -63,124 +64,6 @@ const versionHistory = [
   }
 ];
 
-const auditedClaims = [
-  {
-    id: 'CLM-001',
-    metric: 'UNICEF Adolescent Deepfake Victimization',
-    value: '1.2 million+ children affected',
-    denominator: 'Population projection from 11 surveyed national cohorts (ages 12–17)',
-    source: 'UNICEF Innocenti (2024) Digital Harms Survey, Section 3.2',
-    status: 'Verified with Caveats',
-    caveat: 'Self-reported survey projection; subject to recall bias; bounds detailed in report.'
-  },
-  {
-    id: 'CLM-002',
-    metric: 'UNICEF Gender Exposure Disparity',
-    value: '41% female vs 29% male',
-    denominator: 'Adolescent respondents reporting exposure to synthetic intimate imagery',
-    source: 'UNICEF Innocenti (2024), Section 3.4; p. 28',
-    status: 'Verified',
-    caveat: 'Measures observed exposure prevalence among active online respondents.'
-  },
-  {
-    id: 'CLM-003',
-    metric: 'IWF Assessed AI CSAM Media Items (2025)',
-    value: '8,029 media files',
-    denominator: 'Total realistic AI-generated CSAM media objects assessed by analysts in 2025',
-    source: 'Internet Watch Foundation (2025/2026 Data & Insights Report)',
-    status: 'Verified',
-    caveat: 'Measures verified digital media objects/URLs; does not equal unique child victims.'
-  },
-  {
-    id: 'CLM-004',
-    metric: 'IWF Operational Incident Surge',
-    value: '491 reports (2025) vs 193 (2024)',
-    denominator: 'Analyst-investigated incident dockets containing realistic AI CSAM',
-    source: 'Internet Watch Foundation (2025/2026 Data & Insights Report)',
-    status: 'Verified',
-    caveat: 'Reflects hotline reporting propensity, discovered URLs, and automated scanning.'
-  },
-  {
-    id: 'IWF-02',
-    metric: 'IWF Assessed Photorealistic Videos (2024–2025)',
-    value: '13 (2024) to 3,443 (2025) (~264.85x)',
-    denominator: 'Assessed photorealistic AI-generated CSAM videos',
-    source: 'IWF 2025 Annual Data & Insights Report (detailed video insights)',
-    status: 'Primary evidence supported',
-    caveat: 'Earlier announcement reported 3,440; detailed report 3,443 preferred. Two annual points do not establish an exponential trend.'
-  },
-  {
-    id: 'ISD-01',
-    metric: 'ISD Web Traffic to Selected Services',
-    value: '20.7 million monthly visits',
-    denominator: '31 selected abuse-enabling services (May 2025)',
-    source: 'Institute for Strategic Dialogue (ISD 2025)',
-    status: 'Primary evidence supported',
-    caveat: 'Website visits do not equal unique users, offenders, victims, purchases, or generated images.'
-  },
-  {
-    id: 'OFCOM-01',
-    metric: 'Ofcom Risk-Assessment Governance Records',
-    value: '66.35% (69 of 104 records)',
-    denominator: '104 reviewed online-safety risk-assessment records',
-    source: 'Ofcom Year One Report (2025), printed page 18',
-    status: 'Primary evidence supported',
-    caveat: 'Concerns broader online-safety governance; not evidence that 66.35% of AI model developers lack accountability.'
-  },
-  {
-    id: 'INV-53',
-    metric: 'Preliminary Technical Inventory',
-    value: '53 cataloged records',
-    denominator: 'Phase 1 preliminary technical inventory (M001–M053)',
-    source: 'Phase_1_Image_Model_Inventory.xlsx; model_metadata_completeness.csv',
-    status: 'Primary evidence supported',
-    caveat: 'Contains metadata collection gaps describing investigation completeness; requires publisher-level verification.'
-  }
-];
-
-const impactMilestones = [
-  {
-    date: 'July 2024',
-    jurisdiction: 'Australia',
-    body: 'Australian eSafety Commissioner',
-    action: 'Intervention Against Commercial Deepfake Services',
-    detail: 'Issued formal statutory notices to commercial deepfake platforms utilizing downloadable hub weights; 8 targeted services modified access or compliance measures under civil penalty threat.',
-    citationId: 69
-  },
-  {
-    date: 'August 2024',
-    jurisdiction: 'South Korea',
-    body: 'National Police Agency & KCSC',
-    action: 'Emergency Taskforce on Telegram Deepfake Networks',
-    detail: 'Launched nationwide criminal probe into synthetic sexual abuse rings operating across 200+ school networks, resulting in 500+ arrests and expedited platform blocking orders.',
-    citationId: 44
-  },
-  {
-    date: 'Late 2024',
-    jurisdiction: 'Global / US',
-    body: 'Hugging Face Trust & Safety',
-    action: 'Model Hub Terms of Service Update',
-    detail: 'Updated platform content policies to explicitly prohibit repositories, fine-tunes, or adapters purpose-built for non-consensual sexual depiction or CSAM generation.',
-    citationId: 9
-  },
-  {
-    date: 'Early 2025',
-    jurisdiction: 'United Kingdom',
-    body: 'Ofcom & Ministry of Justice',
-    action: 'Online Safety Act Priority Offenses Enforcement',
-    detail: 'Brought intimate image abuse offenses into force as statutory priority illegal content, requiring commercial hosting platforms to proactively prevent dissemination.',
-    citationId: 41
-  },
-  {
-    date: 'Mid 2026',
-    jurisdiction: 'India',
-    body: 'Ministry of Electronics and Information Technology (MeitY)',
-    action: 'Amended Intermediary Guidelines (2-Hour Takedown Mandate)',
-    detail: 'Enforced strict 2-hour takedown obligations under Rule 3(2)(b) for non-consensual intimate or morphed imagery, holding hosting intermediaries liable for non-compliance.',
-    citationId: 74
-  }
-];
-
 export default function TransparencyPage() {
   return (
     <>
@@ -240,21 +123,21 @@ export default function TransparencyPage() {
               </tr>
             </thead>
             <tbody>
-              {auditedClaims.map((c, i) => (
-                <tr key={i}>
+              {claims.map((c: any) => (
+                <tr key={c.id}>
                   <td><code>{c.id}</code></td>
-                  <td><strong>{c.metric}</strong></td>
+                  <td><strong>{c.exact_wording}</strong></td>
                   <td><span className="badge-neutral">{c.value}</span></td>
-                  <td className="micro">{c.denominator}</td>
+                  <td className="micro">{c.denominator} · {c.population_geography}</td>
                   <td className="micro">
-                    {c.source}
+                    {c.original_title} ({c.locator}) <Source id={c.source_id} />
                     <div style={{marginTop:'4px',fontStyle:'italic',color:'var(--muted)'}}>
-                      Note: {c.caveat}
+                      Note: {c.limitations}
                     </div>
                   </td>
                   <td>
-                    <span className={c.status.includes('Primary') || c.status === 'Verified' ? 'badge-primary' : 'badge-neutral'}>
-                      {c.status}
+                    <span className={c.verification_status.includes('Primary') ? 'badge-primary' : 'badge-neutral'}>
+                      {c.verification_status}
                     </span>
                   </td>
                 </tr>
@@ -270,29 +153,54 @@ export default function TransparencyPage() {
         </div>
       </Section>
 
-      {/* 3. IMPACT & ACCOUNTABILITY TRACKER */}
-      <Section title="3. Institutional Impact &amp; Accountability Tracker" id="impact-tracker">
+      {/* 3. EXTERNAL ECOSYSTEM DEVELOPMENTS VS. INITIATIVE OUTCOMES */}
+      <Section title="3. External Ecosystem Developments (Not Attributed to This Initiative)" id="impact-tracker">
         <p>
-          The objective of this initiative is enforceable developer accountability and statutory victim protection. This tracker logs verified regulatory, statutory, and platform policy developments:
+          These are documented external legislative, regulatory, and platform-policy developments recorded in primary sources. They are <strong>not</strong> achievements attributable to this initiative.
         </p>
 
         <div className="control-list" style={{marginTop:'24px'}}>
-          {impactMilestones.map((m, i) => (
-            <article key={i} className="panel">
+          {external_developments.map((m: any) => (
+            <article key={m.id} className="panel">
               <div style={{display:'flex',justifyContent:'space-between',alignItems:'flex-start',flexWrap:'wrap',gap:'8px'}}>
                 <div>
-                  <span className="tag">{m.jurisdiction}</span>
-                  <span className="tag" style={{marginLeft:'6px'}}>{m.body}</span>
-                  <h3 style={{marginTop:'8px'}}>{m.action}</h3>
+                  <span className="tag">{m.id} · {m.actor}</span>
+                  <span className="tag" style={{marginLeft:'6px'}}>{m.status}</span>
+                  <h3 style={{marginTop:'8px'}}>{m.development}</h3>
                 </div>
                 <span className="micro muted">{m.date}</span>
               </div>
-              <p style={{marginTop:'10px'}}>{m.detail}</p>
-              <div style={{marginTop:'10px'}}>
-                <Source id={m.citationId} />
-              </div>
             </article>
           ))}
+        </div>
+
+        <h3 style={{marginTop:'32px'}}>Initiative Activity &amp; Proposed Submissions</h3>
+        <p className="micro muted">
+          All institutional submissions remain in <strong>Proposed</strong> status pending owner authorization; none have been externally submitted.
+        </p>
+        <div className="table-scroll" style={{marginTop:'12px'}}>
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Target Institution</th>
+                <th>Deliverable</th>
+                <th>Status</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              {initiative_impact.map((item: any) => (
+                <tr key={item.id}>
+                  <td><code>{item.id}</code></td>
+                  <td><strong>{item.target}</strong></td>
+                  <td><code>{item.deliverable}</code></td>
+                  <td><span className="badge-neutral">{item.status}</span></td>
+                  <td className="micro">{item.notes}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </Section>
 

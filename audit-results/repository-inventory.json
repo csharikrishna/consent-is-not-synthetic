@@ -12,6 +12,7 @@
     "/methodology/",
     "/model-governance/",
     "/models/",
+    "/open-weights/",
     "/press/",
     "/regulation/",
     "/research/",
@@ -21,13 +22,20 @@
     "/technology/",
     "/transparency/"
   ],
-  "route_count": 20,
+  "route_count": 21,
   "app_files": [
     "web/app/about/page.tsx",
     "web/app/accountability/page.tsx",
     "web/app/action/page.tsx",
     "web/app/corrections/page.tsx",
     "web/app/evidence/page.tsx",
+    "web/app/fonts/inter-latin-400-normal.woff2",
+    "web/app/fonts/inter-latin-600-normal.woff2",
+    "web/app/fonts/inter-latin-700-normal.woff2",
+    "web/app/fonts/source-serif-4-latin-400-italic.woff2",
+    "web/app/fonts/source-serif-4-latin-400-normal.woff2",
+    "web/app/fonts/source-serif-4-latin-600-normal.woff2",
+    "web/app/fonts/source-serif-4-latin-700-normal.woff2",
     "web/app/globals.css",
     "web/app/impact/page.tsx",
     "web/app/incidents/page.tsx",
@@ -37,6 +45,7 @@
     "web/app/model-governance/page.tsx",
     "web/app/models/page.tsx",
     "web/app/not-found.tsx",
+    "web/app/open-weights/page.tsx",
     "web/app/page.tsx",
     "web/app/press/page.tsx",
     "web/app/regulation/page.tsx",
@@ -52,6 +61,7 @@
   "component_files": [
     "web/components/Explorer.tsx",
     "web/components/ModelAccessGate.tsx",
+    "web/components/charts.tsx",
     "web/components/ui.tsx"
   ],
   "lib_files": [
@@ -77,6 +87,7 @@
     "web/public/downloads/india-policy-brief.pdf",
     "web/public/downloads/media-backgrounder.md",
     "web/public/downloads/model-metadata-completeness.csv",
+    "web/public/downloads/platform-trust-safety-brief.md",
     "web/public/downloads/public-data-manifest.json",
     "web/public/downloads/public-evidence-brief.pdf",
     "web/public/downloads/public-source-register.csv",
@@ -103,6 +114,6 @@
     "canonical_data/sources.json",
     "canonical_data/support-resources.json"
   ],
-  "out_html_count": 23,
-  "out_js_count": 13
+  "out_html_count": 24,
+  "out_js_count": 14
 }

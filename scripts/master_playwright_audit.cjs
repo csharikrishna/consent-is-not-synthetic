@@ -75,7 +75,7 @@ const ROUTES = [
         };
       });
 
-      const pass = status === 200 && dom.title.length > 0 && dom.h1Count === 1 && !dom.overflow && dom.imgsNoAlt === 0 && dom.tablesUnwrapped === 0 && pageErrors.length === 0 && failedRequests.length === 0;
+      const pass = status === 200 && dom.title.length > 0 && dom.h1Count === 1 && !dom.overflow && dom.imgsNoAlt === 0 && dom.tablesUnwrapped === 0 && consoleErrors.length === 0 && pageErrors.length === 0 && failedRequests.length === 0;
 
       routeResults.push({ viewport: vp.name, route, status, pass, consoleErrors, pageErrors, failedRequests, title: dom.title });
       responsiveResults.push({ viewport: vp.name, route, overflow: dom.overflow, scrollWidth: dom.scrollWidth, innerWidth: dom.innerWidth, tablesUnwrapped: dom.tablesUnwrapped });
@@ -155,4 +155,15 @@ const ROUTES = [
 
   console.log(`Playwright Audit: ${passed}/${total} route-viewport checks passed.`);
   console.log('Functional Matrix:', JSON.stringify(functionalMatrix));
+  if (
+    passed !== total ||
+    functionalMatrix.headerDropdowns.openAfterHover !== 1 ||
+    functionalMatrix.headerDropdowns.openAfterEscape !== 0 ||
+    !functionalMatrix.citationModal.opened ||
+    !functionalMatrix.citationModal.closedOnEscape ||
+    functionalMatrix.modelsGateAndTop50.totalRows !== 50 ||
+    !functionalMatrix.mobileDrawer.opened
+  ) {
+    process.exit(1);
+  }
 })();

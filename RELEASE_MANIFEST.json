@@ -5,29 +5,29 @@
   "archives": [
     {
       "package_name": "CINS_WEBSITE_SOURCE.zip",
-      "sha256": "a4b55f84a074699b21f52517bfd51c0ff63f637d8f4419c4d212982fddd963d2",
-      "size_bytes": 2227672,
-      "size_mb": 2.12,
+      "sha256": "11054eca5ca2242b634863465ebb7fbe947d528185bb5553c7cd4a434f00b1dc",
+      "size_bytes": 2232625,
+      "size_mb": 2.13,
       "file_count": 79
     },
     {
       "package_name": "CINS_PUBLIC_PRODUCTION_RELEASE.zip",
-      "sha256": "a8ee1df1ecfba06d3a831ac1304fa91f6fae29925f986db1863172a9a712a179",
-      "size_bytes": 3473884,
-      "size_mb": 3.31,
+      "sha256": "7b56c94047e7682ed4cd9173f1e535220179921ab635824e583dbfa2ef7e6b39",
+      "size_bytes": 3490616,
+      "size_mb": 3.33,
       "file_count": 211
     },
     {
       "package_name": "CINS_PRIVATE_RESEARCH_ARCHIVE.zip",
-      "sha256": "2efeb7aa41b2fa2794952781a9cb89daa50533d94ce336404b35789ec2ad9c08",
-      "size_bytes": 11253899,
+      "sha256": "ab518a13e5e556c99404e08d69601125afe1275c022a9979aef114676761b992",
+      "size_bytes": 11254403,
       "size_mb": 10.73,
       "file_count": 165
     },
     {
       "package_name": "CINS_ACADEMIC_PUBLICATION_PACKAGE.zip",
-      "sha256": "ee4b04aa25e08a4bce3ecf6643be3237a1fe71fc08d22d4fe64d591dcaafe701",
-      "size_bytes": 485921,
+      "sha256": "3d8b19eb13850c2849ab467bd877d3098b08178deb58c245e9a4ae32a58b0f79",
+      "size_bytes": 486065,
       "size_mb": 0.46,
       "file_count": 18
     },
@@ -47,9 +47,9 @@
     },
     {
       "package_name": "CINS_FINAL_MASTER_ARCHIVE.zip",
-      "sha256": "2bd882b24caa9c463d6de6cb55b7c3c78d79b2f8d48858b101aa60782b842da1",
-      "size_bytes": 19190588,
-      "size_mb": 18.3,
+      "sha256": "8fa295048dc795a38816fa092ce2b20e9957b059cb833b85b0b5238dbf164794",
+      "size_bytes": 19208863,
+      "size_mb": 18.32,
       "file_count": 497
     }
   ]

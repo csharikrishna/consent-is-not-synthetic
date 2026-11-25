@@ -42,13 +42,10 @@ export default function CorrectionsPage() {
         <CorrectionExplorer corrections={corrections} />
       </Section>
 
-      <Section title="Submit a Research Correction or Challenge">
+      <Section title="Correction Intake Status">
         <Note>
-          <strong>Peer Review &amp; Public Scrutiny:</strong> If you identify an erroneous citation, conflicting statistic, or outdated legal provision in any of our publications, please submit an evidence-backed inquiry for review.
+          <strong>Public Scrutiny &amp; Intake Notice:</strong> Public correction-submission intake is currently closed on this static release pending owner-authorized operational inbox deployment. All documented revisions, withdrawn claims, and source reconciliations remain permanently logged above.
         </Note>
-        <div className="text-link" style={{marginTop:'20px'}}>
-          <ButtonLink href="/take-action/">Submit an Evidence Correction</ButtonLink>
-        </div>
       </Section>
     </>
   );

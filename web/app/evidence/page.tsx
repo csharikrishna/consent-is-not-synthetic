@@ -190,10 +190,10 @@ export default function Evidence() {
               </p>
             </div>
             <div className="panel">
-              <span className="tag">Severe Psychological Morbidity</span>
-              <h3 style={{marginTop:'8px'}}>Fourfold Increase in Self-Harm Odds</h3>
+              <span className="tag">Broader TFSEA Context (21 Countries)</span>
+              <h3 style={{marginTop:'8px'}}>~20 Million Youth (Ages 12–17)</h3>
               <p className="micro">
-                UNICEF Innocenti study of 20 million youth in 21 countries established that children experiencing tech-facilitated sexual exploitation face roughly fourfold higher odds of self-harm and suicidal ideation <Source id={54}/>.
+                UNICEF Innocenti study (3 Sept 2026) estimated ~20 million children aged 12–17 across 21 countries experienced broader technology-facilitated sexual exploitation or abuse in one year (not exclusively AI-generated abuse) <Source id={54}/>.
               </p>
             </div>
           </div>
@@ -202,8 +202,8 @@ export default function Evidence() {
 
       {/* 3. QUANTITATIVE EVIDENCE REGISTER */}
       <Section
-        title="3. Quantitative Evidence Register (14 Curated Measures)"
-        description="Filter and search the complete register of 14 empirical measurements from the research review. Filter by unit of measurement or search by keywords. Every statistic includes its denominator, timeframe, and interpretation caveat."
+        title="3. Quantitative Evidence Register (14 Curated Indicators)"
+        description="Filter and search the complete register of 14 quantitative evidence indicators (spanning prevalence, operational volumes, enforcement, and governance context). Every statistic includes its denominator, timeframe, and interpretation caveat."
       >
         <MetricExplorer />
         <div style={{marginTop:'20px',display:'flex',gap:'12px',flexWrap:'wrap',alignItems:'center'}}>

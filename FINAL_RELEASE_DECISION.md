@@ -18,7 +18,7 @@
 | Support resources verified | **PASS** | Official portals only; India `1930` restricted to financial fraud notice; `1091` withheld; `112`, `1098`, `181` (subject to availability), `cybercrime.gov.in` verified. |
 | Sensitive public-data leakage prevented | **PASS** | `scripts/verify_build_isolation.py` confirmed 0 source maps, 0 Excel workbooks, and 0 `722` leaks in `web/out/`. |
 | Production build successful | **PASS** | `npm run typecheck` (0 errors) and `npm run build` (24/24 routes prerendered + `postbuild.cjs` RSC aliasing) succeeded. |
-| Essential browser tests successful | **PASS** | `scripts/run_browser_qa.cjs`: **108/108** tests passed across 6 viewports (360px–1920px), 0 JS errors, HTTP 200 on all tested routes, citation modal verified. |
+| Essential browser tests successful | **PASS** | `scripts/master_playwright_audit.cjs`: **126/126** checks passed across 21 routes × 6 viewports (`360px`–`1920px`), `0` console/JS/network errors, functional matrix verified. |
 | Accessibility reviewed | **PARTIAL** | Keyboard focus, Escape modal close, mobile drawer, `prefers-reduced-motion`, and 6 responsive viewports tested; full screen-reader & Lighthouse field audits not run in offline environment. |
 | SEO configuration reviewed | **PASS** | `sitemap.ts`, `robots.ts`, `seo.ts`, semantic headings, and metadata verified; `NEXT_PUBLIC_SITE_URL` remains safely gated until production domain is set. |
 | Downloads checked | **PASS** | `scripts/verify_build_isolation.py` confirmed 0 broken `/downloads/` or `/assets/` links in `web/out/`; `v4-journal.pdf` recompiled. |

@@ -54,7 +54,7 @@ export default function Methodology() {
             <span className="tag">Stream 1</span>
             <h3 style={{marginTop:'8px'}}>Adolescent &amp; Adult Victimological Surveys</h3>
             <p className="micro">
-              Captures self-reported prevalence, psychological distress, social isolation, and harassment experienced by victims of deepfakes and non-consensual intimate imagery (e.g., UNICEF 11-country adolescent study; CHI 2024 high school survey; CCRI studies).
+              Captures self-reported prevalence, psychological distress, social isolation, and harassment experienced by victims of deepfakes and non-consensual intimate imagery (e.g., UNICEF 11-country adolescent study; Umbach et al. CHI 2024 10-country adult survey of 16,145 respondents; CCRI studies).
             </p>
             <p className="micro muted" style={{marginTop:'8px'}}>
               <strong>Key Limitation:</strong> Subject to self-reporting biases and social stigma; reflects active online respondents rather than universal administrative censuses.

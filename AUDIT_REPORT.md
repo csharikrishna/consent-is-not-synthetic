@@ -6,7 +6,7 @@
 ---
 
 ## A. Executive Summary
-- **Overall Result:** **120 / 120** Playwright route-viewport checks passed across all **20 routes** and **6 viewports** (`360×640`, `390×844`, `768×1024`, `1024×768`, `1440×900`, `1920×1080`) with **0** console errors, **0** runtime page errors, **0** failed network requests, and **0** horizontal overflows.
+- **Overall Result:** **126 / 126** Playwright route-viewport checks passed across all **21 routes** and **6 viewports** (`360×640`, `390×844`, `768×1024`, `1024×768`, `1440×900`, `1920×1080`) with **0** console errors, **0** runtime page errors, **0** failed network requests, and **0** horizontal overflows.
 - **Initial Defects Found:** `2` (`1` P1, `1` P2).
 - **Resolved Defects:** `2` (`100%` of discovered defects fixed and re-verified).
 - **Remaining Unresolved Defects:** `0` P0/P1.
@@ -53,7 +53,7 @@ See `audit-results/download-audit.json` and `audit-results/asset-audit.json`.
 ## F. UI/UX & Accessibility
 See `audit-results/responsive-audit.json`, `audit-results/accessibility-audit.json`, and `audit-results/screenshots/`.
 - **Responsive:** `0` horizontal overflows (`scrollWidth <= innerWidth`), `0` unwrapped tables across all 120 checks.
-- **Accessibility:** `h1Count === 1` on all 20 routes (including gated `/models/`), `hasHeader`, `hasMain`, `hasFooter`, `hasSkipLink` all `true`, `imgsNoAlt === 0`, mobile menu button height `44px`, Escape-dismissible citation modal verified. Screen-reader assistive-tech manual testing remains `UNVERIFIED`.
+- **Accessibility:** Automated smoke checks passed (`h1Count === 1` on all 21 routes, `hasHeader`, `hasMain`, `hasFooter`, `hasSkipLink` all `true`, `imgsNoAlt === 0`, mobile menu button height `44px`, Escape-dismissible citation modal). Full WCAG/axe and manual screen-reader audits remain `UNVERIFIED`.
 
 ---
 

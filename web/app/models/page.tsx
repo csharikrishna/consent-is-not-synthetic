@@ -50,8 +50,8 @@ export default function ModelHubGovernancePage() {
         </div>
 
         <Note>
-          <strong>Institutional Safeguarding Notice:</strong>
-          In compliance with ethical research standards, child online safety guidelines, and statutory prohibitions (18 U.S.C. § 2252A; POCSO Act 2012), this platform does not publish direct repository links, file download mirrors, rank-ordered lists, or operational generation prompts. All data is reported in aggregate to inform platform governance, statutory oversight, and developer accountability.
+          <strong>Safeguarding &amp; Scope Notice:</strong>
+          In compliance with ethical research standards, child online safety guidelines, and statutory prohibitions (18 U.S.C. § 2252A; POCSO Act 2012), this platform does <strong>not</strong> host model weight files, download mirrors, abusive imagery, or operational generation prompts, and does not rank models by abusive capability. The 50-repository table in Section 7B records public Hugging Face search-listing metadata (<code>sort=likes</code>, 25 Nov 2026) strictly for governance, licensing, and documentation-completeness auditing.
         </Note>
       </Section>
 

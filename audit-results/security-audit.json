@@ -2,5 +2,8 @@
   "env_files_exposed": [],
   "xlsx_files_exposed": [],
   "source_maps_in_out": [],
-  "722_leaks_outside_corrections": []
+  "722_leaks_outside_corrections": [
+    "web\\out\\index.html",
+    "web\\out\\evidence\\index.html"
+  ]
 }

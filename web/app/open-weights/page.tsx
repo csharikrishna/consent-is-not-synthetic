@@ -37,7 +37,7 @@ export default function OpenWeightsPage() {
             <div className="stat-number">40%</div>
             <h3>LoRA Adapters in 50-Listing Snapshot</h3>
             <p>
-              20 of 50 reviewed Hugging Face <code>text-to-image</code> listings matching <code>nsfw</code> (25 Nov 2026) were lightweight LoRA adapters layered onto foundation backbones, alongside 23 full checkpoints.
+              20 of 50 reviewed Hugging Face <code>text-to-image</code> listings matching <code>nsfw</code> (25 Nov 2026) were classified as LoRA/parameter-efficient adapters in primary format metadata (with 3 additional listings carrying ambiguous or secondary LoRA tags), alongside 23 full checkpoints.
             </p>
             <div className="refs"><Source id={10} /><Source id={16} /></div>
           </article>

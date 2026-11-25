@@ -51,12 +51,12 @@ const IWF_SERIES: Record<string, IwfMetricSeries> = {
   videos: {
     id: 'videos',
     label: 'Photorealistic Criminal AI Videos',
-    unit: 'confirmed videos',
-    badge: 'Confirmed Content',
-    description: 'Confirmed photorealistic criminal AI videos evaluated by IWF technical analysts.',
-    years: [2023, 2024, 2025],
-    values: [13, 52, 3443],
-    growth: '+26,384% (2023 → 2025)',
+    unit: 'assessed videos',
+    badge: 'Detailed 2025 Report',
+    description: 'Assessed photorealistic criminal AI-generated videos evaluated by IWF analysts (not unique victims).',
+    years: [2024, 2025],
+    values: [13, 3443],
+    growth: '~264.85x (13 in 2024 to 3,443 in 2025; earlier announcement reported 3,440)',
     sources: [3, 5],
   },
   reports: {
@@ -64,22 +64,22 @@ const IWF_SERIES: Record<string, IwfMetricSeries> = {
     label: 'Operational Hotline Incident Reports',
     unit: 'reports assessed',
     badge: 'Incident Volume',
-    description: 'Hotline incident reports evaluated containing realistic AI-generated abuse material.',
+    description: 'Hotline incident reports evaluated containing realistic AI-generated CSAM (reports are not unique victims).',
     years: [2024, 2025],
     values: [193, 491],
-    growth: '+154% YoY Surge',
+    growth: '+154.4% (193 in 2024 to 491 in 2025)',
     sources: [1],
   },
   media: {
     id: 'media',
-    label: 'Total Assessed Criminal AI Media Items',
-    unit: 'media files',
+    label: '2025 Assessed AI CSAM Media Breakdown',
+    unit: 'assessed items (2025)',
     badge: 'Media Scale',
-    description: 'Total individual criminal synthetic media files assessed and actioned by analysts.',
-    years: [2024, 2025],
-    values: [2800, 8029],
-    growth: '+187% YoY Growth',
-    sources: [1],
+    description: '2025 combined assessed items: 4,586 still images + 3,443 videos = 8,029 (+14% on prior year comparable total).',
+    years: [2025],
+    values: [8029],
+    growth: '8,029 combined items in 2025 (+14% on previous year)',
+    sources: [1, 2],
   },
 };
 
@@ -130,8 +130,7 @@ export function IwfSurgeTrendChart() {
       <div className="chart-canvas-wrap" style={{ marginTop: '22px', position: 'relative' }}>
         <svg
           viewBox={`0 0 ${chartWidth} ${chartHeight + 48}`}
-          width="100%"
-          height="auto"
+          style={{ width: '100%', height: 'auto', display: 'block' }}
           role="img"
           aria-label={`${series.label} bar graph`}
           className="chart-svg"
@@ -282,42 +281,42 @@ const PIPELINE_STAGES: PipelineStage[] = [
   {
     step: '01',
     title: 'Upstream Foundation Labs',
-    actor: 'Stability AI, Black Forest Labs, Runway',
-    risk: 'Removal of Safety Filters',
-    details: 'Foundation models requiring $5M–$50M+ compute are released as open-weights. Safety guardrails (NSFW latent clip filters) are stripped out in open-weight form.',
-    vulnerability: 'Unrestricted model weights allow downstream developers to bypass platform-level prompts and inference filters completely.',
-    statutoryFix: 'Mandatory pre-release red teaming, provenance watermarking (SynthID/C2PA), and Know-Your-Customer (KYC) developer registration.',
+    actor: 'Foundation model developers & labs',
+    risk: 'Downstream Weight Permanence',
+    details: 'Documented fact: high-capacity base architectures (e.g., SDXL, FLUX, Qwen-Image) are released as downloadable weights. Policy hypothesis: once weights are distributed publicly, upstream providers cannot remotely enforce runtime prompt filters.',
+    vulnerability: 'Downstream users can run or modify open weights offline without server-side API moderation.',
+    statutoryFix: 'Proportionate pre-release safety evaluations, documented provenance disclosures, and release holds where critical unmitigated risks exist.',
     sources: [11, 12, 13],
   },
   {
     step: '02',
     title: 'Open Model Repositories',
-    actor: 'Hugging Face, Civitai, GitHub',
-    risk: 'Unfiltered Weight Distribution',
-    details: 'Model hubs host hundreds of unverified fine-tunes and LoRA adapters. 66% lack upload sensitivity filters, exposing unauthenticated visitors.',
-    vulnerability: 'Lack of automated hash screening against known CSAM/NCII seed models; anonymous publisher uploads without identity verification.',
-    statutoryFix: 'Statutory duty of care, proactive perceptual hash filtering, mandatory Not-For-All-Audiences gating, and 24h take-down protocols.',
-    sources: [9, 10, 69],
+    actor: 'Model-hosting platforms & hubs',
+    risk: 'Metadata & Moderation Gaps',
+    details: 'Documented fact: in a 50-listing Hugging Face snapshot (25 Nov 2026), 13/50 listings displayed no license or Unknown, and 12/50 displayed OpenRail terms. Australian eSafety engagement led Hugging Face to update its misuse rules.',
+    vulnerability: 'Honor-system license tags do not prevent downstream misuse; preliminary 53-record inventory showed collection gaps in safety and provenance fields.',
+    statutoryFix: 'Enforceable repository terms, publisher verification, abuse-reporting intake, and cooperation with child-protection institutions.',
+    sources: [9, 10, 69, 70],
   },
   {
     step: '03',
-    title: 'Parameter-Efficient LoRAs',
-    actor: 'Anonymous Community Fine-Tuners',
-    risk: '<$20 Consumer Hardware Tuning',
-    details: 'Community developers train Low-Rank Adaptation (LoRA) files (<700 MB) on scraped unconsented personal photos in under 30 minutes for pennies in cloud compute.',
-    vulnerability: 'Democratizes targeted photorealistic exploitation: anyone can inject specific victim faces onto sexually explicit bodies without training a base model.',
-    statutoryFix: 'Prohibition of purpose-built undressing adapters, criminalization of unauthorized likeness synthesis, and hosting distributor liability.',
-    sources: [20, 34, 35],
+    title: 'Parameter-Efficient Adapters',
+    actor: 'Third-party adapter publishers',
+    risk: 'Lowered Fine-Tuning Barriers',
+    details: 'Documented fact: Low-Rank Adaptation (LoRA) and DreamBooth enable subject-specific adaptation with significantly fewer trainable parameters than base pretraining. 20 of 50 listings in the HF snapshot were LoRA adapters.',
+    vulnerability: 'Compact adapters can be layered onto general-purpose backbones to specialize outputs without retraining a base model.',
+    statutoryFix: 'Targeted prohibition of purpose-built exploitation adapters and enforceable hosting-hub removal duties.',
+    sources: [16, 17, 18],
   },
   {
     step: '04',
-    title: 'Commercial Wrappers & Exploitation',
-    actor: 'Telegram Bot Operators, Web Undressers, Bad Actors',
-    risk: 'Real Victims & Severe Trauma',
-    details: 'Operators wrap models in 1-click web interfaces, collecting $20.7M monthly visits. Fabricated nudes are weaponized for peer harassment, extortion, and humiliation.',
-    vulnerability: 'Asymmetric distribution speed: synthetic nudes spread in minutes across encrypted apps, while manual takedowns take weeks or fail completely.',
-    statutoryFix: 'Zero-tolerance criminalization of non-consensual deepfakes (TAKE IT DOWN Act / BNS 79), civil restitution, and emergency injunctions.',
-    sources: [53, 54, 57, 66],
+    title: 'Commercial Wrappers & Distribution',
+    actor: 'Commercial undressing sites & bot operators',
+    risk: 'Real Victims & Severe Harm',
+    details: 'Documented fact: ISD estimated 20.7 million monthly website visits across 31 selected abuse-enabling services in May 2025 (visits are not unique users, victims, or revenue).',
+    vulnerability: 'Hosted wrappers and messaging bots scale access to non-technical users faster than manual takedowns.',
+    statutoryFix: 'Platform 24–48h takedown obligations (TAKE IT DOWN Act / eSafety / IT Rules), criminal prosecution of creators, and survivor support.',
+    sources: [53, 57, 66],
   },
 ];
 
@@ -597,28 +596,28 @@ interface ArchFormat {
 
 const ARCH_FORMATS: ArchFormat[] = [
   {
-    name: 'Parameter-Efficient LoRAs',
-    count: 491,
-    pct: 68,
-    size: '< 700 MB weights',
-    color: '#9f2149',
-    risk: 'Trained on individual victim likenesses in <30 mins',
-  },
-  {
-    name: 'Full Foundation Checkpoints',
-    count: 173,
-    pct: 24,
-    size: '3B – 12B parameters (6GB–28GB)',
+    name: 'Checkpoints / Full Models',
+    count: 23,
+    pct: 46,
+    size: '23 of 50 reviewed listings',
     color: '#183849',
-    risk: 'Unmoderated base weights distributed without safety tags',
+    risk: 'Standalone or merged checkpoints distributed with varying license and documentation completeness',
   },
   {
-    name: 'Diffusion Transformers (DiT / Hybrids)',
-    count: 58,
-    pct: 8,
-    size: 'Modern DiT (Flux / Qwen)',
-    color: '#b43a5e',
-    risk: 'Photorealistic high-resolution video & localized inpainting',
+    name: 'Parameter-Efficient LoRAs',
+    count: 20,
+    pct: 40,
+    size: '20 of 50 reviewed listings',
+    color: '#9D2048',
+    risk: 'Modular adapters layered onto foundation backbones (e.g., SDXL, FLUX, Qwen-Image)',
+  },
+  {
+    name: 'GGUF / Quantized, Detection & Other',
+    count: 7,
+    pct: 14,
+    size: '2 GGUF + 2 Detection + 3 Unclear',
+    color: '#C45C7A',
+    risk: 'Includes quantized adapters, task-tagging noise (detection classifiers), and unclear formats',
   },
 ];
 
@@ -633,16 +632,16 @@ export function ModelArchitectureChart() {
       ref={containerRef}
       className={`chart-card ${isInView ? 'in-view' : ''}`}
       role="region"
-      aria-label="Model Architecture Distribution Chart"
+      aria-label="50-Listing Snapshot Composition Chart"
     >
       <div className="chart-header">
         <div>
-          <span className="tag">Repository Audit / 722 Model Exploratory Discovery</span>
+          <span className="tag">50-Listing Metadata Snapshot (25 Nov 2026)</span>
           <h4 style={{ margin: '8px 0 3px', fontSize: '18px', color: 'var(--ink)' }}>
-            Architectural Distribution of Explicit Vision Checkpoints
+            Artifact Composition Across 50 Reviewed Search Listings
           </h4>
           <p className="micro muted" style={{ margin: 0 }}>
-            Analysis of model formats across Hugging Face discovery indices reveals extreme reliance on modular LoRAs.
+            Breakdown of <code>pipeline_tag=text-to-image</code>, <code>search=nsfw</code> listings (not a census of all models).
           </p>
         </div>
       </div>
@@ -717,32 +716,32 @@ interface GovernanceMetric {
 
 const GOVERNANCE_METRICS: GovernanceMetric[] = [
   {
-    title: 'Training Dataset Provenance',
-    compliantPct: 19,
-    omittedPct: 81,
-    status: 'Critical Provenance Blindspot',
-    impact: 'Impossible to audit whether underlying training data was scrubbed of scraped non-consensual images or CSAM.',
+    title: 'Core Identity & Repository URLs (53 / 53)',
+    compliantPct: 100,
+    omittedPct: 0,
+    status: 'Captured in Desk Workbook',
+    impact: 'ID, family, repository name, publisher, artifact type, and access dates were recorded for all 53 entries.',
   },
   {
-    title: 'Explicit Licensing Terms',
-    compliantPct: 38,
-    omittedPct: 62,
-    status: 'Legal & Liability Ambiguity',
-    impact: 'Commercial operators exploit unstated licenses to sell wrapper subscriptions without developer accountability.',
+    title: 'Reported Parameter Count (31 / 53)',
+    compliantPct: 58.5,
+    omittedPct: 41.5,
+    status: 'Partially Collected',
+    impact: '31 of 53 records included reported parameter counts; 22 were blank or placeholder in the initial workbook.',
   },
   {
-    title: 'Model Card Safety Disclosures',
-    compliantPct: 27,
-    omittedPct: 73,
-    status: 'Zero Misuse Guidelines',
-    impact: 'Omits basic warnings regarding prohibited non-consensual generation or human rights boundaries.',
+    title: 'Notes Field (7 / 53)',
+    compliantPct: 13.2,
+    omittedPct: 86.8,
+    status: 'Partially Collected',
+    impact: '7 of 53 records contained researcher notes in the initial desk inventory.',
   },
   {
-    title: 'Sensitivity Tagging at Upload',
-    compliantPct: 34,
-    omittedPct: 66,
-    status: 'Exposed to Unauthenticated Users',
-    impact: 'Two-thirds of explicit models omitted the Not-For-All-Audiences filter upon publication.',
+    title: 'Safety Eval, Exact License & Weight Size (0 / 53 collected)',
+    compliantPct: 0,
+    omittedPct: 100,
+    status: 'Investigation Collection Gap',
+    impact: 'Describes the completeness of this preliminary investigation; requires publisher-level verification and does not establish absence of documentation or unsafe behaviour.',
   },
 ];
 
@@ -754,16 +753,16 @@ export function GovernanceGapsScorecard() {
       ref={containerRef}
       className={`chart-card ${isInView ? 'in-view' : ''}`}
       role="region"
-      aria-label="Model Card Governance Deficiencies Scorecard"
+      aria-label="Preliminary 53-Record Inventory Completeness Scorecard"
     >
       <div className="chart-header">
         <div>
-          <span className="tag">Empirical Hub Audit</span>
+          <span className="tag">Preliminary 53-Record Desk Inventory</span>
           <h4 style={{ margin: '8px 0 3px', fontSize: '18px', color: 'var(--ink)' }}>
-            Model Card Deficiencies &amp; Provenance Failures
+            Investigation Metadata Completeness (N=53)
           </h4>
           <p className="micro muted" style={{ margin: 0 }}>
-            Systemic non-compliance with AI safety standards across public community model repositories.
+            Measures field coverage in the preliminary desk workbook (<code>model-metadata-completeness.csv</code>), not publisher misconduct.
           </p>
         </div>
       </div>
@@ -824,28 +823,28 @@ const REGULATORY_TIERS: RegulatoryTier[] = [
     id: 1,
     level: 'TIER 1 (NARROW / ZERO-TOLERANCE)',
     title: 'Purpose-Built Abuse Generators',
-    target: 'Nudification software, unconsented face-swap bots, automated stripping apps',
-    mandate: 'Strict statutory prohibition on creation, commercialization, hosting, or knowing supply. Absolute criminal liability.',
-    penalties: 'Criminal prosecution, asset forfeiture, domain seizure, individual creator accountability.',
-    precedent: 'US TAKE IT DOWN Act (Pending) / South Korea Emergency Revision 2024 / India BNS Section 79.',
+    target: 'Tools and fine-tunes knowingly supplied or marketed for non-consensual sexual depiction or CSAM',
+    mandate: 'Targeted statutory prohibition on creation, commercialization, or knowing supply—without banning general-purpose open-source AI.',
+    penalties: 'Criminal liability under applicable statutes (e.g., UK Crime and Policing Act 2026 ss. 99–101 in force 29 June 2026; South Korea Art. 14-2).',
+    precedent: 'UK Crime & Policing Act 2026 (ss. 99–101) / South Korea Sexual Crimes Act Art. 14-2 / EU Reg. 2026/1744 (applicable 2 Dec 2026).',
   },
   {
     id: 2,
     level: 'TIER 2 (FOUNDATION WEIGHTS)',
     title: 'High-Risk Generative Model Developers',
-    target: 'Upstream research labs releasing weights with photorealistic human depiction capability',
-    mandate: 'Mandatory pre-release safety evaluation, cryptographically signed watermarks (C2PA/SynthID), and supply-chain KYC disclosures.',
-    penalties: 'Civil regulatory fines for unverified release; joint liability for foreseeable downstream weaponization.',
-    precedent: 'EU AI Act High-Risk Model Obligations / Australian Online Safety Act Model Directions.',
+    target: 'Upstream developers releasing high-capability photorealistic human-generation weights',
+    mandate: 'Proportionate pre-release safety evaluations, provenance documentation, and release holds where critical unmitigated risks remain.',
+    penalties: 'Administrative regulatory enforcement where statutory obligations apply (e.g., EU AI Act / Reg. 2026/1744; subject to statutory scope).',
+    precedent: 'EU AI Act Art. 50 & Reg. (EU) 2026/1744 / Australian Online Safety Act regulatory notices.',
   },
   {
     id: 3,
     level: 'TIER 3 (BROAD HOSTING & DISTRIBUTION)',
-    title: 'Hosting Repositories & Commercial Platforms',
-    target: 'Hugging Face, Civitai, GitHub, cloud GPU hosts, and web hosters',
-    mandate: 'Proactive perceptual hash filtering (PhotoDNA/PDQ), 24-hour victim take-down windows, default sensitivity tagging, and verified age gating.',
-    penalties: 'Loss of safe-harbor immunity; statutory civil damages up to AUD 343,500+ / INR 25 Lakhs per failure.',
-    precedent: 'eSafety Commissioner Enforcement (2024) / MeitY Intermediary Rules 3(1)(b) & 3(2)(b).',
+    title: 'Hosting Repositories & Covered Platforms',
+    target: 'Model repositories, interactive computer services, and social media platforms',
+    mandate: 'Time-bound victim removal duties, hash-matching for known copies (StopNCII / Take It Down), and accessible abuse reporting.',
+    penalties: 'FTC civil penalties up to $53,088 per violation (US TAKE IT DOWN Act, enforced 19 May 2026); Federal Court civil penalty (AUD 343,500 in 2025 AU case); India IT Rules safe-harbor loss.',
+    precedent: 'US TAKE IT DOWN Act (48h covered-platform removal) / Australia eSafety / India IT Rules 2021 & 2026 amendments.',
   },
 ];
 

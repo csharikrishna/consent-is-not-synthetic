@@ -16,8 +16,8 @@
     },
     {
       "filename": "citation-audit.json",
-      "size_bytes": 75011,
-      "sha256": "a205f5f1b50b665f4efd4c3ef6e0da12b6fead80465883b3f18419345172ac79",
+      "size_bytes": 85512,
+      "sha256": "9cc347423cb7afed7ec5b236257a17ad1fae336ec91876061b8b1284c3912984",
       "referenced_in_app": true,
       "in_out": true
     },
@@ -30,8 +30,8 @@
     },
     {
       "filename": "claim-verification-final.csv",
-      "size_bytes": 10849,
-      "sha256": "8ed93f1df53f794230f7eb4e9c994665c2af6a88ff547438ecf3d354deaaa382",
+      "size_bytes": 10852,
+      "sha256": "5e6bc0f5c9b1209f90c54a144aba70828dde1249c333eb62c3dec584fd843e1a",
       "referenced_in_app": true,
       "in_out": true
     },
@@ -85,6 +85,13 @@
       "in_out": true
     },
     {
+      "filename": "platform-trust-safety-brief.md",
+      "size_bytes": 4284,
+      "sha256": "b82354c32a03a93e4d19329cf0f428dfed23037acdd58e68fb94b0dc61a0f399",
+      "referenced_in_app": true,
+      "in_out": true
+    },
+    {
       "filename": "public-data-manifest.json",
       "size_bytes": 3748,
       "sha256": "df58ec9c1616ee9bd7860159ab4aef62bff21a8d4e2044f59c85cc916dcafce3",
@@ -100,8 +107,8 @@
     },
     {
       "filename": "public-source-register.csv",
-      "size_bytes": 31584,
-      "sha256": "25427a80703b4c8c100a3a0505f2d5f3b634347facac9a559f6536118e3a4640",
+      "size_bytes": 32181,
+      "sha256": "c7993c23f2b4f54f4003aad85b5350bfcda5ffad69faa5d1eb43fabba92410c3",
       "referenced_in_app": true,
       "in_out": true
     },

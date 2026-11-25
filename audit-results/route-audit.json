@@ -4,9 +4,7 @@
     "route": "/",
     "status": 200,
     "pass": true,
-    "consoleErrors": [
-      "Error: <svg> attribute height: Expected length, \"auto\"."
-    ],
+    "consoleErrors": [],
     "pageErrors": [],
     "failedRequests": [],
     "title": "Consent Is Not Synthetic — Public Research & Advocacy Platform"
@@ -26,9 +24,7 @@
     "route": "/evidence/",
     "status": 200,
     "pass": true,
-    "consoleErrors": [
-      "Error: <svg> attribute height: Expected length, \"auto\"."
-    ],
+    "consoleErrors": [],
     "pageErrors": [],
     "failedRequests": [],
     "title": "Evidence Dashboard & Quantitative Data Explorer — Consent Is Not Synthetic | Consent Is Not Synthetic"
@@ -218,9 +214,7 @@
     "route": "/",
     "status": 200,
     "pass": true,
-    "consoleErrors": [
-      "Error: <svg> attribute height: Expected length, \"auto\"."
-    ],
+    "consoleErrors": [],
     "pageErrors": [],
     "failedRequests": [],
     "title": "Consent Is Not Synthetic — Public Research & Advocacy Platform"
@@ -240,9 +234,7 @@
     "route": "/evidence/",
     "status": 200,
     "pass": true,
-    "consoleErrors": [
-      "Error: <svg> attribute height: Expected length, \"auto\"."
-    ],
+    "consoleErrors": [],
     "pageErrors": [],
     "failedRequests": [],
     "title": "Evidence Dashboard & Quantitative Data Explorer — Consent Is Not Synthetic | Consent Is Not Synthetic"
@@ -432,9 +424,7 @@
     "route": "/",
     "status": 200,
     "pass": true,
-    "consoleErrors": [
-      "Error: <svg> attribute height: Expected length, \"auto\"."
-    ],
+    "consoleErrors": [],
     "pageErrors": [],
     "failedRequests": [],
     "title": "Consent Is Not Synthetic — Public Research & Advocacy Platform"
@@ -454,9 +444,7 @@
     "route": "/evidence/",
     "status": 200,
     "pass": true,
-    "consoleErrors": [
-      "Error: <svg> attribute height: Expected length, \"auto\"."
-    ],
+    "consoleErrors": [],
     "pageErrors": [],
     "failedRequests": [],
     "title": "Evidence Dashboard & Quantitative Data Explorer — Consent Is Not Synthetic | Consent Is Not Synthetic"
@@ -646,9 +634,7 @@
     "route": "/",
     "status": 200,
     "pass": true,
-    "consoleErrors": [
-      "Error: <svg> attribute height: Expected length, \"auto\"."
-    ],
+    "consoleErrors": [],
     "pageErrors": [],
     "failedRequests": [],
     "title": "Consent Is Not Synthetic — Public Research & Advocacy Platform"
@@ -668,9 +654,7 @@
     "route": "/evidence/",
     "status": 200,
     "pass": true,
-    "consoleErrors": [
-      "Error: <svg> attribute height: Expected length, \"auto\"."
-    ],
+    "consoleErrors": [],
     "pageErrors": [],
     "failedRequests": [],
     "title": "Evidence Dashboard & Quantitative Data Explorer — Consent Is Not Synthetic | Consent Is Not Synthetic"
@@ -860,9 +844,7 @@
     "route": "/",
     "status": 200,
     "pass": true,
-    "consoleErrors": [
-      "Error: <svg> attribute height: Expected length, \"auto\"."
-    ],
+    "consoleErrors": [],
     "pageErrors": [],
     "failedRequests": [],
     "title": "Consent Is Not Synthetic — Public Research & Advocacy Platform"
@@ -882,9 +864,7 @@
     "route": "/evidence/",
     "status": 200,
     "pass": true,
-    "consoleErrors": [
-      "Error: <svg> attribute height: Expected length, \"auto\"."
-    ],
+    "consoleErrors": [],
     "pageErrors": [],
     "failedRequests": [],
     "title": "Evidence Dashboard & Quantitative Data Explorer — Consent Is Not Synthetic | Consent Is Not Synthetic"
@@ -1074,9 +1054,7 @@
     "route": "/",
     "status": 200,
     "pass": true,
-    "consoleErrors": [
-      "Error: <svg> attribute height: Expected length, \"auto\"."
-    ],
+    "consoleErrors": [],
     "pageErrors": [],
     "failedRequests": [],
     "title": "Consent Is Not Synthetic — Public Research & Advocacy Platform"
@@ -1096,9 +1074,7 @@
     "route": "/evidence/",
     "status": 200,
     "pass": true,
-    "consoleErrors": [
-      "Error: <svg> attribute height: Expected length, \"auto\"."
-    ],
+    "consoleErrors": [],
     "pageErrors": [],
     "failedRequests": [],
     "title": "Evidence Dashboard & Quantitative Data Explorer — Consent Is Not Synthetic | Consent Is Not Synthetic"

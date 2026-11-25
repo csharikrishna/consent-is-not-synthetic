@@ -8,7 +8,10 @@ export const {
   completeness,
   jurisdictions,
   corrections,
-  publications
+  publications,
+  claims,
+  external_developments,
+  initiative_impact
 } = data;
 
 export const checked = sources.filter((s: { verified: boolean }) => s.verified).length;

@@ -1,5 +1,42 @@
 {
   "exported_components": {
+    "IwfSurgeTrendChart": {
+      "file": "web/components/charts.tsx",
+      "consumers": [
+        "web/app/page.tsx",
+        "web/app/evidence/page.tsx"
+      ]
+    },
+    "SupplyChainPipelineDiagram": {
+      "file": "web/components/charts.tsx",
+      "consumers": [
+        "web/app/page.tsx"
+      ]
+    },
+    "DemographicPrevalenceChart": {
+      "file": "web/components/charts.tsx",
+      "consumers": [
+        "web/app/evidence/page.tsx"
+      ]
+    },
+    "ModelArchitectureChart": {
+      "file": "web/components/charts.tsx",
+      "consumers": [
+        "web/app/models/page.tsx"
+      ]
+    },
+    "GovernanceGapsScorecard": {
+      "file": "web/components/charts.tsx",
+      "consumers": [
+        "web/app/models/page.tsx"
+      ]
+    },
+    "RegulatoryTiersPyramid": {
+      "file": "web/components/charts.tsx",
+      "consumers": [
+        "web/app/accountability/page.tsx"
+      ]
+    },
     "MetricExplorer": {
       "file": "web/components/Explorer.tsx",
       "consumers": [
@@ -26,7 +63,8 @@
         "web/app/methodology/page.tsx",
         "web/app/model-governance/page.tsx",
         "web/app/models/page.tsx",
-        "web/app/research/page.tsx"
+        "web/app/research/page.tsx",
+        "web/components/charts.tsx"
       ]
     },
     "JurisdictionExplorer": {
@@ -75,6 +113,7 @@
       "consumers": [
         "web/app/page.tsx",
         "web/app/accountability/page.tsx",
+        "web/app/open-weights/page.tsx",
         "web/app/press/page.tsx",
         "web/app/research/page.tsx",
         "web/app/support/page.tsx"
@@ -93,6 +132,7 @@
         "web/app/methodology/page.tsx",
         "web/app/model-governance/page.tsx",
         "web/app/models/page.tsx",
+        "web/app/open-weights/page.tsx",
         "web/app/press/page.tsx",
         "web/app/regulation/page.tsx",
         "web/app/research/page.tsx",
@@ -116,6 +156,7 @@
         "web/app/methodology/page.tsx",
         "web/app/model-governance/page.tsx",
         "web/app/models/page.tsx",
+        "web/app/open-weights/page.tsx",
         "web/app/press/page.tsx",
         "web/app/regulation/page.tsx",
         "web/app/research/page.tsx",
@@ -137,6 +178,7 @@
         "web/app/methodology/page.tsx",
         "web/app/model-governance/page.tsx",
         "web/app/models/page.tsx",
+        "web/app/open-weights/page.tsx",
         "web/app/press/page.tsx",
         "web/app/regulation/page.tsx",
         "web/app/research/page.tsx",
@@ -145,6 +187,7 @@
         "web/app/take-action/page.tsx",
         "web/app/technology/page.tsx",
         "web/app/transparency/page.tsx",
+        "web/components/charts.tsx",
         "web/components/Explorer.tsx"
       ]
     },
@@ -173,6 +216,7 @@
         "web/app/methodology/page.tsx",
         "web/app/model-governance/page.tsx",
         "web/app/models/page.tsx",
+        "web/app/open-weights/page.tsx",
         "web/app/press/page.tsx",
         "web/app/regulation/page.tsx",
         "web/app/research/page.tsx",
@@ -196,6 +240,7 @@
         "web/app/methodology/page.tsx",
         "web/app/model-governance/page.tsx",
         "web/app/models/page.tsx",
+        "web/app/open-weights/page.tsx",
         "web/app/press/page.tsx",
         "web/app/regulation/page.tsx",
         "web/app/research/page.tsx",
@@ -203,7 +248,9 @@
         "web/app/support/page.tsx",
         "web/app/take-action/page.tsx",
         "web/app/technology/page.tsx",
-        "web/app/transparency/page.tsx"
+        "web/app/transparency/page.tsx",
+        "web/components/charts.tsx",
+        "web/components/ModelAccessGate.tsx"
       ]
     },
     "Bars": {
@@ -211,7 +258,8 @@
       "consumers": [
         "web/app/evidence/page.tsx",
         "web/app/impact/page.tsx",
-        "web/app/methodology/page.tsx"
+        "web/app/methodology/page.tsx",
+        "web/components/charts.tsx"
       ]
     },
     "Chain": {
@@ -220,7 +268,9 @@
         "web/app/page.tsx",
         "web/app/accountability/page.tsx",
         "web/app/model-governance/page.tsx",
-        "web/app/models/page.tsx"
+        "web/app/models/page.tsx",
+        "web/app/open-weights/page.tsx",
+        "web/components/charts.tsx"
       ]
     },
     "RestrictionBanner": {

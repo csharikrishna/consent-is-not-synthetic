@@ -47,10 +47,13 @@ if 53 in source_by_id:
         "Separate September 2026 research across 9 countries reported ~1.1M children (2% prevalence); do not combine or infer a declining trend."
     )
 if 54 in source_by_id:
+    source_by_id[54]["verified_claim"] = (
+        "Estimated 20 million internet-using youth aged 12-17 across 21 countries experienced broader technology-facilitated sexual exploitation or abuse in one year."
+    )
     source_by_id[54]["limitations"] = (
         "Covers broader technology-facilitated sexual exploitation or abuse (not exclusively AI-generated abuse). "
         "Reported ~4x occurrence of suicidal thoughts/behaviours and self-harm is an observational association, not AI-specific causation; "
-        "exact outcome definition requires verification against the original report."
+        "withheld from public headline claims pending exact outcome-definition verification."
     )
 if 65 in source_by_id:
     source_by_id[65]["limitations"] = (
@@ -75,6 +78,46 @@ if 75 in source_by_id:
         "It is not evidence that 66.35% of AI model developers lack accountability."
     )
 
+# P2-30: Fix Source 59 & 60 sentence-period metadata
+if 59 in source_by_id:
+    source_by_id[59]["period"] = "Sentence imposed May 11, 2026"
+if 60 in source_by_id:
+    source_by_id[60]["period"] = "Sentence imposed September 8, 2026"
+
+# P1-07: Dedicated Source 77 for UNICEF 9-country September 2026 study
+if 77 not in source_by_id:
+    s77 = {
+        "id": 77,
+        "publisher": "UNICEF",
+        "title": "Nine-country sexual deepfake prevalence research (September 2026)",
+        "date": "September 2026; accessed 2026-11-25",
+        "url": "https://www.unicef.org/innocenti/",
+        "summary": "Approximately 1.1 million children across nine surveyed countries (2% reported average prevalence).",
+        "limitations": "Do not combine with UNICEF-01 (11 countries, 1.2M+) or interpret the difference as a declining trend.",
+        "verified": True,
+        "stream": "Harm / usage / enforcement evidence",
+        "technical": False,
+        "status": "Secondary source checked",
+        "locator": "September 2026 research summary",
+        "population": "Surveyed children across 9 countries",
+        "period": "September 2026",
+        "geo_scope": "9 countries",
+        "verified_claim": "Approximately 1.1 million children across nine countries experienced sexual deepfakes (2% average prevalence)."
+    }
+    sources.append(s77)
+    source_by_id[77] = s77
+
+# P1-05: Blank URLs must never be labelled verified
+for s in sources:
+    if not str(s.get("url", "")).strip():
+        s["verified"] = False
+        s["status"] = "Indexed reference · URL pending verification"
+
+# P2-13: Preserve lower-bound > sign on M08
+for m in data.get("metrics", []):
+    if m.get("metric_id") == "M08":
+        m["value"] = ">200,000"
+
 # 2. Reconcile Jurisdictions
 jurisdictions = [
     {
@@ -84,11 +127,11 @@ jurisdictions = [
         "statute": "IT Act 2000, IT Rules 2021 (2026 Amendments), BNS, POCSO Act, DPDP Act",
         "status": "In force (2026 Rules amendments active)",
         "effectiveDate": "2021 / 2026 IT Rules Amendments",
-        "timeline": "2 hours (qualifying intimate-image complaints); 3 hours (qualifying court/government orders)",
-        "scope": "Distinct statutory triggers under IT Rules 2021/2026, BNS criminal provisions, POCSO child protection, and DPDP personal data duties.",
+        "timeline": "2 hours (Rule 3(2)(b) qualifying intimate-image complaints); 3 hours (Rule 3(1)(d) actual knowledge / court or government orders)",
+        "scope": "Distinct statutory triggers under IT Rules 2021/2026 (Rule 3(2)(b) 2h reasonable/practicable measures vs Rule 3(1)(d) 3h actual knowledge), BNS, POCSO, and DPDP Act.",
         "obligations": [
-            "2-hour window applies to qualifying intimate-image complaints under the relevant IT Rules provision (not a universal deadline for all online content).",
-            "3-hour window applies to qualifying court or authorized government orders under the relevant provision.",
+            "Rule 3(2)(b): 2-hour window for reasonable and practicable measures on qualifying intimate-image complaints (not a universal deadline for all content).",
+            "Rule 3(1)(d): 3-hour window upon specified actual knowledge (qualifying court order or authorized government notification).",
             "Distinguish current intermediary law from proposed upstream model-distribution regulation; not every model-hosting repository is automatically subject to every intermediary obligation."
         ],
         "penalties": "Loss of Section 79 safe harbour; BNS/POCSO criminal liability; DPDP financial penalties.",
@@ -117,18 +160,18 @@ jurisdictions = [
         "id": "uk",
         "country": "United Kingdom",
         "flag": "UK",
-        "statute": "Online Safety Act 2023 & Crime and Policing Act 2026",
-        "status": "Online Safety Act active; Crime & Policing Act 2026 (commencement-dependent)",
-        "effectiveDate": "OSA active; CPA 2026 provisions subject to commencement",
+        "statute": "Online Safety Act 2023 & Crime and Policing Act 2026 (ss. 99–101 in force)",
+        "status": "In force (OSA active; CPA 2026 ss. 99–101 commenced 29 June 2026)",
+        "effectiveDate": "OSA active; CPA 2026 ss. 99–101 in force 29 June 2026 (S.I. 2026/689)",
         "timeline": "Expeditious takedown & Ofcom statutory enforcement notices",
-        "scope": "Crime and Policing Act 2026 addresses specified child sexual abuse image generators and purported intimate-image generators; uncommenced provisions are not yet enforceable.",
+        "scope": "Crime and Policing Act 2026 sections 99–101 (purported intimate-image generators, taking down intimate-image content, consequential amendments) came into force on 29 June 2026 via S.I. 2026/689. Other sections vary by commencement.",
         "obligations": [
             "Platforms in scope of the Online Safety Act must assess and mitigate illegal content risks under Ofcom codes and guidance.",
-            "Crime and Policing Act 2026 generator offences apply only upon statutory commencement of the relevant provisions."
+            "Sections 99–101 of the Crime and Policing Act 2026 are in force as of 29 June 2026 (S.I. 2026/689)."
         ],
-        "penalties": "Ofcom fines up to 10% of qualifying worldwide revenue under OSA; criminal penalties once CPA 2026 provisions commence.",
+        "penalties": "Ofcom fines up to 10% of qualifying worldwide revenue under OSA; criminal penalties under commenced CPA 2026 ss. 99–101.",
         "sources": [41, 42, 73, 75],
-        "gaps": "Uncommenced statutory provisions cannot yet be enforced; cross-border open-weight mirror enforcement remains challenging."
+        "gaps": "Other CPA 2026 provisions depend on separate commencement orders; cross-border open-weight mirror enforcement remains challenging."
     },
     {
         "id": "eu",
@@ -401,8 +444,8 @@ claims = [
         "denominator": "9 surveyed countries (2% average prevalence)",
         "population_geography": "Children across 9 countries",
         "reporting_period": "Published September 2026",
-        "source_id": 53,
-        "original_title": "UNICEF 9-country deepfake prevalence research (September 2026)",
+        "source_id": 77,
+        "original_title": "Nine-country sexual deepfake prevalence research (September 2026)",
         "publisher_authors": "UNICEF",
         "publication_date": "2026-09",
         "access_date": "2026-11-25",
@@ -777,6 +820,9 @@ data["sources"] = sources
 data["jurisdictions"] = jurisdictions
 data["publications"] = publications
 data["corrections"] = corrections
+data["claims"] = [c for c in claims if c.get("publication_eligible")]
+data["external_developments"] = external_developments
+data["initiative_impact"] = initiative_impact
 with open(WEB_DATA_PATH, "w", encoding="utf-8") as f:
     json.dump(data, f, indent=2, ensure_ascii=False)
 

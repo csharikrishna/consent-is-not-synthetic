@@ -29,7 +29,7 @@ export default function Home() {
               <ButtonLink href="/take-action/" secondary>Take action</ButtonLink>
             </div>
             <p className="micro">
-              Independent desk research · 76 audited primary sources · Zero tracking cookies · Fair-use research publication
+              Independent desk research · 76 indexed references (selected claims rechecked) · Zero tracking cookies · Fair-use research publication
             </p>
           </div>
           <div className="hero-art">
@@ -49,9 +49,9 @@ export default function Home() {
 
       {/* TRUST & RESEARCH CREDIBILITY STRIP */}
       <div className="wrap trust-strip">
-        <span><strong>76</strong> Audited Primary Sources</span>
-        <span><strong>14</strong> Quantified Harm Metrics</span>
-        <span><strong>10</strong> Adjudicated Incidents</span>
+        <span><strong>76</strong> Indexed References</span>
+        <span><strong>14</strong> Quantitative Indicators</span>
+        <span><strong>10</strong> Legal &amp; Regulatory Records</span>
         <span><strong>8</strong> Statutory Regimes Analyzed</span>
       </div>
 
@@ -116,7 +116,7 @@ export default function Home() {
               <span className="stat-number">400,000+</span>
               <h3>NCMEC CyberTipline Reports with a Generative AI Nexus</h3>
               <p>
-                The National Center for Missing &amp; Exploited Children recorded over 400,000 reports in 2025 exhibiting a generative AI nexus, with over 182,000 involving the direct generation or possession of synthetic CSAM <Source id={7}/>. Staff analysts categorized over 158,000 AI abuse files, whereas commercial providers self-flagged barely 11,000 <Source id={6}/>.
+                The National Center for Missing &amp; Exploited Children recorded over 400,000 reports in 2025 exhibiting a generative AI nexus, with over 182,000 involving the possession, generation, or attempted generation of AI-generated CSAM <Source id={7}/>. Staff analysts categorized over 158,000 AI abuse files (2023–2025) <Source id={6}/>. (Reports are not unique victims.)
               </p>
               <div className="refs" style={{marginTop:'14px'}}>
                 <Source id={6}/> <Source id={7}/>
@@ -137,10 +137,10 @@ export default function Home() {
               </p>
             </div>
             <div className="panel">
-              <span className="tag">Severe Mental Distress</span>
-              <h3 style={{marginTop:'10px'}}>~4x Higher Odds of Self-Harm</h3>
+              <span className="tag">Broader TFSEA Context</span>
+              <h3 style={{marginTop:'10px'}}>~20 Million Children (21 Countries)</h3>
               <p className="micro">
-                UNICEF Innocenti research across 21 countries established that children experiencing tech-facilitated sexual exploitation face approximately fourfold higher odds of self-harm and suicidal behaviors <Source id={54}/>.
+                UNICEF Innocenti research (3 Sept 2026) estimated ~20 million children aged 12–17 across 21 countries experienced broader technology-facilitated sexual exploitation or abuse in one year (not exclusively AI-generated) <Source id={54}/>.
               </p>
             </div>
             <div className="panel">
@@ -171,9 +171,9 @@ export default function Home() {
 
           <article className="panel">
             <span className="ref-number">02</span>
-            <h3 style={{marginTop:'8px'}}>Hardware Execution Barriers Have Collapsed</h3>
+            <h3 style={{marginTop:'8px'}}>Hardware Execution Barriers Have Lowered</h3>
             <p>
-              Parameter-efficient fine-tuning (LoRA) and memory quantization enable 12-billion-parameter diffusion models to execute high-resolution personalizations on consumer-grade 8 GB GPUs in under 2 seconds <Source id={16}/> <Source id={19}/> <Source id={48}/>. Abuse is no longer confined to supercomputing clusters.
+              Parameter-efficient fine-tuning (LoRA) and memory-optimization techniques documented in Diffusers and academic literature reduce compute and VRAM requirements compared to training foundation models from scratch <Source id={16}/> <Source id={19}/>.
             </p>
           </article>
 
@@ -220,9 +220,9 @@ export default function Home() {
               </p>
             </div>
             <div className="panel">
-              <h3>Repository Moderation Lags</h3>
+              <h3>Online-Safety Governance Context</h3>
               <p>
-                Ofcom&rsquo;s regulatory audit found that 66.35% (69 of 104) of reviewed online service risk assessment records failed to designate a responsible officer accountable for safety mitigations <Source id={75}/>. Model hubs remain largely reactive.
+                In broader online-safety oversight, Ofcom&rsquo;s Year One report found that 66.35% (69 of 104) of reviewed risk-assessment records did not identify a named responsible person (printed p. 18) <Source id={75}/>—a general governance indicator rather than an AI-developer-specific audit.
               </p>
             </div>
           </div>

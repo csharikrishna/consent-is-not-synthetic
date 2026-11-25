@@ -1,6 +1,6 @@
 {
-  "total_sources": 76,
-  "referenced_count": 54,
+  "total_sources": 77,
+  "referenced_count": 53,
   "missing_sources": [],
   "incomplete_sources": [],
   "orphan_source_ids": [
@@ -17,6 +17,7 @@
     36,
     42,
     47,
+    48,
     49,
     50,
     51,
@@ -25,8 +26,9 @@
     62,
     65,
     73,
-    76
+    76,
+    77
   ],
-  "interactions_js_source_count": 76,
+  "interactions_js_source_count": 77,
   "sources_missing_from_interactions_js": []
 }

@@ -70,16 +70,16 @@ export default function ModelAccessGate({children}: ModelAccessGateProps) {
               ⚠️
             </span>
             <div>
-              <span className="tag" style={{backgroundColor:'var(--accent)',color:'#fff'}}>Mandatory Safeguarding Notice</span>
+              <span className="tag" style={{backgroundColor:'var(--accent)',color:'#fff'}}>Content Advisory Notice</span>
               <h1 style={{margin:'4px 0 0',fontSize:'1.4rem',color:'var(--ink)',fontFamily:'var(--serif)'}}>
-                Institutional Access &amp; Research Safeguarding Gate
+                Research Content Notice &amp; Safeguarding Acknowledgement
               </h1>
             </div>
           </div>
 
           <div style={{fontSize:'0.96rem',lineHeight:1.65,color:'var(--ink)'}}>
             <p>
-              You are requesting access to the <strong>Model Hub Governance &amp; Repository Supply Chains</strong> empirical audit. This technical dossier analyzes architectural distributions, parameter adaptations, and documentation omissions across open machine learning repositories.
+              You are viewing the <strong>Model Hub Governance &amp; Repository Supply Chains</strong> technical dossier, which examines architectural distributions, parameter adaptations, and metadata completeness across public machine learning repositories.
             </p>
 
             <div style={{
@@ -94,19 +94,19 @@ export default function ModelAccessGate({children}: ModelAccessGateProps) {
               </h4>
               <ul style={{margin:0,paddingLeft:'18px',fontSize:'0.9rem',color:'var(--ink)'}}>
                 <li style={{marginBottom:'6px'}}>
-                  <strong>No Executable Weights or Mirrors:</strong> In strict compliance with child sexual abuse prevention statutes (18 U.S.C. § 2252A; POCSO Act 2012) and human dignity safeguards, this platform <em>never hosts, distributes, or mirrors</em> weights, model checkpoints, or direct repository download links.
+                  <strong>No Model Weights or Mirrors Hosted:</strong> In compliance with child sexual abuse prevention statutes (18 U.S.C. § 2252A; POCSO Act 2012) and human dignity safeguards, this platform <em>never hosts, stores, or mirrors</em> weight binaries or model checkpoints.
                 </li>
                 <li style={{marginBottom:'6px'}}>
                   <strong>No Operational Prompts:</strong> No generation prompts, fine-tuning scripts, or evasion workflows capable of weaponizing synthetic likenesses are disclosed.
                 </li>
                 <li>
-                  <strong>Aggregate Policy Evidence:</strong> All empirical findings are aggregated exclusively to inform regulatory oversight, model registry compliance, and platform trust &amp; safety policies.
+                  <strong>Governance &amp; Audit Scope:</strong> Public repository metadata is documented strictly to inform regulatory oversight, licensing clarity, and platform trust &amp; safety policies.
                 </li>
               </ul>
             </div>
 
             <p style={{fontSize:'0.9rem',color:'var(--muted)'}}>
-              Access is restricted to policymakers, machine learning researchers, legal counsel, journalists, and public safety specialists conducting legitimate governance analysis.
+              Note: This banner is a client-side reading acknowledgement (using browser <code>sessionStorage</code>), not server-side authentication or access control.
             </p>
           </div>
 

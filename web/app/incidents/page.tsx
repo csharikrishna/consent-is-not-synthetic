@@ -10,8 +10,8 @@ export default function IncidentsPage() {
     <>
       <Heading
         eyebrow="Legal &amp; Regulatory Register"
-        title="Documented Incidents &amp; Enforcement Actions"
-        description="A curated register of adjudicated criminal proceedings, civil penalties, regulatory warnings, and repository interventions involving synthetic image abuse."
+        title="Documented Legal, Regulatory &amp; Governance Records"
+        description="A curated register of 10 legal, regulatory, and platform-governance records (comprising criminal sentences, a verdict, an investigation, civil enforcement, regulatory warnings, and policy changes)."
       />
 
       <Section
