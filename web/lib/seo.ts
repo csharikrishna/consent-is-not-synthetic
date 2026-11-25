@@ -1,5 +1,9 @@
 import type { Metadata } from 'next';
 import {siteName,descriptions} from './content';
+export const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+export function assetPath(p: string): string {
+  return `${basePath}${p.startsWith('/') ? p : '/' + p}`;
+}
 export const origin = (()=>{try{const url = new URL(process.env.NEXT_PUBLIC_SITE_URL || ''); return url.protocol==='https:' ? url.origin : undefined;}catch{return undefined;}})();
 export function pageMeta(path:string,title:string,customDescription?:string):Metadata {
  const description=customDescription||descriptions[path];

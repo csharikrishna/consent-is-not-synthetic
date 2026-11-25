@@ -1,7 +1,7 @@
 import {Heading,Section,Note,Source,ButtonLink} from '../../components/ui';
 import {IncidentExplorer} from '../../components/Explorer';
 import {incidents} from '../../lib/content';
-import {pageMeta} from '../../lib/seo';
+import {pageMeta, assetPath} from '../../lib/seo';
 
 export const metadata = pageMeta('/incidents/', 'Documented Incidents & Legal Case Register');
 
@@ -49,7 +49,7 @@ export default function IncidentsPage() {
       >
         <IncidentExplorer />
         <div className="text-link" style={{marginTop:'24px'}}>
-          <a href="/downloads/incident-register.csv" download className="inline-link">
+          <a href={assetPath('/downloads/incident-register.csv')} download className="inline-link">
             Download Incident Register CSV ↓
           </a>
         </div>

@@ -1,5 +1,5 @@
 import {Heading,Section,Note,Source,SignupCard,ButtonLink} from '../../components/ui';
-import {pageMeta} from '../../lib/seo';
+import {pageMeta, assetPath} from '../../lib/seo';
 
 export const metadata = pageMeta('/take-action/', 'Take Action: Protect Dignity & Demand Accountability');
 
@@ -154,13 +154,13 @@ export default function TakeActionPage() {
           <article className="panel">
             <h3>Public Evidence Brief</h3>
             <p>Four-page accessible summary for community leaders, journalists, and educators.</p>
-            <a className="inline-link" href="/downloads/public-evidence-brief.pdf">Download PDF ↗</a>
+            <a className="inline-link" href={assetPath('/downloads/public-evidence-brief.pdf')}>Download PDF ↗</a>
           </article>
 
           <article className="panel">
             <h3>Regulatory Policy Brief</h3>
             <p>Two-page focused legal analysis on intermediary obligations under IT Rules 2026.</p>
-            <a className="inline-link" href="/downloads/india-policy-brief.pdf">Download PDF ↗</a>
+            <a className="inline-link" href={assetPath('/downloads/india-policy-brief.pdf')}>Download PDF ↗</a>
           </article>
         </div>
       </Section>

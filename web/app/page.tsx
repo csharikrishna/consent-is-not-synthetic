@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import {Eyebrow, Stat, Section, Chain, ButtonLink, Source, Note, SignupCard} from '../components/ui';
 import {IwfSurgeTrendChart, SupplyChainPipelineDiagram} from '../components/charts';
-import {pageMeta} from '../lib/seo';
+import {pageMeta, assetPath} from '../lib/seo';
 
 export const metadata = pageMeta(
   '/',
@@ -34,7 +34,7 @@ export default function Home() {
           </div>
           <div className="hero-art">
             <img
-              src="/assets/hero.svg"
+              src={assetPath('/assets/hero.svg')}
               alt="Editorial illustration of digital integrity shield defending against synthetic media fragments"
               width="600"
               height="560"

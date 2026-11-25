@@ -1,7 +1,7 @@
 import {Heading,Section,Note,Stat,ButtonLink} from '../../components/ui';
 import {SourceExplorer} from '../../components/Explorer';
 import {sources, checked} from '../../lib/content';
-import {pageMeta} from '../../lib/seo';
+import {pageMeta, assetPath} from '../../lib/seo';
 
 export const metadata = pageMeta('/sources/', 'Source Register & Annotated Bibliography');
 
@@ -50,7 +50,7 @@ export default function SourcesPage() {
       >
         <SourceExplorer />
         <div className="text-link" style={{marginTop:'24px'}}>
-          <a href="/downloads/public-source-register.csv" download className="inline-link">
+          <a href={assetPath('/downloads/public-source-register.csv')} download className="inline-link">
             Download Public Source Register CSV ↓
           </a>
         </div>

@@ -1,7 +1,7 @@
 import {Heading, Section, Note, Stat, Source, ButtonLink} from '../../components/ui';
 import {Top50SnapshotExplorer} from '../../components/Explorer';
 import {ModelArchitectureChart, GovernanceGapsScorecard} from '../../components/charts';
-import {pageMeta} from '../../lib/seo';
+import {pageMeta, assetPath} from '../../lib/seo';
 import ModelAccessGate from '../../components/ModelAccessGate';
 
 export const metadata = pageMeta(
@@ -416,7 +416,7 @@ export default function ModelHubGovernancePage() {
             <h3>Complete 50-Repository Metadata &amp; Audit Catalogue (25 November 2026 Snapshot)</h3>
             <p className="micro muted" style={{marginBottom:'14px'}}>
               Searchable table of all 50 listings from <code>pipeline_tag=text-to-image</code>, <code>search=nsfw</code> (sorted by likes descending). Expand any row for repository-by-repository notes, base model dependency, verification notes, and audit status.{' '}
-              <a href="/downloads/top50-hf-metadata-snapshot.json" download className="inline-link" style={{margin:0}}>
+              <a href={assetPath('/downloads/top50-hf-metadata-snapshot.json')} download className="inline-link" style={{margin:0}}>
                 Download Top-50 Snapshot (JSON) ↓
               </a>
             </p>

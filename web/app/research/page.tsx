@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import {Heading, Section, Note, ButtonLink, Eyebrow, Source} from '../../components/ui';
-import {pageMeta} from '../../lib/seo';
+import {pageMeta, assetPath} from '../../lib/seo';
 
 export const metadata = pageMeta(
   '/research/',
@@ -75,7 +75,7 @@ export default function ResearchPage() {
               <strong>Abstract:</strong> Pre-publication defended edition incorporating V4.1 evidence corrections: reconciles UNICEF, IWF, NCMEC, ISD, Ofcom, and eSafety baselines; frames the 53-record inventory as metadata collection completeness; withdraws the exploratory search pagination count; updates EU Regulation (EU) 2026/1744 and India helpline routing.
             </p>
             <div style={{marginTop:'auto',paddingTop:'14px',display:'flex',gap:'8px',flexWrap:'wrap'}}>
-              <a href="/downloads/v4-journal.pdf" download className="button primary" style={{fontSize:'13px',padding:'9px 16px',flex:1,justifyContent:'center'}}>
+              <a href={assetPath('/downloads/v4-journal.pdf')} download className="button primary" style={{fontSize:'13px',padding:'9px 16px',flex:1,justifyContent:'center'}}>
                 Download V4.1 Defended PDF ↓
               </a>
               <Link href="/transparency/" className="button secondary" style={{fontSize:'13px',padding:'9px 16px'}}>
@@ -96,7 +96,7 @@ export default function ResearchPage() {
               <strong>Abstract:</strong> Recalibrates research around 14 verified empirical harm metrics, operational child protection data (IWF, NCMEC), and a three-tier supply-chain governance model linking failure modes directly to 6 actionable policy controls.
             </p>
             <div style={{marginTop:'auto',paddingTop:'14px'}}>
-              <a href="/downloads/v3-journal.pdf" download className="button secondary" style={{fontSize:'13px',padding:'9px 16px',width:'100%',justifyContent:'center'}}>
+              <a href={assetPath('/downloads/v3-journal.pdf')} download className="button secondary" style={{fontSize:'13px',padding:'9px 16px',width:'100%',justifyContent:'center'}}>
                 Download V3 Archival PDF ↓
               </a>
             </div>
@@ -116,7 +116,7 @@ export default function ResearchPage() {
               <strong>Abstract:</strong> Restructured the project around victim impact and digital dignity. Formulated the initial three-tier governance framework (Prohibit / Restrict / Permit) and analyzed statutory frameworks across 8 jurisdictions.
             </p>
             <div style={{marginTop:'auto',paddingTop:'14px'}}>
-              <a href="/downloads/v2-journal.pdf" download className="button secondary" style={{fontSize:'13px',padding:'9px 16px',width:'100%',justifyContent:'center'}}>
+              <a href={assetPath('/downloads/v2-journal.pdf')} download className="button secondary" style={{fontSize:'13px',padding:'9px 16px',width:'100%',justifyContent:'center'}}>
                 Download V2 Archival PDF ↓
               </a>
             </div>
@@ -134,7 +134,7 @@ export default function ResearchPage() {
               <strong>Abstract:</strong> Initial technical survey cataloging open-weight diffusion architectures (LDM, SDXL), parameter quantization, low-rank adaptations (LoRA), and early community fine-tuning patterns.
             </p>
             <div style={{marginTop:'auto',paddingTop:'14px'}}>
-              <a href="/downloads/v1-journal.pdf" download className="button secondary" style={{fontSize:'13px',padding:'9px 16px',width:'100%',justifyContent:'center'}}>
+              <a href={assetPath('/downloads/v1-journal.pdf')} download className="button secondary" style={{fontSize:'13px',padding:'9px 16px',width:'100%',justifyContent:'center'}}>
                 Download V1 Archival PDF ↓
               </a>
             </div>
@@ -156,7 +156,7 @@ export default function ResearchPage() {
                 A concise 4-page executive briefing summarizing verified harm statistics, model hub governance failures, and urgent statutory priorities.
               </p>
               <div style={{marginTop:'auto',paddingTop:'12px'}}>
-                <a href="/downloads/public-evidence-brief.pdf" download className="inline-link">
+                <a href={assetPath('/downloads/public-evidence-brief.pdf')} download className="inline-link">
                   Download PDF (35 KB) ↓
                 </a>
               </div>
@@ -169,7 +169,7 @@ export default function ResearchPage() {
                 Detailed 2-page analysis of the IT (Intermediary Guidelines) Amendment Rules 2026, Rule 3(2)(b) 2-hour takedowns, and cross-border model hub liability.
               </p>
               <div style={{marginTop:'auto',paddingTop:'12px'}}>
-                <a href="/downloads/india-policy-brief.pdf" download className="inline-link">
+                <a href={assetPath('/downloads/india-policy-brief.pdf')} download className="inline-link">
                   Download PDF (145 KB) ↓
                 </a>
               </div>
@@ -182,7 +182,7 @@ export default function ResearchPage() {
                 16-page technical dossier with verbatim source excerpts, page locators, study populations, and methodological caveats for all 76 references.
               </p>
               <div style={{marginTop:'auto',paddingTop:'12px'}}>
-                <a href="/downloads/annotated-evidence.pdf" download className="inline-link">
+                <a href={assetPath('/downloads/annotated-evidence.pdf')} download className="inline-link">
                   Download PDF (223 KB) ↓
                 </a>
               </div>
@@ -195,7 +195,7 @@ export default function ResearchPage() {
                 12-page indexed catalog of all academic literature, government gazettes, court dockets, and technical model cards referenced in the research.
               </p>
               <div style={{marginTop:'auto',paddingTop:'12px'}}>
-                <a href="/downloads/resource-directory.pdf" download className="inline-link">
+                <a href={assetPath('/downloads/resource-directory.pdf')} download className="inline-link">
                   Download PDF (198 KB) ↓
                 </a>
               </div>
@@ -208,7 +208,7 @@ export default function ResearchPage() {
                 Prospective review protocol guided by PRISMA transparency principles, defining eligibility criteria, non-pooling rules, and external peer-review gates.
               </p>
               <div style={{marginTop:'auto',paddingTop:'12px'}}>
-                <a href="/downloads/research-protocol.md" download className="inline-link">
+                <a href={assetPath('/downloads/research-protocol.md')} download className="inline-link">
                   Download Protocol (Markdown) ↓
                 </a>
               </div>
@@ -240,8 +240,8 @@ export default function ResearchPage() {
                 <td>76 Sources</td>
                 <td>Complete audit records with locators, study populations, reporting periods, and caveats.</td>
                 <td>
-                  <a href="/downloads/citation-audit.csv" download className="inline-link" style={{margin:0}}>CSV (14 KB)</a> ·{' '}
-                  <a href="/downloads/citation-audit.json" download className="inline-link" style={{margin:0}}>JSON (32 KB)</a>
+                  <a href={assetPath('/downloads/citation-audit.csv')} download className="inline-link" style={{margin:0}}>CSV (14 KB)</a> ·{' '}
+                  <a href={assetPath('/downloads/citation-audit.json')} download className="inline-link" style={{margin:0}}>JSON (32 KB)</a>
                 </td>
               </tr>
               <tr>
@@ -250,7 +250,7 @@ export default function ResearchPage() {
                 <td>14 Measures</td>
                 <td>Empirical metrics (M01–M14) with denominators, periods, and interpretation notes.</td>
                 <td>
-                  <a href="/downloads/quantitative-evidence.csv" download className="inline-link" style={{margin:0}}>CSV (2 KB)</a>
+                  <a href={assetPath('/downloads/quantitative-evidence.csv')} download className="inline-link" style={{margin:0}}>CSV (2 KB)</a>
                 </td>
               </tr>
               <tr>
@@ -259,7 +259,7 @@ export default function ResearchPage() {
                 <td>10 Cases</td>
                 <td>Real-world judicial sentences, civil penalties, and platform enforcement actions.</td>
                 <td>
-                  <a href="/downloads/incident-register.csv" download className="inline-link" style={{margin:0}}>CSV (3 KB)</a>
+                  <a href={assetPath('/downloads/incident-register.csv')} download className="inline-link" style={{margin:0}}>CSV (3 KB)</a>
                 </td>
               </tr>
               <tr>
@@ -268,7 +268,7 @@ export default function ResearchPage() {
                 <td>6 Controls</td>
                 <td>Policy controls (C01–C06) mapped from documented harms to accountable actors.</td>
                 <td>
-                  <a href="/downloads/claim-to-action.csv" download className="inline-link" style={{margin:0}}>CSV (2 KB)</a>
+                  <a href={assetPath('/downloads/claim-to-action.csv')} download className="inline-link" style={{margin:0}}>CSV (2 KB)</a>
                 </td>
               </tr>
               <tr>
@@ -277,7 +277,7 @@ export default function ResearchPage() {
                 <td>53 Models</td>
                 <td>Field-by-field audit of provenance, licensing, and model card completeness.</td>
                 <td>
-                  <a href="/downloads/model-metadata-completeness.csv" download className="inline-link" style={{margin:0}}>CSV (1.5 KB)</a>
+                  <a href={assetPath('/downloads/model-metadata-completeness.csv')} download className="inline-link" style={{margin:0}}>CSV (1.5 KB)</a>
                 </td>
               </tr>
               <tr>
@@ -286,7 +286,7 @@ export default function ResearchPage() {
                 <td>50 Listings</td>
                 <td>Metadata-only snapshot of 50 <code>text-to-image</code> listings matching <code>nsfw</code> (25 Nov 2026).</td>
                 <td>
-                  <a href="/downloads/top50-hf-metadata-snapshot.json" download className="inline-link" style={{margin:0}}>JSON (28 KB)</a>
+                  <a href={assetPath('/downloads/top50-hf-metadata-snapshot.json')} download className="inline-link" style={{margin:0}}>JSON (28 KB)</a>
                 </td>
               </tr>
               <tr>
@@ -295,7 +295,7 @@ export default function ResearchPage() {
                 <td>76 Sources</td>
                 <td>Complete bibliographic register with verification statuses, locators, and limitations.</td>
                 <td>
-                  <a href="/downloads/public-source-register.csv" download className="inline-link" style={{margin:0}}>CSV</a>
+                  <a href={assetPath('/downloads/public-source-register.csv')} download className="inline-link" style={{margin:0}}>CSV</a>
                 </td>
               </tr>
               <tr>
@@ -304,7 +304,7 @@ export default function ResearchPage() {
                 <td>15 Claims</td>
                 <td>Audited empirical claims with denominators, locators, and publication eligibility.</td>
                 <td>
-                  <a href="/downloads/claim-verification-final.csv" download className="inline-link" style={{margin:0}}>CSV</a>
+                  <a href={assetPath('/downloads/claim-verification-final.csv')} download className="inline-link" style={{margin:0}}>CSV</a>
                 </td>
               </tr>
               <tr>
@@ -313,8 +313,8 @@ export default function ResearchPage() {
                 <td>2 Docs</td>
                 <td>Open verification items and V4.1 release gate checklist.</td>
                 <td>
-                  <a href="/downloads/unresolved-evidence-register.md" download className="inline-link" style={{margin:0}}>Unresolved MD</a> ·{' '}
-                  <a href="/downloads/final-release-decision.md" download className="inline-link" style={{margin:0}}>Decision MD</a>
+                  <a href={assetPath('/downloads/unresolved-evidence-register.md')} download className="inline-link" style={{margin:0}}>Unresolved MD</a> ·{' '}
+                  <a href={assetPath('/downloads/final-release-decision.md')} download className="inline-link" style={{margin:0}}>Decision MD</a>
                 </td>
               </tr>
             </tbody>

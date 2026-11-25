@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import {Heading, Section, Note, Source, ButtonLink, Eyebrow} from '../../components/ui';
-import {pageMeta} from '../../lib/seo';
+import {pageMeta, assetPath} from '../../lib/seo';
 
 export const metadata = pageMeta(
   '/press/',
@@ -63,7 +63,7 @@ export default function PressCenterPage() {
                 One-page verified briefing summarizing the scale, technical supply chain, legal frameworks, and core policy demands.
               </p>
               <div style={{marginTop:'auto',paddingTop:'12px'}}>
-                <a href="/downloads/public-evidence-brief.pdf" className="inline-link" download>
+                <a href={assetPath('/downloads/public-evidence-brief.pdf')} className="inline-link" download>
                   Download Fact Sheet (PDF) ↓
                 </a>
               </div>
@@ -76,7 +76,7 @@ export default function PressCenterPage() {
                 Analysis of India&rsquo;s IT Rules 2026 amendments, Rule 3(2)(b) 2-hour takedown windows, and supply-chain liability.
               </p>
               <div style={{marginTop:'auto',paddingTop:'12px'}}>
-                <a href="/downloads/india-policy-brief.pdf" className="inline-link" download>
+                <a href={assetPath('/downloads/india-policy-brief.pdf')} className="inline-link" download>
                   Download India Brief (PDF) ↓
                 </a>
               </div>
@@ -89,7 +89,7 @@ export default function PressCenterPage() {
                 Defended V4.1 manuscript detailing 76 indexed references, canonical empirical metrics, and the three-tier governance framework.
               </p>
               <div style={{marginTop:'auto',paddingTop:'12px'}}>
-                <a href="/downloads/v4-journal.pdf" className="inline-link" download>
+                <a href={assetPath('/downloads/v4-journal.pdf')} className="inline-link" download>
                   Download Manuscript (PDF) ↓
                 </a>
               </div>
@@ -104,7 +104,7 @@ export default function PressCenterPage() {
                 Comprehensive reference catalog with verbatim excerpts, exact page locators, study populations, and methodological caveats.
               </p>
               <div style={{marginTop:'auto',paddingTop:'12px'}}>
-                <a href="/downloads/annotated-evidence.pdf" className="inline-link" download>
+                <a href={assetPath('/downloads/annotated-evidence.pdf')} className="inline-link" download>
                   Download Evidence Dossier (PDF) ↓
                 </a>
               </div>
@@ -117,7 +117,7 @@ export default function PressCenterPage() {
                 Machine-readable structured datasets including all 76 audited citations and 14 quantitative claims with denominators.
               </p>
               <div style={{marginTop:'auto',paddingTop:'12px'}}>
-                <a href="/downloads/public-source-register.csv" className="inline-link" download>
+                <a href={assetPath('/downloads/public-source-register.csv')} className="inline-link" download>
                   Download Data Ledger (CSV) ↓
                 </a>
               </div>
@@ -129,9 +129,9 @@ export default function PressCenterPage() {
                 Coordinated V4.1 newsroom briefings: 2-page executive summary, 1-page fact sheet, and media backgrounder.
               </p>
               <div style={{marginTop:'auto',paddingTop:'12px',display:'flex',gap:'12px',flexWrap:'wrap'}}>
-                <a href="/downloads/executive-summary-2page.md" className="inline-link" style={{margin:0}} download>Executive Summary ↓</a>
-                <a href="/downloads/fact-sheet-1page.md" className="inline-link" style={{margin:0}} download>Fact Sheet ↓</a>
-                <a href="/downloads/media-backgrounder.md" className="inline-link" style={{margin:0}} download>Backgrounder ↓</a>
+                <a href={assetPath('/downloads/executive-summary-2page.md')} className="inline-link" style={{margin:0}} download>Executive Summary ↓</a>
+                <a href={assetPath('/downloads/fact-sheet-1page.md')} className="inline-link" style={{margin:0}} download>Fact Sheet ↓</a>
+                <a href={assetPath('/downloads/media-backgrounder.md')} className="inline-link" style={{margin:0}} download>Backgrounder ↓</a>
               </div>
             </article>
           </div>

@@ -3,7 +3,7 @@ import {Heading, Section, Bars, Source, Note, ButtonLink} from '../../components
 import {MetricExplorer, IncidentExplorer, JurisdictionExplorer, Completeness} from '../../components/Explorer';
 import {IwfSurgeTrendChart, DemographicPrevalenceChart} from '../../components/charts';
 import {jurisdictions} from '../../lib/content';
-import {pageMeta} from '../../lib/seo';
+import {pageMeta, assetPath} from '../../lib/seo';
 
 export const metadata = pageMeta(
   '/evidence/',
@@ -207,10 +207,10 @@ export default function Evidence() {
       >
         <MetricExplorer />
         <div style={{marginTop:'20px',display:'flex',gap:'12px',flexWrap:'wrap',alignItems:'center'}}>
-          <a href="/downloads/public-source-register.csv" download className="button secondary" style={{fontSize:'13px',padding:'9px 16px',minHeight:'40px'}}>
+          <a href={assetPath('/downloads/public-source-register.csv')} download className="button secondary" style={{fontSize:'13px',padding:'9px 16px',minHeight:'40px'}}>
             Download Source Register (CSV) ↓
           </a>
-          <a href="/downloads/citation-audit.csv" download className="button secondary" style={{fontSize:'13px',padding:'9px 16px',minHeight:'40px'}}>
+          <a href={assetPath('/downloads/citation-audit.csv')} download className="button secondary" style={{fontSize:'13px',padding:'9px 16px',minHeight:'40px'}}>
             Download Citation Audit Register (CSV) ↓
           </a>
           <span className="micro muted">Machine-readable data tables published under CC BY 4.0.</span>
