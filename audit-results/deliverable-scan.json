@@ -1,0 +1,1047 @@
+{
+  "checked_file_count": 205,
+  "html_count": 24,
+  "js_count": 14,
+  "source_maps_in_out": 0,
+  "xlsx_in_out": 0,
+  "env_in_out": 0,
+  "missing_assets": [],
+  "ineligible_in_web_data": [],
+  "claim_csv_issues": [],
+  "findings": {
+    "leak_722": [],
+    "leak_68_pct": [],
+    "leak_unicef04_withheld": [],
+    "leak_section79_notice": [],
+    "leak_2_3_hrs": [],
+    "leak_withheld_display_contradiction": [],
+    "archived_pdf_notes": []
+  },
+  "checked_files": [
+    {
+      "file": "web/out/404/index.html",
+      "kind": "html",
+      "chars": 34238
+    },
+    {
+      "file": "web/out/404.html",
+      "kind": "html",
+      "chars": 34238
+    },
+    {
+      "file": "web/out/__next.__PAGE__.txt",
+      "kind": "txt",
+      "chars": 29804
+    },
+    {
+      "file": "web/out/__next._full.txt",
+      "kind": "txt",
+      "chars": 46974
+    },
+    {
+      "file": "web/out/__next._index.txt",
+      "kind": "txt",
+      "chars": 15958
+    },
+    {
+      "file": "web/out/__next._tree.txt",
+      "kind": "txt",
+      "chars": 1072
+    },
+    {
+      "file": "web/out/_next/static/chunks/0c98xzjfks9hq.js",
+      "kind": "js",
+      "chars": 169973
+    },
+    {
+      "file": "web/out/_next/static/chunks/0cz1d0mv5g_q7.js",
+      "kind": "js",
+      "chars": 112541
+    },
+    {
+      "file": "web/out/_next/static/chunks/0ic0vppu-hd83.js",
+      "kind": "js",
+      "chars": 29081
+    },
+    {
+      "file": "web/out/_next/static/chunks/0ijkp9lnyitv_.js",
+      "kind": "js",
+      "chars": 26830
+    },
+    {
+      "file": "web/out/_next/static/chunks/0uk63h0tuavo5.js",
+      "kind": "js",
+      "chars": 6557
+    },
+    {
+      "file": "web/out/_next/static/chunks/0ypis_hjtie6t.js",
+      "kind": "js",
+      "chars": 24258
+    },
+    {
+      "file": "web/out/_next/static/chunks/1wnov70f88xjy.js",
+      "kind": "js",
+      "chars": 29127
+    },
+    {
+      "file": "web/out/_next/static/chunks/3lbm-r_1xmrrq.js",
+      "kind": "js",
+      "chars": 228093
+    },
+    {
+      "file": "web/out/_next/static/chunks/3qfy96eoyh-ek.js",
+      "kind": "js",
+      "chars": 13992
+    },
+    {
+      "file": "web/out/_next/static/chunks/turbopack-2u1d16houkiyo.js",
+      "kind": "js",
+      "chars": 9974
+    },
+    {
+      "file": "web/out/_next/static/pQXgUEsNbfeq12nhMeWDj/_buildManifest.js",
+      "kind": "js",
+      "chars": 219
+    },
+    {
+      "file": "web/out/_next/static/pQXgUEsNbfeq12nhMeWDj/_clientMiddlewareManifest.js",
+      "kind": "js",
+      "chars": 96
+    },
+    {
+      "file": "web/out/_next/static/pQXgUEsNbfeq12nhMeWDj/_ssgManifest.js",
+      "kind": "js",
+      "chars": 80
+    },
+    {
+      "file": "web/out/_not-found/__next._full.txt",
+      "kind": "txt",
+      "chars": 18890
+    },
+    {
+      "file": "web/out/_not-found/__next._index.txt",
+      "kind": "txt",
+      "chars": 15909
+    },
+    {
+      "file": "web/out/_not-found/__next._not-found/__PAGE__.txt",
+      "kind": "txt",
+      "chars": 2459
+    },
+    {
+      "file": "web/out/_not-found/__next._not-found.__PAGE__.txt",
+      "kind": "txt",
+      "chars": 2459
+    },
+    {
+      "file": "web/out/_not-found/__next._tree.txt",
+      "kind": "txt",
+      "chars": 218
+    },
+    {
+      "file": "web/out/_not-found/index.html",
+      "kind": "html",
+      "chars": 34238
+    },
+    {
+      "file": "web/out/_not-found/index.txt",
+      "kind": "txt",
+      "chars": 18890
+    },
+    {
+      "file": "web/out/about/__next._full.txt",
+      "kind": "txt",
+      "chars": 28373
+    },
+    {
+      "file": "web/out/about/__next._index.txt",
+      "kind": "txt",
+      "chars": 15909
+    },
+    {
+      "file": "web/out/about/__next._tree.txt",
+      "kind": "txt",
+      "chars": 1088
+    },
+    {
+      "file": "web/out/about/__next.about/__PAGE__.txt",
+      "kind": "txt",
+      "chars": 10980
+    },
+    {
+      "file": "web/out/about/__next.about.__PAGE__.txt",
+      "kind": "txt",
+      "chars": 10980
+    },
+    {
+      "file": "web/out/about/index.html",
+      "kind": "html",
+      "chars": 52193
+    },
+    {
+      "file": "web/out/about/index.txt",
+      "kind": "txt",
+      "chars": 28373
+    },
+    {
+      "file": "web/out/accountability/__next._full.txt",
+      "kind": "txt",
+      "chars": 67596
+    },
+    {
+      "file": "web/out/accountability/__next._index.txt",
+      "kind": "txt",
+      "chars": 15958
+    },
+    {
+      "file": "web/out/accountability/__next._tree.txt",
+      "kind": "txt",
+      "chars": 1097
+    },
+    {
+      "file": "web/out/accountability/__next.accountability/__PAGE__.txt",
+      "kind": "txt",
+      "chars": 50145
+    },
+    {
+      "file": "web/out/accountability/__next.accountability.__PAGE__.txt",
+      "kind": "txt",
+      "chars": 50145
+    },
+    {
+      "file": "web/out/accountability/index.html",
+      "kind": "html",
+      "chars": 130594
+    },
+    {
+      "file": "web/out/accountability/index.txt",
+      "kind": "txt",
+      "chars": 67596
+    },
+    {
+      "file": "web/out/action/__next._full.txt",
+      "kind": "txt",
+      "chars": 32306
+    },
+    {
+      "file": "web/out/action/__next._index.txt",
+      "kind": "txt",
+      "chars": 15909
+    },
+    {
+      "file": "web/out/action/__next._tree.txt",
+      "kind": "txt",
+      "chars": 1089
+    },
+    {
+      "file": "web/out/action/__next.action/__PAGE__.txt",
+      "kind": "txt",
+      "chars": 14891
+    },
+    {
+      "file": "web/out/action/__next.action.__PAGE__.txt",
+      "kind": "txt",
+      "chars": 14891
+    },
+    {
+      "file": "web/out/action/index.html",
+      "kind": "html",
+      "chars": 59900
+    },
+    {
+      "file": "web/out/action/index.txt",
+      "kind": "txt",
+      "chars": 32306
+    },
+    {
+      "file": "web/out/corrections/__next._full.txt",
+      "kind": "txt",
+      "chars": 77472
+    },
+    {
+      "file": "web/out/corrections/__next._index.txt",
+      "kind": "txt",
+      "chars": 15909
+    },
+    {
+      "file": "web/out/corrections/__next._tree.txt",
+      "kind": "txt",
+      "chars": 1094
+    },
+    {
+      "file": "web/out/corrections/__next.corrections/__PAGE__.txt",
+      "kind": "txt",
+      "chars": 60098
+    },
+    {
+      "file": "web/out/corrections/__next.corrections.__PAGE__.txt",
+      "kind": "txt",
+      "chars": 60098
+    },
+    {
+      "file": "web/out/corrections/index.html",
+      "kind": "html",
+      "chars": 146754
+    },
+    {
+      "file": "web/out/corrections/index.txt",
+      "kind": "txt",
+      "chars": 77472
+    },
+    {
+      "file": "web/out/downloads/annotated-evidence.pdf",
+      "kind": "pdf",
+      "chars": 34817
+    },
+    {
+      "file": "web/out/downloads/citation-audit.csv",
+      "kind": "csv",
+      "chars": 57246
+    },
+    {
+      "file": "web/out/downloads/citation-audit.json",
+      "kind": "json",
+      "chars": 80568
+    },
+    {
+      "file": "web/out/downloads/claim-to-action.csv",
+      "kind": "csv",
+      "chars": 1793
+    },
+    {
+      "file": "web/out/downloads/claim-verification-final.csv",
+      "kind": "csv",
+      "chars": 10911
+    },
+    {
+      "file": "web/out/downloads/executive-summary-2page.md",
+      "kind": "md",
+      "chars": 6846
+    },
+    {
+      "file": "web/out/downloads/fact-sheet-1page.md",
+      "kind": "md",
+      "chars": 4855
+    },
+    {
+      "file": "web/out/downloads/final-release-decision.md",
+      "kind": "md",
+      "chars": 3856
+    },
+    {
+      "file": "web/out/downloads/incident-register.csv",
+      "kind": "csv",
+      "chars": 2877
+    },
+    {
+      "file": "web/out/downloads/india-policy-brief.pdf",
+      "kind": "pdf",
+      "chars": 4912
+    },
+    {
+      "file": "web/out/downloads/media-backgrounder.md",
+      "kind": "md",
+      "chars": 6281
+    },
+    {
+      "file": "web/out/downloads/model-metadata-completeness.csv",
+      "kind": "csv",
+      "chars": 1463
+    },
+    {
+      "file": "web/out/downloads/platform-trust-safety-brief.md",
+      "kind": "md",
+      "chars": 4448
+    },
+    {
+      "file": "web/out/downloads/public-data-manifest.json",
+      "kind": "json",
+      "chars": 3633
+    },
+    {
+      "file": "web/out/downloads/public-evidence-brief.pdf",
+      "kind": "pdf",
+      "chars": 4465
+    },
+    {
+      "file": "web/out/downloads/public-source-register.csv",
+      "kind": "csv",
+      "chars": 32089
+    },
+    {
+      "file": "web/out/downloads/quantitative-evidence.csv",
+      "kind": "csv",
+      "chars": 1883
+    },
+    {
+      "file": "web/out/downloads/research-protocol.md",
+      "kind": "md",
+      "chars": 8935
+    },
+    {
+      "file": "web/out/downloads/resource-directory.pdf",
+      "kind": "pdf",
+      "chars": 14384
+    },
+    {
+      "file": "web/out/downloads/Synthetic_Abuse_Research_V4.pdf",
+      "kind": "pdf",
+      "chars": 10933
+    },
+    {
+      "file": "web/out/downloads/top50-hf-metadata-snapshot.json",
+      "kind": "json",
+      "chars": 38486
+    },
+    {
+      "file": "web/out/downloads/unresolved-evidence-register.md",
+      "kind": "md",
+      "chars": 3419
+    },
+    {
+      "file": "web/out/downloads/v1-journal.pdf",
+      "kind": "pdf",
+      "chars": 47126
+    },
+    {
+      "file": "web/out/downloads/v2-journal.pdf",
+      "kind": "pdf",
+      "chars": 66393
+    },
+    {
+      "file": "web/out/downloads/v3-journal.pdf",
+      "kind": "pdf",
+      "chars": 80592
+    },
+    {
+      "file": "web/out/downloads/v4-journal.pdf",
+      "kind": "pdf",
+      "chars": 10933
+    },
+    {
+      "file": "web/out/evidence/__next._full.txt",
+      "kind": "txt",
+      "chars": 94055
+    },
+    {
+      "file": "web/out/evidence/__next._index.txt",
+      "kind": "txt",
+      "chars": 15958
+    },
+    {
+      "file": "web/out/evidence/__next._tree.txt",
+      "kind": "txt",
+      "chars": 1091
+    },
+    {
+      "file": "web/out/evidence/__next.evidence/__PAGE__.txt",
+      "kind": "txt",
+      "chars": 76584
+    },
+    {
+      "file": "web/out/evidence/__next.evidence.__PAGE__.txt",
+      "kind": "txt",
+      "chars": 76584
+    },
+    {
+      "file": "web/out/evidence/index.html",
+      "kind": "html",
+      "chars": 182699
+    },
+    {
+      "file": "web/out/evidence/index.txt",
+      "kind": "txt",
+      "chars": 94055
+    },
+    {
+      "file": "web/out/impact/__next._full.txt",
+      "kind": "txt",
+      "chars": 30911
+    },
+    {
+      "file": "web/out/impact/__next._index.txt",
+      "kind": "txt",
+      "chars": 15909
+    },
+    {
+      "file": "web/out/impact/__next._tree.txt",
+      "kind": "txt",
+      "chars": 1089
+    },
+    {
+      "file": "web/out/impact/__next.impact/__PAGE__.txt",
+      "kind": "txt",
+      "chars": 13545
+    },
+    {
+      "file": "web/out/impact/__next.impact.__PAGE__.txt",
+      "kind": "txt",
+      "chars": 13545
+    },
+    {
+      "file": "web/out/impact/index.html",
+      "kind": "html",
+      "chars": 56828
+    },
+    {
+      "file": "web/out/impact/index.txt",
+      "kind": "txt",
+      "chars": 30911
+    },
+    {
+      "file": "web/out/incidents/__next._full.txt",
+      "kind": "txt",
+      "chars": 34030
+    },
+    {
+      "file": "web/out/incidents/__next._index.txt",
+      "kind": "txt",
+      "chars": 15909
+    },
+    {
+      "file": "web/out/incidents/__next._tree.txt",
+      "kind": "txt",
+      "chars": 1092
+    },
+    {
+      "file": "web/out/incidents/__next.incidents/__PAGE__.txt",
+      "kind": "txt",
+      "chars": 16691
+    },
+    {
+      "file": "web/out/incidents/__next.incidents.__PAGE__.txt",
+      "kind": "txt",
+      "chars": 16691
+    },
+    {
+      "file": "web/out/incidents/index.html",
+      "kind": "html",
+      "chars": 63048
+    },
+    {
+      "file": "web/out/incidents/index.txt",
+      "kind": "txt",
+      "chars": 34030
+    },
+    {
+      "file": "web/out/index.html",
+      "kind": "html",
+      "chars": 95679
+    },
+    {
+      "file": "web/out/index.txt",
+      "kind": "txt",
+      "chars": 46974
+    },
+    {
+      "file": "web/out/interactions.js",
+      "kind": "js",
+      "chars": 68345
+    },
+    {
+      "file": "web/out/library/__next._full.txt",
+      "kind": "txt",
+      "chars": 41821
+    },
+    {
+      "file": "web/out/library/__next._index.txt",
+      "kind": "txt",
+      "chars": 15909
+    },
+    {
+      "file": "web/out/library/__next._tree.txt",
+      "kind": "txt",
+      "chars": 1090
+    },
+    {
+      "file": "web/out/library/__next.library/__PAGE__.txt",
+      "kind": "txt",
+      "chars": 24429
+    },
+    {
+      "file": "web/out/library/__next.library.__PAGE__.txt",
+      "kind": "txt",
+      "chars": 24429
+    },
+    {
+      "file": "web/out/library/index.html",
+      "kind": "html",
+      "chars": 77351
+    },
+    {
+      "file": "web/out/library/index.txt",
+      "kind": "txt",
+      "chars": 41821
+    },
+    {
+      "file": "web/out/methodology/__next._full.txt",
+      "kind": "txt",
+      "chars": 33013
+    },
+    {
+      "file": "web/out/methodology/__next._index.txt",
+      "kind": "txt",
+      "chars": 15909
+    },
+    {
+      "file": "web/out/methodology/__next._tree.txt",
+      "kind": "txt",
+      "chars": 1094
+    },
+    {
+      "file": "web/out/methodology/__next.methodology/__PAGE__.txt",
+      "kind": "txt",
+      "chars": 15699
+    },
+    {
+      "file": "web/out/methodology/__next.methodology.__PAGE__.txt",
+      "kind": "txt",
+      "chars": 15699
+    },
+    {
+      "file": "web/out/methodology/index.html",
+      "kind": "html",
+      "chars": 61254
+    },
+    {
+      "file": "web/out/methodology/index.txt",
+      "kind": "txt",
+      "chars": 33013
+    },
+    {
+      "file": "web/out/model-governance/__next._full.txt",
+      "kind": "txt",
+      "chars": 28980
+    },
+    {
+      "file": "web/out/model-governance/__next._index.txt",
+      "kind": "txt",
+      "chars": 15909
+    },
+    {
+      "file": "web/out/model-governance/__next._tree.txt",
+      "kind": "txt",
+      "chars": 1099
+    },
+    {
+      "file": "web/out/model-governance/__next.model-governance/__PAGE__.txt",
+      "kind": "txt",
+      "chars": 11585
+    },
+    {
+      "file": "web/out/model-governance/__next.model-governance.__PAGE__.txt",
+      "kind": "txt",
+      "chars": 11585
+    },
+    {
+      "file": "web/out/model-governance/index.html",
+      "kind": "html",
+      "chars": 53974
+    },
+    {
+      "file": "web/out/model-governance/index.txt",
+      "kind": "txt",
+      "chars": 28980
+    },
+    {
+      "file": "web/out/models/__next._full.txt",
+      "kind": "txt",
+      "chars": 155617
+    },
+    {
+      "file": "web/out/models/__next._index.txt",
+      "kind": "txt",
+      "chars": 15958
+    },
+    {
+      "file": "web/out/models/__next._tree.txt",
+      "kind": "txt",
+      "chars": 1089
+    },
+    {
+      "file": "web/out/models/__next.models/__PAGE__.txt",
+      "kind": "txt",
+      "chars": 138240
+    },
+    {
+      "file": "web/out/models/__next.models.__PAGE__.txt",
+      "kind": "txt",
+      "chars": 138240
+    },
+    {
+      "file": "web/out/models/index.html",
+      "kind": "html",
+      "chars": 194931
+    },
+    {
+      "file": "web/out/models/index.txt",
+      "kind": "txt",
+      "chars": 155617
+    },
+    {
+      "file": "web/out/open-weights/__next._full.txt",
+      "kind": "txt",
+      "chars": 33303
+    },
+    {
+      "file": "web/out/open-weights/__next._index.txt",
+      "kind": "txt",
+      "chars": 15909
+    },
+    {
+      "file": "web/out/open-weights/__next._tree.txt",
+      "kind": "txt",
+      "chars": 1095
+    },
+    {
+      "file": "web/out/open-weights/__next.open-weights/__PAGE__.txt",
+      "kind": "txt",
+      "chars": 15934
+    },
+    {
+      "file": "web/out/open-weights/__next.open-weights.__PAGE__.txt",
+      "kind": "txt",
+      "chars": 15934
+    },
+    {
+      "file": "web/out/open-weights/index.html",
+      "kind": "html",
+      "chars": 61949
+    },
+    {
+      "file": "web/out/open-weights/index.txt",
+      "kind": "txt",
+      "chars": 33303
+    },
+    {
+      "file": "web/out/press/__next._full.txt",
+      "kind": "txt",
+      "chars": 32924
+    },
+    {
+      "file": "web/out/press/__next._index.txt",
+      "kind": "txt",
+      "chars": 15909
+    },
+    {
+      "file": "web/out/press/__next._tree.txt",
+      "kind": "txt",
+      "chars": 1088
+    },
+    {
+      "file": "web/out/press/__next.press/__PAGE__.txt",
+      "kind": "txt",
+      "chars": 15552
+    },
+    {
+      "file": "web/out/press/__next.press.__PAGE__.txt",
+      "kind": "txt",
+      "chars": 15552
+    },
+    {
+      "file": "web/out/press/index.html",
+      "kind": "html",
+      "chars": 61002
+    },
+    {
+      "file": "web/out/press/index.txt",
+      "kind": "txt",
+      "chars": 32924
+    },
+    {
+      "file": "web/out/regulation/__next._full.txt",
+      "kind": "txt",
+      "chars": 64301
+    },
+    {
+      "file": "web/out/regulation/__next._index.txt",
+      "kind": "txt",
+      "chars": 15909
+    },
+    {
+      "file": "web/out/regulation/__next._tree.txt",
+      "kind": "txt",
+      "chars": 1093
+    },
+    {
+      "file": "web/out/regulation/__next.regulation/__PAGE__.txt",
+      "kind": "txt",
+      "chars": 46882
+    },
+    {
+      "file": "web/out/regulation/__next.regulation.__PAGE__.txt",
+      "kind": "txt",
+      "chars": 46882
+    },
+    {
+      "file": "web/out/regulation/index.html",
+      "kind": "html",
+      "chars": 120968
+    },
+    {
+      "file": "web/out/regulation/index.txt",
+      "kind": "txt",
+      "chars": 64301
+    },
+    {
+      "file": "web/out/research/__next._full.txt",
+      "kind": "txt",
+      "chars": 41823
+    },
+    {
+      "file": "web/out/research/__next._index.txt",
+      "kind": "txt",
+      "chars": 15909
+    },
+    {
+      "file": "web/out/research/__next._tree.txt",
+      "kind": "txt",
+      "chars": 1091
+    },
+    {
+      "file": "web/out/research/__next.research/__PAGE__.txt",
+      "kind": "txt",
+      "chars": 24430
+    },
+    {
+      "file": "web/out/research/__next.research.__PAGE__.txt",
+      "kind": "txt",
+      "chars": 24430
+    },
+    {
+      "file": "web/out/research/index.html",
+      "kind": "html",
+      "chars": 77353
+    },
+    {
+      "file": "web/out/research/index.txt",
+      "kind": "txt",
+      "chars": 41823
+    },
+    {
+      "file": "web/out/robots.txt",
+      "kind": "txt",
+      "chars": 27
+    },
+    {
+      "file": "web/out/sitemap.xml",
+      "kind": "xml",
+      "chars": 110
+    },
+    {
+      "file": "web/out/sources/__next._full.txt",
+      "kind": "txt",
+      "chars": 120298
+    },
+    {
+      "file": "web/out/sources/__next._index.txt",
+      "kind": "txt",
+      "chars": 15909
+    },
+    {
+      "file": "web/out/sources/__next._tree.txt",
+      "kind": "txt",
+      "chars": 1090
+    },
+    {
+      "file": "web/out/sources/__next.sources/__PAGE__.txt",
+      "kind": "txt",
+      "chars": 102908
+    },
+    {
+      "file": "web/out/sources/__next.sources.__PAGE__.txt",
+      "kind": "txt",
+      "chars": 102908
+    },
+    {
+      "file": "web/out/sources/index.html",
+      "kind": "html",
+      "chars": 225060
+    },
+    {
+      "file": "web/out/sources/index.txt",
+      "kind": "txt",
+      "chars": 120298
+    },
+    {
+      "file": "web/out/support/__next._full.txt",
+      "kind": "txt",
+      "chars": 38042
+    },
+    {
+      "file": "web/out/support/__next._index.txt",
+      "kind": "txt",
+      "chars": 15909
+    },
+    {
+      "file": "web/out/support/__next._tree.txt",
+      "kind": "txt",
+      "chars": 1090
+    },
+    {
+      "file": "web/out/support/__next.support/__PAGE__.txt",
+      "kind": "txt",
+      "chars": 20714
+    },
+    {
+      "file": "web/out/support/__next.support.__PAGE__.txt",
+      "kind": "txt",
+      "chars": 20714
+    },
+    {
+      "file": "web/out/support/index.html",
+      "kind": "html",
+      "chars": 70881
+    },
+    {
+      "file": "web/out/support/index.txt",
+      "kind": "txt",
+      "chars": 38042
+    },
+    {
+      "file": "web/out/take-action/__next._full.txt",
+      "kind": "txt",
+      "chars": 32316
+    },
+    {
+      "file": "web/out/take-action/__next._index.txt",
+      "kind": "txt",
+      "chars": 15909
+    },
+    {
+      "file": "web/out/take-action/__next._tree.txt",
+      "kind": "txt",
+      "chars": 1094
+    },
+    {
+      "file": "web/out/take-action/__next.take-action/__PAGE__.txt",
+      "kind": "txt",
+      "chars": 14896
+    },
+    {
+      "file": "web/out/take-action/__next.take-action.__PAGE__.txt",
+      "kind": "txt",
+      "chars": 14896
+    },
+    {
+      "file": "web/out/take-action/index.html",
+      "kind": "html",
+      "chars": 59910
+    },
+    {
+      "file": "web/out/take-action/index.txt",
+      "kind": "txt",
+      "chars": 32316
+    },
+    {
+      "file": "web/out/technology/__next._full.txt",
+      "kind": "txt",
+      "chars": 30359
+    },
+    {
+      "file": "web/out/technology/__next._index.txt",
+      "kind": "txt",
+      "chars": 15909
+    },
+    {
+      "file": "web/out/technology/__next._tree.txt",
+      "kind": "txt",
+      "chars": 1093
+    },
+    {
+      "file": "web/out/technology/__next.technology/__PAGE__.txt",
+      "kind": "txt",
+      "chars": 12991
+    },
+    {
+      "file": "web/out/technology/__next.technology.__PAGE__.txt",
+      "kind": "txt",
+      "chars": 12991
+    },
+    {
+      "file": "web/out/technology/index.html",
+      "kind": "html",
+      "chars": 56300
+    },
+    {
+      "file": "web/out/technology/index.txt",
+      "kind": "txt",
+      "chars": 30359
+    },
+    {
+      "file": "web/out/transparency/__next._full.txt",
+      "kind": "txt",
+      "chars": 54974
+    },
+    {
+      "file": "web/out/transparency/__next._index.txt",
+      "kind": "txt",
+      "chars": 15909
+    },
+    {
+      "file": "web/out/transparency/__next._tree.txt",
+      "kind": "txt",
+      "chars": 1095
+    },
+    {
+      "file": "web/out/transparency/__next.transparency/__PAGE__.txt",
+      "kind": "txt",
+      "chars": 37500
+    },
+    {
+      "file": "web/out/transparency/__next.transparency.__PAGE__.txt",
+      "kind": "txt",
+      "chars": 37500
+    },
+    {
+      "file": "web/out/transparency/index.html",
+      "kind": "html",
+      "chars": 102336
+    },
+    {
+      "file": "web/out/transparency/index.txt",
+      "kind": "txt",
+      "chars": 54974
+    },
+    {
+      "file": "regulatory_submissions/01_MeitY_India_Submission.md",
+      "kind": "md",
+      "chars": 5612
+    },
+    {
+      "file": "regulatory_submissions/02_NCPCR_Child_Protection_Submission.md",
+      "kind": "md",
+      "chars": 4741
+    },
+    {
+      "file": "regulatory_submissions/03_NCW_Women_Dignity_Submission.md",
+      "kind": "md",
+      "chars": 4869
+    },
+    {
+      "file": "regulatory_submissions/04_Platform_Trust_and_Safety_Brief.md",
+      "kind": "md",
+      "chars": 4448
+    },
+    {
+      "file": "regulatory_submissions/05_Child_Protection_NGO_Protocol.md",
+      "kind": "md",
+      "chars": 3341
+    },
+    {
+      "file": "press_kit/EXECUTIVE_SUMMARY_2PAGE.md",
+      "kind": "md",
+      "chars": 6846
+    },
+    {
+      "file": "press_kit/FACT_SHEET_1PAGE.md",
+      "kind": "md",
+      "chars": 4855
+    },
+    {
+      "file": "press_kit/MEDIA_BACKGROUNDER.md",
+      "kind": "md",
+      "chars": 6281
+    }
+  ]
+}

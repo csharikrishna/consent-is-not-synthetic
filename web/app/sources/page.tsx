@@ -11,7 +11,7 @@ export default function SourcesPage() {
       <Heading
         eyebrow="Bibliographic Provenance"
         title="Source Register &amp; Annotated Bibliography"
-        description="A complete index of all 76 academic studies, official child-safety reports, statutes, and model documentation underpinning this research initiative."
+        description={`A complete index of all ${sources.length} academic studies, official child-safety reports, statutes, and model documentation underpinning this research initiative.`}
       />
 
       <Section
@@ -20,7 +20,7 @@ export default function SourcesPage() {
       >
         <div className="grid-3" style={{marginBottom:'24px'}}>
           <Stat
-            value="76"
+            value={String(sources.length)}
             label="Total Bibliographic Entries"
             note="Indexed across harm studies, regulatory statutes, and technical specifications."
             refs={[]}

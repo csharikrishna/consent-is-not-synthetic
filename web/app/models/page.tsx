@@ -51,7 +51,7 @@ export default function ModelHubGovernancePage() {
 
         <Note>
           <strong>Safeguarding &amp; Scope Notice:</strong>
-          In compliance with ethical research standards, child online safety guidelines, and statutory prohibitions (18 U.S.C. § 2252A; POCSO Act 2012), this platform does <strong>not</strong> host model weight files, download mirrors, abusive imagery, or operational generation prompts, and does not rank models by abusive capability. The 50-repository table in Section 7B records public Hugging Face search-listing metadata (<code>sort=likes</code>, 25 Nov 2026) strictly for governance, licensing, and documentation-completeness auditing.
+          In compliance with ethical research standards, child online safety guidelines, and statutory prohibitions (18 U.S.C. § 2252A; POCSO Act 2012), this platform does <strong>not</strong> host model weight files, download mirrors, abusive imagery, or operational generation prompts. For governance, licensing, and documentation-completeness research, Section 7B publishes the 50-listing Hugging Face public metadata catalogue (<code>pipeline_tag=text-to-image</code>, <code>search=nsfw</code>, <code>sort=likes</code>, captured 25 Nov 2026 UTC), including public repository IDs, search-order ranks, and Hugging Face reference URLs. Separately, the preliminary 53-record desk inventory is currently summarized only at field-completeness level because the row-level workbook is not reproducible from local repository files.
         </Note>
       </Section>
 
@@ -64,7 +64,7 @@ export default function ModelHubGovernancePage() {
         <div className="panel" style={{marginTop:'20px',backgroundColor:'var(--bg)',borderLeft:'4px solid var(--accent)'}}>
           <h3 style={{marginTop:0}}>Phase 1: Model Discovery and Enumeration Findings</h3>
           <p>
-            On public model hubs such as Hugging Face, researchers examined how base checkpoints and parameter-efficient adapters are tagged, licensed, and documented—while excluding any model directories, direct links, or operational prompts from public release.
+            On public model hubs such as Hugging Face, researchers examined how base checkpoints and parameter-efficient adapters are tagged, licensed, and documented—while excluding model binary downloads and operational generation prompts from public release (Section 7B publishes the 50-listing public metadata catalogue for governance research).
           </p>
           <p>
             The discovery documented an expansive spectrum of open checkpoints and fine-tunes:
@@ -325,7 +325,7 @@ export default function ModelHubGovernancePage() {
       <section className="soft-section">
         <Section title="7B. 50-Repository Metadata Snapshot &amp; Technical Audit Protocol" id="audit-protocol">
           <p className="lede">
-            To complement the preliminary 53-record inventory, researchers performed a metadata-only review of the first 50 Hugging Face <code>text-to-image</code> search listings matching <code>nsfw</code> (snapshot dated 25 November 2026). In accordance with institutional safeguarding rules, individual repository handles, direct download URLs, and popularity rankings are withheld from public display.
+            To complement the preliminary 53-record field-completeness summary, researchers performed a metadata-only review of the first 50 Hugging Face <code>text-to-image</code> search listings matching <code>nsfw</code> (<code>sort=likes</code>, snapshot captured 25 November 2026 UTC). In accordance with our governance-research disclosure policy, this section publishes the 50 public repository IDs, search-order ranks, and Hugging Face reference URLs, while withholding model binary weights, download mirrors, and operational generation prompts.
           </p>
 
           <Note>
@@ -415,9 +415,9 @@ export default function ModelHubGovernancePage() {
           <div style={{marginTop:'28px'}}>
             <h3>Complete 50-Repository Metadata &amp; Audit Catalogue (25 November 2026 Snapshot)</h3>
             <p className="micro muted" style={{marginBottom:'14px'}}>
-              Searchable table of all 50 listings from <code>pipeline_tag=text-to-image</code>, <code>search=nsfw</code> (sorted by likes descending). Expand any row for repository-by-repository notes, base model dependency, verification notes, and audit status.{' '}
+              Searchable table of all 50 listings from <code>pipeline_tag=text-to-image</code>, <code>search=nsfw</code> (<code>sort=likes</code>, captured <code>2026-11-25T00:00:00Z</code> UTC). Expand any row for repository-by-repository notes, base model dependency, verification notes, and audit status. Dates lacking a year on the search card are labeled <code>(year not displayed)</code>; missing licenses are labeled <code>Not displayed</code> or <code>Unknown</code>.{' '}
               <a href={assetPath('/downloads/top50-hf-metadata-snapshot.json')} download className="inline-link" style={{margin:0}}>
-                Download Top-50 Snapshot (JSON) ↓
+                Download Top-50 Snapshot with Provenance Metadata (JSON) ↓
               </a>
             </p>
             <Top50SnapshotExplorer />
@@ -487,7 +487,7 @@ export default function ModelHubGovernancePage() {
             Inspect Research Transparency &amp; Data Manifest
           </ButtonLink>
           <ButtonLink href="/sources/" variant="secondary">
-            Inspect All 76 Verified Citations
+            Inspect All 77 Indexed Citations
           </ButtonLink>
         </div>
       </Section>

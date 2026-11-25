@@ -2210,6 +2210,56 @@
       "revised_wording": "Classified as an AI-assisted structured narrative evidence review and regulatory policy synthesis guided by PRISMA transparency principles, not independently peer-reviewed.",
       "reason": "PRISMA 2020 systematic review requires pre-registered screening logs and dual-blind inter-rater records not present here.",
       "status": "Verified & Corrected"
+    },
+    {
+      "id": "CORR-06",
+      "date": "2026-11-25",
+      "title": "Withdrawal of Exploratory 722-Model Query Count",
+      "affected_field": "Public model hub findings, abstracts, charts, and SEO metadata",
+      "previous_wording": "Referenced 722 model artifacts/listings from Hugging Face Text-to-Image search=nsfw pagination.",
+      "revised_wording": "Withdrawn from all public findings, charts, abstracts, policy arguments, and SEO metadata. Retained only in this historical corrections register.",
+      "reason": "The 722 figure was an exploratory search pagination count without an established row-level dataset; no replacement census is fabricated.",
+      "status": "Withdrawn from Public Findings"
+    },
+    {
+      "id": "CORR-07",
+      "date": "2026-11-25",
+      "title": "Reframing of 53-Record Technical Inventory Metadata Gaps",
+      "affected_field": "Technical inventory interpretation (/models/, /evidence/, manuscripts)",
+      "previous_wording": "Implied 0% of publishers conducted safety evaluations, 0% provided provenance, or 100% had ambiguous licenses.",
+      "revised_wording": "The preliminary 53-record technical inventory contains gaps in collected safety-evaluation, licensing and provenance metadata. These gaps describe the completeness of this investigation and require additional publisher-level verification. They do not establish the absence of documentation or unsafe model behaviour.",
+      "reason": "Missing fields in a preliminary desk inventory measure collection completeness, not publisher misconduct or model unsafety.",
+      "status": "Verified & Corrected"
+    },
+    {
+      "id": "CORR-08",
+      "date": "2026-11-25",
+      "title": "India Helpline 1930 Scope & Regional Number Withholding",
+      "affected_field": "/support/, /about/ (Hindi & Telugu blocks), /take-action/, submissions",
+      "previous_wording": "Listed 1930 alongside sexual-abuse/deepfake emergency reporting and included 1091.",
+      "revised_wording": "1930 is strictly designated for financial cyber-fraud reporting. Sexual abuse / NCII routing uses cybercrime.gov.in, 112 (Emergency), 1098 (Childline), and 181 (Women Helpline, subject to availability). 1091 is withheld pending applicability verification.",
+      "reason": "Prevents misrouting survivors in crisis to a financial fraud hotline.",
+      "status": "Verified & Corrected"
+    },
+    {
+      "id": "CORR-09",
+      "date": "2026-11-25",
+      "title": "Reconciliation of Claim Verification Register (IWF, Ofcom, CHI 2024, ISD)",
+      "affected_field": "CLAIM_VERIFICATION_FINAL.csv (CLM-005, CLM-006, CLM-007, CLM-009)",
+      "previous_wording": "Contained mismatched descriptions (IWF 2023-2024 6521%, Ofcom 'adult content on Reddit', CHI 2024 US high school N=1421, ISD 12 platforms).",
+      "revised_wording": "Corrected to canonical baseline: IWF 13 (2024) to 3,443 (2025) videos (~264.85x) & 193 to 491 reports (+154.4%); Ofcom 69/104 (66.35%) risk records lacking named responsible person; Umbach et al. CHI 2024 10-country survey (2.2% victimization, 1.8% perpetration); ISD 20.7M monthly visits across 31 selected services (May 2025).",
+      "reason": "Eliminates transcription errors against primary sources.",
+      "status": "Verified & Corrected"
+    },
+    {
+      "id": "CORR-10",
+      "date": "2026-11-25",
+      "title": "Methodology Classification: Structured Narrative Evidence Review",
+      "affected_field": "/methodology/, /research/, manuscripts, protocol",
+      "previous_wording": "Referenced PRISMA 2020 systematic review compliance.",
+      "revised_wording": "Classified as an AI-assisted structured narrative evidence review and regulatory policy synthesis guided by PRISMA transparency principles, not independently peer-reviewed.",
+      "reason": "PRISMA 2020 systematic review requires pre-registered screening logs and dual-blind inter-rater records not present here.",
+      "status": "Verified & Corrected"
     }
   ],
   "publications": [

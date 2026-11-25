@@ -12,7 +12,7 @@
 Model hosting repositories and serverless cloud GPU providers occupy the critical upstream tier of the generative AI supply chain. While commercial consumer platforms (e.g., social networks) struggle with downstream detection and removal, upstream model hubs provide the foundational infrastructure that enables malicious actors to fine-tune and execute unconstrained sexual exploitation pipelines.
 
 Our preliminary 53-record technical inventory highlights governance and documentation priorities. The preliminary 53-record technical inventory contains gaps in collected safety-evaluation, licensing and provenance metadata. These gaps describe the completeness of this investigation and require additional publisher-level verification. They do not establish the absence of documentation or unsafe model behaviour. Specifically:
-- Over 68% of specialized abusive models are lightweight LoRA adapters (<700 MB).
+- In a separate 50-listing Hugging Face `text-to-image` metadata snapshot (`nsfw`), 20 of 50 reviewed listings were classified as LoRA or parameter-efficient adapters, with 3 additional listings carrying ambiguous or secondary LoRA tags (this sample is not representative of all abusive models).
 - Safety evaluation, licensing, and provenance fields showed collection gaps in the preliminary desk inventory, underscoring the need for standardized publisher disclosures.
 - Permissive licenses and ambiguous terms allow commercial re-hosting without acceptable-use enforcement.
 

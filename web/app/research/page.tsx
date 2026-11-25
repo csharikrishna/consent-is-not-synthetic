@@ -179,7 +179,7 @@ export default function ResearchPage() {
               <span className="tag">Evidence Dossier · 223 KB</span>
               <h3 style={{marginTop:'8px'}}>Annotated Source Evidence</h3>
               <p className="micro">
-                16-page technical dossier with verbatim source excerpts, page locators, study populations, and methodological caveats for all 76 references.
+                16-page technical dossier with verbatim source excerpts, page locators, study populations, and methodological caveats for indexed references.
               </p>
               <div style={{marginTop:'auto',paddingTop:'12px'}}>
                 <a href={assetPath('/downloads/annotated-evidence.pdf')} download className="inline-link">
@@ -237,7 +237,7 @@ export default function ResearchPage() {
               <tr>
                 <td><strong>Citation Audit Register</strong></td>
                 <td>CSV / JSON</td>
-                <td>76 Sources</td>
+                <td>77 Sources</td>
                 <td>Complete audit records with locators, study populations, reporting periods, and caveats.</td>
                 <td>
                   <a href={assetPath('/downloads/citation-audit.csv')} download className="inline-link" style={{margin:0}}>CSV (14 KB)</a> ·{' '}
@@ -292,7 +292,7 @@ export default function ResearchPage() {
               <tr>
                 <td><strong>Public Source Register</strong></td>
                 <td>CSV</td>
-                <td>76 Sources</td>
+                <td>77 Sources</td>
                 <td>Complete bibliographic register with verification statuses, locators, and limitations.</td>
                 <td>
                   <a href={assetPath('/downloads/public-source-register.csv')} download className="inline-link" style={{margin:0}}>CSV</a>
@@ -365,10 +365,10 @@ export default function ResearchPage() {
       {/* CITATION REGISTER CTA */}
       <section className="wrap section final-cta">
         <div>
-          <h2>Inspect All 76 Primary Reference Citations</h2>
+          <h2>Inspect All 77 Indexed Reference Citations</h2>
           <p>Explore our searchable bibliography containing complete bibliographic metadata, audit statuses, and primary source links.</p>
         </div>
-        <ButtonLink href="/sources/">Open Source Register (76) ↗</ButtonLink>
+        <ButtonLink href="/sources/">Open Source Register (77) ↗</ButtonLink>
       </section>
     </>
   );

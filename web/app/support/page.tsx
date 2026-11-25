@@ -102,7 +102,7 @@ export default function SupportPage() {
                   <a href="https://cybercrime.gov.in" target="_blank" rel="noopener noreferrer" className="inline-link" style={{margin:0}}>
                     cybercrime.gov.in ↗
                   </a>{' '}
-                  &mdash; Select <em>&ldquo;Report Crime Against Women/Children&rdquo;</em> to report non-consensual intimate imagery, deepfake extortion, or CSAM. Supports anonymous complaints and provides formal acknowledgment numbers for statutory Section 79 takedown notices.
+                  &mdash; Select <em>&ldquo;Report Crime Against Women/Children&rdquo;</em> to report non-consensual intimate imagery, deepfake extortion, or CSAM. Supports anonymous complaints and provides formal acknowledgment numbers for statutory takedown requests under IT Rules Rule 3(2)(b) (distinct from IT Act Section 79 safe-harbor rules and BNS Section 79 criminal provisions).
                 </li>
                 <li>
                   <strong>All-India Emergency Response:</strong> Dial <strong>112</strong> (National ERSS &mdash; 24/7 police intervention for immediate extortion threats, stalking, or physical danger).
@@ -120,7 +120,7 @@ export default function SupportPage() {
                   <strong>Financial Fraud Scope Notice:</strong> Dial <strong>1930</strong> specifically for the <em>Citizen Financial Cyber Fraud Reporting System</em> (designated for freezing stolen funds in online banking fraud; for sexual abuse or deepfakes, use 112 or cybercrime.gov.in above).
                 </li>
                 <li>
-                  <strong>Statutory Removal Mandate:</strong> IT Rules 2026 mandate 2-hour takedown triggers upon formal complaint <Source id={74}/>.
+                  <strong>Statutory Removal Mandates:</strong> IT Rules 2021 (2026 Amendments) establish distinct 2-hour (Rule 3(2)(b) intimate-image complaints) and 3-hour (Rule 3(1)(d) qualifying actual-knowledge orders) removal triggers <Source id={74}/>.
                 </li>
               </ul>
             </article>

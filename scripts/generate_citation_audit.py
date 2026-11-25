@@ -832,9 +832,10 @@ citations = [
         "population": "Children (defined as any person below age 18) within Indian jurisdiction",
         "period": "Statutory law",
         "geo_scope": "India",
-        "verified_claim": "Sections 14 and 15 criminalize the storage, possession, and dissemination of child pornography; Supreme Court of India precedent confirms synthetic representations fall under strict liability.",
-        "limitations": "Strict liability criminal statute; does not require physical contact to substantiate serious penal offenses.",
-        "stream": "Law / governance / policy"
+        "verified_claim": "Sections 13–15 criminalize child sexual abuse material and its storage, possession, or dissemination; applicability to synthetic depictions involves statutory interpretation and case-specific facts, and Section 19 imposes mandatory reporting duties.",
+        "limitations": "Strict liability framework for covered offences; application to specific synthetic outputs requires qualified Indian legal review.",
+        "stream": "Law / governance / policy",
+        "publication_eligible": True
     },
     {
         "id": 53,
@@ -864,9 +865,10 @@ citations = [
         "population": "Representative survey across 21 countries; internet-using youth aged 12–17",
         "period": "2024-2025",
         "geo_scope": "21 countries globally",
-        "verified_claim": "Estimated 20 million internet-using youth experienced technology-facilitated sexual exploitation or abuse; affected children had roughly fourfold higher odds of self-harm and suicidal ideation.",
-        "limitations": "Covers broader technology-facilitated abuse (online grooming, non-consensual sharing, and synthetic manipulation); correlations indicate severe distress but are not purely causal.",
-        "stream": "Harm / usage / enforcement evidence"
+        "verified_claim": "Non-AI-specific contextual research: Estimated 20 million internet-using youth experienced broader technology-facilitated sexual exploitation or abuse across 21 countries. Causal distress claims (UNICEF-04) are withheld from public AI-specific findings.",
+        "limitations": "Withheld from AI-specific headline claims (publication_eligible: false): covers broader technology-facilitated abuse rather than AI-specific causation.",
+        "stream": "Harm / usage / enforcement evidence",
+        "publication_eligible": False
     },
     {
         "id": 55,
@@ -1219,23 +1221,59 @@ citations = [
         "verified_claim": "Coordinated international law enforcement operation resulting in 25 arrests of individuals generating and distributing AI-generated CSAM via encrypted chat channels.",
         "limitations": "Law enforcement arrest tally; arrests reflect initial criminal apprehensions and charges rather than final trial verdicts.",
         "stream": "Harm / usage / enforcement evidence"
+    },
+    {
+        "id": 77,
+        "key": "unicef9",
+        "publisher": "UNICEF",
+        "title": "Nine-country sexual deepfake prevalence research (September 2026)",
+        "date": "September 2026",
+        "url": "https://www.unicef.org/innocenti/",
+        "status": "Secondary source checked",
+        "locator": "September 2026 research summary",
+        "population": "Surveyed children across 9 countries",
+        "period": "September 2026",
+        "geo_scope": "9 countries",
+        "verified_claim": "Approximately 1.1 million children across nine countries experienced sexual deepfakes (2% average prevalence).",
+        "limitations": "Do not combine with UNICEF-01 (11 countries, 1.2M+) or interpret the difference as a declining trend.",
+        "stream": "Harm / usage / enforcement evidence",
+        "publication_eligible": True
     }
 ]
 
-# Write citation-audit.json
-with open('citation-audit.json', 'w', encoding='utf-8') as f:
-    json.dump(citations, f, indent=2, ensure_ascii=False)
+# Sync verification status & citation_role from canonical_data/sources.json
+canonical_sources_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "canonical_data", "sources.json")
+canonical_by_id = {}
+if os.path.exists(canonical_sources_path):
+    with open(canonical_sources_path, "r", encoding="utf-8") as cf:
+        for cs in json.load(cf):
+            canonical_by_id[cs["id"]] = cs
 
-# Write citation-audit.csv
+for c in citations:
+    c.setdefault("publication_eligible", True)
+    cs = canonical_by_id.get(c["id"], {})
+    if cs:
+        c["status"] = cs.get("status", c["status"])
+        verified = cs.get("verified", True)
+    else:
+        verified = True
+    c["citation_role"] = "cited_in_text" if verified else "pending_external_verification"
+
+out_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "web", "public", "downloads")
+for target_dir in [".", out_dir]:
+    with open(os.path.join(target_dir, "citation-audit.json"), "w", encoding="utf-8") as f:
+        json.dump(citations, f, indent=2, ensure_ascii=False)
+
 fieldnames = [
-    "id", "key", "publisher", "title", "date", "url", "status",
+    "id", "key", "publisher", "title", "date", "url", "status", "citation_role",
     "locator", "population", "period", "geo_scope",
-    "verified_claim", "limitations", "stream"
+    "verified_claim", "limitations", "stream", "publication_eligible"
 ]
-with open('citation-audit.csv', 'w', encoding='utf-8', newline='') as f:
-    writer = csv.DictWriter(f, fieldnames=fieldnames)
-    writer.writeheader()
-    for c in citations:
-        writer.writerow(c)
+for target_dir in [".", out_dir]:
+    with open(os.path.join(target_dir, "citation-audit.csv"), "w", encoding="utf-8", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        for c in citations:
+            writer.writerow({k: c.get(k, "") for k in fieldnames})
 
 print(f"Successfully generated citation-audit.json and citation-audit.csv with {len(citations)} audited sources.")

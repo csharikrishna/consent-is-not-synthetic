@@ -23,7 +23,7 @@ The psychological and socio-economic consequences for survivors are profound and
 
 Victims of synthetic intimate image abuse in India possess strong statutory remedies under existing criminal statutes:
 1. **Bharatiya Nyaya Sanhita (BNS), 2023:**
-   - **Section 79 (Word, gesture or act intended to insult modesty of a woman):** Criminalizes the creation, display, or transmission of any image or media intended to outrage or insult the modesty of a woman (punishable by imprisonment up to 3 years and fine).
+   - **Section 79 (Word, gesture or act intended to insult the modesty of a woman):** Criminalizes uttering any word, making any sound or gesture, or exhibiting any object intending that it be heard or seen by a woman, or intruding upon her privacy, with the intention to insult her modesty (punishable with simple imprisonment up to 3 years and fine). This criminal provision is distinct from Section 79 of the Information Technology Act, 2000 (intermediary safe harbour) and is not a blanket synthetic-image creation offence; applicability depends on the specific facts and statutory elements and requires review by a qualified Indian technology-law professional.
    - **Section 351 (Criminal Intimidation):** Directly applies to sextortion demands threatening the publication of altered photographs.
    - **Section 78 (Stalking):** Encompasses monitoring a woman’s digital likeness or online presence to generate and circulate synthetic content without consent.
 2. **Information Technology Act, 2000:**
@@ -39,7 +39,7 @@ We formally urge the National Commission for Women to spearhead the following su
 
 #### Recommendation 1: Dedicated Fast-Track NCII Redressal Cell
 - Establish a specialized **Synthetic Image Abuse & Digital Dignity Desk** within the NCW 24/7 Cyber Cell (`+91-7827170170`), staffed by female cyber law officers trained in trauma-informed victim intake.
-- Assist victims in issuing statutory 2-hour Section 79 takedown notices directly to intermediary grievance officers.
+- Assist victims in submitting documented takedown requests under IT Rules Rule 3(2)(b) (2-hour reasonable and practicable measures for qualifying intimate-image complaints, distinct from IT Act Section 79 safe-harbour rules and BNS Section 79 criminal complaints) directly to intermediary grievance officers.
 
 #### Recommendation 2: Partnerships with Global Cryptographic Hashing Systems
 - Facilitate official partnership between NCW, MeitY, and non-profit cryptographic platforms such as **StopNCII.org** (administered by SWGfL) and **Take It Down** (NCMEC).

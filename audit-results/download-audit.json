@@ -9,15 +9,15 @@
     },
     {
       "filename": "citation-audit.csv",
-      "size_bytes": 54850,
-      "sha256": "5eb6fc914bac9c87d1eee966318b33e86509b92c6fb834971d75980cd0129e9b",
+      "size_bytes": 57356,
+      "sha256": "9fe57691646a16dc090286c585f793160840f22c704778679d5db9a51148cf48",
       "referenced_in_app": true,
       "in_out": true
     },
     {
       "filename": "citation-audit.json",
-      "size_bytes": 85512,
-      "sha256": "9cc347423cb7afed7ec5b236257a17ad1fae336ec91876061b8b1284c3912984",
+      "size_bytes": 81987,
+      "sha256": "ca3a98657bdfd680cf29fcfbf774e41a82756cfeb6800538013e2e281e5a5668",
       "referenced_in_app": true,
       "in_out": true
     },
@@ -30,22 +30,22 @@
     },
     {
       "filename": "claim-verification-final.csv",
-      "size_bytes": 10852,
-      "sha256": "5e6bc0f5c9b1209f90c54a144aba70828dde1249c333eb62c3dec584fd843e1a",
+      "size_bytes": 10929,
+      "sha256": "de2021f1832d145592eca66f9e65d48e8e50881096ef1ad4e8ff1eb502be5c23",
       "referenced_in_app": true,
       "in_out": true
     },
     {
       "filename": "executive-summary-2page.md",
-      "size_bytes": 6951,
-      "sha256": "42b2684bb20cba5b4976a41bf83593d673480c63b14c1bab754e4adf1a69a279",
+      "size_bytes": 6931,
+      "sha256": "b4941cf2699753ee3ed56d93fd26b2ebfc10d9432d62e0ddfbb0e483299e3961",
       "referenced_in_app": true,
       "in_out": true
     },
     {
       "filename": "fact-sheet-1page.md",
-      "size_bytes": 4552,
-      "sha256": "589d6040752f3df262ae1d6a513b8a6b8ca40d57fe5712be8f6926bf5828db8c",
+      "size_bytes": 4922,
+      "sha256": "7b224ba8545c6e564092080294bc65ea93ccf3bc819114473e2c87991312ac18",
       "referenced_in_app": true,
       "in_out": true
     },
@@ -86,8 +86,8 @@
     },
     {
       "filename": "platform-trust-safety-brief.md",
-      "size_bytes": 4284,
-      "sha256": "b82354c32a03a93e4d19329cf0f428dfed23037acdd58e68fb94b0dc61a0f399",
+      "size_bytes": 4498,
+      "sha256": "dc20f544436c8d6b862f559f7240661af162c3a6f3ddf6a03fa147e46d45dcc5",
       "referenced_in_app": true,
       "in_out": true
     },
@@ -142,8 +142,8 @@
     },
     {
       "filename": "top50-hf-metadata-snapshot.json",
-      "size_bytes": 36906,
-      "sha256": "dc2b5ce3df6346fb53fdccab7907279af5e2117a1fc23c1ea425fe3a273aefc9",
+      "size_bytes": 39254,
+      "sha256": "d1eb33e70bedfdad97e0a6fd943c85f0e1ed37797a3e85a1ac2617522c49098f",
       "referenced_in_app": true,
       "in_out": true
     },
@@ -185,7 +185,7 @@
   ],
   "missing_targets": [
     "${v.file}",
-    "citation-audit.json</code> &mdash; All 76 peer-reviewed and statutory references.\n            </li>\n            <li style={{marginBottom:",
+    "citation-audit.json</code> &mdash; All 77 indexed peer-reviewed and statutory references (67 verified, 10 pending URL verification).\n            </li>\n            <li style={{marginBottom:",
     "claim-verification-final.csv</code> &mdash; 15 headline empirical claims audited with page locators.\n            </li>\n            <li style={{marginBottom:",
     "incident-register.csv</code> &mdash; 10 documented legal and enforcement cases.\n            </li>\n          </ul>\n\n          <div style={{marginTop:",
     "v4-journal.pdf</code> &mdash; Complete 24-page defended research paper.\n            </li>\n            <li style={{marginBottom:"

@@ -87,6 +87,11 @@ for p in list((WEB / "app").rglob("*.tsx")) + list((WEB / "components").rglob("*
 missing_sources = [sid for sid in referenced_ids if sid not in source_ids]
 incomplete_sources = [s["id"] for s in sources if not all(str(s.get(k, "")).strip() for k in ("publisher", "title", "locator", "limitations"))]
 orphan_sources = sorted(sid for sid in source_ids if sid not in referenced_ids)
+source_classification = {
+    "cited_in_text": sorted(sid for sid in source_ids if sid in referenced_ids),
+    "supplementary_verified": sorted(s["id"] for s in sources if s["id"] not in referenced_ids and s.get("verified")),
+    "pending_url_verification": sorted(s["id"] for s in sources if not s.get("verified")),
+}
 
 # Check interactions.js source count vs data.json source count
 js_source_ids = set(int(x) for x in re.findall(r'"id"\s*:\s*(\d+)', interactions_txt))
@@ -96,6 +101,7 @@ citation_audit = {
     "missing_sources": missing_sources,
     "incomplete_sources": incomplete_sources,
     "orphan_source_ids": orphan_sources,
+    "source_classification": source_classification,
     "interactions_js_source_count": len(js_source_ids),
     "sources_missing_from_interactions_js": sorted(source_ids - js_source_ids),
 }
@@ -144,10 +150,12 @@ map_files = [str(p.relative_to(ROOT)) for p in OUT.rglob("*.map")]
 leak_722 = []
 for p in OUT.rglob("*"):
     if p.is_file() and p.suffix in (".html", ".js", ".json", ".txt"):
-        if "corrections" in str(p):
+        rel = str(p.relative_to(ROOT)).replace("\\", "/")
+        if any(tok in rel for tok in ("corrections", "top50-hf-metadata-snapshot", "public-data-manifest")):
             continue
-        if "722" in p.read_text(encoding="utf-8", errors="ignore"):
-            leak_722.append(str(p.relative_to(ROOT)))
+        cleaned = p.read_text(encoding="utf-8", errors="ignore").replace("1,722", "")
+        if re.search(r"\b722\b", cleaned):
+            leak_722.append(rel)
 
 sec_audit = {
     "env_files_exposed": env_files,

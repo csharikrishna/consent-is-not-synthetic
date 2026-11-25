@@ -23,7 +23,7 @@ const stakeholders = [
   },
   {
     role: 'Model-Hosting Repositories & Hubs',
-    problem: 'Repositories host and index thousands of specialized fine-tunes with zero upload identity verification, missing model cards, and unscrubbed training datasets.',
+    problem: 'In the preliminary 53-record technical inventory, upload-identity verification, model-card safety evaluations, and training-dataset provenance were not established from collected desk-review fields; additional publisher-level verification is required before generalizing across repositories.',
     evidence: 'The preliminary 53-record technical inventory contains gaps in collected safety-evaluation, licensing and provenance metadata, requiring publisher-level verification <Source id={9}/> <Source id={10}/>.',
     responsible: 'Hosting platforms (Hugging Face, Civitai, GitHub, ModelScope)',
     action: 'Mandate verified publisher phone/email authentication, require affirmative training dataset provenance declarations, implement automated pre-upload heuristic scanning for predatory anatomical tags, and enforce hash-based takedown registers.',
@@ -38,7 +38,7 @@ const stakeholders = [
     responsible: 'Interactive computer services & social networks (Meta, X, TikTok, YouTube, Telegram, Discord)',
     action: 'Deploy automated perceptual hash matching (integrating StopNCII and Take It Down databases), enforce strict 24-hour to 48-hour takedown windows upon receipt of verified victim notices, and terminate repeat distributor accounts.',
     implementation: 'API integration with global hashing consortiums; displaying prominent in-app reporting flows specifically tailored for synthetic sexual abuse.',
-    metric: 'Proportion of reported synthetic NCII items removed within statutory time limits (48 hours US / 2-3 hours India / 24 hours Australia).',
+    metric: 'Proportion of reported synthetic NCII items removed within statutory time limits (48 hours US / 2h Rule 3(2)(b) or 3h Rule 3(1)(d) India / 24 hours Australia).',
     caveats: 'Content moderation at scale faces challenges with end-to-end encrypted messaging channels (e.g. Telegram); platform takedown does not remove local source files.'
   },
   {

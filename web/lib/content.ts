@@ -48,7 +48,7 @@ export const descriptions: Record<string, string> = {
   '/accountability/': 'Three-tier policy framework: targeted prohibition of abuse tools, risk-based release holds, and claim-to-action accountability controls.',
   '/research/': 'Complete research archive: manuscripts (V1, V2, V3, V4), public evidence briefs, India policy analysis, and downloadable research datasets.',
   '/library/': 'Research repository and public downloads catalog: research drafts, data tables, and methodological protocols.',
-  '/sources/': 'Searchable bibliography of all 76 referenced studies, regulatory reports, statutes, and model cards with audit verification status.',
+  '/sources/': 'Searchable bibliography of all 77 referenced studies, regulatory reports, statutes, and model cards with audit verification status.',
   '/transparency/': 'Research version changelog (V1 to V4), verified claim registry, interactive impact & accountability tracker, and public data manifest.',
   '/methodology/': 'Structured Narrative Evidence Review methodology, evidence hierarchy, PRISMA transparency principles, and audit findings.',
   '/about/': 'Mission, ethical boundaries, independence disclosure, authorship accountability, and institutional non-affiliation.',
@@ -73,7 +73,7 @@ export const downloads = [
   { title: 'Historical Research Review · V1', file: 'v1-journal.pdf', tag: 'Archive V1', desc: 'Original technical architecture and open-weight model capability review.' },
   { title: 'Quantitative Evidence Register', file: 'quantitative-evidence.csv', tag: 'Dataset', desc: '14 empirical metrics with denominators, periods, and audit statuses.' },
   { title: 'Claim-to-Action Register', file: 'claim-to-action.csv', tag: 'Dataset', desc: 'Six proposed policy controls linked to empirical failure modes.' },
-  { title: 'Public Source Register', file: 'public-source-register.csv', tag: 'Dataset', desc: '76 bibliographic records with primary-source recheck audit status.' },
+  { title: 'Public Source Register', file: 'public-source-register.csv', tag: 'Dataset', desc: '77 bibliographic records with primary-source recheck audit status.' },
   { title: 'Incident Register', file: 'incident-register.csv', tag: 'Dataset', desc: 'Ten case and regulatory enforcement records; one conflicting duration withheld.' },
   { title: 'Model Metadata Completeness', file: 'model-metadata-completeness.csv', tag: 'Dataset', desc: 'Aggregate completeness audit across 53 general-purpose model records.' },
   { title: 'Prospective Research Protocol', file: 'research-protocol.md', tag: 'Protocol', desc: 'Structured narrative evidence review protocol and external peer-review criteria.' }

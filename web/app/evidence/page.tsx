@@ -244,7 +244,7 @@ export default function Evidence() {
           <Completeness />
           <Note>
             <strong>Research Completeness Notice:</strong>
-            All 76 bibliographic citations on this platform are indexed with primary source locators and limitations; selected headline claims have undergone primary-source rechecking. The preliminary 53-record technical inventory contains gaps in collected safety-evaluation, licensing and provenance metadata. These gaps describe the completeness of this investigation and require additional publisher-level verification. They do not establish the absence of documentation or unsafe model behaviour.
+            All 77 bibliographic citations on this platform are indexed with primary source locators and limitations (67 verified, 10 pending URL verification); selected headline claims have undergone primary-source rechecking. The preliminary 53-record technical inventory contains gaps in collected safety-evaluation, licensing and provenance metadata. These gaps describe the completeness of this investigation and require additional publisher-level verification. They do not establish the absence of documentation or unsafe model behaviour.
           </Note>
         </Section>
       </section>

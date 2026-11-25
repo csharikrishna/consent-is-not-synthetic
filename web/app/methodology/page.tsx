@@ -1,5 +1,6 @@
 import {Heading, Section, Note, Source, Bars, ButtonLink} from '../../components/ui';
 import {Completeness} from '../../components/Explorer';
+import {sources, checked} from '../../lib/content';
 import {pageMeta} from '../../lib/seo';
 
 export const metadata = pageMeta(
@@ -101,12 +102,12 @@ export default function Methodology() {
         <div className="grid-2">
           <Bars
             title="Source Recheck Coverage (Audited Edition)"
-            description="All 76 primary citations systematically audited with exact locators, populations, and caveats in citation-audit.json."
+            description={`Canonical register tracks ${sources.length} total sources: ${checked} verified against primary URLs and ${sources.length - checked} pending external URL verification.`}
             items={[
-              {label: 'Primary Sources Audited & Verified', value: 76},
-              {label: 'Sources Pending Audit', value: 0}
+              {label: 'Primary Sources Verified (Active URLs)', value: checked},
+              {label: 'Sources Pending URL Verification', value: sources.length - checked}
             ]}
-            max={76}
+            max={sources.length}
             source={[]}
           />
 
@@ -167,7 +168,7 @@ export default function Methodology() {
             Explore Research Transparency Center &rarr;
           </ButtonLink>
           <ButtonLink href="/sources/" variant="secondary">
-            Inspect All 76 Verified Citations &rarr;
+            Inspect All {sources.length} Indexed Citations &rarr;
           </ButtonLink>
           <ButtonLink href="/downloads/research-protocol.md" variant="secondary">
             Download Research Protocol (MD) &rarr;

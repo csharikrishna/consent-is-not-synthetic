@@ -227,7 +227,7 @@ export default function TransparencyPage() {
               <strong>Claim Verification CSV:</strong> <code>web/public/downloads/claim-verification-final.csv</code> &mdash; 15 headline empirical claims audited with page locators.
             </li>
             <li style={{marginBottom:'10px'}}>
-              <strong>Audited Citation Ledger:</strong> <code>web/public/downloads/citation-audit.json</code> &mdash; All 76 peer-reviewed and statutory references.
+              <strong>Audited Citation Ledger:</strong> <code>web/public/downloads/citation-audit.json</code> &mdash; All 77 indexed peer-reviewed and statutory references (67 verified, 10 pending URL verification).
             </li>
             <li style={{marginBottom:'10px'}}>
               <strong>Incident Register:</strong> <code>web/public/downloads/incident-register.csv</code> &mdash; 10 documented legal and enforcement cases.

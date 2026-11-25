@@ -81,7 +81,7 @@ export function Header(){
               </Link>
               <Link href="/sources/" className="dropdown-link" data-nav>
                 <div className="dropdown-title">Source Register</div>
-                <div className="dropdown-desc">76 bibliographic citations &amp; audit statuses</div>
+                <div className="dropdown-desc">77 bibliographic citations &amp; audit statuses</div>
               </Link>
               <Link href="/methodology/" className="dropdown-link" data-nav>
                 <div className="dropdown-title">Methodology</div>
@@ -176,7 +176,7 @@ export function Footer(){
           <h3>Research &amp; Integrity</h3>
           <Link href="/research/">Research library</Link>
           <Link href="/transparency/">Transparency &amp; impact tracker</Link>
-          <Link href="/sources/">Source register (76)</Link>
+          <Link href="/sources/">Source register (77)</Link>
           <Link href="/methodology/">Methodology &amp; protocol</Link>
           <Link href="/press/">Press &amp; media center</Link>
           <Link href="/about/">About initiative</Link>

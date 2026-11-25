@@ -25,7 +25,7 @@ While downstream social media platforms (e.g., X, Instagram, WhatsApp) bear down
 An empirical audit of specialized vision generation repositories reveals critical regulatory enforcement gaps:
 1. **Technical Inventory Completeness:** The preliminary 53-record technical inventory contains gaps in collected safety-evaluation, licensing and provenance metadata. These gaps describe the completeness of this investigation and require additional publisher-level verification. They do not establish the absence of documentation or unsafe model behaviour.
 2. **Provenance Verification:** Additional publisher-level verification is required to establish dataset provenance and licensing.
-3. **LoRA Adaptation Asymmetry:** Over 68% of discovered abusive models are lightweight parameter adapters (<700 MB) fine-tuned on top of foundation releases (SDXL, Flux.1). Downstream actors download these files in seconds and execute them locally or on serverless cloud GPUs, evading centralized platform API filters.
+3. **LoRA Adaptation Observation (50-Listing Snapshot):** In a separate metadata snapshot of 50 Hugging Face `text-to-image` listings matching `nsfw` (25 November 2026), 20 of 50 reviewed listings were classified as LoRA or parameter-efficient adapters, with 3 additional listings carrying ambiguous or secondary LoRA tags. This exploratory snapshot is not representative of all abusive models. Downstream actors can download lightweight adapters and run them locally or on serverless cloud GPUs, bypassing centralized platform API filters.
 
 ---
 
@@ -35,7 +35,7 @@ We formally submit the following four regulatory recommendations for inclusion i
 
 #### Recommendation 1: Clarify Model Repositories as Regulated Intermediaries
 - Explicitly declare that open-source model repositories, code-hosting hubs, and weight distribution platforms hosting executable checkpoints and fine-tune adapters fall squarely within the definition of an **Intermediary** under Section 2(1)(w) of the IT Act.
-- Upstream repositories cannot claim safe harbor protections under Section 79 if they fail to observe algorithmic due diligence regarding demonstrably abusive fine-tunes upon notification.
+- Upstream repositories cannot claim safe harbor protections under IT Act Section 79 (distinct from BNS Section 79 criminal provisions) if they fail to observe due diligence obligations under the IT Rules upon receiving qualifying notice or actual knowledge.
 
 #### Recommendation 2: Mandate 24-Hour Automated Hash Deprecation for Model Repositories
 - Require model hubs operating within Indian jurisdiction to integrate a shared hash registry of prohibited weight checkpoints and LoRA adapters purpose-built for non-consensual sexual depiction.
@@ -45,7 +45,7 @@ We formally submit the following four regulatory recommendations for inclusion i
 - Intermediary model hubs must require publishers distributing vision-generation weights to submit affirmative declarations regarding training data provenance, verifying that datasets do not incorporate unconsented personal likenesses or CSAM.
 
 #### Recommendation 4: Coordinate Emergency Takedown Protocols with National Cybercrime Portal
-- Establish a direct, expedited integration between the Indian Cyber Crime Coordination Centre (I4C) and major model repositories to issue Section 79 takedown notices directly to repository trust and safety desks.
+- Establish a direct, expedited integration between the Indian Cyber Crime Coordination Centre (I4C) and major model repositories to issue statutory removal orders under IT Rules Rule 3(1)(d) (3-hour actual-knowledge trigger) and coordinate Rule 3(2)(b) complaint workflows with repository trust and safety desks.
 
 ---
 

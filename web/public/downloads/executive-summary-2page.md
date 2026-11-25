@@ -24,7 +24,7 @@ Empirical evidence from accredited child-protection hotlines and international s
 #### 3. Technology Supply Chains & The Upstream Failure Point
 Synthetic intimate abuse is driven by an asymmetric technology supply chain:
 1. **Foundation Models:** Massive foundation backbones (e.g., Stable Diffusion XL, Flux.1, Qwen-Image) developed at multi-million dollar compute expense are released as open weights.
-2. **Low-Rank Adaptation (LoRA):** Downstream community developers specialize these foundation backbones using lightweight parameter-efficient adapters (<700 MB). Trained on consumer hardware in a few hours using 20–50 unconsented photographs, LoRA adapters enable unconstrained generation of specific real individuals.
+2. **Low-Rank Adaptation (LoRA):** Downstream community developers specialize these foundation backbones using lightweight parameter-efficient adapters (LoRA), enabling targeted customization without retraining the base model.
 3. **Execution Arbitrage:** Commercial deepfake services deploy these open weights to serverless cloud GPU containers (e.g., RunPod, vast.ai) for pennies per thousand generations, evading consumer device limitations and commercial API moderation.
 
 ---
@@ -59,7 +59,7 @@ Standard open-source regime with safety notices
 3. **Tier 3 (Permitted Innovation):** Maintain open distribution for abstract, scientific, design, and non-biometric generative tools.
 
 #### 6. Immediate Statutory & Support Imperatives
-- **Intermediary Accountability:** Clarify that model repositories (Hugging Face, GitHub, Civitai) function as regulated intermediaries under the Indian IT Act and international online safety frameworks, subject to 2-hour removal triggers under Rule 3(2)(b) for non-consensual intimate imagery.
+- **Intermediary Accountability:** Clarify how model repositories (Hugging Face, GitHub, Civitai) are treated under intermediary due-diligence rules (IT Act Section 79 safe-harbour conditions, distinct from BNS Section 79 criminal provisions), including the distinct 2-hour Rule 3(2)(b) intimate-image complaint trigger and 3-hour Rule 3(1)(d) actual-knowledge trigger.
 - **Accurate Victim Routing:** Emergency danger requires **112** (Police). Sexual abuse and deepfakes must route to the National Cyber Crime Portal (`cybercrime.gov.in` Women & Child module), Women’s Helplines (**181 (subject to availability)**), and Childline (**1098**). (Note: National helpline **1930** is specifically designated for financial cyber fraud).
 
 ---

@@ -26,10 +26,22 @@ export default function RegulationPage() {
       >
         <div className="grid-3">
           <article className="panel stat">
-            <div className="stat-number">2–3 hrs</div>
-            <h3>India Takedown Triggers</h3>
-            <p>IT Rules 2026 amendments mandate expeditious response for qualifying intimate depictions and actual knowledge.</p>
-            <div className="refs"><Source id={74} /></div>
+            <h3>India Takedown Triggers (IT Rules 2021 / 2026)</h3>
+            <div className="table-scroll" tabIndex={0} aria-label="India IT Rules removal triggers" style={{marginTop:'10px'}}>
+              <table style={{fontSize:'0.92rem'}}>
+                <tbody>
+                  <tr>
+                    <td><strong>Rule 3(2)(b)</strong></td>
+                    <td><strong>2 hours</strong> &mdash; Reasonable &amp; practicable measures on qualifying intimate-image complaints</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Rule 3(1)(d)</strong></td>
+                    <td><strong>3 hours</strong> &mdash; Removal upon qualifying court or government actual-knowledge orders</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="refs" style={{marginTop:'10px'}}><Source id={74} /></div>
           </article>
 
           <article className="panel stat">

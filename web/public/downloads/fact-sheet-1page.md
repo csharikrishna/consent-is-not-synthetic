@@ -29,15 +29,15 @@
 ### THE TECHNOLOGY SUPPLY CHAIN IN THREE LAYERS
 
 1. **Upstream Foundation Models:** Massive base checkpoints (SDXL 3.5B, Flux.1 12B, Qwen 5B–20B) trained by well-capitalized labs released as downloadable open weights.
-2. **Midstream Parameter Adapters (LoRA):** Specialized low-rank adapters (<700 MB) trained on consumer GPUs in hours using 20–50 personal photos, weaponizing models for non-consensual depiction.
+2. **Midstream Parameter Adapters (LoRA):** Lightweight parameter-efficient adapters allow downstream customization on top of open-weight foundation backbones; training requirements vary by method and architecture.
 3. **Downstream Cloud Inference:** Commercial nudification websites mount hosted models on serverless cloud GPUs (RunPod, vast.ai), evading local hardware limits and platform API content filters.
 
 ---
 
 ### STATUTORY MANDATES & REGULATORY PRECEDENTS
 
-- **India (IT Rules 2026):** Rule 3(2)(b) mandates a **2-hour takedown window** for non-consensual intimate imagery upon receiving complaint. Intermediaries face Section 79 safe-harbor forfeiture for failure to comply.
-- **India (POCSO Act 2012):** Sections 13–15 strictly criminalize synthetic child depictions; Section 19 imposes mandatory reporting duties on educational institutions.
+- **India (IT Rules 2021 / 2026 Amendments):** Distinct triggers: Rule 3(2)(b) mandates reasonable and practicable measures within **2 hours** on qualifying non-consensual intimate-image complaints; Rule 3(1)(d) mandates removal within **3 hours** upon qualifying court or government actual-knowledge orders. Non-compliance risks loss of intermediary safe harbour under **IT Act Section 79** (distinct from BNS Section 79 criminal provisions).
+- **India (POCSO Act 2012):** Sections 13–15 criminalize child sexual abuse material and its storage or transmission; applicability to synthetic depictions involves statutory interpretation and case-specific facts, while Section 19 imposes mandatory reporting duties upon knowledge of an offence.
 - **Australia (Online Safety Act):** Australian eSafety Commissioner initiated regulatory engagement with Hugging Face, forcing terms amendments and disrupting 8 commercial services under civil penalty notice [69].
 - **United Kingdom (Online Safety Act 2023):** Classifies intimate image abuse as a priority illegal offense subject to fines up to 10% of qualifying global revenue.
 

@@ -114,7 +114,7 @@ export default function PressCenterPage() {
               <span className="tag">Data Tables · CSV</span>
               <h3 style={{marginTop:'8px'}}>Verified Data &amp; Citation Ledger</h3>
               <p className="micro">
-                Machine-readable structured datasets including all 76 audited citations and 14 quantitative claims with denominators.
+                Machine-readable structured datasets including all 77 indexed citations and 14 quantitative claims with denominators.
               </p>
               <div style={{marginTop:'auto',paddingTop:'12px'}}>
                 <a href={assetPath('/downloads/public-source-register.csv')} className="inline-link" download>
@@ -187,7 +187,7 @@ export default function PressCenterPage() {
               Public operational email inboxes are withheld on this static release until owner-authorized domain MX infrastructure is live. Journalists and researchers can download all verified briefs, PDFs, and CSV registers directly from this Press Center and the Research Library.
             </p>
           </div>
-          <ButtonLink href="/sources/">Browse All 76 Citations</ButtonLink>
+          <ButtonLink href="/sources/">Browse All 77 Citations</ButtonLink>
         </div>
       </Section>
     </>

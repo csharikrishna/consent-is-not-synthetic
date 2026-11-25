@@ -29,7 +29,7 @@ export default function Home() {
               <ButtonLink href="/take-action/" secondary>Take action</ButtonLink>
             </div>
             <p className="micro">
-              Independent desk research · 76 indexed references (selected claims rechecked) · Zero tracking cookies · Fair-use research publication
+              Independent desk research · 77 indexed references (67 verified, 10 pending URL verification) · Zero tracking cookies · Fair-use research publication
             </p>
           </div>
           <div className="hero-art">
@@ -49,7 +49,7 @@ export default function Home() {
 
       {/* TRUST & RESEARCH CREDIBILITY STRIP */}
       <div className="wrap trust-strip">
-        <span><strong>76</strong> Indexed References</span>
+        <span><strong>77</strong> Indexed References</span>
         <span><strong>14</strong> Quantitative Indicators</span>
         <span><strong>10</strong> Legal &amp; Regulatory Records</span>
         <span><strong>8</strong> Statutory Regimes Analyzed</span>
@@ -249,7 +249,7 @@ export default function Home() {
             <p style={{marginTop:'10px'}}>
               <strong>Tier 1 (Prohibit):</strong> Enact strict civil and criminal prohibitions on commercial services and software purpose-built to facilitate non-consensual nudity or CSAM.<br/>
               <strong>Tier 2 (Govern &amp; Screen):</strong> Require open model hosting repositories to enforce mandatory publisher identity verification, training provenance disclosures, and automated pre-upload heuristic scanning.<br/>
-              <strong>Tier 3 (Expedite Takedown):</strong> Mandate binding rapid-removal windows (48 hours under US law, 2–3 hours under Indian regulations, 24 hours in Australia) backed by enforceable civil penalties.
+              <strong>Tier 3 (Expedite Takedown):</strong> Mandate binding rapid-removal windows (48 hours under US law, 2 hours under India IT Rules Rule 3(2)(b) for qualifying intimate-image complaints and 3 hours under Rule 3(1)(d) for actual-knowledge orders, 24 hours in Australia) backed by enforceable civil penalties.
             </p>
           </div>
           <ButtonLink href="/accountability/">Read the Full Policy Proposals</ButtonLink>

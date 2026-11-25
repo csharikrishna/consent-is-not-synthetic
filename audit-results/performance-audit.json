@@ -1,107 +1,107 @@
 [
   {
     "route": "/",
-    "dclMs": 205,
-    "loadMs": 205
+    "dclMs": 47,
+    "loadMs": 152
   },
   {
     "route": "/impact/",
+    "dclMs": 23,
+    "loadMs": 24
+  },
+  {
+    "route": "/evidence/",
+    "dclMs": 27,
+    "loadMs": 49
+  },
+  {
+    "route": "/incidents/",
+    "dclMs": 18,
+    "loadMs": 24
+  },
+  {
+    "route": "/technology/",
+    "dclMs": 23,
+    "loadMs": 25
+  },
+  {
+    "route": "/model-governance/",
+    "dclMs": 21,
+    "loadMs": 23
+  },
+  {
+    "route": "/open-weights/",
+    "dclMs": 26,
+    "loadMs": 28
+  },
+  {
+    "route": "/regulation/",
+    "dclMs": 26,
+    "loadMs": 37
+  },
+  {
+    "route": "/accountability/",
+    "dclMs": 32,
+    "loadMs": 34
+  },
+  {
+    "route": "/research/",
+    "dclMs": 57,
+    "loadMs": 57
+  },
+  {
+    "route": "/library/",
+    "dclMs": 18,
+    "loadMs": 20
+  },
+  {
+    "route": "/sources/",
+    "dclMs": 32,
+    "loadMs": 47
+  },
+  {
+    "route": "/transparency/",
+    "dclMs": 37,
+    "loadMs": 40
+  },
+  {
+    "route": "/methodology/",
+    "dclMs": 31,
+    "loadMs": 33
+  },
+  {
+    "route": "/about/",
     "dclMs": 24,
     "loadMs": 26
   },
   {
-    "route": "/evidence/",
-    "dclMs": 98,
-    "loadMs": 238
-  },
-  {
-    "route": "/incidents/",
-    "dclMs": 150,
-    "loadMs": 180
-  },
-  {
-    "route": "/technology/",
-    "dclMs": 103,
-    "loadMs": 112
-  },
-  {
-    "route": "/model-governance/",
-    "dclMs": 30,
-    "loadMs": 33
-  },
-  {
-    "route": "/open-weights/",
-    "dclMs": 46,
-    "loadMs": 49
-  },
-  {
-    "route": "/regulation/",
-    "dclMs": 116,
-    "loadMs": 138
-  },
-  {
-    "route": "/accountability/",
-    "dclMs": 120,
-    "loadMs": 120
-  },
-  {
-    "route": "/research/",
-    "dclMs": 138,
-    "loadMs": 147
-  },
-  {
-    "route": "/library/",
+    "route": "/corrections/",
     "dclMs": 35,
-    "loadMs": 38
-  },
-  {
-    "route": "/sources/",
-    "dclMs": 198,
-    "loadMs": 199
-  },
-  {
-    "route": "/transparency/",
-    "dclMs": 148,
-    "loadMs": 157
-  },
-  {
-    "route": "/methodology/",
-    "dclMs": 33,
     "loadMs": 35
   },
   {
-    "route": "/about/",
-    "dclMs": 66,
-    "loadMs": 71
-  },
-  {
-    "route": "/corrections/",
-    "dclMs": 109,
-    "loadMs": 118
-  },
-  {
     "route": "/take-action/",
-    "dclMs": 188,
-    "loadMs": 188
+    "dclMs": 29,
+    "loadMs": 34
   },
   {
     "route": "/action/",
-    "dclMs": 132,
-    "loadMs": 150
+    "dclMs": 25,
+    "loadMs": 30
   },
   {
     "route": "/models/",
-    "dclMs": 107,
-    "loadMs": 113
+    "dclMs": 41,
+    "loadMs": 42
   },
   {
     "route": "/press/",
-    "dclMs": 83,
-    "loadMs": 89
+    "dclMs": 21,
+    "loadMs": 23
   },
   {
     "route": "/support/",
-    "dclMs": 28,
-    "loadMs": 30
+    "dclMs": 17,
+    "loadMs": 19
   }
 ]

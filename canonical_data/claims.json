@@ -70,9 +70,9 @@
   },
   {
     "id": "UNICEF-04",
-    "exact_wording": "Approximately fourfold higher reported occurrence of suicidal thoughts or behaviours and self-harm among affected children.",
-    "value": "~4x",
-    "unit": "relative occurrence ratio",
+    "exact_wording": "[WITHHELD — NON-AI-SPECIFIC CONTEXT] Observational TFSEA distress association in broader technology-facilitated sexual exploitation research (withheld from public AI-specific findings).",
+    "value": "Withheld",
+    "unit": "non-AI-specific contextual record",
     "numerator": "Affected cohort occurrence",
     "denominator": "Unaffected cohort occurrence",
     "population_geography": "Surveyed children in TFSEA research",
