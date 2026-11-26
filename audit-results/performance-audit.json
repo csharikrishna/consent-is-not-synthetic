@@ -1,107 +1,107 @@
 [
   {
     "route": "/",
-    "dclMs": 146,
-    "loadMs": 146
+    "dclMs": 35,
+    "loadMs": 185
   },
   {
     "route": "/impact/",
-    "dclMs": 20,
-    "loadMs": 58
+    "dclMs": 37,
+    "loadMs": 49
   },
   {
     "route": "/evidence/",
     "dclMs": 27,
-    "loadMs": 89
+    "loadMs": 87
   },
   {
     "route": "/incidents/",
-    "dclMs": 22,
-    "loadMs": 60
+    "dclMs": 21,
+    "loadMs": 58
   },
   {
     "route": "/technology/",
-    "dclMs": 28,
-    "loadMs": 68
+    "dclMs": 26,
+    "loadMs": 59
   },
   {
     "route": "/model-governance/",
-    "dclMs": 32,
-    "loadMs": 71
+    "dclMs": 26,
+    "loadMs": 36
   },
   {
     "route": "/open-weights/",
     "dclMs": 28,
-    "loadMs": 78
+    "loadMs": 67
   },
   {
     "route": "/regulation/",
-    "dclMs": 30,
-    "loadMs": 87
+    "dclMs": 29,
+    "loadMs": 77
   },
   {
     "route": "/accountability/",
-    "dclMs": 39,
-    "loadMs": 95
+    "dclMs": 34,
+    "loadMs": 44
   },
   {
     "route": "/research/",
-    "dclMs": 33,
-    "loadMs": 48
+    "dclMs": 32,
+    "loadMs": 77
   },
   {
     "route": "/library/",
-    "dclMs": 36,
-    "loadMs": 84
+    "dclMs": 21,
+    "loadMs": 63
   },
   {
     "route": "/sources/",
-    "dclMs": 38,
-    "loadMs": 103
+    "dclMs": 33,
+    "loadMs": 90
   },
   {
     "route": "/transparency/",
-    "dclMs": 48,
-    "loadMs": 114
+    "dclMs": 38,
+    "loadMs": 85
   },
   {
     "route": "/methodology/",
-    "dclMs": 33,
-    "loadMs": 71
+    "dclMs": 23,
+    "loadMs": 58
   },
   {
     "route": "/about/",
-    "dclMs": 25,
-    "loadMs": 88
+    "dclMs": 27,
+    "loadMs": 42
   },
   {
     "route": "/corrections/",
-    "dclMs": 31,
-    "loadMs": 70
+    "dclMs": 29,
+    "loadMs": 72
   },
   {
     "route": "/take-action/",
-    "dclMs": 42,
-    "loadMs": 146
+    "dclMs": 38,
+    "loadMs": 77
   },
   {
     "route": "/action/",
-    "dclMs": 30,
-    "loadMs": 68
+    "dclMs": 28,
+    "loadMs": 63
   },
   {
     "route": "/models/",
-    "dclMs": 40,
-    "loadMs": 87
+    "dclMs": 28,
+    "loadMs": 62
   },
   {
     "route": "/press/",
-    "dclMs": 23,
-    "loadMs": 34
+    "dclMs": 24,
+    "loadMs": 58
   },
   {
     "route": "/support/",
-    "dclMs": 29,
-    "loadMs": 72
+    "dclMs": 19,
+    "loadMs": 60
   }
 ]

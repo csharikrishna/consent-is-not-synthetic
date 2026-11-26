@@ -7,7 +7,7 @@ export function Header(){
   return (
     <header className="site-header">
       <div className="wrap nav-wrap">
-        <Link href="/" className="brand select-none">
+        <Link href="/" className="brand select-none" prefetch={false}>
           <Mark/>
           <span>Consent Is Not<br/><strong>Synthetic.</strong></span>
         </Link>
@@ -21,7 +21,7 @@ export function Header(){
               Understand <span className="nav-chevron" aria-hidden="true">▾</span>
             </button>
             <div className="dropdown-panel">
-              <Link href="/" className="dropdown-link" data-nav>
+              <Link href="/" className="dropdown-link" data-nav prefetch={false}>
                 <div className="dropdown-title">Overview</div>
                 <div className="dropdown-desc">Core research initiative &amp; findings</div>
               </Link>
@@ -145,7 +145,7 @@ export function Footer(){
     <footer>
       <div className="wrap footer-grid-4">
         <div>
-          <Link href="/" className="brand select-none">
+          <Link href="/" className="brand select-none" prefetch={false}>
             <Mark/>
             <span>Consent Is Not<br/><strong>Synthetic.</strong></span>
           </Link>
@@ -156,7 +156,7 @@ export function Footer(){
         </div>
         <div>
           <h3>Evidence &amp; Harms</h3>
-          <Link href="/">Overview</Link>
+          <Link href="/" prefetch={false}>Overview</Link>
           <Link href="/impact/">Human impact</Link>
           <Link href="/evidence/">Evidence dashboard</Link>
           <Link href="/incidents/">Documented incidents</Link>

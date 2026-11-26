@@ -194,8 +194,10 @@ def main() -> int:
             "exploratory 722-model search" in txt.lower() and "withdrawn" in txt.lower()
         )
 
+        is_withdrawal_ledger_text = "withdrawal of exploratory 722-model" in txt.lower()
+
         # 1. Withdrawn 722 count
-        if not is_governance_ledger and not is_v4_withdrawal_note:
+        if not is_governance_ledger and not is_v4_withdrawal_note and not is_withdrawal_ledger_text:
             cleaned = txt.replace("1,722", "")
             if re.search(r"\b722\b", cleaned):
                 if is_archive_pdf:
