@@ -1,11 +1,31 @@
 # Consent Is Not Synthetic
 
+[![Deploy](https://github.com/csharikrishna/consent-is-not-synthetic/actions/workflows/deploy-gh-pages.yml/badge.svg)](https://github.com/csharikrishna/consent-is-not-synthetic/actions/workflows/deploy-gh-pages.yml)
+[![Live Site](https://img.shields.io/badge/Live%20Platform-csharikrishna.github.io-9D2048?style=flat&logo=githubpages&logoColor=white)](https://csharikrishna.github.io/consent-is-not-synthetic/)
+[![License](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![Accessibility](https://img.shields.io/badge/Accessibility-WCAG%202.1%20AA%20PASS-brightgreen)](audit-results/accessibility-audit.json)
+[![Audit Matrix](https://img.shields.io/badge/Routes%20Audited-21%2F21%20PASS-blue)](audit-results/route-audit.json)
+
 **Artificial Images. Real Victims. Real Consequences.**
 
 An independent public-interest research and evidence-led advocacy initiative documenting AI-enabled sexual exploitation, child safeguarding risks, open-weight model distribution accountability, and comparative regulatory responses.
 
+> **Live Platform:** [https://csharikrishna.github.io/consent-is-not-synthetic/](https://csharikrishna.github.io/consent-is-not-synthetic/)  
 > **Research Cutoff:** 25 November 2026 · **Edition:** Version 4.1 (Defended Edition)  
 > **Classification:** AI-assisted structured narrative evidence review and regulatory policy synthesis, not independently peer-reviewed. Legal comparisons are informational research and have not undergone independent qualified legal review.
+
+---
+
+## Key Deliverables & Direct Links
+
+| Resource | Scope | Link / Deliverable |
+|---|---|---|
+| **Live Web Platform** | 21 routes, accessible, zero cookies | [csharikrishna.github.io/consent-is-not-synthetic](https://csharikrishna.github.io/consent-is-not-synthetic/) |
+| **Release Decision** | Gate verification & statutory alignment | [FINAL_RELEASE_DECISION.md](FINAL_RELEASE_DECISION.md) |
+| **Comprehensive Audit** | 126 route checks, axe-core, deliverable scan | [AUDIT_REPORT.md](AUDIT_REPORT.md) |
+| **Citation Audit Register** | 77 audited sources with full cross-references | [citation-audit.csv](citation-audit.csv) / [citation-audit.json](citation-audit.json) |
+| **Regulatory Submissions** | Audience-tailored policy briefs (MeitY, NCPCR, NCW) | [`regulatory_submissions/`](regulatory_submissions/) |
+| **Model Hub Inventory** | Top-50 NSFW text-to-image metadata snapshot | [`research/snapshots/`](research/snapshots/) |
 
 ---
 
@@ -44,8 +64,9 @@ npm run build        # Static export to web/out/ + RSC payload aliasing + .nojek
 ### Automated Quality & Isolation Checks (from repo root)
 
 ```bash
-python scripts/verify_build_isolation.py    # Ensures 0 source maps, 0 Excel files, 0 broken links
-node scripts/master_playwright_audit.cjs    # 126-check matrix across 21 routes x 6 viewports
+python scripts/verify_build_isolation.py    # Ensures 0 source maps, 0 Excel files, 0 broken links (205 files checked)
+node scripts/master_playwright_audit.cjs    # 126-check matrix across 21 routes x 6 viewports + full axe-core WCAG 2.1 AA
+node scripts/production_smoke_test.cjs      # Verifies 21/21 routes live on production with HTTP 200
 ```
 
 ---
