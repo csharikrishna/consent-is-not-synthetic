@@ -2,10 +2,13 @@ const path = require('path');
 const fs = require('fs');
 const { chromium } = require(path.resolve(__dirname, '../web/node_modules/playwright'));
 
-const BASE_URL = 'http://127.0.0.1:3000';
+const BASE_URL = process.env.BASE_URL || 'http://127.0.0.1:3000';
 const AUDIT_DIR = path.resolve(__dirname, '../audit-results');
 const SHOTS_DIR = path.join(AUDIT_DIR, 'screenshots');
 fs.mkdirSync(SHOTS_DIR, { recursive: true });
+
+const axeSourcePath = path.resolve(__dirname, '../web/node_modules/axe-core/axe.min.js');
+const axeSource = fs.existsSync(axeSourcePath) ? fs.readFileSync(axeSourcePath, 'utf8') : null;
 
 const VIEWPORTS = [
   { name: 'mobile_360', width: 360, height: 640 },
@@ -30,6 +33,7 @@ const ROUTES = [
   const a11yResults = [];
   const perfResults = [];
   const functionalMatrix = {};
+  const axeSummary = { totalViolations: 0, byRoute: {} };
 
   for (const vp of VIEWPORTS) {
     const context = await browser.newContext({ viewport: { width: vp.width, height: vp.height } });
@@ -52,7 +56,7 @@ const ROUTES = [
         }
       });
 
-      const resp = await page.goto(`${BASE_URL}${route}`, { waitUntil: 'networkidle', timeout: 20000 });
+      const resp = await page.goto(`${BASE_URL}${route}`, { waitUntil: 'networkidle', timeout: 25000 });
       const status = resp ? resp.status() : 0;
 
       const dom = await page.evaluate(() => {
@@ -75,11 +79,42 @@ const ROUTES = [
         };
       });
 
+      let axeViolations = [];
+      if (vp.name === 'desktop_1440' && axeSource) {
+        await page.evaluate(axeSource);
+        const axeRes = await page.evaluate(async () => {
+          return await axe.run(document, {
+            runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa'] }
+          });
+        });
+        axeViolations = axeRes.violations.map(v => ({
+          id: v.id,
+          impact: v.impact,
+          help: v.help,
+          nodes: v.nodes.length
+        }));
+        if (axeViolations.length > 0) {
+          axeSummary.byRoute[route] = axeViolations;
+          axeSummary.totalViolations += axeViolations.length;
+        }
+      }
+
       const pass = status === 200 && dom.title.length > 0 && dom.h1Count === 1 && !dom.overflow && dom.imgsNoAlt === 0 && dom.tablesUnwrapped === 0 && consoleErrors.length === 0 && pageErrors.length === 0 && failedRequests.length === 0;
 
       routeResults.push({ viewport: vp.name, route, status, pass, consoleErrors, pageErrors, failedRequests, title: dom.title });
       responsiveResults.push({ viewport: vp.name, route, overflow: dom.overflow, scrollWidth: dom.scrollWidth, innerWidth: dom.innerWidth, tablesUnwrapped: dom.tablesUnwrapped });
-      a11yResults.push({ viewport: vp.name, route, h1Count: dom.h1Count, hasHeader: dom.hasHeader, hasMain: dom.hasMain, hasFooter: dom.hasFooter, hasSkipLink: dom.hasSkipLink, imgsNoAlt: dom.imgsNoAlt });
+      a11yResults.push({
+        viewport: vp.name,
+        route,
+        h1Count: dom.h1Count,
+        hasHeader: dom.hasHeader,
+        hasMain: dom.hasMain,
+        hasFooter: dom.hasFooter,
+        hasSkipLink: dom.hasSkipLink,
+        imgsNoAlt: dom.imgsNoAlt,
+        axeViolations: vp.name === 'desktop_1440' ? axeViolations : undefined
+      });
+
       if (vp.name === 'desktop_1440') {
         perfResults.push({ route, dclMs: dom.dclMs, loadMs: dom.loadMs });
       }
@@ -92,12 +127,18 @@ const ROUTES = [
     await context.close();
   }
 
-  // Functional Interaction Matrix on Desktop 1440
+  // Functional Interaction & Keyboard Matrix on Desktop 1440
   const fCtx = await browser.newContext({ viewport: { width: 1440, height: 900 } });
   const fPage = await fCtx.newPage();
 
-  // 1. Citation modal + mutually exclusive header dropdowns on /
+  // 1. Skip link + Tab key navigation test
   await fPage.goto(`${BASE_URL}/`, { waitUntil: 'networkidle' });
+  await fPage.keyboard.press('Tab');
+  const focusedTag = await fPage.evaluate(() => document.activeElement ? document.activeElement.tagName.toLowerCase() : null);
+  const focusedHref = await fPage.evaluate(() => document.activeElement ? document.activeElement.getAttribute('href') : null);
+  functionalMatrix.keyboardNav = { firstTabTag: focusedTag, skipLinkFocused: focusedHref === '#main' };
+
+  // 2. Citation modal + mutually exclusive header dropdowns on /
   await fPage.locator('[data-dropdown-btn]', { hasText: 'Research' }).click();
   await fPage.locator('[data-dropdown-btn]', { hasText: 'Act' }).hover();
   const openDropdownsAfterHover = await fPage.locator('[data-dropdown].open').count();
@@ -112,7 +153,7 @@ const ROUTES = [
   const modalClosed = !(await fPage.locator('#citation-inspector-modal').isVisible());
   functionalMatrix.citationModal = { opened: modalVisible, title: modalTitle, closedOnEscape: modalClosed };
 
-  // 2. Chart tabs & Metric filter on /evidence/
+  // 3. Chart tabs & Metric filter on /evidence/
   await fPage.goto(`${BASE_URL}/evidence/`, { waitUntil: 'networkidle' });
   const tab2 = fPage.locator('[data-chart-tab]').nth(1);
   await tab2.click();
@@ -122,7 +163,7 @@ const ROUTES = [
   const countText = await fPage.locator('[data-filter-root] [data-count]').first().textContent();
   functionalMatrix.evidenceTabsAndFilter = { tab2Pressed, filteredCountText: countText?.trim() };
 
-  // 3. ModelAccessGate + Top50SnapshotExplorer on /models/
+  // 4. ModelAccessGate + Top50SnapshotExplorer on /models/
   await fPage.goto(`${BASE_URL}/models/`, { waitUntil: 'networkidle' });
   const gateBtn = fPage.locator('button', { hasText: /Acknowledge|Proceed|Enter/i }).first();
   const gateVisible = await gateBtn.isVisible();
@@ -133,7 +174,7 @@ const ROUTES = [
   const visibleTop50 = await fPage.locator('[aria-label*="Top 50"] tbody tr:not([hidden])').count();
   functionalMatrix.modelsGateAndTop50 = { gateVisible, totalRows: top50Rows, filteredApacheRows: visibleTop50 };
 
-  // 4. Mobile drawer on 390x844
+  // 5. Mobile drawer on 390x844
   const mCtx = await browser.newContext({ viewport: { width: 390, height: 844 } });
   const mPage = await mCtx.newPage();
   await mPage.goto(`${BASE_URL}/`, { waitUntil: 'networkidle' });
@@ -149,12 +190,14 @@ const ROUTES = [
   const passed = routeResults.filter(r => r.pass).length;
   fs.writeFileSync(path.join(AUDIT_DIR, 'route-audit.json'), JSON.stringify(routeResults, null, 2));
   fs.writeFileSync(path.join(AUDIT_DIR, 'responsive-audit.json'), JSON.stringify(responsiveResults, null, 2));
-  fs.writeFileSync(path.join(AUDIT_DIR, 'accessibility-audit.json'), JSON.stringify(a11yResults, null, 2));
+  fs.writeFileSync(path.join(AUDIT_DIR, 'accessibility-audit.json'), JSON.stringify({ axeSummary, a11yResults }, null, 2));
   fs.writeFileSync(path.join(AUDIT_DIR, 'performance-audit.json'), JSON.stringify(perfResults, null, 2));
-  fs.writeFileSync(path.join(AUDIT_DIR, 'playwright-results.json'), JSON.stringify({ total, passed, functionalMatrix }, null, 2));
+  fs.writeFileSync(path.join(AUDIT_DIR, 'playwright-results.json'), JSON.stringify({ total, passed, axeSummary, functionalMatrix }, null, 2));
 
   console.log(`Playwright Audit: ${passed}/${total} route-viewport checks passed.`);
+  console.log(`Axe Accessibility Audit: ${axeSummary.totalViolations} rule violations across ${ROUTES.length} routes.`);
   console.log('Functional Matrix:', JSON.stringify(functionalMatrix));
+
   if (
     passed !== total ||
     functionalMatrix.headerDropdowns.openAfterHover !== 1 ||
@@ -162,7 +205,8 @@ const ROUTES = [
     !functionalMatrix.citationModal.opened ||
     !functionalMatrix.citationModal.closedOnEscape ||
     functionalMatrix.modelsGateAndTop50.totalRows !== 50 ||
-    !functionalMatrix.mobileDrawer.opened
+    !functionalMatrix.mobileDrawer.opened ||
+    !functionalMatrix.keyboardNav.skipLinkFocused
   ) {
     process.exit(1);
   }

@@ -866,13 +866,14 @@ export function RegulatoryTiersPyramid() {
 
       <div className="pyramid-interactive-wrap" style={{ marginTop: '22px' }}>
         {/* Tier Blocks (Stack from Tier 1 at top to Tier 3 at bottom) */}
-        <div className="tiers-stack">
+        <div className="tiers-stack" role="tablist" aria-label="Regulatory tiers">
           {REGULATORY_TIERS.map((tier) => {
             const isSelected = selectedTier === tier.id;
             return (
               <button
                 key={tier.id}
                 type="button"
+                role="tab"
                 className={`tier-block tier-${tier.id} ${isSelected ? 'selected' : ''}`}
                 onClick={() => setSelectedTier(tier.id)}
                 aria-selected={isSelected}

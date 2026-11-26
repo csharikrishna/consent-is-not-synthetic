@@ -344,7 +344,7 @@ export default function ResearchPage() {
                   Copy BibTeX
                 </button>
               </div>
-              <textarea id="bibtex-box" readOnly value={bibtexCitation} style={{height:'170px',fontSize:'12px',fontFamily:'monospace'}}></textarea>
+              <textarea id="bibtex-box" aria-label="BibTeX citation text" readOnly value={bibtexCitation} style={{height:'170px',fontSize:'12px',fontFamily:'monospace'}}></textarea>
               <span data-copy-status className="micro muted" aria-live="polite"></span>
             </div>
 
@@ -355,7 +355,7 @@ export default function ResearchPage() {
                   Copy RIS
                 </button>
               </div>
-              <textarea id="ris-box" readOnly value={risCitation} style={{height:'170px',fontSize:'12px',fontFamily:'monospace'}}></textarea>
+              <textarea id="ris-box" aria-label="RIS citation text" readOnly value={risCitation} style={{height:'170px',fontSize:'12px',fontFamily:'monospace'}}></textarea>
               <span data-copy-status className="micro muted" aria-live="polite"></span>
             </div>
           </div>

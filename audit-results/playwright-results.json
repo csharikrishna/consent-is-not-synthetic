@@ -1,7 +1,15 @@
 {
   "total": 126,
   "passed": 126,
+  "axeSummary": {
+    "totalViolations": 0,
+    "byRoute": {}
+  },
   "functionalMatrix": {
+    "keyboardNav": {
+      "firstTabTag": "a",
+      "skipLinkFocused": true
+    },
     "headerDropdowns": {
       "openAfterHover": 1,
       "openAfterEscape": 0

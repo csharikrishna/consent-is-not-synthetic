@@ -51,8 +51,8 @@
     },
     {
       "filename": "final-release-decision.md",
-      "size_bytes": 3868,
-      "sha256": "244d78f7cc04f48891cb1d793ca79f9205930871a06bd10dcbcbdbc26a7edaab",
+      "size_bytes": 2378,
+      "sha256": "49feec81c857691384c6d741dd5770df8334aee386ac96f51358b1d676435f08",
       "referenced_in_app": true,
       "in_out": true
     },
@@ -142,8 +142,8 @@
     },
     {
       "filename": "top50-hf-metadata-snapshot.json",
-      "size_bytes": 39254,
-      "sha256": "d1eb33e70bedfdad97e0a6fd943c85f0e1ed37797a3e85a1ac2617522c49098f",
+      "size_bytes": 39858,
+      "sha256": "3cc3510a23ddbeda28d82b1583bbb3bc3ce17330abee3d91689d5aa379f2191a",
       "referenced_in_app": true,
       "in_out": true
     },

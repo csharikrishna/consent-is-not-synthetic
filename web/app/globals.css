@@ -235,7 +235,7 @@ footer{border-top:1px solid var(--line);background:#f9f2f5;padding:46px 0 24px}
   font-family: var(--serif);
   font-size: 20px;
   font-weight: 700;
-  color: #c98fa1;
+  color: #8c2643;
 }
 .pipeline-node.active .node-step {
   color: var(--accent);
@@ -502,6 +502,9 @@ footer{border-top:1px solid var(--line);background:#f9f2f5;padding:46px 0 24px}
   border-radius: 8px;
   padding: 20px;
   animation: fadeIn 0.25s ease;
+}
+.tier-drawer .micro.muted {
+  color: #554d52;
 }
 .tier-details-grid {
   display: grid;

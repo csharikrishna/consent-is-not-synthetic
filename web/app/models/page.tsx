@@ -174,9 +174,9 @@ export default function ModelHubGovernancePage() {
       </Section>
 
       {/* METADATA COMPLETENESS AUDIT */}
-      <Section title="4. Model-Card Deficiencies and Provenance Failures" id="provenance">
+      <Section title="4. Model-Card Metadata Completeness and Verification Priorities" id="provenance">
         <p>
-          Model cards were introduced by AI safety researchers as a standardized mechanism to communicate training data provenance, intended use-cases, known limitations, and ethical boundaries <Source id={10}/>. The empirical audit (documented in <code>model_metadata_completeness.csv</code>) reveals systemic non-compliance across community repositories:
+          Model cards were introduced by AI safety researchers as a standardized mechanism to communicate training data provenance, intended use-cases, known limitations, and ethical boundaries <Source id={10}/>. In the preliminary 53-record desk inventory (documented in <code>model-metadata-completeness.csv</code>), the collected fields contain metadata-completeness gaps that describe the extent of this desk investigation and require publisher-level verification rather than demonstrating systemic publisher non-compliance:
         </p>
 
         <div style={{marginTop:'22px',marginBottom:'26px'}}>
@@ -415,7 +415,7 @@ export default function ModelHubGovernancePage() {
           <div style={{marginTop:'28px'}}>
             <h3>Complete 50-Repository Metadata &amp; Audit Catalogue (25 November 2026 Snapshot)</h3>
             <p className="micro muted" style={{marginBottom:'14px'}}>
-              Searchable table of all 50 listings from <code>pipeline_tag=text-to-image</code>, <code>search=nsfw</code> (<code>sort=likes</code>, captured <code>2026-11-25T00:00:00Z</code> UTC). Expand any row for repository-by-repository notes, base model dependency, verification notes, and audit status. Dates lacking a year on the search card are labeled <code>(year not displayed)</code>; missing licenses are labeled <code>Not displayed</code> or <code>Unknown</code>.{' '}
+              Searchable table of all 50 listings from <code>pipeline_tag=text-to-image</code>, <code>search=nsfw</code> (<code>sort=likes</code>, captured <code>2026-11-25</code>, date-level precision). Expand any row for repository-by-repository notes, base model dependency, verification notes, and audit status. Dates lacking a year on the search card are labeled <code>(year not displayed)</code>; missing licenses are labeled <code>Not displayed</code> or <code>Unknown</code>.{' '}
               <a href={assetPath('/downloads/top50-hf-metadata-snapshot.json')} download className="inline-link" style={{margin:0}}>
                 Download Top-50 Snapshot with Provenance Metadata (JSON) ↓
               </a>

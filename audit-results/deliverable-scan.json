@@ -1,5 +1,8 @@
 {
-  "checked_file_count": 205,
+  "status": "PASS",
+  "expected_deliverable_count": 205,
+  "successfully_checked_count": 205,
+  "skipped_file_count": 12,
   "html_count": 24,
   "js_count": 14,
   "source_maps_in_out": 0,
@@ -9,6 +12,9 @@
   "ineligible_in_web_data": [],
   "claim_csv_issues": [],
   "findings": {
+    "missing_dirs": [],
+    "empty_build": [],
+    "read_errors": [],
     "leak_722": [],
     "leak_68_pct": [],
     "leak_unicef04_withheld": [],
@@ -17,7 +23,7 @@
     "leak_withheld_display_contradiction": [],
     "archived_pdf_notes": []
   },
-  "checked_files": [
+  "scanned_files": [
     {
       "file": "web/out/404/index.html",
       "kind": "html",
@@ -31,12 +37,12 @@
     {
       "file": "web/out/__next.__PAGE__.txt",
       "kind": "txt",
-      "chars": 29804
+      "chars": 29856
     },
     {
       "file": "web/out/__next._full.txt",
       "kind": "txt",
-      "chars": 46974
+      "chars": 47026
     },
     {
       "file": "web/out/__next._index.txt",
@@ -59,11 +65,6 @@
       "chars": 112541
     },
     {
-      "file": "web/out/_next/static/chunks/0ic0vppu-hd83.js",
-      "kind": "js",
-      "chars": 29081
-    },
-    {
       "file": "web/out/_next/static/chunks/0ijkp9lnyitv_.js",
       "kind": "js",
       "chars": 26830
@@ -74,14 +75,19 @@
       "chars": 6557
     },
     {
-      "file": "web/out/_next/static/chunks/0ypis_hjtie6t.js",
-      "kind": "js",
-      "chars": 24258
-    },
-    {
       "file": "web/out/_next/static/chunks/1wnov70f88xjy.js",
       "kind": "js",
       "chars": 29127
+    },
+    {
+      "file": "web/out/_next/static/chunks/2out9t1xdjt4q.js",
+      "kind": "js",
+      "chars": 29139
+    },
+    {
+      "file": "web/out/_next/static/chunks/3hrykbt9m93hb.js",
+      "kind": "js",
+      "chars": 24316
     },
     {
       "file": "web/out/_next/static/chunks/3lbm-r_1xmrrq.js",
@@ -99,17 +105,17 @@
       "chars": 9974
     },
     {
-      "file": "web/out/_next/static/pQXgUEsNbfeq12nhMeWDj/_buildManifest.js",
+      "file": "web/out/_next/static/eWrhL91UTCxkzAUzBfA3C/_buildManifest.js",
       "kind": "js",
       "chars": 219
     },
     {
-      "file": "web/out/_next/static/pQXgUEsNbfeq12nhMeWDj/_clientMiddlewareManifest.js",
+      "file": "web/out/_next/static/eWrhL91UTCxkzAUzBfA3C/_clientMiddlewareManifest.js",
       "kind": "js",
       "chars": 96
     },
     {
-      "file": "web/out/_next/static/pQXgUEsNbfeq12nhMeWDj/_ssgManifest.js",
+      "file": "web/out/_next/static/eWrhL91UTCxkzAUzBfA3C/_ssgManifest.js",
       "kind": "js",
       "chars": 80
     },
@@ -211,7 +217,7 @@
     {
       "file": "web/out/accountability/index.html",
       "kind": "html",
-      "chars": 130594
+      "chars": 130672
     },
     {
       "file": "web/out/accountability/index.txt",
@@ -221,7 +227,7 @@
     {
       "file": "web/out/action/__next._full.txt",
       "kind": "txt",
-      "chars": 32306
+      "chars": 32358
     },
     {
       "file": "web/out/action/__next._index.txt",
@@ -236,22 +242,22 @@
     {
       "file": "web/out/action/__next.action/__PAGE__.txt",
       "kind": "txt",
-      "chars": 14891
+      "chars": 14943
     },
     {
       "file": "web/out/action/__next.action.__PAGE__.txt",
       "kind": "txt",
-      "chars": 14891
+      "chars": 14943
     },
     {
       "file": "web/out/action/index.html",
       "kind": "html",
-      "chars": 59900
+      "chars": 60003
     },
     {
       "file": "web/out/action/index.txt",
       "kind": "txt",
-      "chars": 32306
+      "chars": 32358
     },
     {
       "file": "web/out/corrections/__next._full.txt",
@@ -326,7 +332,7 @@
     {
       "file": "web/out/downloads/final-release-decision.md",
       "kind": "md",
-      "chars": 3856
+      "chars": 2373
     },
     {
       "file": "web/out/downloads/incident-register.csv",
@@ -391,7 +397,7 @@
     {
       "file": "web/out/downloads/top50-hf-metadata-snapshot.json",
       "kind": "json",
-      "chars": 38486
+      "chars": 39087
     },
     {
       "file": "web/out/downloads/unresolved-evidence-register.md",
@@ -526,12 +532,12 @@
     {
       "file": "web/out/index.html",
       "kind": "html",
-      "chars": 95679
+      "chars": 95782
     },
     {
       "file": "web/out/index.txt",
       "kind": "txt",
-      "chars": 46974
+      "chars": 47026
     },
     {
       "file": "web/out/interactions.js",
@@ -541,7 +547,7 @@
     {
       "file": "web/out/library/__next._full.txt",
       "kind": "txt",
-      "chars": 41821
+      "chars": 41890
     },
     {
       "file": "web/out/library/__next._index.txt",
@@ -556,22 +562,22 @@
     {
       "file": "web/out/library/__next.library/__PAGE__.txt",
       "kind": "txt",
-      "chars": 24429
+      "chars": 24498
     },
     {
       "file": "web/out/library/__next.library.__PAGE__.txt",
       "kind": "txt",
-      "chars": 24429
+      "chars": 24498
     },
     {
       "file": "web/out/library/index.html",
       "kind": "html",
-      "chars": 77351
+      "chars": 77493
     },
     {
       "file": "web/out/library/index.txt",
       "kind": "txt",
-      "chars": 41821
+      "chars": 41890
     },
     {
       "file": "web/out/methodology/__next._full.txt",
@@ -646,7 +652,7 @@
     {
       "file": "web/out/models/__next._full.txt",
       "kind": "txt",
-      "chars": 155617
+      "chars": 155820
     },
     {
       "file": "web/out/models/__next._index.txt",
@@ -661,22 +667,22 @@
     {
       "file": "web/out/models/__next.models/__PAGE__.txt",
       "kind": "txt",
-      "chars": 138240
+      "chars": 138443
     },
     {
       "file": "web/out/models/__next.models.__PAGE__.txt",
       "kind": "txt",
-      "chars": 138240
+      "chars": 138443
     },
     {
       "file": "web/out/models/index.html",
       "kind": "html",
-      "chars": 194931
+      "chars": 195137
     },
     {
       "file": "web/out/models/index.txt",
       "kind": "txt",
-      "chars": 155617
+      "chars": 155820
     },
     {
       "file": "web/out/open-weights/__next._full.txt",
@@ -786,7 +792,7 @@
     {
       "file": "web/out/research/__next._full.txt",
       "kind": "txt",
-      "chars": 41823
+      "chars": 41892
     },
     {
       "file": "web/out/research/__next._index.txt",
@@ -801,22 +807,22 @@
     {
       "file": "web/out/research/__next.research/__PAGE__.txt",
       "kind": "txt",
-      "chars": 24430
+      "chars": 24499
     },
     {
       "file": "web/out/research/__next.research.__PAGE__.txt",
       "kind": "txt",
-      "chars": 24430
+      "chars": 24499
     },
     {
       "file": "web/out/research/index.html",
       "kind": "html",
-      "chars": 77353
+      "chars": 77495
     },
     {
       "file": "web/out/research/index.txt",
       "kind": "txt",
-      "chars": 41823
+      "chars": 41892
     },
     {
       "file": "web/out/robots.txt",
@@ -901,7 +907,7 @@
     {
       "file": "web/out/take-action/__next._full.txt",
       "kind": "txt",
-      "chars": 32316
+      "chars": 32368
     },
     {
       "file": "web/out/take-action/__next._index.txt",
@@ -916,22 +922,22 @@
     {
       "file": "web/out/take-action/__next.take-action/__PAGE__.txt",
       "kind": "txt",
-      "chars": 14896
+      "chars": 14948
     },
     {
       "file": "web/out/take-action/__next.take-action.__PAGE__.txt",
       "kind": "txt",
-      "chars": 14896
+      "chars": 14948
     },
     {
       "file": "web/out/take-action/index.html",
       "kind": "html",
-      "chars": 59910
+      "chars": 60013
     },
     {
       "file": "web/out/take-action/index.txt",
       "kind": "txt",
-      "chars": 32316
+      "chars": 32368
     },
     {
       "file": "web/out/technology/__next._full.txt",
@@ -1042,6 +1048,56 @@
       "file": "press_kit/MEDIA_BACKGROUNDER.md",
       "kind": "md",
       "chars": 6281
+    }
+  ],
+  "skipped_files": [
+    {
+      "file": "web/out/.nojekyll",
+      "reason": "non-text asset ()"
+    },
+    {
+      "file": "web/out/_next/static/chunks/27whqwukq-q_q.css",
+      "reason": "non-text asset (.css)"
+    },
+    {
+      "file": "web/out/_next/static/media/inter_latin_400_normal-s.p.2qdljeg3s-lsl.woff2",
+      "reason": "non-text asset (.woff2)"
+    },
+    {
+      "file": "web/out/_next/static/media/inter_latin_600_normal-s.p.2dov6rjg62vru.woff2",
+      "reason": "non-text asset (.woff2)"
+    },
+    {
+      "file": "web/out/_next/static/media/inter_latin_700_normal-s.p.4421omqeymgmp.woff2",
+      "reason": "non-text asset (.woff2)"
+    },
+    {
+      "file": "web/out/_next/static/media/source_serif_4_latin_400_italic-s.p.176tdg0wh_pxv.woff2",
+      "reason": "non-text asset (.woff2)"
+    },
+    {
+      "file": "web/out/_next/static/media/source_serif_4_latin_400_normal-s.p.2h0g4hvhigxb2.woff2",
+      "reason": "non-text asset (.woff2)"
+    },
+    {
+      "file": "web/out/_next/static/media/source_serif_4_latin_600_normal-s.p.1hueffaspwr_u.woff2",
+      "reason": "non-text asset (.woff2)"
+    },
+    {
+      "file": "web/out/_next/static/media/source_serif_4_latin_700_normal-s.p.3yrx7comk54ni.woff2",
+      "reason": "non-text asset (.woff2)"
+    },
+    {
+      "file": "web/out/assets/hero.svg",
+      "reason": "non-text asset (.svg)"
+    },
+    {
+      "file": "web/out/assets/mark.svg",
+      "reason": "non-text asset (.svg)"
+    },
+    {
+      "file": "web/out/assets/social-card.png",
+      "reason": "non-text asset (.png)"
     }
   ]
 }

@@ -290,7 +290,7 @@ export function SignupCard({title="Research & Policy Updates Desk", subtitle="Re
         </label>
       </div>
       <div style={{display:'flex', alignItems:'center', gap:'16px', flexWrap:'wrap', marginTop:'12px'}}>
-        <button type="button" className="button secondary" style={{opacity:0.7, cursor:'not-allowed'}} title="Disabled pending subscriber infrastructure deployment">
+        <button type="button" className="button secondary" disabled style={{cursor:'not-allowed', color:'var(--fg)', borderColor:'var(--border)'}} title="Disabled pending subscriber infrastructure deployment">
           Registration paused pending server backend
         </button>
         <span className="micro muted">Zero credentials stored or requested in client code.</span>

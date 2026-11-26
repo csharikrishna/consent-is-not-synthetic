@@ -4,7 +4,7 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-MD_PATH = ROOT / "research" / "private-snapshots" / "huggingface_top50_nsfw_models_updated.md"
+MD_PATH = ROOT / "research" / "snapshots" / "huggingface_top50_nsfw_models_snapshot.md"
 OUT_JSON = ROOT / "web" / "lib" / "top50_hf.json"
 DOWNLOAD_JSON = ROOT / "web" / "public" / "downloads" / "top50-hf-metadata-snapshot.json"
 
@@ -65,13 +65,16 @@ OUT_JSON.write_text(json.dumps(records, indent=2, ensure_ascii=False), encoding=
 
 snapshot_bundle = {
     "snapshot_metadata": {
-        "captured_at_utc": "2026-11-25T00:00:00Z",
-        "timezone": "UTC",
+        "capture_date": "2026-11-25",
+        "capture_date_precision": "date_only",
+        "capture_timezone_note": "Search listings were reviewed on 25 November 2026; exact intraday capture timestamp was not logged, so date-level precision is specified without fabricated hours/minutes.",
         "platform": "Hugging Face Hub",
         "query": "pipeline_tag=text-to-image&search=nsfw&sort=likes",
         "sort_order": "likes descending (search-page display)",
         "record_count": len(records),
+        "source_snapshot_path": "research/snapshots/huggingface_top50_nsfw_models_snapshot.md",
         "source_sha256": source_sha256,
+        "reproducibility_notes": "Live Hugging Face search listings, like counts, and download metrics are mutable and updated continuously by platform users. This versioned snapshot establishes a frozen, reproducible record of public search-card and repository metadata observed on 25 November 2026.",
         "disclosure_policy": "Metadata-only governance catalogue: public repository IDs, search-order ranks, and Hugging Face reference URLs are published; model weights, download mirrors, and generation prompts are excluded.",
         "field_notes": "Dates without a visible year in Hugging Face search cards are labeled '(year not displayed)'. Missing or custom licenses are labeled 'Not displayed', 'Unknown', or 'Other (inspect license text)'."
     },

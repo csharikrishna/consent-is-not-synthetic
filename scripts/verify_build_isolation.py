@@ -18,7 +18,9 @@ except ImportError:
 def extract_pdf_text(path: Path) -> str:
     if fitz is not None:
         doc = fitz.open(str(path))
-        return "\n".join(page.get_text("text") for page in doc)
+        text = "\n".join(page.get_text("text") for page in doc)
+        doc.close()
+        return text
     if PdfReader is not None:
         reader = PdfReader(str(path))
         return "\n".join((page.extract_text() or "") for page in reader.pages)
@@ -31,11 +33,38 @@ def main() -> int:
     canonical_claims_path = root / "canonical_data" / "claims.json"
     report_path = root / "audit-results" / "deliverable-scan.json"
 
-    html_files = list(out_dir.rglob("*.html"))
-    js_files = list(out_dir.rglob("*.js"))
-    maps = list(out_dir.rglob("*.map"))
-    xlsx = list(out_dir.rglob("*.xlsx"))
-    envs = list(out_dir.rglob(".env*"))
+    findings = {
+        "missing_dirs": [],
+        "empty_build": [],
+        "read_errors": [],
+        "leak_722": [],
+        "leak_68_pct": [],
+        "leak_unicef04_withheld": [],
+        "leak_section79_notice": [],
+        "leak_2_3_hrs": [],
+        "leak_withheld_display_contradiction": [],
+        "archived_pdf_notes": [],
+    }
+
+    # Verify required directories fail-closed
+    required_dirs = [
+        ("out_dir", out_dir),
+        ("out_downloads", out_dir / "downloads"),
+        ("regulatory_submissions", root / "regulatory_submissions"),
+        ("press_kit", root / "press_kit"),
+    ]
+    for name, d in required_dirs:
+        if not d.exists() or not d.is_dir():
+            findings["missing_dirs"].append({"name": name, "path": str(d.relative_to(root)).replace("\\", "/")})
+
+    html_files = list(out_dir.rglob("*.html")) if out_dir.exists() else []
+    js_files = list(out_dir.rglob("*.js")) if out_dir.exists() else []
+    maps = list(out_dir.rglob("*.map")) if out_dir.exists() else []
+    xlsx = list(out_dir.rglob("*.xlsx")) if out_dir.exists() else []
+    envs = list(out_dir.rglob(".env*")) if out_dir.exists() else []
+
+    if out_dir.exists() and len(html_files) == 0:
+        findings["empty_build"].append("web/out contains 0 HTML files")
 
     print(f"Built HTML files: {len(html_files)}, JS files: {len(js_files)}")
     print(f"Source maps in out/: {len(maps)}, Excel: {len(xlsx)}, Env: {len(envs)}")
@@ -93,40 +122,61 @@ def main() -> int:
                 claim_csv_issues.append(f"citation-audit.json:id={item.get('id')}")
 
     text_exts = {".html", ".js", ".json", ".txt", ".xml", ".csv", ".md"}
-    scan_targets = []
-    for p in sorted(out_dir.rglob("*")):
-        if p.is_file() and (p.suffix.lower() in text_exts or p.suffix.lower() == ".pdf"):
-            scan_targets.append(p)
+    expected_scan_targets = []
+    skipped_files = []
+
+    # Collect from out_dir
+    if out_dir.exists():
+        for p in sorted(out_dir.rglob("*")):
+            if p.is_file():
+                if p.suffix.lower() in text_exts or p.suffix.lower() == ".pdf":
+                    expected_scan_targets.append(p)
+                else:
+                    skipped_files.append({
+                        "file": str(p.relative_to(root)).replace("\\", "/"),
+                        "reason": f"non-text asset ({p.suffix.lower()})"
+                    })
+
+    # Collect from public doc directories
     for folder in ("regulatory_submissions", "press_kit"):
         d = root / folder
         if d.exists():
-            for p in sorted(d.glob("*.md")):
-                scan_targets.append(p)
+            for p in sorted(d.glob("*")):
+                if p.is_file():
+                    if p.suffix.lower() in text_exts or p.suffix.lower() == ".pdf":
+                        expected_scan_targets.append(p)
+                    else:
+                        skipped_files.append({
+                            "file": str(p.relative_to(root)).replace("\\", "/"),
+                            "reason": f"non-text asset ({p.suffix.lower()})"
+                        })
 
-    # Archived historical PDFs (V1-V3) are explicitly labeled historical archives; track separately
     archived_pdfs = {"v1-journal.pdf", "v2-journal.pdf", "v3-journal.pdf"}
+    scanned_files = []
+    successfully_checked_count = 0
 
-    findings = {
-        "leak_722": [],
-        "leak_68_pct": [],
-        "leak_unicef04_withheld": [],
-        "leak_section79_notice": [],
-        "leak_2_3_hrs": [],
-        "leak_withheld_display_contradiction": [],
-        "archived_pdf_notes": [],
-    }
-    checked_files = []
-
-    for p in scan_targets:
+    for p in expected_scan_targets:
         rel = str(p.relative_to(root)).replace("\\", "/")
         is_pdf = p.suffix.lower() == ".pdf"
+        txt = ""
         try:
-            txt = extract_pdf_text(p) if is_pdf else p.read_text(encoding="utf-8", errors="ignore")
+            if is_pdf:
+                txt = extract_pdf_text(p)
+                if not txt.strip():
+                    raise ValueError("Extracted PDF text is empty")
+            else:
+                txt = p.read_text(encoding="utf-8")
         except Exception as exc:
-            findings.setdefault("read_errors", []).append({"file": rel, "error": str(exc)})
+            findings["read_errors"].append({"file": rel, "error": str(exc)})
+            print(f"FAIL-CLOSED ERROR reading {rel}: {exc}")
             continue
 
-        checked_files.append({"file": rel, "kind": "pdf" if is_pdf else p.suffix.lower().lstrip("."), "chars": len(txt)})
+        successfully_checked_count += 1
+        scanned_files.append({
+            "file": rel,
+            "kind": "pdf" if is_pdf else p.suffix.lower().lstrip("."),
+            "chars": len(txt)
+        })
 
         is_archive_pdf = p.name in archived_pdfs
         is_governance_ledger = any(
@@ -176,8 +226,21 @@ def main() -> int:
         if re.search(r"withheld from public display", txt, re.IGNORECASE):
             findings["leak_withheld_display_contradiction"].append(rel)
 
+    failed = any([
+        bool(findings["missing_dirs"]),
+        bool(findings["empty_build"]),
+        bool(findings["read_errors"]),
+        maps, xlsx, envs, missing_assets, ineligible_in_web_data, claim_csv_issues,
+        findings["leak_722"], findings["leak_68_pct"], findings["leak_unicef04_withheld"],
+        findings["leak_section79_notice"], findings["leak_2_3_hrs"],
+        findings["leak_withheld_display_contradiction"],
+    ])
+
     report = {
-        "checked_file_count": len(checked_files),
+        "status": "FAIL" if failed else "PASS",
+        "expected_deliverable_count": len(expected_scan_targets),
+        "successfully_checked_count": successfully_checked_count,
+        "skipped_file_count": len(skipped_files),
         "html_count": len(html_files),
         "js_count": len(js_files),
         "source_maps_in_out": len(maps),
@@ -187,22 +250,20 @@ def main() -> int:
         "ineligible_in_web_data": ineligible_in_web_data,
         "claim_csv_issues": claim_csv_issues,
         "findings": findings,
-        "checked_files": checked_files,
+        "scanned_files": scanned_files,
+        "skipped_files": skipped_files,
     }
     report_path.parent.mkdir(parents=True, exist_ok=True)
     report_path.write_text(json.dumps(report, indent=2), encoding="utf-8")
 
-    print(f"Checked {len(checked_files)} deliverables (HTML, JS, JSON, CSV, MD, PDF). Report -> {report_path.relative_to(root)}")
+    print(
+        f"Checked {successfully_checked_count}/{len(expected_scan_targets)} deliverables "
+        f"({len(skipped_files)} skipped non-text assets). Status: {report['status']} -> {report_path.relative_to(root)}"
+    )
     for k, v in findings.items():
-        if k != "archived_pdf_notes":
+        if k != "archived_pdf_notes" and v:
             print(f"  {k}: {v}")
 
-    failed = any([
-        maps, xlsx, envs, missing_assets, ineligible_in_web_data, claim_csv_issues,
-        findings["leak_722"], findings["leak_68_pct"], findings["leak_unicef04_withheld"],
-        findings["leak_section79_notice"], findings["leak_2_3_hrs"],
-        findings["leak_withheld_display_contradiction"],
-    ])
     return 1 if failed else 0
 
 

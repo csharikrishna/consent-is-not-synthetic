@@ -1,1262 +1,1289 @@
-[
-  {
-    "viewport": "mobile_360",
-    "route": "/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_360",
-    "route": "/impact/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_360",
-    "route": "/evidence/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_360",
-    "route": "/incidents/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_360",
-    "route": "/technology/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_360",
-    "route": "/model-governance/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_360",
-    "route": "/open-weights/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_360",
-    "route": "/regulation/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_360",
-    "route": "/accountability/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_360",
-    "route": "/research/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_360",
-    "route": "/library/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_360",
-    "route": "/sources/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_360",
-    "route": "/transparency/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_360",
-    "route": "/methodology/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_360",
-    "route": "/about/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_360",
-    "route": "/corrections/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_360",
-    "route": "/take-action/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_360",
-    "route": "/action/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_360",
-    "route": "/models/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_360",
-    "route": "/press/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_360",
-    "route": "/support/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_390",
-    "route": "/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_390",
-    "route": "/impact/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_390",
-    "route": "/evidence/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_390",
-    "route": "/incidents/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_390",
-    "route": "/technology/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_390",
-    "route": "/model-governance/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_390",
-    "route": "/open-weights/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_390",
-    "route": "/regulation/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_390",
-    "route": "/accountability/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_390",
-    "route": "/research/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_390",
-    "route": "/library/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_390",
-    "route": "/sources/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_390",
-    "route": "/transparency/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_390",
-    "route": "/methodology/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_390",
-    "route": "/about/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_390",
-    "route": "/corrections/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_390",
-    "route": "/take-action/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_390",
-    "route": "/action/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_390",
-    "route": "/models/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_390",
-    "route": "/press/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "mobile_390",
-    "route": "/support/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_768",
-    "route": "/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_768",
-    "route": "/impact/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_768",
-    "route": "/evidence/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_768",
-    "route": "/incidents/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_768",
-    "route": "/technology/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_768",
-    "route": "/model-governance/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_768",
-    "route": "/open-weights/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_768",
-    "route": "/regulation/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_768",
-    "route": "/accountability/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_768",
-    "route": "/research/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_768",
-    "route": "/library/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_768",
-    "route": "/sources/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_768",
-    "route": "/transparency/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_768",
-    "route": "/methodology/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_768",
-    "route": "/about/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_768",
-    "route": "/corrections/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_768",
-    "route": "/take-action/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_768",
-    "route": "/action/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_768",
-    "route": "/models/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_768",
-    "route": "/press/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_768",
-    "route": "/support/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_1024",
-    "route": "/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_1024",
-    "route": "/impact/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_1024",
-    "route": "/evidence/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_1024",
-    "route": "/incidents/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_1024",
-    "route": "/technology/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_1024",
-    "route": "/model-governance/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_1024",
-    "route": "/open-weights/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_1024",
-    "route": "/regulation/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_1024",
-    "route": "/accountability/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_1024",
-    "route": "/research/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_1024",
-    "route": "/library/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_1024",
-    "route": "/sources/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_1024",
-    "route": "/transparency/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_1024",
-    "route": "/methodology/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_1024",
-    "route": "/about/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_1024",
-    "route": "/corrections/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_1024",
-    "route": "/take-action/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_1024",
-    "route": "/action/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_1024",
-    "route": "/models/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_1024",
-    "route": "/press/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "tablet_1024",
-    "route": "/support/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1440",
-    "route": "/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1440",
-    "route": "/impact/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1440",
-    "route": "/evidence/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1440",
-    "route": "/incidents/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1440",
-    "route": "/technology/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1440",
-    "route": "/model-governance/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1440",
-    "route": "/open-weights/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1440",
-    "route": "/regulation/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1440",
-    "route": "/accountability/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1440",
-    "route": "/research/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1440",
-    "route": "/library/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1440",
-    "route": "/sources/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1440",
-    "route": "/transparency/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1440",
-    "route": "/methodology/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1440",
-    "route": "/about/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1440",
-    "route": "/corrections/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1440",
-    "route": "/take-action/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1440",
-    "route": "/action/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1440",
-    "route": "/models/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1440",
-    "route": "/press/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1440",
-    "route": "/support/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1920",
-    "route": "/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1920",
-    "route": "/impact/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1920",
-    "route": "/evidence/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1920",
-    "route": "/incidents/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1920",
-    "route": "/technology/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1920",
-    "route": "/model-governance/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1920",
-    "route": "/open-weights/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1920",
-    "route": "/regulation/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1920",
-    "route": "/accountability/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1920",
-    "route": "/research/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1920",
-    "route": "/library/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1920",
-    "route": "/sources/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1920",
-    "route": "/transparency/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1920",
-    "route": "/methodology/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1920",
-    "route": "/about/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1920",
-    "route": "/corrections/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1920",
-    "route": "/take-action/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1920",
-    "route": "/action/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1920",
-    "route": "/models/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1920",
-    "route": "/press/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  },
-  {
-    "viewport": "desktop_1920",
-    "route": "/support/",
-    "h1Count": 1,
-    "hasHeader": true,
-    "hasMain": true,
-    "hasFooter": true,
-    "hasSkipLink": true,
-    "imgsNoAlt": 0
-  }
-]
+{
+  "axeSummary": {
+    "totalViolations": 0,
+    "byRoute": {}
+  },
+  "a11yResults": [
+    {
+      "viewport": "mobile_360",
+      "route": "/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_360",
+      "route": "/impact/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_360",
+      "route": "/evidence/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_360",
+      "route": "/incidents/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_360",
+      "route": "/technology/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_360",
+      "route": "/model-governance/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_360",
+      "route": "/open-weights/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_360",
+      "route": "/regulation/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_360",
+      "route": "/accountability/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_360",
+      "route": "/research/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_360",
+      "route": "/library/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_360",
+      "route": "/sources/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_360",
+      "route": "/transparency/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_360",
+      "route": "/methodology/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_360",
+      "route": "/about/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_360",
+      "route": "/corrections/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_360",
+      "route": "/take-action/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_360",
+      "route": "/action/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_360",
+      "route": "/models/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_360",
+      "route": "/press/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_360",
+      "route": "/support/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_390",
+      "route": "/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_390",
+      "route": "/impact/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_390",
+      "route": "/evidence/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_390",
+      "route": "/incidents/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_390",
+      "route": "/technology/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_390",
+      "route": "/model-governance/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_390",
+      "route": "/open-weights/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_390",
+      "route": "/regulation/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_390",
+      "route": "/accountability/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_390",
+      "route": "/research/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_390",
+      "route": "/library/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_390",
+      "route": "/sources/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_390",
+      "route": "/transparency/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_390",
+      "route": "/methodology/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_390",
+      "route": "/about/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_390",
+      "route": "/corrections/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_390",
+      "route": "/take-action/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_390",
+      "route": "/action/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_390",
+      "route": "/models/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_390",
+      "route": "/press/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "mobile_390",
+      "route": "/support/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_768",
+      "route": "/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_768",
+      "route": "/impact/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_768",
+      "route": "/evidence/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_768",
+      "route": "/incidents/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_768",
+      "route": "/technology/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_768",
+      "route": "/model-governance/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_768",
+      "route": "/open-weights/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_768",
+      "route": "/regulation/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_768",
+      "route": "/accountability/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_768",
+      "route": "/research/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_768",
+      "route": "/library/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_768",
+      "route": "/sources/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_768",
+      "route": "/transparency/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_768",
+      "route": "/methodology/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_768",
+      "route": "/about/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_768",
+      "route": "/corrections/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_768",
+      "route": "/take-action/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_768",
+      "route": "/action/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_768",
+      "route": "/models/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_768",
+      "route": "/press/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_768",
+      "route": "/support/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_1024",
+      "route": "/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_1024",
+      "route": "/impact/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_1024",
+      "route": "/evidence/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_1024",
+      "route": "/incidents/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_1024",
+      "route": "/technology/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_1024",
+      "route": "/model-governance/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_1024",
+      "route": "/open-weights/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_1024",
+      "route": "/regulation/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_1024",
+      "route": "/accountability/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_1024",
+      "route": "/research/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_1024",
+      "route": "/library/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_1024",
+      "route": "/sources/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_1024",
+      "route": "/transparency/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_1024",
+      "route": "/methodology/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_1024",
+      "route": "/about/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_1024",
+      "route": "/corrections/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_1024",
+      "route": "/take-action/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_1024",
+      "route": "/action/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_1024",
+      "route": "/models/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_1024",
+      "route": "/press/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "tablet_1024",
+      "route": "/support/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "desktop_1440",
+      "route": "/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0,
+      "axeViolations": []
+    },
+    {
+      "viewport": "desktop_1440",
+      "route": "/impact/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0,
+      "axeViolations": []
+    },
+    {
+      "viewport": "desktop_1440",
+      "route": "/evidence/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0,
+      "axeViolations": []
+    },
+    {
+      "viewport": "desktop_1440",
+      "route": "/incidents/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0,
+      "axeViolations": []
+    },
+    {
+      "viewport": "desktop_1440",
+      "route": "/technology/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0,
+      "axeViolations": []
+    },
+    {
+      "viewport": "desktop_1440",
+      "route": "/model-governance/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0,
+      "axeViolations": []
+    },
+    {
+      "viewport": "desktop_1440",
+      "route": "/open-weights/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0,
+      "axeViolations": []
+    },
+    {
+      "viewport": "desktop_1440",
+      "route": "/regulation/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0,
+      "axeViolations": []
+    },
+    {
+      "viewport": "desktop_1440",
+      "route": "/accountability/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0,
+      "axeViolations": []
+    },
+    {
+      "viewport": "desktop_1440",
+      "route": "/research/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0,
+      "axeViolations": []
+    },
+    {
+      "viewport": "desktop_1440",
+      "route": "/library/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0,
+      "axeViolations": []
+    },
+    {
+      "viewport": "desktop_1440",
+      "route": "/sources/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0,
+      "axeViolations": []
+    },
+    {
+      "viewport": "desktop_1440",
+      "route": "/transparency/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0,
+      "axeViolations": []
+    },
+    {
+      "viewport": "desktop_1440",
+      "route": "/methodology/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0,
+      "axeViolations": []
+    },
+    {
+      "viewport": "desktop_1440",
+      "route": "/about/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0,
+      "axeViolations": []
+    },
+    {
+      "viewport": "desktop_1440",
+      "route": "/corrections/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0,
+      "axeViolations": []
+    },
+    {
+      "viewport": "desktop_1440",
+      "route": "/take-action/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0,
+      "axeViolations": []
+    },
+    {
+      "viewport": "desktop_1440",
+      "route": "/action/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0,
+      "axeViolations": []
+    },
+    {
+      "viewport": "desktop_1440",
+      "route": "/models/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0,
+      "axeViolations": []
+    },
+    {
+      "viewport": "desktop_1440",
+      "route": "/press/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0,
+      "axeViolations": []
+    },
+    {
+      "viewport": "desktop_1440",
+      "route": "/support/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0,
+      "axeViolations": []
+    },
+    {
+      "viewport": "desktop_1920",
+      "route": "/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "desktop_1920",
+      "route": "/impact/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "desktop_1920",
+      "route": "/evidence/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "desktop_1920",
+      "route": "/incidents/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "desktop_1920",
+      "route": "/technology/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "desktop_1920",
+      "route": "/model-governance/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "desktop_1920",
+      "route": "/open-weights/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "desktop_1920",
+      "route": "/regulation/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "desktop_1920",
+      "route": "/accountability/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "desktop_1920",
+      "route": "/research/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "desktop_1920",
+      "route": "/library/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "desktop_1920",
+      "route": "/sources/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "desktop_1920",
+      "route": "/transparency/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "desktop_1920",
+      "route": "/methodology/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "desktop_1920",
+      "route": "/about/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "desktop_1920",
+      "route": "/corrections/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "desktop_1920",
+      "route": "/take-action/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "desktop_1920",
+      "route": "/action/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "desktop_1920",
+      "route": "/models/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "desktop_1920",
+      "route": "/press/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    },
+    {
+      "viewport": "desktop_1920",
+      "route": "/support/",
+      "h1Count": 1,
+      "hasHeader": true,
+      "hasMain": true,
+      "hasFooter": true,
+      "hasSkipLink": true,
+      "imgsNoAlt": 0
+    }
+  ]
+}
