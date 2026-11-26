@@ -431,6 +431,14 @@ footer{border-top:1px solid var(--line);background:#f9f2f5;padding:46px 0 24px}
   padding: 14px 18px;
   animation: fadeIn 0.25s ease;
 }
+.arch-detail-card .micro,
+.arch-detail-card .micro.muted,
+.arch-detail-card .muted {
+  color: #3d2d34 !important;
+}
+.arch-detail-card strong {
+  color: #1f1419 !important;
+}
 
 /* --- REGULATORY PYRAMID --- */
 .pyramid-card {

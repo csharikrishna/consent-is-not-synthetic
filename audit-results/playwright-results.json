@@ -3,7 +3,8 @@
   "passed": 126,
   "axeSummary": {
     "totalViolations": 0,
-    "byRoute": {}
+    "byRoute": {},
+    "interactiveStates": {}
   },
   "functionalMatrix": {
     "keyboardNav": {
@@ -17,7 +18,8 @@
     "citationModal": {
       "opened": true,
       "title": "Deepfake abuse is abuse: Disrupting Harm Phase 2 findings",
-      "closedOnEscape": true
+      "closedOnEscape": true,
+      "axeViolations": 0
     },
     "evidenceTabsAndFilter": {
       "tab2Pressed": "true",
@@ -26,11 +28,13 @@
     "modelsGateAndTop50": {
       "gateVisible": true,
       "totalRows": 50,
-      "filteredApacheRows": 7
+      "filteredApacheRows": 7,
+      "axeViolations": 0
     },
     "mobileDrawer": {
       "menuHeightPx": 44,
-      "opened": true
+      "opened": true,
+      "axeViolations": 0
     }
   }
 }

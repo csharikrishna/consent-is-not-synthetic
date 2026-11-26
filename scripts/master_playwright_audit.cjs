@@ -8,7 +8,10 @@ const SHOTS_DIR = path.join(AUDIT_DIR, 'screenshots');
 fs.mkdirSync(SHOTS_DIR, { recursive: true });
 
 const axeSourcePath = path.resolve(__dirname, '../web/node_modules/axe-core/axe.min.js');
-const axeSource = fs.existsSync(axeSourcePath) ? fs.readFileSync(axeSourcePath, 'utf8') : null;
+if (!fs.existsSync(axeSourcePath)) {
+  throw new Error(`axe-core is unavailable at ${axeSourcePath}; accessibility audit cannot run.`);
+}
+const axeSource = fs.readFileSync(axeSourcePath, 'utf8');
 
 const VIEWPORTS = [
   { name: 'mobile_360', width: 360, height: 640 },
@@ -33,7 +36,7 @@ const ROUTES = [
   const a11yResults = [];
   const perfResults = [];
   const functionalMatrix = {};
-  const axeSummary = { totalViolations: 0, byRoute: {} };
+  const axeSummary = { totalViolations: 0, byRoute: {}, interactiveStates: {} };
 
   for (const vp of VIEWPORTS) {
     const context = await browser.newContext({ viewport: { width: vp.width, height: vp.height } });
@@ -79,8 +82,9 @@ const ROUTES = [
         };
       });
 
+      // Run axe on desktop 1440 and mobile 390
       let axeViolations = [];
-      if (vp.name === 'desktop_1440' && axeSource) {
+      if (vp.name === 'desktop_1440' || vp.name === 'mobile_390') {
         await page.evaluate(axeSource);
         const axeRes = await page.evaluate(async () => {
           return await axe.run(document, {
@@ -94,7 +98,8 @@ const ROUTES = [
           nodes: v.nodes.length
         }));
         if (axeViolations.length > 0) {
-          axeSummary.byRoute[route] = axeViolations;
+          const key = `${vp.name}:${route}`;
+          axeSummary.byRoute[key] = axeViolations;
           axeSummary.totalViolations += axeViolations.length;
         }
       }
@@ -112,7 +117,7 @@ const ROUTES = [
         hasFooter: dom.hasFooter,
         hasSkipLink: dom.hasSkipLink,
         imgsNoAlt: dom.imgsNoAlt,
-        axeViolations: vp.name === 'desktop_1440' ? axeViolations : undefined
+        axeViolations: (vp.name === 'desktop_1440' || vp.name === 'mobile_390') ? axeViolations : undefined
       });
 
       if (vp.name === 'desktop_1440') {
@@ -149,9 +154,20 @@ const ROUTES = [
   await fPage.locator('[data-citation]').first().click();
   const modalVisible = await fPage.locator('#citation-inspector-modal').isVisible();
   const modalTitle = await fPage.locator('#citation-modal-title').textContent();
+
+  // Axe on open citation modal
+  await fPage.evaluate(axeSource);
+  const modalAxe = await fPage.evaluate(async () => {
+    return await axe.run(document, { runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa'] } });
+  });
+  if (modalAxe.violations.length > 0) {
+    axeSummary.interactiveStates['citationModal'] = modalAxe.violations.map(v => ({ id: v.id, nodes: v.nodes.length }));
+    axeSummary.totalViolations += modalAxe.violations.length;
+  }
+
   await fPage.keyboard.press('Escape');
   const modalClosed = !(await fPage.locator('#citation-inspector-modal').isVisible());
-  functionalMatrix.citationModal = { opened: modalVisible, title: modalTitle, closedOnEscape: modalClosed };
+  functionalMatrix.citationModal = { opened: modalVisible, title: modalTitle, closedOnEscape: modalClosed, axeViolations: modalAxe.violations.length };
 
   // 3. Chart tabs & Metric filter on /evidence/
   await fPage.goto(`${BASE_URL}/evidence/`, { waitUntil: 'networkidle' });
@@ -172,7 +188,23 @@ const ROUTES = [
   const top50Search = fPage.locator('[aria-label*="Top 50"]').locator('..').locator('..').locator('[data-search]');
   await top50Search.fill('Apache-2.0');
   const visibleTop50 = await fPage.locator('[aria-label*="Top 50"] tbody tr:not([hidden])').count();
-  functionalMatrix.modelsGateAndTop50 = { gateVisible, totalRows: top50Rows, filteredApacheRows: visibleTop50 };
+
+  // Wait for any fadeIn animations to finish
+  await fPage.waitForTimeout(400);
+
+  // Axe on acknowledged models explorer
+  await fPage.evaluate(axeSource);
+  const modelsAxe = await fPage.evaluate(async () => {
+    return await axe.run(document, { runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa'] } });
+  });
+  if (modelsAxe.violations.length > 0) {
+    axeSummary.interactiveStates['modelsExplorer'] = modelsAxe.violations.map(v => ({
+      id: v.id,
+      nodes: v.nodes.map(n => ({ target: n.target, html: n.html, failure: n.failureSummary }))
+    }));
+    axeSummary.totalViolations += modelsAxe.violations.length;
+  }
+  functionalMatrix.modelsGateAndTop50 = { gateVisible, totalRows: top50Rows, filteredApacheRows: visibleTop50, axeViolations: modelsAxe.violations.length };
 
   // 5. Mobile drawer on 390x844
   const mCtx = await browser.newContext({ viewport: { width: 390, height: 844 } });
@@ -182,7 +214,17 @@ const ROUTES = [
   const menuBox = await menuBtn.boundingBox();
   await menuBtn.click();
   const navOpen = await mPage.locator('#main-nav.open').count();
-  functionalMatrix.mobileDrawer = { menuHeightPx: menuBox ? Math.round(menuBox.height) : 0, opened: navOpen === 1 };
+
+  // Axe on open mobile drawer
+  await mPage.evaluate(axeSource);
+  const drawerAxe = await mPage.evaluate(async () => {
+    return await axe.run(document, { runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa'] } });
+  });
+  if (drawerAxe.violations.length > 0) {
+    axeSummary.interactiveStates['mobileDrawer'] = drawerAxe.violations.map(v => ({ id: v.id, nodes: v.nodes.length }));
+    axeSummary.totalViolations += drawerAxe.violations.length;
+  }
+  functionalMatrix.mobileDrawer = { menuHeightPx: menuBox ? Math.round(menuBox.height) : 0, opened: navOpen === 1, axeViolations: drawerAxe.violations.length };
 
   await browser.close();
 
@@ -195,11 +237,12 @@ const ROUTES = [
   fs.writeFileSync(path.join(AUDIT_DIR, 'playwright-results.json'), JSON.stringify({ total, passed, axeSummary, functionalMatrix }, null, 2));
 
   console.log(`Playwright Audit: ${passed}/${total} route-viewport checks passed.`);
-  console.log(`Axe Accessibility Audit: ${axeSummary.totalViolations} rule violations across ${ROUTES.length} routes.`);
+  console.log(`Axe Accessibility Audit: ${axeSummary.totalViolations} rule violations (desktop, mobile, and interactive states).`);
   console.log('Functional Matrix:', JSON.stringify(functionalMatrix));
 
   if (
     passed !== total ||
+    axeSummary.totalViolations > 0 ||
     functionalMatrix.headerDropdowns.openAfterHover !== 1 ||
     functionalMatrix.headerDropdowns.openAfterEscape !== 0 ||
     !functionalMatrix.citationModal.opened ||
@@ -208,6 +251,7 @@ const ROUTES = [
     !functionalMatrix.mobileDrawer.opened ||
     !functionalMatrix.keyboardNav.skipLinkFocused
   ) {
+    console.error('Playwright / Axe Audit FAILED!');
     process.exit(1);
   }
 })();

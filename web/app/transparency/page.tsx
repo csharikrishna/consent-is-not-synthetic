@@ -110,7 +110,7 @@ export default function TransparencyPage() {
           Every headline statistic presented on this platform has been evaluated against primary records, bounding parameters, and methodological caveats. Below is the audited claim ledger:
         </p>
 
-        <div className="table-scroll" style={{marginTop:'20px'}}>
+        <div className="table-scroll" tabIndex={0} role="region" aria-label="Audited headline claims ledger" style={{marginTop:'20px'}}>
           <table>
             <thead>
               <tr>
@@ -178,7 +178,7 @@ export default function TransparencyPage() {
         <p className="micro muted">
           All institutional submissions remain in <strong>Proposed</strong> status pending owner authorization; none have been externally submitted.
         </p>
-        <div className="table-scroll" style={{marginTop:'12px'}}>
+        <div className="table-scroll" tabIndex={0} role="region" aria-label="Proposed regulatory submissions register" style={{marginTop:'12px'}}>
           <table>
             <thead>
               <tr>

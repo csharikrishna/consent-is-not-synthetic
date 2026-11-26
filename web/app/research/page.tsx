@@ -222,7 +222,7 @@ export default function ResearchPage() {
         title="3. Open Machine-Readable Datasets (CSV &amp; JSON)"
         description="Structured datasets supporting the visualizations and registers across the platform. Published under Creative Commons CC BY 4.0."
       >
-        <div className="table-scroll">
+        <div className="table-scroll" tabIndex={0} role="region" aria-label="Open research datasets table">
           <table>
             <thead>
               <tr>

@@ -183,7 +183,7 @@ export default function ModelHubGovernancePage() {
           <GovernanceGapsScorecard />
         </div>
 
-        <div className="table-scroll" style={{marginTop:'20px'}}>
+        <div className="table-scroll" tabIndex={0} role="region" aria-label="Governance completeness scorecard table" style={{marginTop:'20px'}}>
           <table>
             <thead>
               <tr>

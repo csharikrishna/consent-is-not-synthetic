@@ -689,14 +689,14 @@ export function ModelArchitectureChart() {
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <div>
             <h5 style={{ margin: 0, fontSize: '15.5px', color: 'var(--ink)' }}>{active.name}</h5>
-            <span className="micro muted">{active.size} · {active.count} cataloged models</span>
+            <span className="micro" style={{ color: '#3d2d34' }}>{active.size} · {active.count} cataloged models</span>
           </div>
           <span className="stat-number" style={{ fontSize: '26px', color: active.color }}>
             {active.pct}%
           </span>
         </div>
-        <p className="micro" style={{ margin: '8px 0 0', color: '#56424b', lineHeight: 1.55 }}>
-          <strong>Supply-Chain Implication:</strong> {active.risk}. Downstream perpetrators do not need multi-million dollar supercomputers; they exploit lightweight adapters layered on top of open lab weights.
+        <p className="micro" style={{ margin: '8px 0 0', color: '#3d2d34', lineHeight: 1.55 }}>
+          <strong style={{ color: '#1f1419' }}>Supply-Chain Implication:</strong> {active.risk}. Downstream perpetrators do not need multi-million dollar supercomputers; they exploit lightweight adapters layered on top of open lab weights.
         </p>
       </div>
     </div>
