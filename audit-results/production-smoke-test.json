@@ -1,0 +1,273 @@
+{
+  "production_url": "https://csharikrishna.github.io/consent-is-not-synthetic",
+  "test_timestamp_utc": "2026-11-26T05:10:56.059Z",
+  "total_routes_checked": 21,
+  "routes_passed": 21,
+  "all_routes_passed": true,
+  "failures": [],
+  "route_results": [
+    {
+      "route": "/",
+      "status": 200,
+      "pass": true,
+      "title": "Consent Is Not Synthetic — Public Research & Advocacy Platform",
+      "h1Count": 1,
+      "canonical": "https://csharikrishna.github.io/consent-is-not-synthetic/",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/impact/",
+      "status": 200,
+      "pass": true,
+      "title": "Human impact | Consent Is Not Synthetic",
+      "h1Count": 1,
+      "canonical": "https://csharikrishna.github.io/consent-is-not-synthetic/impact/",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/evidence/",
+      "status": 200,
+      "pass": true,
+      "title": "Evidence Dashboard & Quantitative Data Explorer — Consent Is Not Synthetic | Consent Is Not Synthetic",
+      "h1Count": 1,
+      "canonical": "https://csharikrishna.github.io/consent-is-not-synthetic/evidence/",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/incidents/",
+      "status": 200,
+      "pass": true,
+      "title": "Documented Incidents & Legal Case Register | Consent Is Not Synthetic",
+      "h1Count": 1,
+      "canonical": "https://csharikrishna.github.io/consent-is-not-synthetic/incidents/",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/technology/",
+      "status": 200,
+      "pass": true,
+      "title": "Technology and digital forensics | Consent Is Not Synthetic",
+      "h1Count": 1,
+      "canonical": "https://csharikrishna.github.io/consent-is-not-synthetic/technology/",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/model-governance/",
+      "status": 200,
+      "pass": true,
+      "title": "Model Publisher & Repository Governance | Consent Is Not Synthetic",
+      "h1Count": 1,
+      "canonical": "https://csharikrishna.github.io/consent-is-not-synthetic/model-governance/",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/open-weights/",
+      "status": 200,
+      "pass": true,
+      "title": "Hugging Face & Open-Weight Accountability — Consent Is Not Synthetic | Consent Is Not Synthetic",
+      "h1Count": 1,
+      "canonical": "https://csharikrishna.github.io/consent-is-not-synthetic/open-weights/",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/regulation/",
+      "status": 200,
+      "pass": true,
+      "title": "Global Regulation & Legal Matrix | Consent Is Not Synthetic",
+      "h1Count": 1,
+      "canonical": "https://csharikrishna.github.io/consent-is-not-synthetic/regulation/",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/accountability/",
+      "status": 200,
+      "pass": true,
+      "title": "Policy & Accountability Center — Consent Is Not Synthetic | Consent Is Not Synthetic",
+      "h1Count": 1,
+      "canonical": "https://csharikrishna.github.io/consent-is-not-synthetic/accountability/",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/research/",
+      "status": 200,
+      "pass": true,
+      "title": "Research Library & Public Repository — Consent Is Not Synthetic | Consent Is Not Synthetic",
+      "h1Count": 1,
+      "canonical": "https://csharikrishna.github.io/consent-is-not-synthetic/research/",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/library/",
+      "status": 200,
+      "pass": true,
+      "title": "Research Library & Public Repository — Consent Is Not Synthetic | Consent Is Not Synthetic",
+      "h1Count": 1,
+      "canonical": "https://csharikrishna.github.io/consent-is-not-synthetic/research/",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/sources/",
+      "status": 200,
+      "pass": true,
+      "title": "Source Register & Annotated Bibliography | Consent Is Not Synthetic",
+      "h1Count": 1,
+      "canonical": "https://csharikrishna.github.io/consent-is-not-synthetic/sources/",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/transparency/",
+      "status": 200,
+      "pass": true,
+      "title": "Research Transparency Center: Version History, Audited Claims & Impact Tracker | Consent Is Not Synthetic",
+      "h1Count": 1,
+      "canonical": "https://csharikrishna.github.io/consent-is-not-synthetic/transparency/",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/methodology/",
+      "status": 200,
+      "pass": true,
+      "title": "Research Methodology: Structured Narrative Evidence Review & Audit Standards | Consent Is Not Synthetic",
+      "h1Count": 1,
+      "canonical": "https://csharikrishna.github.io/consent-is-not-synthetic/methodology/",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/about/",
+      "status": 200,
+      "pass": true,
+      "title": "About the Initiative & Mission | Consent Is Not Synthetic",
+      "h1Count": 1,
+      "canonical": "https://csharikrishna.github.io/consent-is-not-synthetic/about/",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/corrections/",
+      "status": 200,
+      "pass": true,
+      "title": "Public Corrections & Integrity Register | Consent Is Not Synthetic",
+      "h1Count": 1,
+      "canonical": "https://csharikrishna.github.io/consent-is-not-synthetic/corrections/",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/take-action/",
+      "status": 200,
+      "pass": true,
+      "title": "Take Action: Protect Dignity & Demand Accountability | Consent Is Not Synthetic",
+      "h1Count": 1,
+      "canonical": "https://csharikrishna.github.io/consent-is-not-synthetic/take-action/",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/action/",
+      "status": 200,
+      "pass": true,
+      "title": "Take Action: Protect Dignity & Demand Accountability | Consent Is Not Synthetic",
+      "h1Count": 1,
+      "canonical": "https://csharikrishna.github.io/consent-is-not-synthetic/take-action/",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/models/",
+      "status": 200,
+      "pass": true,
+      "title": "Model Hub Governance: Technical Inventory Completeness & Repository Accountability | Consent Is Not Synthetic",
+      "h1Count": 1,
+      "canonical": "https://csharikrishna.github.io/consent-is-not-synthetic/models/",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/press/",
+      "status": 200,
+      "pass": true,
+      "title": "Press & Media Center — Consent Is Not Synthetic | Consent Is Not Synthetic",
+      "h1Count": 1,
+      "canonical": "https://csharikrishna.github.io/consent-is-not-synthetic/press/",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/support/",
+      "status": 200,
+      "pass": true,
+      "title": "Survivor Support & Official Reporting Hub — Consent Is Not Synthetic | Consent Is Not Synthetic",
+      "h1Count": 1,
+      "canonical": "https://csharikrishna.github.io/consent-is-not-synthetic/support/",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": []
+    }
+  ],
+  "asset_statuses": {
+    "/robots.txt": {
+      "status": 200,
+      "ok": true
+    },
+    "/sitemap.xml": {
+      "status": 200,
+      "ok": true
+    },
+    "/assets/hero.svg": {
+      "status": 200,
+      "ok": true
+    },
+    "/downloads/citation-audit.csv": {
+      "status": 200,
+      "ok": true
+    },
+    "/downloads/top50-hf-metadata-snapshot.json": {
+      "status": 200,
+      "ok": true
+    },
+    "/downloads/v4-journal.pdf": {
+      "status": 200,
+      "ok": true
+    }
+  },
+  "content_assertions": {
+    "regulation_has_distinct_triggers": true,
+    "sources_displays_77_count": true,
+    "models_has_no_overstatement_or_contradiction": true
+  },
+  "verdict": "PASS"
+}
