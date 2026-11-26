@@ -23,8 +23,8 @@ const stakeholders = [
   },
   {
     role: 'Model-Hosting Repositories & Hubs',
-    problem: 'In the preliminary 53-record technical inventory, upload-identity verification, model-card safety evaluations, and training-dataset provenance were not established from collected desk-review fields; additional publisher-level verification is required before generalizing across repositories.',
-    evidence: 'The preliminary 53-record technical inventory contains gaps in collected safety-evaluation, licensing and provenance metadata, requiring publisher-level verification <Source id={9}/> <Source id={10}/>.',
+    problem: 'The preliminary 53-record technical inventory identified gaps in the metadata collected during this investigation, including safety-evaluation, licensing and training-data provenance fields. These findings describe the completeness of the investigation\'s collected records. They do not establish that publishers lack such documentation or that the models exhibit unsafe behaviour.',
+    evidence: 'Preliminary 53-record internal technical inventory describes investigation metadata completeness (Phase 1 workbook records M001–M053); model card schema specifications defined in Hugging Face documentation <Source id={10}/>.',
     responsible: 'Hosting platforms (Hugging Face, Civitai, GitHub, ModelScope)',
     action: 'Mandate verified publisher phone/email authentication, require affirmative training dataset provenance declarations, implement automated pre-upload heuristic scanning for predatory anatomical tags, and enforce hash-based takedown registers.',
     implementation: 'Integration of automated safety linters into model pull requests; fast-track 24-hour statutory takedown portals for child protection hotlines and affected individuals.',

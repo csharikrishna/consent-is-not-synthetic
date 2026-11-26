@@ -102,7 +102,11 @@ export default function SupportPage() {
                   <a href="https://cybercrime.gov.in" target="_blank" rel="noopener noreferrer" className="inline-link" style={{margin:0}}>
                     cybercrime.gov.in ↗
                   </a>{' '}
-                  &mdash; Select <em>&ldquo;Report Crime Against Women/Children&rdquo;</em> to report non-consensual intimate imagery, deepfake extortion, or CSAM. Supports anonymous complaints and provides formal acknowledgment numbers for statutory takedown requests under IT Rules Rule 3(2)(b) (distinct from IT Act Section 79 safe-harbor rules and BNS Section 79 criminal provisions).
+                  &mdash; Select <em>&ldquo;Report Crime Against Women/Children&rdquo;</em> to report non-consensual intimate imagery, deepfake extortion, or CSAM. The National Cyber Crime Reporting Portal provides dedicated reporting options for cybercrime, including offences involving women and children. Anonymous reporting is available only for specified reporting categories. Other complaint routes may require personal details and mobile verification. Check the portal's instructions (<a href="https://www.cybercrime.gov.in/webform/FAQ.aspx" target="_blank" rel="noopener noreferrer" className="inline-link" style={{margin:0}}>FAQ ↗</a>) for the category relevant to your situation.
+                </li>
+                <li>
+                  <strong>Platform Removal vs. Police Reporting Distinction:</strong>{' '}
+                  For qualifying complaints involving intimate imagery under Rule 3(2)(b) of the Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, an intermediary must take reasonable and practicable measures to remove or disable access within two hours of receiving the qualifying complaint. This is an intermediary obligation and is separate from filing a police complaint. (<a href="https://www.meity.gov.in/static/uploads/2026/02/49d4c4b42fc2d3dce00e0fdcf7ed1389.pdf" target="_blank" rel="noopener noreferrer" className="inline-link" style={{margin:0}}>MeitY Advisory ↗</a>).
                 </li>
                 <li>
                   <strong>All-India Emergency Response:</strong> Dial <strong>112</strong> (National ERSS &mdash; 24/7 police intervention for immediate extortion threats, stalking, or physical danger).

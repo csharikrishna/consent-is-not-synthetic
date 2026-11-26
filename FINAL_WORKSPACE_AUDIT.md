@@ -1,5 +1,7 @@
 # FINAL WORKSPACE AUDIT — Consent Is Not Synthetic (V4.1)
 
+> **Historical audit snapshot.** This document records an earlier investigation state and is superseded by the final V4.1 release audit and its associated verification reports. Historical findings should not be interpreted as the current production state.
+
 **Audit Date:** 25 November 2026  
 **Research Cutoff:** 25 November 2026  
 **Status:** Verified Local Inventory & Gap Assessment

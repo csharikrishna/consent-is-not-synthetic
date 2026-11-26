@@ -260,7 +260,7 @@ const playwright = require(path.resolve(__dirname, '../web/node_modules/playwrig
       </tr>
       <tr>
         <td><strong>Canada / JP / KR</strong></td>
-        <td>Canada Protecting Victims Act (Royal Assent 18 Jun 2026; commencement pending confirmation). Japan Penal Code Art. 230/231; South Korea Sexual Crimes Act Art. 14-2.</td>
+        <td>Canada Protecting Victims Act, 2026 (Royal Assent 18 Jun 2026; s. 15 in force 18 Jul 2026 under s. 205(1), amending Criminal Code s. 162.1). Japan Penal Code Art. 230/231; South Korea Sexual Crimes Act Art. 14-2.</td>
       </tr>
     </tbody>
   </table>

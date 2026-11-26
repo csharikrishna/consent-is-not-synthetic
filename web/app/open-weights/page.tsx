@@ -55,7 +55,7 @@ export default function OpenWeightsPage() {
             <div className="stat-number">53</div>
             <h3>Preliminary Technical Inventory</h3>
             <p>
-              The preliminary 53-record technical inventory contains gaps in collected safety-evaluation, licensing and provenance metadata—requiring publisher-level verification rather than assuming safety.
+              The preliminary 53-record technical inventory identified gaps in the metadata collected during this investigation, including safety-evaluation, licensing and training-data provenance fields. These findings describe the completeness of the investigation&apos;s collected records. They do not establish that publishers lack such documentation or that the models exhibit unsafe behaviour.
             </p>
             <div className="refs"><Source id={9} /><Source id={10} /></div>
           </article>

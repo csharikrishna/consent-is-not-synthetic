@@ -1,3 +1,4 @@
+# Historical archive checksum manifest (packaging artifacts pending publication; not committed in git tree)
 11054eca5ca2242b634863465ebb7fbe947d528185bb5553c7cd4a434f00b1dc  CINS_WEBSITE_SOURCE.zip
 7b56c94047e7682ed4cd9173f1e535220179921ab635824e583dbfa2ef7e6b39  CINS_PUBLIC_PRODUCTION_RELEASE.zip
 ab518a13e5e556c99404e08d69601125afe1275c022a9979aef114676761b992  CINS_PRIVATE_RESEARCH_ARCHIVE.zip

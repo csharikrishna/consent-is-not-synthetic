@@ -176,7 +176,7 @@ export default function ModelHubGovernancePage() {
       {/* METADATA COMPLETENESS AUDIT */}
       <Section title="4. Model-Card Metadata Completeness and Verification Priorities" id="provenance">
         <p>
-          Model cards were introduced by AI safety researchers as a standardized mechanism to communicate training data provenance, intended use-cases, known limitations, and ethical boundaries <Source id={10}/>. In the preliminary 53-record desk inventory (documented in <code>model-metadata-completeness.csv</code>), the collected fields contain metadata-completeness gaps that describe the extent of this desk investigation and require publisher-level verification rather than demonstrating systemic publisher non-compliance:
+          Model cards were introduced by AI safety researchers as a standardized mechanism to communicate training data provenance, intended use-cases, known limitations, and ethical boundaries <Source id={10}/>. The preliminary 53-record technical inventory identified gaps in the metadata collected during this investigation, including safety-evaluation, licensing and training-data provenance fields. These findings describe the completeness of the investigation&apos;s collected records. They do not establish that publishers lack such documentation or that the models exhibit unsafe behaviour:
         </p>
 
         <div style={{marginTop:'22px',marginBottom:'26px'}}>

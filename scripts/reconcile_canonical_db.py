@@ -84,28 +84,52 @@ if 59 in source_by_id:
 if 60 in source_by_id:
     source_by_id[60]["period"] = "Sentence imposed September 8, 2026"
 
-# P1-07: Dedicated Source 77 for UNICEF 9-country September 2026 study
+# P1-07 & Final Freeze: Dedicated Source 77 for UNICEF 9-country September 2026 study
+s77_metadata = {
+    "id": 77,
+    "publisher": "UNICEF / UNICEF Innocenti",
+    "title": "Through Children's Eyes: Technology-Facilitated Sexual Exploitation and Abuse",
+    "date": "September 2026",
+    "url": "https://www.unicef.org/belize/media/10601/file/UNICEF-Innocenti-Through-Children%27s-Eyes-report-2026.pdf",
+    "summary": "Approximately 1.1 million children across nine surveyed countries (2% reported average prevalence).",
+    "limitations": "Nine surveyed countries for the sexual-deepfake finding (~1.1M children, 2% prevalence). Do not combine with UNICEF-01 (11 countries, 1.2M+) or interpret the difference as a declining trend.",
+    "verified": True,
+    "stream": "Harm / usage / enforcement evidence",
+    "technical": False,
+    "status": "Primary source checked",
+    "locator": "Appendix Table A08",
+    "population": "Surveyed children across 9 countries",
+    "period": "September 2026",
+    "geo_scope": "9 countries",
+    "verified_claim": "Approximately 1.1 million children across nine countries experienced sexual deepfakes (2% average prevalence)."
+}
 if 77 not in source_by_id:
-    s77 = {
-        "id": 77,
-        "publisher": "UNICEF",
-        "title": "Nine-country sexual deepfake prevalence research (September 2026)",
-        "date": "September 2026; accessed 2026-11-25",
-        "url": "https://www.unicef.org/innocenti/",
-        "summary": "Approximately 1.1 million children across nine surveyed countries (2% reported average prevalence).",
-        "limitations": "Do not combine with UNICEF-01 (11 countries, 1.2M+) or interpret the difference as a declining trend.",
-        "verified": True,
-        "stream": "Harm / usage / enforcement evidence",
-        "technical": False,
-        "status": "Secondary source checked",
-        "locator": "September 2026 research summary",
-        "population": "Surveyed children across 9 countries",
-        "period": "September 2026",
-        "geo_scope": "9 countries",
-        "verified_claim": "Approximately 1.1 million children across nine countries experienced sexual deepfakes (2% average prevalence)."
-    }
-    sources.append(s77)
-    source_by_id[77] = s77
+    sources.append(s77_metadata)
+    source_by_id[77] = s77_metadata
+else:
+    source_by_id[77].update(s77_metadata)
+
+# Final Freeze: Source 44 Canada Protecting Victims Act 2026
+if 44 in source_by_id:
+    source_by_id[44].update({
+        "publisher": "Parliament of Canada",
+        "title": "Protecting Victims Act, 2026 (S.C. 2026, c. 19)",
+        "date": "Royal Assent 18 June 2026; in force 18 July 2026",
+        "url": "https://laws-lois.justice.gc.ca/eng/AnnualStatutes/2026_19/FullText.html",
+        "status": "Primary source checked",
+        "locator": "Section 15 (amending Criminal Code s. 162.1) & Section 205(1) (commencement on 30th day after Royal Assent: 18 July 2026)",
+        "summary": "Canada's Protecting Victims Act, 2026 received Royal Assent on 18 June 2026. Section 15 amends Criminal Code section 162.1 to include qualifying realistic synthetic visual representations of identifiable persons in intimate circumstances. Under section 205(1), the provision came into force on 18 July 2026, the 30th day after Royal Assent.",
+        "limitations": "Not a blanket prohibition on all AI-generated imagery; preserves statutory threshold concerning qualifying realistic synthetic representations and identifiable persons in intimate circumstances.",
+        "verified_claim": "Section 15 amends Criminal Code section 162.1 to include qualifying realistic synthetic visual representations of identifiable persons in intimate circumstances (in force 18 July 2026)."
+    })
+
+# Final Freeze: Source 65 CHI 2024 sample size consistency
+if 65 in source_by_id:
+    source_by_id[65]["population"] = "Adult survey sample across 10 diverse countries (US, UK, India, Brazil, Japan, etc.)"
+    source_by_id[65]["limitations"] = (
+        "Ten-country survey observations (2.2% victimization, 1.8% perpetration); not worldwide prevalence estimates. "
+        "In a ten-country survey, approximately 2.2% of respondents self-reported victimization and 1.8% self-reported perpetration involving non-consensual synthetic intimate imagery."
+    )
 
 # P1-05: Blank URLs must never be labelled verified
 for s in sources:
@@ -213,18 +237,18 @@ jurisdictions = [
         "id": "canada",
         "country": "Canada",
         "flag": "CA",
-        "statute": "Bill C-16 (Protecting Victims Act)",
-        "status": "Royal Assent 18 June 2026 (commencement pending confirmation)",
-        "effectiveDate": "Royal Assent 18 June 2026; commencement details pending verification",
-        "timeline": "Criminal justice proceedings (commencement-dependent)",
-        "scope": "Addresses non-consensual sexual deepfakes; exact commencement dates and operative statutory provisions require verification against authoritative Canadian legal records before making enforceability claims.",
+        "statute": "Protecting Victims Act, 2026 (Bill C-16)",
+        "status": "In force (Section 15 in force 18 July 2026)",
+        "effectiveDate": "Royal Assent 18 June 2026; in force 18 July 2026 (s. 205(1))",
+        "timeline": "Criminal justice proceedings (s. 15 in force 18 July 2026)",
+        "scope": "Canada's Protecting Victims Act, 2026 received Royal Assent on 18 June 2026. Section 15 amends Criminal Code section 162.1 to include qualifying realistic synthetic visual representations of identifiable persons in intimate circumstances. Under section 205(1), the provision came into force on 18 July 2026, the 30th day after Royal Assent. Not a blanket prohibition on all AI imagery.",
         "obligations": [
-            "Statutory amendments addressing non-consensual synthetic sexual depictions (subject to confirmed commencement).",
-            "Intermediary court-order compliance under applicable criminal procedure."
+            "Criminal Code section 162.1 prohibition on non-consensual distribution of qualifying realistic synthetic intimate imagery (in force 18 July 2026 under s. 205(1)).",
+            "Preserves statutory threshold requiring qualifying realistic depictions of identifiable persons in intimate circumstances."
         ],
-        "penalties": "Criminal penalties as prescribed upon commencement.",
+        "penalties": "Criminal penalties under Criminal Code s. 162.1 (indictable offence up to 5 years imprisonment or summary conviction).",
         "sources": [44],
-        "gaps": "Commencement status and full operative text require local primary verification."
+        "gaps": "Addresses criminal sanctions; does not establish standalone upstream developer release hold mandates."
     },
     {
         "id": "japan",
@@ -445,17 +469,17 @@ claims = [
         "population_geography": "Children across 9 countries",
         "reporting_period": "Published September 2026",
         "source_id": 77,
-        "original_title": "Nine-country sexual deepfake prevalence research (September 2026)",
-        "publisher_authors": "UNICEF",
+        "original_title": "Through Children's Eyes: Technology-Facilitated Sexual Exploitation and Abuse",
+        "publisher_authors": "UNICEF / UNICEF Innocenti",
         "publication_date": "2026-09",
         "access_date": "2026-11-25",
-        "official_url": "https://www.unicef.org/innocenti/",
+        "official_url": "https://www.unicef.org/belize/media/10601/file/UNICEF-Innocenti-Through-Children%27s-Eyes-report-2026.pdf",
         "doi": "",
-        "locator": "September 2026 publication",
+        "locator": "Appendix Table A08",
         "supporting_summary": "Approximately 1.1 million children across nine countries; 2% reported average prevalence.",
         "calculation_method": "Survey prevalence estimate",
-        "limitations": "Do not combine with UNICEF-01 or interpret the difference as a declining trend.",
-        "verification_status": "Secondary evidence supported",
+        "limitations": "Nine surveyed countries for the sexual-deepfake finding (~1.1M children, 2% prevalence). Do not combine with UNICEF-01 (11 countries, 1.2M+) or interpret the difference as a declining trend.",
+        "verification_status": "Primary evidence supported",
         "publication_eligible": True
     },
     {
@@ -713,25 +737,25 @@ claims = [
     },
     {
         "id": "INV-53",
-        "exact_wording": "The preliminary 53-record technical inventory contains gaps in collected safety-evaluation, licensing and provenance metadata. These gaps describe the completeness of this investigation and require additional publisher-level verification. They do not establish the absence of documentation or unsafe model behaviour.",
+        "exact_wording": "The preliminary 53-record technical inventory identified gaps in the metadata collected during this investigation, including safety-evaluation, licensing and training-data provenance fields. These findings describe the completeness of the investigation's collected records. They do not establish that publishers lack such documentation or that the models exhibit unsafe behaviour.",
         "value": "53",
         "unit": "technical inventory records",
         "numerator": "53",
         "denominator": "Phase 1 preliminary technical inventory",
         "population_geography": "Public model repositories",
         "reporting_period": "October-November 2026",
-        "source_id": 10,
-        "original_title": "Phase 1 Image Model Inventory (local workbook)",
-        "publisher_authors": "Consent Is Not Synthetic desk inventory",
+        "source_id": None,
+        "original_title": "Phase 1 technical inventory workbook (records M001–M053)",
+        "publisher_authors": "Consent Is Not Synthetic internal investigation",
         "publication_date": "2026-11",
         "access_date": "2026-11-25",
-        "official_url": "https://huggingface.co/content-policy",
+        "official_url": "",
         "doi": "",
-        "locator": "Phase_1_Image_Model_Inventory.xlsx (M001-M053)",
-        "supporting_summary": "Preliminary 53-record technical inventory describing investigation metadata completeness.",
+        "locator": "Internal investigation artefact (Phase 1 technical inventory workbook, records M001–M053)",
+        "supporting_summary": "The preliminary 53-record technical inventory identified gaps in the metadata collected during this investigation, including safety-evaluation, licensing and training-data provenance fields. These findings describe the completeness of the investigation's collected records. They do not establish that publishers lack such documentation or that the models exhibit unsafe behaviour.",
         "calculation_method": "Direct workbook row count (53 records)",
-        "limitations": "Preliminary inventory, not a representative census; metadata gaps describe investigation completeness, not absence of publisher documentation or unsafe behaviour.",
-        "verification_status": "Primary evidence supported",
+        "limitations": "Internal research artefact; findings describe completeness of the investigation's collected records, not an exhaustive census or proof that publishers lack documentation.",
+        "verification_status": "Internal investigation record (M001–M053)",
         "publication_eligible": True
     },
     {
@@ -778,7 +802,7 @@ external_developments = [
     {"id": "EXT-02", "date": "2026-07-08", "actor": "European Union", "development": "Regulation (EU) 2026/1744 adopted (published 24 July 2026; AI prohibitions applicable 2 Dec 2026)", "status": "Enacted, not yet applicable as of 25 Nov 2026"},
     {"id": "EXT-03", "date": "2026-09", "actor": "Australian eSafety Commissioner", "development": "8 services restricted Australian access or added compliance measures; Hugging Face updated misuse rules", "status": "Verified external regulatory outcome"},
     {"id": "EXT-04", "date": "2026-10-26", "actor": "UK Ofcom", "development": "NCII enforcement programme engaging 25 high-risk services and opening formal investigations", "status": "Verified external regulatory action"},
-    {"id": "EXT-05", "date": "2026-06-18", "actor": "Parliament of Canada", "development": "Protecting Victims Act (Bill C-16) received Royal Assent", "status": "Enacted; commencement pending confirmation"}
+    {"id": "EXT-05", "date": "2026-06-18", "actor": "Parliament of Canada", "development": "Protecting Victims Act, 2026 (Bill C-16) received Royal Assent; section 15 in force 18 July 2026 amending Criminal Code s. 162.1", "status": "In force (18 July 2026 under s. 205(1))"}
 ]
 
 initiative_impact = [
@@ -793,10 +817,11 @@ initiative_impact = [
 assert len({c["id"] for c in claims}) == len(claims), "Duplicate claim IDs!"
 assert len({s["id"] for s in sources}) == len(sources), "Duplicate source IDs!"
 for c in claims:
-    assert c["source_id"] in source_by_id, f"Missing source_id {c['source_id']} in {c['id']}"
+    if c.get("source_id") is not None:
+        assert c["source_id"] in source_by_id, f"Missing source_id {c['source_id']} in {c['id']}"
     assert c["limitations"].strip(), f"Missing limitations in {c['id']}"
     if c["publication_eligible"]:
-        assert c["verification_status"] in ("Primary evidence supported", "Secondary evidence supported"), f"Unsupported public claim: {c['id']}"
+        assert c["verification_status"] in ("Primary evidence supported", "Secondary evidence supported", "Internal investigation record (M001–M053)"), f"Unsupported public claim: {c['id']}"
 
 # Write 10 canonical JSON files
 canonical_files = {

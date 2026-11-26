@@ -9,15 +9,15 @@
     },
     {
       "filename": "citation-audit.csv",
-      "size_bytes": 57356,
-      "sha256": "9fe57691646a16dc090286c585f793160840f22c704778679d5db9a51148cf48",
+      "size_bytes": 57833,
+      "sha256": "777d71d0f5a2b58c7f6d7570dd1ceeb82a2a4f49a2c33879c99e5373be27045d",
       "referenced_in_app": true,
       "in_out": true
     },
     {
       "filename": "citation-audit.json",
-      "size_bytes": 81987,
-      "sha256": "ca3a98657bdfd680cf29fcfbf774e41a82756cfeb6800538013e2e281e5a5668",
+      "size_bytes": 82462,
+      "sha256": "017b710510c4bcb384b2a59cf2e7793d22decdb5e127056343e8d36800b6e45c",
       "referenced_in_app": true,
       "in_out": true
     },
@@ -30,8 +30,8 @@
     },
     {
       "filename": "claim-verification-final.csv",
-      "size_bytes": 10929,
-      "sha256": "de2021f1832d145592eca66f9e65d48e8e50881096ef1ad4e8ff1eb502be5c23",
+      "size_bytes": 11545,
+      "sha256": "67bdfafab29fc64af0c7af7a245813172116a5f52414ce09bae81ca3ee711c23",
       "referenced_in_app": true,
       "in_out": true
     },
@@ -51,8 +51,8 @@
     },
     {
       "filename": "final-release-decision.md",
-      "size_bytes": 2378,
-      "sha256": "49feec81c857691384c6d741dd5770df8334aee386ac96f51358b1d676435f08",
+      "size_bytes": 5553,
+      "sha256": "754cc454de469dc20dd41b8b39d8729dd7bab18a37825e5e2a2b6d10291479da",
       "referenced_in_app": true,
       "in_out": true
     },
@@ -107,8 +107,8 @@
     },
     {
       "filename": "public-source-register.csv",
-      "size_bytes": 32181,
-      "sha256": "c7993c23f2b4f54f4003aad85b5350bfcda5ffad69faa5d1eb43fabba92410c3",
+      "size_bytes": 32577,
+      "sha256": "249594e29a1b3da2ec10b936ac9850fbddf2c16af9ceb672eeade80e4eace134",
       "referenced_in_app": true,
       "in_out": true
     },
@@ -149,8 +149,8 @@
     },
     {
       "filename": "unresolved-evidence-register.md",
-      "size_bytes": 3422,
-      "sha256": "2d16da63bfc19a7c9d5ffdfb6920925215c6d0ed9865497dd062a66df9f1f2ea",
+      "size_bytes": 3762,
+      "sha256": "16bd5a5e9eff1528827bd20e43609db2e08dcf4b81715eae7036feaf9b489b02",
       "referenced_in_app": true,
       "in_out": true
     },
@@ -183,11 +183,5 @@
       "in_out": true
     }
   ],
-  "missing_targets": [
-    "${v.file}",
-    "citation-audit.json</code> &mdash; All 77 indexed peer-reviewed and statutory references (67 verified, 10 pending URL verification).\n            </li>\n            <li style={{marginBottom:",
-    "claim-verification-final.csv</code> &mdash; 15 headline empirical claims audited with page locators.\n            </li>\n            <li style={{marginBottom:",
-    "incident-register.csv</code> &mdash; 10 documented legal and enforcement cases.\n            </li>\n          </ul>\n\n          <div style={{marginTop:",
-    "v4-journal.pdf</code> &mdash; Complete 24-page defended research paper.\n            </li>\n            <li style={{marginBottom:"
-  ]
+  "missing_targets": []
 }

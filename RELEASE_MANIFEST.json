@@ -1,7 +1,8 @@
 {
   "release_version": "Version 4.1 (Defended Edition)",
   "release_date": "2026-11-25",
-  "release_status": "RELEASE_CANDIDATE_PENDING_OWNER_SIGN_OFF",
+  "release_status": "PENDING_ARTIFACT_PUBLICATION",
+  "notes": "Historical packaging checksum manifest. Archive files are pending artifact publication and are not committed in the Git tree.",
   "archives": [
     {
       "package_name": "CINS_WEBSITE_SOURCE.zip",

@@ -112,8 +112,8 @@ downloads_dir = WEB / "public" / "downloads"
 assets_dir = WEB / "public" / "assets"
 
 all_code_txt = all_tsx + "\n" + (WEB / "lib" / "content.ts").read_text(encoding="utf-8") + "\n" + (WEB / "lib" / "seo.ts").read_text(encoding="utf-8")
-download_refs = set(re.findall(r'/(?:downloads)/([^"\'?#`]+)', all_code_txt))
-asset_refs = set(re.findall(r'/(?:assets)/([^"\'?#`]+)', all_code_txt))
+download_refs = set(re.findall(r'/downloads/([A-Za-z0-9_.-]+\.[A-Za-z0-9]{2,5})', all_code_txt))
+asset_refs = set(re.findall(r'/assets/([A-Za-z0-9_.-]+\.[A-Za-z0-9]{2,5})', all_code_txt))
 
 downloads_inv = []
 for p in sorted(downloads_dir.iterdir()):

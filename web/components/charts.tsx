@@ -469,7 +469,7 @@ const DEMOGRAPHIC_STUDIES: DemographicStudy[] = [
   {
     id: 'umbach',
     name: 'Umbach et al. Cross-National Adult Study',
-    sample: '10 Countries (N=16,145 Adults)',
+    sample: '10 Countries (Adult Survey Sample)',
     cohort: 'Adult Population Ages 18+',
     rate: 2.2,
     femaleRate: 72.0,

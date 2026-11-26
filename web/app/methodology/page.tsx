@@ -55,7 +55,7 @@ export default function Methodology() {
             <span className="tag">Stream 1</span>
             <h3 style={{marginTop:'8px'}}>Adolescent &amp; Adult Victimological Surveys</h3>
             <p className="micro">
-              Captures self-reported prevalence, psychological distress, social isolation, and harassment experienced by victims of deepfakes and non-consensual intimate imagery (e.g., UNICEF 11-country adolescent study; Umbach et al. CHI 2024 10-country adult survey of 16,145 respondents; CCRI studies).
+              Captures self-reported prevalence, psychological distress, social isolation, and harassment experienced by victims of deepfakes and non-consensual intimate imagery (e.g., UNICEF 11-country adolescent study; Umbach et al. CHI 2024 10-country adult survey; CCRI studies).
             </p>
             <p className="micro muted" style={{marginTop:'8px'}}>
               <strong>Key Limitation:</strong> Subject to self-reporting biases and social stigma; reflects active online respondents rather than universal administrative censuses.
@@ -148,7 +148,7 @@ export default function Methodology() {
           <article className="panel">
             <h3>Preliminary 53-Record Technical Inventory</h3>
             <p className="micro">
-              The preliminary 53-record technical inventory (M001–M053) contains gaps in collected safety-evaluation, licensing, and provenance metadata. These gaps describe investigation completeness and require publisher-level verification. An earlier exploratory search pagination count has been withdrawn from public findings. <Source id={10}/>
+              The preliminary 53-record technical inventory identified gaps in the metadata collected during this investigation, including safety-evaluation, licensing and training-data provenance fields. These findings describe the completeness of the investigation&apos;s collected records. They do not establish that publishers lack such documentation or that the models exhibit unsafe behaviour. Model card schema specifications defined in Hugging Face documentation <Source id={10}/>.
             </p>
           </article>
 

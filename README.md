@@ -2,8 +2,7 @@
 
 [![Deploy](https://github.com/csharikrishna/consent-is-not-synthetic/actions/workflows/deploy-gh-pages.yml/badge.svg)](https://github.com/csharikrishna/consent-is-not-synthetic/actions/workflows/deploy-gh-pages.yml)
 [![Live Site](https://img.shields.io/badge/Live%20Platform-csharikrishna.github.io-9D2048?style=flat&logo=githubpages&logoColor=white)](https://csharikrishna.github.io/consent-is-not-synthetic/)
-[![License](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![Accessibility](https://img.shields.io/badge/Accessibility-WCAG%202.1%20AA%20PASS-brightgreen)](audit-results/accessibility-audit.json)
+[![Accessibility](https://img.shields.io/badge/Accessibility-Automated%20axe%20scan%3A%200%20violations-brightgreen)](audit-results/accessibility-audit.json)
 [![Audit Matrix](https://img.shields.io/badge/Routes%20Audited-21%2F21%20PASS-blue)](audit-results/route-audit.json)
 
 **Artificial Images. Real Victims. Real Consequences.**
@@ -12,7 +11,8 @@ An independent public-interest research and evidence-led advocacy initiative doc
 
 > **Live Platform:** [https://csharikrishna.github.io/consent-is-not-synthetic/](https://csharikrishna.github.io/consent-is-not-synthetic/)  
 > **Research Cutoff:** 25 November 2026 · **Edition:** Version 4.1 (Defended Edition)  
-> **Classification:** AI-assisted structured narrative evidence review and regulatory policy synthesis, not independently peer-reviewed. Legal comparisons are informational research and have not undergone independent qualified legal review.
+> **Classification:** AI-assisted structured narrative evidence review and regulatory policy synthesis, not independently peer-reviewed. Legal comparisons are informational research and have not undergone independent qualified legal review.  
+> **Source Register:** 77 indexed references in the public source register (67 verified, 10 pending URL verification); the V4.1 manuscript bibliography indexes 76 cited entries.
 
 ---
 
@@ -44,7 +44,7 @@ An independent public-interest research and evidence-led advocacy initiative doc
 ├── docs/governance_history/    # Phase 1–3 audits, protocols, deployment guides
 ├── scripts/                    # Canonical reconciliation, PDF builder, isolation, Playwright QA, packaging
 ├── audit-results/              # Machine-readable audit reports and viewport screenshots
-├── releases/                   # 7 SHA-256 verified V4.1 release archives (excluded from git)
+├── releases/                   # Release archive checksum manifest (packaging artifacts pending publication)
 ├── vercel.json                 # Root Vercel configuration (security headers + web/out output)
 └── .github/workflows/          # GitHub Pages static deployment workflow
 ```
@@ -65,7 +65,7 @@ npm run build        # Static export to web/out/ + RSC payload aliasing + .nojek
 
 ```bash
 python scripts/verify_build_isolation.py    # Ensures 0 source maps, 0 Excel files, 0 broken links (205 files checked)
-node scripts/master_playwright_audit.cjs    # 126-check matrix across 21 routes x 6 viewports + full axe-core WCAG 2.1 AA
+node scripts/master_playwright_audit.cjs    # 126-check matrix across 21 routes x 6 viewports + full axe-core scan
 node scripts/production_smoke_test.cjs      # Verifies 21/21 routes live on production with HTTP 200
 ```
 
@@ -87,3 +87,9 @@ Root `vercel.json` and `web/vercel.json` configure static output (`web/out/`), `
 - **Zero Abusive Media:** No non-consensual intimate imagery, CSAM, or generation bypass instructions are hosted or distributed.
 - **Survivor Support:** Official reporting pathways (`cybercrime.gov.in`, NCMEC CyberTipline, Take It Down, StopNCII.org, IWF, eSafety) are documented on `/support/`. India helpline `1930` is strictly scoped to financial cyber fraud; emergency/abuse routing uses `112`, `1098`, and `181` (subject to availability).
 - **Governance & Audit Trail:** See [AUDIT_REPORT.md](AUDIT_REPORT.md), [FINAL_RELEASE_DECISION.md](FINAL_RELEASE_DECISION.md), and [UNRESOLVED_EVIDENCE_REGISTER.md](UNRESOLVED_EVIDENCE_REGISTER.md).
+
+---
+
+## Licensing & Reuse Notice
+
+No blanket repository license is currently declared. Third-party material remains subject to its respective rights and licenses. Contact the project owner regarding reuse of original project materials.

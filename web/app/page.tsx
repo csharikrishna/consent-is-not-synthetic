@@ -77,7 +77,7 @@ export default function Home() {
           <Stat
             value="2.2%"
             label="Adult Cross-National Self-Reported Victimization"
-            note="Multi-country academic survey of 16,145 adults across 10 countries self-reporting non-consensual synthetic intimate imagery victimization."
+            note="In a ten-country survey (Umbach et al., CHI 2024), approximately 2.2% of respondents self-reported victimization and 1.8% self-reported perpetration."
             refs={[65]}
           />
         </div>
@@ -181,7 +181,7 @@ export default function Home() {
             <span className="ref-number">03</span>
             <h3 style={{marginTop:'8px'}}>Preliminary Inventory Reveals Metadata Gaps</h3>
             <p>
-              The preliminary 53-record technical inventory contains gaps in collected safety-evaluation, licensing and provenance metadata. These gaps describe the completeness of this investigation and require additional publisher-level verification. They do not establish the absence of documentation or unsafe model behaviour <Source id={9}/> <Source id={10}/>.
+              The preliminary 53-record technical inventory identified gaps in the metadata collected during this investigation, including safety-evaluation, licensing and training-data provenance fields. These findings describe the completeness of the investigation&apos;s collected records. They do not establish that publishers lack such documentation or that the models exhibit unsafe behaviour <Source id={9}/> <Source id={10}/>.
             </p>
           </article>
 

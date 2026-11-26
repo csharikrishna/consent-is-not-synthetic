@@ -67,7 +67,7 @@ const surveyDatasets = [
     id: 'chi-survey',
     label: 'ACM CHI 10-Country Adult Survey',
     title: 'Cross-National Self-Reported Sexual Deepfake Prevalence',
-    desc: 'Representative academic survey of 16,145 adults across 10 diverse countries (US, UK, India, Brazil, Japan, etc.).',
+    desc: 'Cross-national survey of adults across 10 diverse countries (US, UK, India, Brazil, Japan, etc.; Umbach et al., CHI 2024).',
     items: [
       { label: 'Self-Reported Personal Victimization', value: 2.2, display: '2.2% of adults' },
       { label: 'Self-Reported Perpetration / Commission', value: 1.8, display: '1.8% of adults' }
@@ -244,7 +244,7 @@ export default function Evidence() {
           <Completeness />
           <Note>
             <strong>Research Completeness Notice:</strong>
-            All 77 bibliographic citations on this platform are indexed with primary source locators and limitations (67 verified, 10 pending URL verification); selected headline claims have undergone primary-source rechecking. The preliminary 53-record technical inventory contains gaps in collected safety-evaluation, licensing and provenance metadata. These gaps describe the completeness of this investigation and require additional publisher-level verification. They do not establish the absence of documentation or unsafe model behaviour.
+            All 77 bibliographic citations on this platform are indexed with primary source locators and limitations (67 verified, 10 pending URL verification); selected headline claims have undergone primary-source rechecking. The preliminary 53-record technical inventory identified gaps in the metadata collected during this investigation, including safety-evaluation, licensing and training-data provenance fields. These findings describe the completeness of the investigation&apos;s collected records. They do not establish that publishers lack such documentation or that the models exhibit unsafe behaviour.
           </Note>
         </Section>
       </section>

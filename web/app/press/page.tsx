@@ -86,7 +86,7 @@ export default function PressCenterPage() {
               <span className="tag">Academic Review · V4.1</span>
               <h3 style={{marginTop:'8px'}}>Full Research Journal (V4.1)</h3>
               <p className="micro">
-                Defended V4.1 manuscript detailing 76 indexed references, canonical empirical metrics, and the three-tier governance framework.
+                Defended V4.1 manuscript bibliography detailing 76 cited references (with 77 entries across the public source register), canonical empirical metrics, and the three-tier governance framework.
               </p>
               <div style={{marginTop:'auto',paddingTop:'12px'}}>
                 <a href={assetPath('/downloads/v4-journal.pdf')} className="inline-link" download>

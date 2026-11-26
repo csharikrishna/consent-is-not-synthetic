@@ -12,6 +12,9 @@ if (!fs.existsSync(axeSourcePath)) {
   throw new Error(`axe-core is unavailable at ${axeSourcePath}; accessibility audit cannot run.`);
 }
 const axeSource = fs.readFileSync(axeSourcePath, 'utf8');
+if (!axeSource) {
+  throw new Error('axe-core is unavailable; accessibility audit cannot run.');
+}
 
 const VIEWPORTS = [
   { name: 'mobile_360', width: 360, height: 640 },
@@ -240,18 +243,27 @@ const ROUTES = [
   console.log(`Axe Accessibility Audit: ${axeSummary.totalViolations} rule violations (desktop, mobile, and interactive states).`);
   console.log('Functional Matrix:', JSON.stringify(functionalMatrix));
 
-  if (
-    passed !== total ||
-    axeSummary.totalViolations > 0 ||
-    functionalMatrix.headerDropdowns.openAfterHover !== 1 ||
-    functionalMatrix.headerDropdowns.openAfterEscape !== 0 ||
-    !functionalMatrix.citationModal.opened ||
-    !functionalMatrix.citationModal.closedOnEscape ||
-    functionalMatrix.modelsGateAndTop50.totalRows !== 50 ||
-    !functionalMatrix.mobileDrawer.opened ||
-    !functionalMatrix.keyboardNav.skipLinkFocused
-  ) {
-    console.error('Playwright / Axe Audit FAILED!');
-    process.exit(1);
+  const failures = [];
+  if (passed !== total) failures.push(`route-viewport checks: ${passed}/${total}`);
+  if (axeSummary.totalViolations > 0) failures.push(`axe-core violations: ${axeSummary.totalViolations}`);
+  if (functionalMatrix.headerDropdowns.openAfterHover !== 1 || functionalMatrix.headerDropdowns.openAfterEscape !== 0) {
+    failures.push('header dropdowns hover/escape check failed');
+  }
+  if (!functionalMatrix.citationModal.opened || !functionalMatrix.citationModal.closedOnEscape) {
+    failures.push('citation modal open/escape check failed');
+  }
+  if (functionalMatrix.modelsGateAndTop50.totalRows !== 50) {
+    failures.push(`modelsGateAndTop50 totalRows: ${functionalMatrix.modelsGateAndTop50.totalRows} !== 50`);
+  }
+  if (!functionalMatrix.mobileDrawer.opened) {
+    failures.push('mobileDrawer did not open');
+  }
+  if (!functionalMatrix.keyboardNav.skipLinkFocused) {
+    failures.push('keyboardNav skipLink not focused');
+  }
+
+  if (failures.length > 0) {
+    console.error('Playwright / Axe Audit FAILED with issues:\n' + failures.map(f => ` - ${f}`).join('\n'));
+    throw new Error(`Master Playwright/Axe Audit failed: ${failures.join('; ')}`);
   }
 })();

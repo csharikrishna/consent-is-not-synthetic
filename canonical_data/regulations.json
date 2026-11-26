@@ -111,20 +111,20 @@
     "id": "canada",
     "country": "Canada",
     "flag": "CA",
-    "statute": "Bill C-16 (Protecting Victims Act)",
-    "status": "Royal Assent 18 June 2026 (commencement pending confirmation)",
-    "effectiveDate": "Royal Assent 18 June 2026; commencement details pending verification",
-    "timeline": "Criminal justice proceedings (commencement-dependent)",
-    "scope": "Addresses non-consensual sexual deepfakes; exact commencement dates and operative statutory provisions require verification against authoritative Canadian legal records before making enforceability claims.",
+    "statute": "Protecting Victims Act, 2026 (Bill C-16)",
+    "status": "In force (Section 15 in force 18 July 2026)",
+    "effectiveDate": "Royal Assent 18 June 2026; in force 18 July 2026 (s. 205(1))",
+    "timeline": "Criminal justice proceedings (s. 15 in force 18 July 2026)",
+    "scope": "Canada's Protecting Victims Act, 2026 received Royal Assent on 18 June 2026. Section 15 amends Criminal Code section 162.1 to include qualifying realistic synthetic visual representations of identifiable persons in intimate circumstances. Under section 205(1), the provision came into force on 18 July 2026, the 30th day after Royal Assent. Not a blanket prohibition on all AI imagery.",
     "obligations": [
-      "Statutory amendments addressing non-consensual synthetic sexual depictions (subject to confirmed commencement).",
-      "Intermediary court-order compliance under applicable criminal procedure."
+      "Criminal Code section 162.1 prohibition on non-consensual distribution of qualifying realistic synthetic intimate imagery (in force 18 July 2026 under s. 205(1)).",
+      "Preserves statutory threshold requiring qualifying realistic depictions of identifiable persons in intimate circumstances."
     ],
-    "penalties": "Criminal penalties as prescribed upon commencement.",
+    "penalties": "Criminal penalties under Criminal Code s. 162.1 (indictable offence up to 5 years imprisonment or summary conviction).",
     "sources": [
       44
     ],
-    "gaps": "Commencement status and full operative text require local primary verification."
+    "gaps": "Addresses criminal sanctions; does not establish standalone upstream developer release hold mandates."
   },
   {
     "id": "japan",
